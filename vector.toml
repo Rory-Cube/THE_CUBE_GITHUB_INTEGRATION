@@ -1,0 +1,31 @@
+[sinks.aws_cloudwatch_logs]
+type = "aws_cloudwatch_logs"
+inputs = [
+  "cubejs-server",
+  "refresh-scheduler",
+  "warmup-job",
+  "cubestore",
+  "query-history"
+]
+region = "us-east-2"
+group_name = "d3-demo_cx-rory"
+stream_name = "d3-demo_cx-rory__log_stream"
+
+[sinks.aws_cloudwatch_logs.auth]
+access_key_id = "${AWS_ACCESS_KEY_ID_CLOUDWATCH}"
+secret_access_key = "${AWS_SECRET_ACCESS_KEY_CLOUDWATCH}"
+
+[sinks.aws_cloudwatch_logs.encoding]
+codec = "json"
+
+[sinks.prometheus]
+type = "prometheus_remote_write"
+inputs = [
+  "metrics"
+]
+endpoint = "https://prometheus-prod-36-prod-us-west-0.grafana.net/api/prom/push"
+
+[sinks.prometheus.auth]
+strategy = "basic"
+user = "1095969"
+password = "${GRAFANA_CLOUD_TOKEN}"
