@@ -1,0 +1,501 @@
+company_id,company_name,order_id,order_date,customer_name,email,city,state,product_name,category,unit_price,quantity,total_amount,status,sales_channel
+ENT-001,Northwind Supply Co,NW-10000,2025-06-19,Daniel Martinez,daniel.martinez549@example.com,Boston,MA,Mechanical Keyboard,Electronics,89.99,1,89.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10001,2025-09-14,Susan Williams,susan.williams247@example.com,Chicago,IL,Whiteboard,Office,49.99,1,49.99,completed,in_store
+ENT-001,Northwind Supply Co,NW-10002,2025-01-08,Joshua Davis,joshua.davis591@demo.org,San Diego,CA,Travel Adapter,Electronics,16.99,4,67.96,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10003,2025-09-27,Ingrid Rodriguez,ingrid.rodriguez121@fakemail.net,Austin,TX,Whiteboard,Office,49.99,1,49.99,completed,web
+ENT-001,Northwind Supply Co,NW-10004,2025-10-02,Donna Torres,donna.torres730@example.com,San Antonio,TX,Webcam HD,Electronics,69.99,1,69.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10005,2025-06-10,Amanda Wright,amanda.wright946@demo.org,Portland,OR,Monitor 27in,Electronics,229.00,1,229.00,completed,in_store
+ENT-001,Northwind Supply Co,NW-10006,2025-06-24,Barbara Hall,barbara.hall538@demo.org,San Diego,CA,USB-C Hub,Electronics,39.99,2,79.98,cancelled,web
+ENT-001,Northwind Supply Co,NW-10007,2025-03-16,Kenneth Jones,kenneth.jones776@fakemail.net,Houston,TX,Phone Case,Electronics,19.99,1,19.99,pending,web
+ENT-001,Northwind Supply Co,NW-10008,2025-06-23,Brian Jones,brian.jones838@fakemail.net,Detroit,MI,Travel Adapter,Electronics,16.99,3,50.97,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10009,2025-08-23,Ashley Nguyen,ashley.nguyen968@fakemail.net,Miami,FL,USB-C Hub,Electronics,39.99,3,119.97,completed,web
+ENT-001,Northwind Supply Co,NW-10010,2025-05-23,Edward Hall,edward.hall842@demo.org,Austin,TX,Travel Adapter,Electronics,16.99,5,84.95,pending,phone
+ENT-001,Northwind Supply Co,NW-10011,2025-01-07,Matthew Johnson,matthew.johnson120@demo.org,Miami,FL,Webcam HD,Electronics,69.99,1,69.99,shipped,web
+ENT-001,Northwind Supply Co,NW-10012,2025-03-15,Melissa Thomas,melissa.thomas509@example.com,Boston,MA,Ergonomic Chair Cushion,Office,42.00,4,168.00,pending,mobile_app
+ENT-001,Northwind Supply Co,NW-10013,2025-06-22,Sarah Haddad,sarah.haddad286@demo.org,Phoenix,AZ,Whiteboard,Office,49.99,3,149.97,pending,web
+ENT-001,Northwind Supply Co,NW-10014,2025-08-27,Elizabeth Garcia,elizabeth.garcia239@example.com,Philadelphia,PA,Desk Lamp,Office,27.95,1,27.95,completed,web
+ENT-001,Northwind Supply Co,NW-10015,2025-03-23,Charles Smith,charles.smith625@fakemail.net,Phoenix,AZ,Whiteboard,Office,49.99,2,99.98,refunded,mobile_app
+ENT-001,Northwind Supply Co,NW-10016,2025-07-13,Carol Baker,carol.baker799@demo.org,Los Angeles,CA,Yoga Mat,Lifestyle,29.99,4,119.96,pending,web
+ENT-001,Northwind Supply Co,NW-10017,2025-03-04,Steven Green,steven.green214@demo.org,Boston,MA,Mechanical Keyboard,Electronics,89.99,1,89.99,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10018,2025-10-01,Patricia Miller,patricia.miller104@fakemail.net,New York,NY,Travel Adapter,Electronics,16.99,1,16.99,completed,in_store
+ENT-001,Northwind Supply Co,NW-10019,2025-10-12,Susan Flores,susan.flores979@fakemail.net,Boston,MA,Desk Lamp,Office,27.95,2,55.90,cancelled,web
+ENT-001,Northwind Supply Co,NW-10020,2025-03-04,Linda Silva,linda.silva320@example.com,Atlanta,GA,Yoga Mat,Lifestyle,29.99,1,29.99,shipped,phone
+ENT-001,Northwind Supply Co,NW-10021,2025-03-23,Thomas Walker,thomas.walker974@fakemail.net,Philadelphia,PA,Phone Case,Electronics,19.99,1,19.99,refunded,web
+ENT-001,Northwind Supply Co,NW-10022,2025-03-12,Ronald King,ronald.king268@fakemail.net,Austin,TX,USB-C Hub,Electronics,39.99,2,79.98,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10023,2025-04-27,Andrew Roberts,andrew.roberts628@mailbox.test,Minneapolis,MN,Monitor 27in,Electronics,229.00,2,458.00,pending,phone
+ENT-001,Northwind Supply Co,NW-10024,2025-01-26,Mateo Anderson,mateo.anderson749@example.com,San Antonio,TX,Phone Case,Electronics,19.99,1,19.99,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10025,2025-06-03,Thomas Gonzalez,thomas.gonzalez960@fakemail.net,Charlotte,NC,Webcam HD,Electronics,69.99,1,69.99,completed,web
+ENT-001,Northwind Supply Co,NW-10026,2025-08-21,Joseph Walker,joseph.walker640@example.com,San Antonio,TX,Monitor 27in,Electronics,229.00,1,229.00,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10027,2025-08-06,Carol Garcia,carol.garcia769@mailbox.test,Houston,TX,Ergonomic Chair Cushion,Office,42.00,3,126.00,pending,in_store
+ENT-001,Northwind Supply Co,NW-10028,2025-12-06,Kevin Perez,kevin.perez762@example.com,Chicago,IL,Ergonomic Chair Cushion,Office,42.00,1,42.00,completed,web
+ENT-001,Northwind Supply Co,NW-10029,2025-11-12,Mary Martinez,mary.martinez150@demo.org,Nashville,TN,Yoga Mat,Lifestyle,29.99,3,89.97,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10030,2025-09-24,Emily Rodriguez,emily.rodriguez744@example.com,New York,NY,Wireless Mouse,Electronics,24.99,3,74.97,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10031,2025-10-11,Chen Gonzalez,chen.gonzalez300@mailbox.test,San Antonio,TX,Wireless Mouse,Electronics,24.99,1,24.99,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10032,2025-11-19,Mark Petrov,mark.petrov363@demo.org,Phoenix,AZ,Mechanical Keyboard,Electronics,89.99,4,359.96,refunded,mobile_app
+ENT-001,Northwind Supply Co,NW-10033,2025-08-25,Priya Okafor,priya.okafor537@example.com,Minneapolis,MN,Desk Lamp,Office,27.95,2,55.90,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10034,2025-09-02,James Roberts,james.roberts634@example.com,Phoenix,AZ,Notebook Set,Office,12.99,1,12.99,shipped,phone
+ENT-001,Northwind Supply Co,NW-10035,2025-04-07,Kimberly King,kimberly.king109@example.com,Detroit,MI,Running Shoes,Lifestyle,119.00,3,357.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10036,2025-08-11,Deborah Miller,deborah.miller779@example.com,Minneapolis,MN,Yoga Mat,Lifestyle,29.99,2,59.98,refunded,mobile_app
+ENT-001,Northwind Supply Co,NW-10037,2025-09-08,Paul Gonzalez,paul.gonzalez827@demo.org,Dallas,TX,Yoga Mat,Lifestyle,29.99,2,59.98,refunded,web
+ENT-001,Northwind Supply Co,NW-10038,2025-08-11,Diego Scott,diego.scott125@demo.org,San Antonio,TX,Yoga Mat,Lifestyle,29.99,1,29.99,completed,phone
+ENT-001,Northwind Supply Co,NW-10039,2025-03-23,Jessica Ramirez,jessica.ramirez803@example.com,Chicago,IL,Water Bottle,Lifestyle,18.00,2,36.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10040,2025-07-16,Thomas Haddad,thomas.haddad976@example.com,Phoenix,AZ,Yoga Mat,Lifestyle,29.99,1,29.99,completed,phone
+ENT-001,Northwind Supply Co,NW-10041,2025-07-07,Omar Anderson,omar.anderson414@fakemail.net,Philadelphia,PA,Whiteboard,Office,49.99,5,249.95,shipped,web
+ENT-001,Northwind Supply Co,NW-10042,2025-12-01,Jennifer Campbell,jennifer.campbell470@demo.org,Denver,CO,Wireless Mouse,Electronics,24.99,1,24.99,pending,web
+ENT-001,Northwind Supply Co,NW-10043,2025-02-03,Kimberly Flores,kimberly.flores116@mailbox.test,Austin,TX,Phone Case,Electronics,19.99,5,99.95,shipped,web
+ENT-001,Northwind Supply Co,NW-10044,2025-11-27,Robert Larsen,robert.larsen840@demo.org,Philadelphia,PA,Coffee Mug,Lifestyle,14.50,3,43.50,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10045,2025-05-02,Elizabeth Wright,elizabeth.wright335@example.com,Minneapolis,MN,Travel Adapter,Electronics,16.99,1,16.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10046,2025-02-20,Luca Jones,luca.jones821@fakemail.net,Dallas,TX,Wireless Mouse,Electronics,24.99,2,49.98,completed,web
+ENT-001,Northwind Supply Co,NW-10047,2025-05-20,Thomas Kim,thomas.kim567@demo.org,Houston,TX,Yoga Mat,Lifestyle,29.99,1,29.99,completed,web
+ENT-001,Northwind Supply Co,NW-10048,2025-03-07,Kimberly Rivera,kimberly.rivera269@example.com,San Diego,CA,Laptop Stand,Office,34.50,5,172.50,shipped,phone
+ENT-001,Northwind Supply Co,NW-10049,2025-05-12,Karen King,karen.king689@mailbox.test,San Antonio,TX,Bluetooth Speaker,Electronics,54.99,1,54.99,completed,web
+ENT-001,Northwind Supply Co,NW-10050,2025-04-15,Robert Smith,robert.smith195@demo.org,New York,NY,Phone Case,Electronics,19.99,2,39.98,completed,phone
+ENT-001,Northwind Supply Co,NW-10051,2025-09-10,Priya Adams,priya.adams911@demo.org,Portland,OR,Running Shoes,Lifestyle,119.00,2,238.00,completed,web
+ENT-001,Northwind Supply Co,NW-10052,2025-01-03,Lisa Gonzalez,lisa.gonzalez56@mailbox.test,Phoenix,AZ,Ergonomic Chair Cushion,Office,42.00,5,210.00,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10053,2025-10-08,William Brown,william.brown687@fakemail.net,Chicago,IL,Ergonomic Chair Cushion,Office,42.00,4,168.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10054,2025-06-18,Sandra Lopez,sandra.lopez270@fakemail.net,Philadelphia,PA,Coffee Mug,Lifestyle,14.50,1,14.50,shipped,web
+ENT-001,Northwind Supply Co,NW-10055,2025-07-03,Robert Haddad,robert.haddad2@fakemail.net,Austin,TX,Water Bottle,Lifestyle,18.00,1,18.00,cancelled,web
+ENT-001,Northwind Supply Co,NW-10056,2025-05-27,Paul Adams,paul.adams6@example.com,San Antonio,TX,Backpack,Lifestyle,64.99,2,129.98,completed,web
+ENT-001,Northwind Supply Co,NW-10057,2025-02-19,Betty Nguyen,betty.nguyen312@mailbox.test,Los Angeles,CA,Ergonomic Chair Cushion,Office,42.00,1,42.00,refunded,in_store
+ENT-001,Northwind Supply Co,NW-10058,2025-03-10,Ronald Martinez,ronald.martinez738@demo.org,Charlotte,NC,Ergonomic Chair Cushion,Office,42.00,3,126.00,completed,web
+ENT-001,Northwind Supply Co,NW-10059,2025-09-25,Priya Petrov,priya.petrov832@mailbox.test,Minneapolis,MN,Whiteboard,Office,49.99,2,99.98,refunded,mobile_app
+ENT-001,Northwind Supply Co,NW-10060,2025-02-01,Omar Kowalski,omar.kowalski729@mailbox.test,New York,NY,Travel Adapter,Electronics,16.99,3,50.97,completed,web
+ENT-001,Northwind Supply Co,NW-10061,2025-11-01,Kevin White,kevin.white572@example.com,Houston,TX,Ergonomic Chair Cushion,Office,42.00,3,126.00,refunded,phone
+ENT-001,Northwind Supply Co,NW-10062,2025-11-17,Jessica Young,jessica.young72@example.com,Dallas,TX,Wireless Mouse,Electronics,24.99,1,24.99,completed,phone
+ENT-001,Northwind Supply Co,NW-10063,2025-04-24,Melissa Walker,melissa.walker241@mailbox.test,Dallas,TX,USB-C Hub,Electronics,39.99,3,119.97,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10064,2025-10-21,Ingrid Harris,ingrid.harris295@example.com,Chicago,IL,Running Shoes,Lifestyle,119.00,4,476.00,completed,web
+ENT-001,Northwind Supply Co,NW-10065,2025-10-19,Kenneth Martinez,kenneth.martinez710@fakemail.net,Seattle,WA,Coffee Mug,Lifestyle,14.50,2,29.00,completed,web
+ENT-001,Northwind Supply Co,NW-10066,2025-11-16,Steven Brown,steven.brown102@mailbox.test,Atlanta,GA,Coffee Mug,Lifestyle,14.50,5,72.50,shipped,phone
+ENT-001,Northwind Supply Co,NW-10067,2025-05-03,Kimberly Jackson,kimberly.jackson122@mailbox.test,Miami,FL,Yoga Mat,Lifestyle,29.99,1,29.99,cancelled,web
+ENT-001,Northwind Supply Co,NW-10068,2025-07-07,Charles Robinson,charles.robinson461@fakemail.net,Chicago,IL,Phone Case,Electronics,19.99,5,99.95,completed,web
+ENT-001,Northwind Supply Co,NW-10069,2025-10-27,Donna Garcia,donna.garcia369@mailbox.test,Phoenix,AZ,Phone Case,Electronics,19.99,1,19.99,refunded,web
+ENT-001,Northwind Supply Co,NW-10070,2025-07-01,Fatima Davis,fatima.davis898@demo.org,Denver,CO,Backpack,Lifestyle,64.99,1,64.99,completed,web
+ENT-001,Northwind Supply Co,NW-10071,2025-06-13,Ashley Baker,ashley.baker145@demo.org,Miami,FL,Ergonomic Chair Cushion,Office,42.00,1,42.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10072,2025-02-07,Omar Perez,omar.perez860@demo.org,New York,NY,Monitor 27in,Electronics,229.00,3,687.00,completed,phone
+ENT-001,Northwind Supply Co,NW-10073,2025-06-14,Charles Taylor,charles.taylor891@example.com,Denver,CO,USB-C Hub,Electronics,39.99,1,39.99,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10074,2025-04-09,Patricia Moore,patricia.moore293@mailbox.test,Houston,TX,Mechanical Keyboard,Electronics,89.99,3,269.97,pending,mobile_app
+ENT-001,Northwind Supply Co,NW-10075,2025-09-18,Daniel Gonzalez,daniel.gonzalez832@demo.org,Denver,CO,Whiteboard,Office,49.99,4,199.96,completed,phone
+ENT-001,Northwind Supply Co,NW-10076,2025-08-02,Jennifer Brown,jennifer.brown142@fakemail.net,Portland,OR,Yoga Mat,Lifestyle,29.99,2,59.98,refunded,web
+ENT-001,Northwind Supply Co,NW-10077,2025-07-21,William Walker,william.walker262@fakemail.net,Portland,OR,Monitor 27in,Electronics,229.00,1,229.00,completed,web
+ENT-001,Northwind Supply Co,NW-10078,2025-04-17,Steven Scott,steven.scott166@example.com,Boston,MA,Laptop Stand,Office,34.50,1,34.50,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10079,2025-04-03,Joseph Lewis,joseph.lewis561@mailbox.test,Seattle,WA,Yoga Mat,Lifestyle,29.99,1,29.99,completed,web
+ENT-001,Northwind Supply Co,NW-10080,2025-01-24,Emily Garcia,emily.garcia829@mailbox.test,Seattle,WA,Backpack,Lifestyle,64.99,1,64.99,pending,mobile_app
+ENT-001,Northwind Supply Co,NW-10081,2025-08-09,Mark Mitchell,mark.mitchell347@example.com,Minneapolis,MN,Water Bottle,Lifestyle,18.00,1,18.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10082,2025-07-13,Amanda Allen,amanda.allen919@mailbox.test,Minneapolis,MN,Water Bottle,Lifestyle,18.00,1,18.00,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10083,2025-10-16,Karen Silva,karen.silva727@demo.org,New York,NY,Desk Lamp,Office,27.95,1,27.95,completed,web
+ENT-001,Northwind Supply Co,NW-10084,2025-04-05,Betty Ferreira,betty.ferreira255@example.com,Minneapolis,MN,Yoga Mat,Lifestyle,29.99,5,149.95,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10085,2025-03-08,Amanda Miller,amanda.miller41@example.com,Miami,FL,USB-C Hub,Electronics,39.99,2,79.98,completed,phone
+ENT-001,Northwind Supply Co,NW-10086,2025-02-03,Dorothy Martin,dorothy.martin448@example.com,Phoenix,AZ,Coffee Mug,Lifestyle,14.50,2,29.00,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10087,2025-01-18,Donna Gonzalez,donna.gonzalez616@example.com,Boston,MA,Coffee Mug,Lifestyle,14.50,1,14.50,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10088,2025-01-14,Sarah Lee,sarah.lee561@mailbox.test,San Diego,CA,Running Shoes,Lifestyle,119.00,2,238.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10089,2025-06-08,Mary Gonzalez,mary.gonzalez234@demo.org,Atlanta,GA,Whiteboard,Office,49.99,1,49.99,cancelled,web
+ENT-001,Northwind Supply Co,NW-10090,2025-05-24,George Perez,george.perez203@example.com,Portland,OR,Webcam HD,Electronics,69.99,2,139.98,refunded,web
+ENT-001,Northwind Supply Co,NW-10091,2025-08-08,Susan Young,susan.young199@mailbox.test,San Antonio,TX,Bluetooth Speaker,Electronics,54.99,3,164.97,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10092,2025-08-14,Fatima Jackson,fatima.jackson192@mailbox.test,Houston,TX,Insulated Tumbler,Lifestyle,25.00,1,25.00,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10093,2025-07-02,Elizabeth Ferreira,elizabeth.ferreira998@mailbox.test,Boston,MA,Mechanical Keyboard,Electronics,89.99,1,89.99,completed,web
+ENT-001,Northwind Supply Co,NW-10094,2025-06-07,Betty Lewis,betty.lewis954@mailbox.test,Seattle,WA,Laptop Stand,Office,34.50,5,172.50,completed,phone
+ENT-001,Northwind Supply Co,NW-10095,2025-06-11,Diego King,diego.king743@demo.org,Miami,FL,Mechanical Keyboard,Electronics,89.99,1,89.99,cancelled,web
+ENT-001,Northwind Supply Co,NW-10096,2025-09-25,Michael Smith,michael.smith431@example.com,Chicago,IL,Coffee Mug,Lifestyle,14.50,1,14.50,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10097,2025-04-12,Matthew Roberts,matthew.roberts723@demo.org,Austin,TX,Whiteboard,Office,49.99,1,49.99,refunded,mobile_app
+ENT-001,Northwind Supply Co,NW-10098,2025-11-25,Richard Lee,richard.lee421@mailbox.test,Denver,CO,Running Shoes,Lifestyle,119.00,1,119.00,pending,web
+ENT-001,Northwind Supply Co,NW-10099,2025-04-24,Anthony Williams,anthony.williams64@fakemail.net,Miami,FL,USB-C Hub,Electronics,39.99,3,119.97,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10100,2025-05-24,Lisa White,lisa.white632@example.com,Dallas,TX,Monitor 27in,Electronics,229.00,5,1145.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10101,2025-08-23,Karen Smith,karen.smith240@example.com,Charlotte,NC,USB-C Hub,Electronics,39.99,1,39.99,cancelled,in_store
+ENT-001,Northwind Supply Co,NW-10102,2025-03-01,Anthony Tanaka,anthony.tanaka136@demo.org,Dallas,TX,Whiteboard,Office,49.99,3,149.97,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10103,2025-08-12,George Roberts,george.roberts882@fakemail.net,Phoenix,AZ,Insulated Tumbler,Lifestyle,25.00,1,25.00,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10104,2025-08-18,Richard Sanchez,richard.sanchez666@example.com,Philadelphia,PA,Backpack,Lifestyle,64.99,1,64.99,refunded,web
+ENT-001,Northwind Supply Co,NW-10105,2025-02-14,William Ramirez,william.ramirez87@mailbox.test,Houston,TX,USB-C Hub,Electronics,39.99,1,39.99,cancelled,phone
+ENT-001,Northwind Supply Co,NW-10106,2025-12-18,Donald Lopez,donald.lopez636@mailbox.test,San Diego,CA,Desk Lamp,Office,27.95,1,27.95,completed,in_store
+ENT-001,Northwind Supply Co,NW-10107,2025-12-09,Omar Jackson,omar.jackson382@fakemail.net,Austin,TX,Coffee Mug,Lifestyle,14.50,2,29.00,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10108,2025-06-03,Jessica Lopez,jessica.lopez906@mailbox.test,San Diego,CA,Backpack,Lifestyle,64.99,1,64.99,pending,web
+ENT-001,Northwind Supply Co,NW-10109,2025-01-04,Jessica Allen,jessica.allen103@demo.org,Minneapolis,MN,Backpack,Lifestyle,64.99,2,129.98,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10110,2025-04-04,Fatima Kowalski,fatima.kowalski42@fakemail.net,San Diego,CA,Yoga Mat,Lifestyle,29.99,4,119.96,completed,web
+ENT-001,Northwind Supply Co,NW-10111,2025-08-20,Kenneth Kowalski,kenneth.kowalski382@mailbox.test,Nashville,TN,Water Bottle,Lifestyle,18.00,4,72.00,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10112,2025-04-02,Deborah Nelson,deborah.nelson727@fakemail.net,New York,NY,Laptop Stand,Office,34.50,2,69.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10113,2025-01-27,Elizabeth Williams,elizabeth.williams750@mailbox.test,San Antonio,TX,Coffee Mug,Lifestyle,14.50,1,14.50,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10114,2025-08-18,Amanda White,amanda.white209@example.com,Philadelphia,PA,Insulated Tumbler,Lifestyle,25.00,1,25.00,cancelled,web
+ENT-001,Northwind Supply Co,NW-10115,2025-11-06,Mark Miller,mark.miller547@example.com,Boston,MA,Desk Organizer,Office,22.50,1,22.50,pending,phone
+ENT-001,Northwind Supply Co,NW-10116,2025-12-19,Sarah Clark,sarah.clark53@fakemail.net,Austin,TX,Bluetooth Speaker,Electronics,54.99,1,54.99,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10117,2025-01-14,Mark Johnson,mark.johnson415@mailbox.test,Denver,CO,Water Bottle,Lifestyle,18.00,1,18.00,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10118,2025-03-05,Linda Kowalski,linda.kowalski374@demo.org,Chicago,IL,Ergonomic Chair Cushion,Office,42.00,2,84.00,completed,web
+ENT-001,Northwind Supply Co,NW-10119,2025-12-17,Emily Martinez,emily.martinez950@fakemail.net,Boston,MA,USB-C Hub,Electronics,39.99,2,79.98,completed,web
+ENT-001,Northwind Supply Co,NW-10120,2025-07-16,Matthew Jackson,matthew.jackson69@example.com,Philadelphia,PA,Phone Case,Electronics,19.99,1,19.99,completed,web
+ENT-001,Northwind Supply Co,NW-10121,2025-02-23,David Petrov,david.petrov623@demo.org,Los Angeles,CA,Running Shoes,Lifestyle,119.00,1,119.00,completed,phone
+ENT-001,Northwind Supply Co,NW-10122,2025-08-06,Aiko Silva,aiko.silva867@mailbox.test,San Diego,CA,Insulated Tumbler,Lifestyle,25.00,1,25.00,completed,web
+ENT-001,Northwind Supply Co,NW-10123,2025-12-27,Betty King,betty.king154@mailbox.test,Philadelphia,PA,Ergonomic Chair Cushion,Office,42.00,1,42.00,completed,web
+ENT-001,Northwind Supply Co,NW-10124,2025-09-28,Fatima Scott,fatima.scott614@demo.org,Los Angeles,CA,Monitor 27in,Electronics,229.00,1,229.00,shipped,phone
+ENT-001,Northwind Supply Co,NW-10125,2025-08-17,Mark Martin,mark.martin675@fakemail.net,Nashville,TN,Backpack,Lifestyle,64.99,1,64.99,cancelled,web
+ENT-001,Northwind Supply Co,NW-10126,2025-03-26,Mary Smith,mary.smith458@demo.org,Charlotte,NC,Running Shoes,Lifestyle,119.00,1,119.00,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10127,2025-09-17,Michael Jones,michael.jones94@demo.org,Phoenix,AZ,Webcam HD,Electronics,69.99,1,69.99,completed,web
+ENT-001,Northwind Supply Co,NW-10128,2025-01-25,Kevin Rodriguez,kevin.rodriguez524@example.com,Chicago,IL,Monitor 27in,Electronics,229.00,3,687.00,refunded,mobile_app
+ENT-001,Northwind Supply Co,NW-10129,2025-04-05,Carol Tanaka,carol.tanaka629@example.com,Phoenix,AZ,Wireless Mouse,Electronics,24.99,3,74.97,cancelled,web
+ENT-001,Northwind Supply Co,NW-10130,2025-03-11,Mateo Okafor,mateo.okafor360@fakemail.net,Philadelphia,PA,Backpack,Lifestyle,64.99,1,64.99,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10131,2025-10-09,Sandra Martinez,sandra.martinez492@mailbox.test,Dallas,TX,Phone Case,Electronics,19.99,5,99.95,refunded,web
+ENT-001,Northwind Supply Co,NW-10132,2025-11-11,Daniel White,daniel.white166@fakemail.net,Los Angeles,CA,Water Bottle,Lifestyle,18.00,1,18.00,pending,web
+ENT-001,Northwind Supply Co,NW-10133,2025-08-18,Aiko Tanaka,aiko.tanaka50@fakemail.net,Dallas,TX,Laptop Stand,Office,34.50,3,103.50,refunded,mobile_app
+ENT-001,Northwind Supply Co,NW-10134,2025-12-26,George Haddad,george.haddad645@demo.org,Houston,TX,Coffee Mug,Lifestyle,14.50,5,72.50,shipped,web
+ENT-001,Northwind Supply Co,NW-10135,2025-08-08,Anthony White,anthony.white783@example.com,Nashville,TN,Desk Lamp,Office,27.95,1,27.95,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10136,2025-12-01,Melissa Brown,melissa.brown655@fakemail.net,Austin,TX,Phone Case,Electronics,19.99,1,19.99,completed,web
+ENT-001,Northwind Supply Co,NW-10137,2025-03-16,Elizabeth Jackson,elizabeth.jackson373@example.com,Charlotte,NC,Whiteboard,Office,49.99,1,49.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10138,2025-02-17,Carol Williams,carol.williams364@fakemail.net,New York,NY,Mechanical Keyboard,Electronics,89.99,1,89.99,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10139,2025-10-27,Joseph Clark,joseph.clark210@fakemail.net,Nashville,TN,Bluetooth Speaker,Electronics,54.99,2,109.98,cancelled,web
+ENT-001,Northwind Supply Co,NW-10140,2025-11-26,David Smith,david.smith66@mailbox.test,San Diego,CA,Desk Lamp,Office,27.95,1,27.95,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10141,2025-10-21,Mateo Taylor,mateo.taylor576@fakemail.net,New York,NY,Mechanical Keyboard,Electronics,89.99,2,179.98,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10142,2025-01-18,Diego King,diego.king1@example.com,Atlanta,GA,Backpack,Lifestyle,64.99,1,64.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10143,2025-10-18,Barbara Thomas,barbara.thomas108@example.com,Philadelphia,PA,Mechanical Keyboard,Electronics,89.99,4,359.96,completed,web
+ENT-001,Northwind Supply Co,NW-10144,2025-10-06,Mark Gonzalez,mark.gonzalez664@demo.org,Minneapolis,MN,Insulated Tumbler,Lifestyle,25.00,2,50.00,refunded,web
+ENT-001,Northwind Supply Co,NW-10145,2025-07-24,John Martin,john.martin7@demo.org,Los Angeles,CA,Running Shoes,Lifestyle,119.00,2,238.00,cancelled,web
+ENT-001,Northwind Supply Co,NW-10146,2025-04-21,Melissa Adams,melissa.adams108@fakemail.net,Miami,FL,Notebook Set,Office,12.99,1,12.99,completed,web
+ENT-001,Northwind Supply Co,NW-10147,2025-11-26,Lisa Larsen,lisa.larsen568@demo.org,Dallas,TX,Mechanical Keyboard,Electronics,89.99,1,89.99,refunded,web
+ENT-001,Northwind Supply Co,NW-10148,2025-05-08,Charles Adams,charles.adams16@mailbox.test,San Antonio,TX,USB-C Hub,Electronics,39.99,4,159.96,completed,web
+ENT-001,Northwind Supply Co,NW-10149,2025-07-28,Melissa Okafor,melissa.okafor337@mailbox.test,Seattle,WA,Water Bottle,Lifestyle,18.00,4,72.00,refunded,mobile_app
+ENT-001,Northwind Supply Co,NW-10150,2025-10-10,Steven Petrov,steven.petrov448@mailbox.test,Minneapolis,MN,Wireless Mouse,Electronics,24.99,3,74.97,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10151,2025-01-04,Michelle Nguyen,michelle.nguyen149@example.com,Chicago,IL,Travel Adapter,Electronics,16.99,4,67.96,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10152,2025-03-23,Diego Hernandez,diego.hernandez32@example.com,Denver,CO,Desk Lamp,Office,27.95,2,55.90,completed,phone
+ENT-001,Northwind Supply Co,NW-10153,2025-04-27,John Mitchell,john.mitchell781@fakemail.net,Los Angeles,CA,USB-C Hub,Electronics,39.99,3,119.97,refunded,phone
+ENT-001,Northwind Supply Co,NW-10154,2025-01-02,John Haddad,john.haddad209@example.com,Boston,MA,Laptop Stand,Office,34.50,1,34.50,completed,in_store
+ENT-001,Northwind Supply Co,NW-10155,2025-05-11,Ronald Green,ronald.green101@mailbox.test,Austin,TX,Running Shoes,Lifestyle,119.00,1,119.00,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10156,2025-06-25,Thomas Johnson,thomas.johnson50@fakemail.net,Denver,CO,Coffee Mug,Lifestyle,14.50,4,58.00,refunded,mobile_app
+ENT-001,Northwind Supply Co,NW-10157,2025-09-25,Ingrid Jackson,ingrid.jackson32@demo.org,Charlotte,NC,Wireless Mouse,Electronics,24.99,3,74.97,completed,web
+ENT-001,Northwind Supply Co,NW-10158,2025-10-27,Steven Rivera,steven.rivera732@example.com,Los Angeles,CA,Desk Organizer,Office,22.50,2,45.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10159,2025-01-12,Margaret Smith,margaret.smith769@example.com,Minneapolis,MN,Water Bottle,Lifestyle,18.00,1,18.00,cancelled,web
+ENT-001,Northwind Supply Co,NW-10160,2025-10-06,Ashley Hall,ashley.hall981@fakemail.net,Philadelphia,PA,Running Shoes,Lifestyle,119.00,2,238.00,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10161,2025-08-26,Susan Hall,susan.hall962@example.com,San Diego,CA,Running Shoes,Lifestyle,119.00,1,119.00,refunded,in_store
+ENT-001,Northwind Supply Co,NW-10162,2025-12-03,Michael Green,michael.green951@demo.org,Seattle,WA,Webcam HD,Electronics,69.99,1,69.99,pending,phone
+ENT-001,Northwind Supply Co,NW-10163,2025-07-21,Mary White,mary.white923@mailbox.test,San Antonio,TX,Bluetooth Speaker,Electronics,54.99,1,54.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10164,2025-09-05,David Wright,david.wright357@fakemail.net,Charlotte,NC,Insulated Tumbler,Lifestyle,25.00,2,50.00,cancelled,phone
+ENT-001,Northwind Supply Co,NW-10165,2025-10-08,Emily Mitchell,emily.mitchell706@fakemail.net,Seattle,WA,Notebook Set,Office,12.99,1,12.99,completed,web
+ENT-001,Northwind Supply Co,NW-10166,2025-12-05,Sandra Adams,sandra.adams309@mailbox.test,San Diego,CA,Phone Case,Electronics,19.99,1,19.99,completed,phone
+ENT-001,Northwind Supply Co,NW-10167,2025-05-24,Daniel Hill,daniel.hill336@mailbox.test,Minneapolis,MN,Webcam HD,Electronics,69.99,1,69.99,completed,web
+ENT-001,Northwind Supply Co,NW-10168,2025-12-10,Brian Miller,brian.miller152@fakemail.net,San Antonio,TX,Ergonomic Chair Cushion,Office,42.00,1,42.00,pending,web
+ENT-001,Northwind Supply Co,NW-10169,2025-01-01,Richard Miller,richard.miller398@demo.org,Houston,TX,Coffee Mug,Lifestyle,14.50,1,14.50,pending,in_store
+ENT-001,Northwind Supply Co,NW-10170,2025-01-05,Aiko Ramirez,aiko.ramirez304@demo.org,San Diego,CA,Phone Case,Electronics,19.99,5,99.95,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10171,2025-04-22,Melissa Sanchez,melissa.sanchez441@demo.org,New York,NY,Backpack,Lifestyle,64.99,4,259.96,completed,phone
+ENT-001,Northwind Supply Co,NW-10172,2025-07-08,Barbara Adams,barbara.adams267@example.com,Houston,TX,Yoga Mat,Lifestyle,29.99,1,29.99,pending,phone
+ENT-001,Northwind Supply Co,NW-10173,2025-01-20,Dorothy Green,dorothy.green495@demo.org,Philadelphia,PA,Coffee Mug,Lifestyle,14.50,3,43.50,pending,mobile_app
+ENT-001,Northwind Supply Co,NW-10174,2025-02-02,Amanda Nelson,amanda.nelson399@demo.org,Philadelphia,PA,Monitor 27in,Electronics,229.00,3,687.00,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10175,2025-09-07,Susan Hernandez,susan.hernandez868@demo.org,San Antonio,TX,Phone Case,Electronics,19.99,1,19.99,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10176,2025-04-22,Mary Green,mary.green760@demo.org,Denver,CO,Phone Case,Electronics,19.99,1,19.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10177,2025-05-13,Paul Carter,paul.carter58@fakemail.net,Houston,TX,Insulated Tumbler,Lifestyle,25.00,1,25.00,pending,web
+ENT-001,Northwind Supply Co,NW-10178,2025-10-09,James Jones,james.jones692@fakemail.net,Portland,OR,Whiteboard,Office,49.99,2,99.98,completed,web
+ENT-001,Northwind Supply Co,NW-10179,2025-08-07,Karen Mitchell,karen.mitchell821@demo.org,Boston,MA,Phone Case,Electronics,19.99,5,99.95,completed,web
+ENT-001,Northwind Supply Co,NW-10180,2025-03-12,Diego Roberts,diego.roberts576@mailbox.test,Chicago,IL,Water Bottle,Lifestyle,18.00,1,18.00,pending,mobile_app
+ENT-001,Northwind Supply Co,NW-10181,2025-04-09,Charles Carter,charles.carter481@fakemail.net,Detroit,MI,Desk Lamp,Office,27.95,3,83.85,pending,phone
+ENT-001,Northwind Supply Co,NW-10182,2025-06-08,Thomas Ramirez,thomas.ramirez740@fakemail.net,Philadelphia,PA,Running Shoes,Lifestyle,119.00,1,119.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10183,2025-03-10,Steven Young,steven.young676@fakemail.net,Portland,OR,Insulated Tumbler,Lifestyle,25.00,2,50.00,pending,web
+ENT-001,Northwind Supply Co,NW-10184,2025-11-19,Jennifer Kowalski,jennifer.kowalski144@fakemail.net,Nashville,TN,Monitor 27in,Electronics,229.00,3,687.00,completed,phone
+ENT-001,Northwind Supply Co,NW-10185,2025-04-06,James Wilson,james.wilson104@mailbox.test,Chicago,IL,Bluetooth Speaker,Electronics,54.99,1,54.99,cancelled,web
+ENT-001,Northwind Supply Co,NW-10186,2025-11-18,Aiko Martinez,aiko.martinez172@example.com,San Antonio,TX,Ergonomic Chair Cushion,Office,42.00,3,126.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10187,2025-11-04,Ashley Hall,ashley.hall860@demo.org,San Antonio,TX,Phone Case,Electronics,19.99,1,19.99,refunded,web
+ENT-001,Northwind Supply Co,NW-10188,2025-08-15,Thomas Clark,thomas.clark571@example.com,San Diego,CA,Desk Lamp,Office,27.95,1,27.95,completed,phone
+ENT-001,Northwind Supply Co,NW-10189,2025-03-27,Ashley Thomas,ashley.thomas884@example.com,Atlanta,GA,Notebook Set,Office,12.99,2,25.98,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10190,2025-07-22,George Torres,george.torres384@demo.org,Atlanta,GA,Bluetooth Speaker,Electronics,54.99,3,164.97,completed,web
+ENT-001,Northwind Supply Co,NW-10191,2025-02-17,Kevin White,kevin.white699@fakemail.net,New York,NY,Wireless Mouse,Electronics,24.99,2,49.98,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10192,2025-06-04,Ronald Larsen,ronald.larsen426@mailbox.test,Phoenix,AZ,Mechanical Keyboard,Electronics,89.99,1,89.99,shipped,web
+ENT-001,Northwind Supply Co,NW-10193,2025-07-11,Steven Roberts,steven.roberts216@fakemail.net,Minneapolis,MN,Desk Organizer,Office,22.50,3,67.50,pending,web
+ENT-001,Northwind Supply Co,NW-10194,2025-06-17,Emily Brown,emily.brown506@demo.org,Austin,TX,Bluetooth Speaker,Electronics,54.99,1,54.99,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10195,2025-06-23,Paul Thompson,paul.thompson339@mailbox.test,San Antonio,TX,Running Shoes,Lifestyle,119.00,3,357.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10196,2025-09-19,Donna Green,donna.green568@demo.org,Chicago,IL,Mechanical Keyboard,Electronics,89.99,1,89.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10197,2025-10-25,Karen Miller,karen.miller944@demo.org,New York,NY,Mechanical Keyboard,Electronics,89.99,1,89.99,completed,in_store
+ENT-001,Northwind Supply Co,NW-10198,2025-04-02,Paul Okafor,paul.okafor151@example.com,Detroit,MI,Insulated Tumbler,Lifestyle,25.00,1,25.00,cancelled,phone
+ENT-001,Northwind Supply Co,NW-10199,2025-11-01,Ronald Lopez,ronald.lopez432@example.com,Houston,TX,Notebook Set,Office,12.99,3,38.97,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10200,2025-03-14,Priya Rodriguez,priya.rodriguez884@fakemail.net,Austin,TX,Desk Organizer,Office,22.50,2,45.00,completed,web
+ENT-001,Northwind Supply Co,NW-10201,2025-10-17,Mary Ramirez,mary.ramirez56@demo.org,Nashville,TN,Travel Adapter,Electronics,16.99,4,67.96,completed,in_store
+ENT-001,Northwind Supply Co,NW-10202,2025-02-01,Linda Roberts,linda.roberts415@demo.org,Portland,OR,Travel Adapter,Electronics,16.99,2,33.98,pending,mobile_app
+ENT-001,Northwind Supply Co,NW-10203,2025-02-21,Donna Nelson,donna.nelson562@example.com,Phoenix,AZ,Running Shoes,Lifestyle,119.00,3,357.00,cancelled,web
+ENT-001,Northwind Supply Co,NW-10204,2025-02-07,Luca Martinez,luca.martinez701@example.com,New York,NY,Whiteboard,Office,49.99,1,49.99,completed,web
+ENT-001,Northwind Supply Co,NW-10205,2025-01-12,Steven Johnson,steven.johnson752@mailbox.test,Dallas,TX,Travel Adapter,Electronics,16.99,1,16.99,completed,phone
+ENT-001,Northwind Supply Co,NW-10206,2025-01-23,Ronald Garcia,ronald.garcia472@fakemail.net,Austin,TX,Desk Organizer,Office,22.50,2,45.00,completed,web
+ENT-001,Northwind Supply Co,NW-10207,2025-08-20,Patricia Smith,patricia.smith320@mailbox.test,Charlotte,NC,USB-C Hub,Electronics,39.99,1,39.99,completed,web
+ENT-001,Northwind Supply Co,NW-10208,2025-06-21,Nancy Torres,nancy.torres149@example.com,Miami,FL,Running Shoes,Lifestyle,119.00,2,238.00,completed,phone
+ENT-001,Northwind Supply Co,NW-10209,2025-10-11,Mateo Clark,mateo.clark464@fakemail.net,Atlanta,GA,Ergonomic Chair Cushion,Office,42.00,3,126.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10210,2025-03-20,Patricia Flores,patricia.flores744@example.com,Charlotte,NC,Monitor 27in,Electronics,229.00,3,687.00,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10211,2025-08-10,Margaret Haddad,margaret.haddad386@mailbox.test,San Diego,CA,Ergonomic Chair Cushion,Office,42.00,1,42.00,completed,web
+ENT-001,Northwind Supply Co,NW-10212,2025-05-27,Thomas Moore,thomas.moore836@example.com,Portland,OR,Notebook Set,Office,12.99,2,25.98,completed,in_store
+ENT-001,Northwind Supply Co,NW-10213,2025-06-18,Fatima Kim,fatima.kim872@demo.org,Nashville,TN,Desk Lamp,Office,27.95,1,27.95,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10214,2025-05-20,Emily Young,emily.young740@mailbox.test,Boston,MA,Water Bottle,Lifestyle,18.00,3,54.00,completed,phone
+ENT-001,Northwind Supply Co,NW-10215,2025-08-18,Betty Robinson,betty.robinson10@demo.org,San Antonio,TX,Coffee Mug,Lifestyle,14.50,2,29.00,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10216,2025-09-11,Mateo Thompson,mateo.thompson534@fakemail.net,Chicago,IL,Backpack,Lifestyle,64.99,1,64.99,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10217,2025-06-19,Donna Gonzalez,donna.gonzalez186@fakemail.net,San Antonio,TX,Water Bottle,Lifestyle,18.00,1,18.00,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10218,2025-02-12,Deborah King,deborah.king506@fakemail.net,Phoenix,AZ,Backpack,Lifestyle,64.99,1,64.99,cancelled,in_store
+ENT-001,Northwind Supply Co,NW-10219,2025-02-02,Jennifer Martinez,jennifer.martinez288@example.com,Seattle,WA,Insulated Tumbler,Lifestyle,25.00,1,25.00,completed,in_store
+ENT-001,Northwind Supply Co,NW-10220,2025-07-04,Chen Torres,chen.torres268@fakemail.net,Atlanta,GA,Travel Adapter,Electronics,16.99,2,33.98,cancelled,in_store
+ENT-001,Northwind Supply Co,NW-10221,2025-04-06,Donna Kowalski,donna.kowalski39@fakemail.net,Charlotte,NC,Desk Lamp,Office,27.95,1,27.95,pending,web
+ENT-001,Northwind Supply Co,NW-10222,2025-08-28,Mary Brown,mary.brown723@demo.org,Los Angeles,CA,Desk Organizer,Office,22.50,1,22.50,completed,in_store
+ENT-001,Northwind Supply Co,NW-10223,2025-06-19,Kenneth Green,kenneth.green93@fakemail.net,Boston,MA,Laptop Stand,Office,34.50,2,69.00,completed,phone
+ENT-001,Northwind Supply Co,NW-10224,2025-06-08,Jennifer Okafor,jennifer.okafor871@mailbox.test,Minneapolis,MN,Ergonomic Chair Cushion,Office,42.00,1,42.00,completed,web
+ENT-001,Northwind Supply Co,NW-10225,2025-01-09,Robert Taylor,robert.taylor927@example.com,Denver,CO,Mechanical Keyboard,Electronics,89.99,4,359.96,refunded,phone
+ENT-001,Northwind Supply Co,NW-10226,2025-04-22,Melissa Adams,melissa.adams326@example.com,Atlanta,GA,Mechanical Keyboard,Electronics,89.99,1,89.99,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10227,2025-02-12,Donna Lewis,donna.lewis264@demo.org,Houston,TX,Running Shoes,Lifestyle,119.00,1,119.00,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10228,2025-08-23,William Lewis,william.lewis914@example.com,San Diego,CA,Desk Lamp,Office,27.95,4,111.80,completed,in_store
+ENT-001,Northwind Supply Co,NW-10229,2025-12-05,Robert Hernandez,robert.hernandez888@fakemail.net,San Diego,CA,USB-C Hub,Electronics,39.99,4,159.96,cancelled,web
+ENT-001,Northwind Supply Co,NW-10230,2025-06-27,Diego Ferreira,diego.ferreira464@fakemail.net,Boston,MA,Wireless Mouse,Electronics,24.99,2,49.98,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10231,2025-03-23,Linda Green,linda.green754@example.com,Denver,CO,Desk Lamp,Office,27.95,1,27.95,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10232,2025-03-01,Fatima Martinez,fatima.martinez422@mailbox.test,Miami,FL,Desk Lamp,Office,27.95,1,27.95,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10233,2025-08-16,Omar Jackson,omar.jackson112@fakemail.net,Seattle,WA,Notebook Set,Office,12.99,1,12.99,completed,web
+ENT-001,Northwind Supply Co,NW-10234,2025-05-25,Paul Brown,paul.brown294@example.com,San Antonio,TX,Desk Organizer,Office,22.50,1,22.50,completed,web
+ENT-001,Northwind Supply Co,NW-10235,2025-03-02,Margaret Taylor,margaret.taylor297@demo.org,San Diego,CA,Backpack,Lifestyle,64.99,1,64.99,shipped,web
+ENT-001,Northwind Supply Co,NW-10236,2025-01-26,Kevin Johnson,kevin.johnson144@demo.org,Miami,FL,Phone Case,Electronics,19.99,1,19.99,refunded,web
+ENT-001,Northwind Supply Co,NW-10237,2025-10-06,Barbara White,barbara.white224@fakemail.net,Portland,OR,Mechanical Keyboard,Electronics,89.99,4,359.96,completed,in_store
+ENT-001,Northwind Supply Co,NW-10238,2025-10-24,Barbara King,barbara.king82@example.com,San Diego,CA,Notebook Set,Office,12.99,1,12.99,cancelled,in_store
+ENT-001,Northwind Supply Co,NW-10239,2025-10-10,Sarah Lopez,sarah.lopez725@mailbox.test,San Antonio,TX,Desk Lamp,Office,27.95,2,55.90,completed,web
+ENT-001,Northwind Supply Co,NW-10240,2025-09-26,John Hall,john.hall939@example.com,Minneapolis,MN,Whiteboard,Office,49.99,3,149.97,shipped,web
+ENT-001,Northwind Supply Co,NW-10241,2025-03-28,Charles Petrov,charles.petrov933@demo.org,Atlanta,GA,USB-C Hub,Electronics,39.99,1,39.99,shipped,web
+ENT-001,Northwind Supply Co,NW-10242,2025-06-17,Barbara Torres,barbara.torres381@example.com,Denver,CO,Mechanical Keyboard,Electronics,89.99,1,89.99,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10243,2025-12-28,John Davis,john.davis887@fakemail.net,Denver,CO,Backpack,Lifestyle,64.99,3,194.97,pending,mobile_app
+ENT-001,Northwind Supply Co,NW-10244,2025-08-17,Ronald Larsen,ronald.larsen977@demo.org,Los Angeles,CA,Bluetooth Speaker,Electronics,54.99,4,219.96,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10245,2025-10-06,Mateo Wright,mateo.wright91@mailbox.test,Phoenix,AZ,Wireless Mouse,Electronics,24.99,1,24.99,completed,web
+ENT-001,Northwind Supply Co,NW-10246,2025-05-01,Karen Taylor,karen.taylor949@mailbox.test,Detroit,MI,Wireless Mouse,Electronics,24.99,1,24.99,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10247,2025-01-09,Jessica Hall,jessica.hall97@mailbox.test,Miami,FL,Laptop Stand,Office,34.50,1,34.50,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10248,2025-03-18,Ashley Nguyen,ashley.nguyen125@demo.org,Minneapolis,MN,Coffee Mug,Lifestyle,14.50,1,14.50,completed,in_store
+ENT-001,Northwind Supply Co,NW-10249,2025-11-13,Joseph Martinez,joseph.martinez169@example.com,Nashville,TN,Yoga Mat,Lifestyle,29.99,2,59.98,pending,mobile_app
+ENT-001,Northwind Supply Co,NW-10250,2025-06-11,Omar Hill,omar.hill964@example.com,Minneapolis,MN,Mechanical Keyboard,Electronics,89.99,1,89.99,pending,web
+ENT-001,Northwind Supply Co,NW-10251,2025-07-28,Omar Perez,omar.perez935@fakemail.net,Portland,OR,Travel Adapter,Electronics,16.99,3,50.97,refunded,web
+ENT-001,Northwind Supply Co,NW-10252,2025-06-04,Daniel King,daniel.king433@example.com,Phoenix,AZ,Webcam HD,Electronics,69.99,1,69.99,refunded,web
+ENT-001,Northwind Supply Co,NW-10253,2025-03-14,John Lee,john.lee22@mailbox.test,Portland,OR,Water Bottle,Lifestyle,18.00,2,36.00,pending,in_store
+ENT-001,Northwind Supply Co,NW-10254,2025-11-20,Diego Robinson,diego.robinson657@fakemail.net,Los Angeles,CA,Mechanical Keyboard,Electronics,89.99,1,89.99,shipped,phone
+ENT-001,Northwind Supply Co,NW-10255,2025-07-08,Andrew Rossi,andrew.rossi125@example.com,Los Angeles,CA,Insulated Tumbler,Lifestyle,25.00,1,25.00,completed,web
+ENT-001,Northwind Supply Co,NW-10256,2025-02-15,Linda Martin,linda.martin609@fakemail.net,Denver,CO,Notebook Set,Office,12.99,1,12.99,refunded,web
+ENT-001,Northwind Supply Co,NW-10257,2025-10-10,Donald Davis,donald.davis938@demo.org,Minneapolis,MN,Desk Lamp,Office,27.95,4,111.80,shipped,web
+ENT-001,Northwind Supply Co,NW-10258,2025-11-13,Melissa Garcia,melissa.garcia625@mailbox.test,Detroit,MI,Bluetooth Speaker,Electronics,54.99,3,164.97,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10259,2025-05-01,Dorothy White,dorothy.white490@demo.org,Miami,FL,Desk Organizer,Office,22.50,1,22.50,completed,web
+ENT-001,Northwind Supply Co,NW-10260,2025-01-12,Joseph Gonzalez,joseph.gonzalez600@demo.org,Minneapolis,MN,Desk Organizer,Office,22.50,1,22.50,completed,in_store
+ENT-001,Northwind Supply Co,NW-10261,2025-05-02,Jessica Lee,jessica.lee292@mailbox.test,Detroit,MI,Monitor 27in,Electronics,229.00,1,229.00,completed,web
+ENT-001,Northwind Supply Co,NW-10262,2025-08-12,Emily Jones,emily.jones64@demo.org,Charlotte,NC,Webcam HD,Electronics,69.99,1,69.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10263,2025-11-07,Joseph Baker,joseph.baker361@mailbox.test,Phoenix,AZ,Whiteboard,Office,49.99,1,49.99,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10264,2025-07-28,Omar King,omar.king646@mailbox.test,Houston,TX,Running Shoes,Lifestyle,119.00,1,119.00,completed,web
+ENT-001,Northwind Supply Co,NW-10265,2025-07-28,Mark Roberts,mark.roberts408@mailbox.test,Detroit,MI,Travel Adapter,Electronics,16.99,1,16.99,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10266,2025-05-24,Michelle Hill,michelle.hill710@demo.org,Houston,TX,Ergonomic Chair Cushion,Office,42.00,3,126.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10267,2025-01-26,Matthew Sanchez,matthew.sanchez664@fakemail.net,Minneapolis,MN,Desk Organizer,Office,22.50,2,45.00,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10268,2025-10-13,Donald Martin,donald.martin149@demo.org,Philadelphia,PA,Desk Organizer,Office,22.50,1,22.50,completed,web
+ENT-001,Northwind Supply Co,NW-10269,2025-06-07,Priya Okafor,priya.okafor623@mailbox.test,Seattle,WA,Monitor 27in,Electronics,229.00,5,1145.00,pending,web
+ENT-001,Northwind Supply Co,NW-10270,2025-09-20,Mary Brown,mary.brown308@fakemail.net,Dallas,TX,Travel Adapter,Electronics,16.99,4,67.96,pending,mobile_app
+ENT-001,Northwind Supply Co,NW-10271,2025-08-01,Priya King,priya.king42@fakemail.net,Portland,OR,Ergonomic Chair Cushion,Office,42.00,1,42.00,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10272,2025-04-14,Joseph Miller,joseph.miller665@mailbox.test,Portland,OR,Webcam HD,Electronics,69.99,2,139.98,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10273,2025-03-12,Donald Roberts,donald.roberts543@example.com,Charlotte,NC,Travel Adapter,Electronics,16.99,1,16.99,shipped,web
+ENT-001,Northwind Supply Co,NW-10274,2025-12-11,John Kowalski,john.kowalski672@fakemail.net,Austin,TX,Phone Case,Electronics,19.99,1,19.99,refunded,mobile_app
+ENT-001,Northwind Supply Co,NW-10275,2025-07-06,Kevin Hernandez,kevin.hernandez213@mailbox.test,Minneapolis,MN,Bluetooth Speaker,Electronics,54.99,3,164.97,completed,phone
+ENT-001,Northwind Supply Co,NW-10276,2025-12-14,Joshua Hill,joshua.hill647@example.com,Houston,TX,Webcam HD,Electronics,69.99,2,139.98,completed,in_store
+ENT-001,Northwind Supply Co,NW-10277,2025-10-01,James Martin,james.martin408@example.com,Detroit,MI,Wireless Mouse,Electronics,24.99,4,99.96,completed,web
+ENT-001,Northwind Supply Co,NW-10278,2025-10-07,Barbara Young,barbara.young663@mailbox.test,Detroit,MI,Travel Adapter,Electronics,16.99,1,16.99,pending,mobile_app
+ENT-001,Northwind Supply Co,NW-10279,2025-02-03,Linda Martinez,linda.martinez110@example.com,Philadelphia,PA,Phone Case,Electronics,19.99,3,59.97,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10280,2025-11-01,Ashley Kowalski,ashley.kowalski820@example.com,Miami,FL,Insulated Tumbler,Lifestyle,25.00,1,25.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10281,2025-10-03,Dorothy Thomas,dorothy.thomas274@example.com,Denver,CO,Coffee Mug,Lifestyle,14.50,1,14.50,shipped,web
+ENT-001,Northwind Supply Co,NW-10282,2025-10-25,Donald Flores,donald.flores912@demo.org,Boston,MA,Wireless Mouse,Electronics,24.99,1,24.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10283,2025-06-01,Patricia Flores,patricia.flores164@mailbox.test,San Diego,CA,Backpack,Lifestyle,64.99,1,64.99,cancelled,web
+ENT-001,Northwind Supply Co,NW-10284,2025-11-13,Mark Hill,mark.hill70@mailbox.test,Dallas,TX,Running Shoes,Lifestyle,119.00,5,595.00,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10285,2025-03-06,Karen Sanchez,karen.sanchez250@example.com,Atlanta,GA,Wireless Mouse,Electronics,24.99,3,74.97,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10286,2025-09-28,Barbara Smith,barbara.smith118@fakemail.net,Austin,TX,Ergonomic Chair Cushion,Office,42.00,2,84.00,pending,web
+ENT-001,Northwind Supply Co,NW-10287,2025-09-08,Betty Adams,betty.adams935@fakemail.net,Chicago,IL,Laptop Stand,Office,34.50,1,34.50,pending,web
+ENT-001,Northwind Supply Co,NW-10288,2025-06-26,Sandra Jackson,sandra.jackson286@example.com,Denver,CO,Backpack,Lifestyle,64.99,1,64.99,completed,web
+ENT-001,Northwind Supply Co,NW-10289,2025-09-15,Dorothy Rodriguez,dorothy.rodriguez856@mailbox.test,Chicago,IL,Water Bottle,Lifestyle,18.00,1,18.00,cancelled,in_store
+ENT-001,Northwind Supply Co,NW-10290,2025-07-21,Aiko Rossi,aiko.rossi222@demo.org,San Diego,CA,Notebook Set,Office,12.99,1,12.99,completed,web
+ENT-001,Northwind Supply Co,NW-10291,2025-12-09,Steven Allen,steven.allen692@mailbox.test,San Antonio,TX,Backpack,Lifestyle,64.99,3,194.97,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10292,2025-02-22,Nancy Wright,nancy.wright218@mailbox.test,San Diego,CA,Ergonomic Chair Cushion,Office,42.00,2,84.00,refunded,web
+ENT-001,Northwind Supply Co,NW-10293,2025-05-01,Andrew Silva,andrew.silva736@mailbox.test,Dallas,TX,Ergonomic Chair Cushion,Office,42.00,1,42.00,pending,phone
+ENT-001,Northwind Supply Co,NW-10294,2025-02-18,Jennifer Hall,jennifer.hall679@example.com,Philadelphia,PA,Backpack,Lifestyle,64.99,1,64.99,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10295,2025-04-10,Paul Carter,paul.carter319@example.com,Austin,TX,Water Bottle,Lifestyle,18.00,1,18.00,completed,in_store
+ENT-001,Northwind Supply Co,NW-10296,2025-11-21,Dorothy Sanchez,dorothy.sanchez931@demo.org,Austin,TX,Webcam HD,Electronics,69.99,1,69.99,completed,web
+ENT-001,Northwind Supply Co,NW-10297,2025-04-28,Barbara Johnson,barbara.johnson26@demo.org,Denver,CO,Webcam HD,Electronics,69.99,4,279.96,pending,web
+ENT-001,Northwind Supply Co,NW-10298,2025-12-22,Luca Green,luca.green278@mailbox.test,Houston,TX,Notebook Set,Office,12.99,1,12.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10299,2025-07-24,Robert Hill,robert.hill311@mailbox.test,Philadelphia,PA,Whiteboard,Office,49.99,1,49.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10300,2025-12-17,Karen Green,karen.green584@demo.org,Philadelphia,PA,Travel Adapter,Electronics,16.99,3,50.97,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10301,2025-01-28,Brian Baker,brian.baker115@fakemail.net,Nashville,TN,Webcam HD,Electronics,69.99,4,279.96,completed,web
+ENT-001,Northwind Supply Co,NW-10302,2025-12-03,Amanda Davis,amanda.davis937@fakemail.net,Los Angeles,CA,Monitor 27in,Electronics,229.00,1,229.00,pending,phone
+ENT-001,Northwind Supply Co,NW-10303,2025-07-15,Melissa Sanchez,melissa.sanchez93@fakemail.net,Charlotte,NC,Backpack,Lifestyle,64.99,1,64.99,shipped,phone
+ENT-001,Northwind Supply Co,NW-10304,2025-07-22,Paul Mitchell,paul.mitchell716@mailbox.test,Miami,FL,Phone Case,Electronics,19.99,1,19.99,refunded,in_store
+ENT-001,Northwind Supply Co,NW-10305,2025-03-18,Diego Roberts,diego.roberts45@fakemail.net,Phoenix,AZ,Running Shoes,Lifestyle,119.00,3,357.00,completed,in_store
+ENT-001,Northwind Supply Co,NW-10306,2025-06-12,Kevin Thomas,kevin.thomas61@mailbox.test,Detroit,MI,Coffee Mug,Lifestyle,14.50,1,14.50,pending,web
+ENT-001,Northwind Supply Co,NW-10307,2025-11-16,Richard Green,richard.green724@demo.org,Austin,TX,Desk Lamp,Office,27.95,1,27.95,completed,phone
+ENT-001,Northwind Supply Co,NW-10308,2025-12-10,Jessica Smith,jessica.smith657@fakemail.net,Minneapolis,MN,Yoga Mat,Lifestyle,29.99,1,29.99,completed,phone
+ENT-001,Northwind Supply Co,NW-10309,2025-09-14,Elizabeth Nguyen,elizabeth.nguyen835@example.com,Nashville,TN,Backpack,Lifestyle,64.99,1,64.99,completed,phone
+ENT-001,Northwind Supply Co,NW-10310,2025-02-23,Brian Martinez,brian.martinez416@mailbox.test,Charlotte,NC,Yoga Mat,Lifestyle,29.99,3,89.97,shipped,web
+ENT-001,Northwind Supply Co,NW-10311,2025-04-04,Nancy Young,nancy.young288@fakemail.net,San Antonio,TX,Mechanical Keyboard,Electronics,89.99,1,89.99,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10312,2025-03-18,Linda Hernandez,linda.hernandez372@fakemail.net,Seattle,WA,Yoga Mat,Lifestyle,29.99,1,29.99,completed,web
+ENT-001,Northwind Supply Co,NW-10313,2025-02-21,James Robinson,james.robinson340@fakemail.net,Atlanta,GA,USB-C Hub,Electronics,39.99,2,79.98,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10314,2025-11-10,Ashley Gonzalez,ashley.gonzalez942@example.com,Detroit,MI,Monitor 27in,Electronics,229.00,1,229.00,shipped,phone
+ENT-001,Northwind Supply Co,NW-10315,2025-05-12,Jessica Garcia,jessica.garcia405@mailbox.test,Phoenix,AZ,Wireless Mouse,Electronics,24.99,1,24.99,completed,phone
+ENT-001,Northwind Supply Co,NW-10316,2025-12-20,Kimberly Silva,kimberly.silva851@fakemail.net,Philadelphia,PA,Laptop Stand,Office,34.50,3,103.50,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10317,2025-05-08,Barbara Adams,barbara.adams140@fakemail.net,Denver,CO,Monitor 27in,Electronics,229.00,1,229.00,completed,web
+ENT-001,Northwind Supply Co,NW-10318,2025-08-24,Michael Torres,michael.torres507@demo.org,Boston,MA,Mechanical Keyboard,Electronics,89.99,4,359.96,completed,web
+ENT-001,Northwind Supply Co,NW-10319,2025-08-21,Kenneth Nguyen,kenneth.nguyen168@mailbox.test,Chicago,IL,Desk Lamp,Office,27.95,2,55.90,pending,web
+ENT-001,Northwind Supply Co,NW-10320,2025-01-02,Robert Silva,robert.silva741@fakemail.net,Miami,FL,Running Shoes,Lifestyle,119.00,1,119.00,refunded,mobile_app
+ENT-001,Northwind Supply Co,NW-10321,2025-02-15,Elizabeth Jackson,elizabeth.jackson432@fakemail.net,Chicago,IL,Mechanical Keyboard,Electronics,89.99,2,179.98,completed,phone
+ENT-001,Northwind Supply Co,NW-10322,2025-10-07,Priya Lopez,priya.lopez454@fakemail.net,Philadelphia,PA,Ergonomic Chair Cushion,Office,42.00,1,42.00,cancelled,web
+ENT-001,Northwind Supply Co,NW-10323,2025-07-20,Andrew Lee,andrew.lee548@mailbox.test,Minneapolis,MN,Yoga Mat,Lifestyle,29.99,1,29.99,completed,in_store
+ENT-001,Northwind Supply Co,NW-10324,2025-06-16,Mateo Brown,mateo.brown579@demo.org,Seattle,WA,Insulated Tumbler,Lifestyle,25.00,2,50.00,completed,web
+ENT-001,Northwind Supply Co,NW-10325,2025-12-03,Chen Perez,chen.perez228@demo.org,Minneapolis,MN,Wireless Mouse,Electronics,24.99,3,74.97,completed,phone
+ENT-001,Northwind Supply Co,NW-10326,2025-10-15,Donna White,donna.white369@mailbox.test,Detroit,MI,Travel Adapter,Electronics,16.99,4,67.96,pending,web
+ENT-001,Northwind Supply Co,NW-10327,2025-05-21,Linda Anderson,linda.anderson115@mailbox.test,Philadelphia,PA,Water Bottle,Lifestyle,18.00,2,36.00,completed,web
+ENT-001,Northwind Supply Co,NW-10328,2025-09-19,Kimberly Nelson,kimberly.nelson470@mailbox.test,Dallas,TX,Running Shoes,Lifestyle,119.00,1,119.00,completed,phone
+ENT-001,Northwind Supply Co,NW-10329,2025-08-05,Paul Okafor,paul.okafor418@example.com,Nashville,TN,Travel Adapter,Electronics,16.99,1,16.99,refunded,mobile_app
+ENT-001,Northwind Supply Co,NW-10330,2025-09-06,Paul Rivera,paul.rivera851@demo.org,Houston,TX,Phone Case,Electronics,19.99,1,19.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10331,2025-07-08,Steven Roberts,steven.roberts634@example.com,Chicago,IL,Desk Lamp,Office,27.95,1,27.95,completed,web
+ENT-001,Northwind Supply Co,NW-10332,2025-07-03,Robert Smith,robert.smith124@mailbox.test,Charlotte,NC,Water Bottle,Lifestyle,18.00,1,18.00,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10333,2025-12-22,Linda Okafor,linda.okafor862@fakemail.net,Denver,CO,Notebook Set,Office,12.99,1,12.99,completed,in_store
+ENT-001,Northwind Supply Co,NW-10334,2025-12-16,Thomas Davis,thomas.davis538@fakemail.net,San Diego,CA,Webcam HD,Electronics,69.99,2,139.98,completed,in_store
+ENT-001,Northwind Supply Co,NW-10335,2025-01-22,Kenneth Thompson,kenneth.thompson823@example.com,Houston,TX,Webcam HD,Electronics,69.99,2,139.98,completed,web
+ENT-001,Northwind Supply Co,NW-10336,2025-02-26,Matthew Gonzalez,matthew.gonzalez596@demo.org,Miami,FL,Wireless Mouse,Electronics,24.99,3,74.97,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10337,2025-11-22,Linda Jones,linda.jones954@fakemail.net,Dallas,TX,Notebook Set,Office,12.99,1,12.99,pending,in_store
+ENT-001,Northwind Supply Co,NW-10338,2025-08-01,Elizabeth Nguyen,elizabeth.nguyen780@fakemail.net,Dallas,TX,Desk Organizer,Office,22.50,5,112.50,completed,web
+ENT-001,Northwind Supply Co,NW-10339,2025-02-06,Elizabeth Young,elizabeth.young820@example.com,Minneapolis,MN,Running Shoes,Lifestyle,119.00,4,476.00,pending,in_store
+ENT-001,Northwind Supply Co,NW-10340,2025-06-11,Steven Hernandez,steven.hernandez981@example.com,Miami,FL,Ergonomic Chair Cushion,Office,42.00,1,42.00,refunded,web
+ENT-001,Northwind Supply Co,NW-10341,2025-06-24,Karen Larsen,karen.larsen217@mailbox.test,Phoenix,AZ,Travel Adapter,Electronics,16.99,2,33.98,cancelled,web
+ENT-001,Northwind Supply Co,NW-10342,2025-06-08,Joshua Robinson,joshua.robinson344@demo.org,Boston,MA,Webcam HD,Electronics,69.99,1,69.99,completed,web
+ENT-001,Northwind Supply Co,NW-10343,2025-05-13,Sandra Haddad,sandra.haddad745@mailbox.test,Charlotte,NC,Mechanical Keyboard,Electronics,89.99,2,179.98,shipped,web
+ENT-001,Northwind Supply Co,NW-10344,2025-12-02,Paul Taylor,paul.taylor599@mailbox.test,Denver,CO,Travel Adapter,Electronics,16.99,2,33.98,refunded,in_store
+ENT-001,Northwind Supply Co,NW-10345,2025-06-26,Michael Kim,michael.kim650@example.com,San Antonio,TX,Whiteboard,Office,49.99,2,99.98,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10346,2025-12-12,Aiko Thomas,aiko.thomas782@fakemail.net,Phoenix,AZ,USB-C Hub,Electronics,39.99,1,39.99,refunded,in_store
+ENT-001,Northwind Supply Co,NW-10347,2025-12-11,Kevin Thomas,kevin.thomas343@example.com,Denver,CO,Desk Organizer,Office,22.50,2,45.00,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10348,2025-03-07,Steven Allen,steven.allen358@mailbox.test,Denver,CO,Backpack,Lifestyle,64.99,3,194.97,completed,in_store
+ENT-001,Northwind Supply Co,NW-10349,2025-03-19,Brian Robinson,brian.robinson791@fakemail.net,Boston,MA,Yoga Mat,Lifestyle,29.99,1,29.99,completed,web
+ENT-001,Northwind Supply Co,NW-10350,2025-02-07,Karen Campbell,karen.campbell565@fakemail.net,Austin,TX,Coffee Mug,Lifestyle,14.50,2,29.00,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10351,2025-12-28,Barbara Martin,barbara.martin366@demo.org,Nashville,TN,Webcam HD,Electronics,69.99,5,349.95,completed,in_store
+ENT-001,Northwind Supply Co,NW-10352,2025-03-21,Ashley Lee,ashley.lee560@example.com,Philadelphia,PA,Coffee Mug,Lifestyle,14.50,4,58.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10353,2025-09-21,Dorothy Johnson,dorothy.johnson206@fakemail.net,San Antonio,TX,Mechanical Keyboard,Electronics,89.99,1,89.99,completed,web
+ENT-001,Northwind Supply Co,NW-10354,2025-10-11,Jessica Campbell,jessica.campbell82@example.com,Los Angeles,CA,Desk Lamp,Office,27.95,2,55.90,completed,web
+ENT-001,Northwind Supply Co,NW-10355,2025-04-11,Richard Moore,richard.moore946@example.com,Detroit,MI,Wireless Mouse,Electronics,24.99,2,49.98,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10356,2025-03-02,Melissa Johnson,melissa.johnson820@fakemail.net,Atlanta,GA,Ergonomic Chair Cushion,Office,42.00,2,84.00,pending,in_store
+ENT-001,Northwind Supply Co,NW-10357,2025-05-15,Robert Garcia,robert.garcia613@demo.org,Charlotte,NC,Monitor 27in,Electronics,229.00,3,687.00,completed,web
+ENT-001,Northwind Supply Co,NW-10358,2025-03-03,Diego Lee,diego.lee629@fakemail.net,Nashville,TN,Monitor 27in,Electronics,229.00,1,229.00,completed,web
+ENT-001,Northwind Supply Co,NW-10359,2025-06-18,Susan Martinez,susan.martinez371@demo.org,Minneapolis,MN,USB-C Hub,Electronics,39.99,1,39.99,refunded,web
+ENT-001,Northwind Supply Co,NW-10360,2025-12-16,Brian Hill,brian.hill634@fakemail.net,Nashville,TN,Monitor 27in,Electronics,229.00,1,229.00,completed,in_store
+ENT-001,Northwind Supply Co,NW-10361,2025-03-09,Carol Martin,carol.martin371@fakemail.net,Detroit,MI,Yoga Mat,Lifestyle,29.99,2,59.98,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10362,2025-02-01,Steven Miller,steven.miller234@demo.org,Denver,CO,Desk Lamp,Office,27.95,5,139.75,completed,web
+ENT-001,Northwind Supply Co,NW-10363,2025-10-12,Patricia Wright,patricia.wright187@fakemail.net,Minneapolis,MN,Water Bottle,Lifestyle,18.00,2,36.00,completed,web
+ENT-001,Northwind Supply Co,NW-10364,2025-08-28,Chen Mitchell,chen.mitchell797@mailbox.test,Philadelphia,PA,Phone Case,Electronics,19.99,1,19.99,cancelled,web
+ENT-001,Northwind Supply Co,NW-10365,2025-02-22,Kevin Okafor,kevin.okafor332@example.com,Denver,CO,Ergonomic Chair Cushion,Office,42.00,1,42.00,completed,web
+ENT-001,Northwind Supply Co,NW-10366,2025-07-13,Mateo Adams,mateo.adams578@demo.org,Boston,MA,Webcam HD,Electronics,69.99,1,69.99,completed,web
+ENT-001,Northwind Supply Co,NW-10367,2025-06-25,Thomas Johnson,thomas.johnson363@mailbox.test,Dallas,TX,Whiteboard,Office,49.99,1,49.99,pending,phone
+ENT-001,Northwind Supply Co,NW-10368,2025-08-28,Sarah Martin,sarah.martin810@mailbox.test,Atlanta,GA,Water Bottle,Lifestyle,18.00,5,90.00,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10369,2025-04-06,David Kowalski,david.kowalski5@demo.org,Austin,TX,Bluetooth Speaker,Electronics,54.99,1,54.99,shipped,phone
+ENT-001,Northwind Supply Co,NW-10370,2025-12-12,Michelle Hill,michelle.hill905@mailbox.test,Miami,FL,Water Bottle,Lifestyle,18.00,2,36.00,completed,in_store
+ENT-001,Northwind Supply Co,NW-10371,2025-11-01,Deborah Kim,deborah.kim144@fakemail.net,Miami,FL,Notebook Set,Office,12.99,1,12.99,completed,web
+ENT-001,Northwind Supply Co,NW-10372,2025-02-25,Yuki Smith,yuki.smith754@fakemail.net,Phoenix,AZ,Bluetooth Speaker,Electronics,54.99,1,54.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10373,2025-06-02,Amanda Sanchez,amanda.sanchez941@demo.org,Chicago,IL,Whiteboard,Office,49.99,1,49.99,completed,web
+ENT-001,Northwind Supply Co,NW-10374,2025-10-14,Aiko Green,aiko.green610@mailbox.test,New York,NY,Mechanical Keyboard,Electronics,89.99,1,89.99,completed,phone
+ENT-001,Northwind Supply Co,NW-10375,2025-03-17,Mary Brown,mary.brown124@demo.org,Seattle,WA,USB-C Hub,Electronics,39.99,4,159.96,pending,web
+ENT-001,Northwind Supply Co,NW-10376,2025-09-12,Barbara Anderson,barbara.anderson559@example.com,Detroit,MI,Desk Lamp,Office,27.95,2,55.90,cancelled,web
+ENT-001,Northwind Supply Co,NW-10377,2025-05-09,Matthew Wilson,matthew.wilson182@example.com,San Diego,CA,USB-C Hub,Electronics,39.99,1,39.99,completed,web
+ENT-001,Northwind Supply Co,NW-10378,2025-05-01,Richard Allen,richard.allen975@fakemail.net,Los Angeles,CA,Whiteboard,Office,49.99,3,149.97,shipped,phone
+ENT-001,Northwind Supply Co,NW-10379,2025-12-23,Robert Adams,robert.adams339@demo.org,Miami,FL,Desk Organizer,Office,22.50,1,22.50,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10380,2025-07-14,Margaret Lee,margaret.lee155@demo.org,Detroit,MI,Whiteboard,Office,49.99,1,49.99,completed,phone
+ENT-001,Northwind Supply Co,NW-10381,2025-04-27,James Thomas,james.thomas261@demo.org,Charlotte,NC,Phone Case,Electronics,19.99,4,79.96,completed,phone
+ENT-001,Northwind Supply Co,NW-10382,2025-12-18,Linda Garcia,linda.garcia51@demo.org,Charlotte,NC,Mechanical Keyboard,Electronics,89.99,4,359.96,shipped,phone
+ENT-001,Northwind Supply Co,NW-10383,2025-08-24,Carol Lewis,carol.lewis592@example.com,Detroit,MI,Monitor 27in,Electronics,229.00,1,229.00,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10384,2025-06-23,Lisa Nguyen,lisa.nguyen645@demo.org,Detroit,MI,Ergonomic Chair Cushion,Office,42.00,1,42.00,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10385,2025-10-25,Kimberly Moore,kimberly.moore817@mailbox.test,Charlotte,NC,Monitor 27in,Electronics,229.00,1,229.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10386,2025-03-03,Yuki Petrov,yuki.petrov489@mailbox.test,Atlanta,GA,Webcam HD,Electronics,69.99,2,139.98,refunded,web
+ENT-001,Northwind Supply Co,NW-10387,2025-03-27,Kimberly Wilson,kimberly.wilson245@mailbox.test,Minneapolis,MN,Notebook Set,Office,12.99,3,38.97,cancelled,web
+ENT-001,Northwind Supply Co,NW-10388,2025-02-14,Kevin Kowalski,kevin.kowalski853@demo.org,Los Angeles,CA,Monitor 27in,Electronics,229.00,1,229.00,completed,phone
+ENT-001,Northwind Supply Co,NW-10389,2025-08-22,Thomas Harris,thomas.harris823@fakemail.net,Houston,TX,Webcam HD,Electronics,69.99,1,69.99,completed,web
+ENT-001,Northwind Supply Co,NW-10390,2025-09-05,Betty Jackson,betty.jackson490@mailbox.test,Miami,FL,Laptop Stand,Office,34.50,1,34.50,completed,phone
+ENT-001,Northwind Supply Co,NW-10391,2025-09-11,David White,david.white638@fakemail.net,Atlanta,GA,Phone Case,Electronics,19.99,2,39.98,pending,web
+ENT-001,Northwind Supply Co,NW-10392,2025-05-23,Mary Scott,mary.scott60@mailbox.test,San Antonio,TX,Wireless Mouse,Electronics,24.99,2,49.98,refunded,web
+ENT-001,Northwind Supply Co,NW-10393,2025-09-21,Yuki Lee,yuki.lee449@example.com,Dallas,TX,Backpack,Lifestyle,64.99,1,64.99,cancelled,in_store
+ENT-001,Northwind Supply Co,NW-10394,2025-01-23,Jennifer Gonzalez,jennifer.gonzalez298@fakemail.net,Phoenix,AZ,Whiteboard,Office,49.99,5,249.95,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10395,2025-06-08,Nancy Williams,nancy.williams623@fakemail.net,Austin,TX,Whiteboard,Office,49.99,1,49.99,pending,in_store
+ENT-001,Northwind Supply Co,NW-10396,2025-02-22,Donna Rodriguez,donna.rodriguez873@fakemail.net,Charlotte,NC,Water Bottle,Lifestyle,18.00,5,90.00,completed,web
+ENT-001,Northwind Supply Co,NW-10397,2025-08-21,Chen Jones,chen.jones539@demo.org,Chicago,IL,Yoga Mat,Lifestyle,29.99,1,29.99,completed,web
+ENT-001,Northwind Supply Co,NW-10398,2025-08-06,Donna Torres,donna.torres447@demo.org,Miami,FL,Yoga Mat,Lifestyle,29.99,2,59.98,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10399,2025-12-07,Betty Young,betty.young10@mailbox.test,Phoenix,AZ,Phone Case,Electronics,19.99,3,59.97,pending,mobile_app
+ENT-001,Northwind Supply Co,NW-10400,2025-02-03,Robert Ferreira,robert.ferreira397@demo.org,Austin,TX,Desk Organizer,Office,22.50,1,22.50,completed,in_store
+ENT-001,Northwind Supply Co,NW-10401,2025-10-15,John Torres,john.torres869@mailbox.test,New York,NY,Laptop Stand,Office,34.50,1,34.50,completed,in_store
+ENT-001,Northwind Supply Co,NW-10402,2025-10-05,Amanda Gonzalez,amanda.gonzalez564@demo.org,Seattle,WA,Running Shoes,Lifestyle,119.00,3,357.00,pending,in_store
+ENT-001,Northwind Supply Co,NW-10403,2025-03-18,Patricia Kim,patricia.kim531@example.com,Phoenix,AZ,Monitor 27in,Electronics,229.00,1,229.00,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10404,2025-09-13,Thomas Garcia,thomas.garcia880@fakemail.net,Seattle,WA,Ergonomic Chair Cushion,Office,42.00,1,42.00,refunded,mobile_app
+ENT-001,Northwind Supply Co,NW-10405,2025-09-09,Amanda Brown,amanda.brown390@demo.org,Austin,TX,Bluetooth Speaker,Electronics,54.99,1,54.99,shipped,web
+ENT-001,Northwind Supply Co,NW-10406,2025-11-16,David Brown,david.brown955@demo.org,San Antonio,TX,Desk Organizer,Office,22.50,2,45.00,completed,web
+ENT-001,Northwind Supply Co,NW-10407,2025-12-11,Diego Rossi,diego.rossi724@example.com,Seattle,WA,Water Bottle,Lifestyle,18.00,1,18.00,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10408,2025-05-07,John Clark,john.clark225@demo.org,Nashville,TN,Monitor 27in,Electronics,229.00,1,229.00,completed,in_store
+ENT-001,Northwind Supply Co,NW-10409,2025-04-02,Donna Flores,donna.flores456@mailbox.test,Miami,FL,Ergonomic Chair Cushion,Office,42.00,4,168.00,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10410,2025-10-16,Ingrid Green,ingrid.green902@example.com,Houston,TX,Mechanical Keyboard,Electronics,89.99,1,89.99,completed,web
+ENT-001,Northwind Supply Co,NW-10411,2025-04-18,Diego Campbell,diego.campbell691@fakemail.net,Detroit,MI,Notebook Set,Office,12.99,1,12.99,completed,web
+ENT-001,Northwind Supply Co,NW-10412,2025-02-02,Deborah Okafor,deborah.okafor98@mailbox.test,San Antonio,TX,Phone Case,Electronics,19.99,1,19.99,pending,web
+ENT-001,Northwind Supply Co,NW-10413,2025-12-05,Brian Petrov,brian.petrov159@example.com,Dallas,TX,Yoga Mat,Lifestyle,29.99,2,59.98,completed,web
+ENT-001,Northwind Supply Co,NW-10414,2025-12-18,Omar Lewis,omar.lewis817@fakemail.net,Austin,TX,Backpack,Lifestyle,64.99,4,259.96,completed,web
+ENT-001,Northwind Supply Co,NW-10415,2025-07-02,Yuki Taylor,yuki.taylor156@mailbox.test,Seattle,WA,Desk Organizer,Office,22.50,3,67.50,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10416,2025-04-15,Elizabeth Adams,elizabeth.adams711@example.com,Austin,TX,Backpack,Lifestyle,64.99,2,129.98,completed,phone
+ENT-001,Northwind Supply Co,NW-10417,2025-02-22,Barbara Ramirez,barbara.ramirez849@fakemail.net,Seattle,WA,Ergonomic Chair Cushion,Office,42.00,1,42.00,completed,phone
+ENT-001,Northwind Supply Co,NW-10418,2025-02-07,Kimberly King,kimberly.king19@demo.org,Chicago,IL,Bluetooth Speaker,Electronics,54.99,1,54.99,cancelled,web
+ENT-001,Northwind Supply Co,NW-10419,2025-03-16,Chen Martin,chen.martin91@mailbox.test,Charlotte,NC,Travel Adapter,Electronics,16.99,2,33.98,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10420,2025-01-12,Luca Carter,luca.carter34@example.com,San Diego,CA,Travel Adapter,Electronics,16.99,4,67.96,completed,web
+ENT-001,Northwind Supply Co,NW-10421,2025-04-11,Brian Martin,brian.martin461@demo.org,Los Angeles,CA,Notebook Set,Office,12.99,1,12.99,shipped,web
+ENT-001,Northwind Supply Co,NW-10422,2025-12-18,Linda Tanaka,linda.tanaka466@example.com,Austin,TX,USB-C Hub,Electronics,39.99,2,79.98,completed,in_store
+ENT-001,Northwind Supply Co,NW-10423,2025-07-21,William Hill,william.hill41@example.com,Boston,MA,Yoga Mat,Lifestyle,29.99,1,29.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10424,2025-06-06,Joshua Petrov,joshua.petrov680@mailbox.test,Denver,CO,USB-C Hub,Electronics,39.99,1,39.99,completed,web
+ENT-001,Northwind Supply Co,NW-10425,2025-04-04,James Petrov,james.petrov97@example.com,Atlanta,GA,Bluetooth Speaker,Electronics,54.99,1,54.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10426,2025-10-18,Sarah Wright,sarah.wright252@mailbox.test,Detroit,MI,Laptop Stand,Office,34.50,1,34.50,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10427,2025-04-24,Thomas White,thomas.white209@mailbox.test,San Antonio,TX,Bluetooth Speaker,Electronics,54.99,1,54.99,refunded,mobile_app
+ENT-001,Northwind Supply Co,NW-10428,2025-12-19,Jessica Haddad,jessica.haddad55@demo.org,Houston,TX,Wireless Mouse,Electronics,24.99,1,24.99,completed,phone
+ENT-001,Northwind Supply Co,NW-10429,2025-07-13,Melissa Anderson,melissa.anderson271@example.com,Chicago,IL,Notebook Set,Office,12.99,1,12.99,refunded,web
+ENT-001,Northwind Supply Co,NW-10430,2025-04-20,Charles Torres,charles.torres223@mailbox.test,Houston,TX,USB-C Hub,Electronics,39.99,2,79.98,refunded,phone
+ENT-001,Northwind Supply Co,NW-10431,2025-04-20,Priya Brown,priya.brown101@example.com,San Diego,CA,USB-C Hub,Electronics,39.99,2,79.98,completed,in_store
+ENT-001,Northwind Supply Co,NW-10432,2025-06-14,Karen Perez,karen.perez188@example.com,Chicago,IL,Yoga Mat,Lifestyle,29.99,2,59.98,pending,web
+ENT-001,Northwind Supply Co,NW-10433,2025-03-26,Jennifer Tanaka,jennifer.tanaka696@mailbox.test,San Diego,CA,Desk Lamp,Office,27.95,2,55.90,shipped,in_store
+ENT-001,Northwind Supply Co,NW-10434,2025-01-26,David Wilson,david.wilson726@example.com,San Antonio,TX,Backpack,Lifestyle,64.99,2,129.98,cancelled,web
+ENT-001,Northwind Supply Co,NW-10435,2025-04-28,Ashley King,ashley.king652@example.com,Seattle,WA,USB-C Hub,Electronics,39.99,3,119.97,completed,in_store
+ENT-001,Northwind Supply Co,NW-10436,2025-10-06,Nancy Tanaka,nancy.tanaka995@fakemail.net,Portland,OR,USB-C Hub,Electronics,39.99,2,79.98,cancelled,phone
+ENT-001,Northwind Supply Co,NW-10437,2025-01-24,Deborah Mitchell,deborah.mitchell711@fakemail.net,Atlanta,GA,Desk Lamp,Office,27.95,1,27.95,cancelled,in_store
+ENT-001,Northwind Supply Co,NW-10438,2025-12-19,Aiko Rossi,aiko.rossi845@fakemail.net,Nashville,TN,Notebook Set,Office,12.99,1,12.99,refunded,phone
+ENT-001,Northwind Supply Co,NW-10439,2025-04-07,Kevin Davis,kevin.davis868@mailbox.test,Chicago,IL,Coffee Mug,Lifestyle,14.50,3,43.50,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10440,2025-07-22,Jessica Haddad,jessica.haddad702@example.com,Atlanta,GA,Travel Adapter,Electronics,16.99,4,67.96,pending,in_store
+ENT-001,Northwind Supply Co,NW-10441,2025-11-22,Kevin Baker,kevin.baker90@mailbox.test,Seattle,WA,Ergonomic Chair Cushion,Office,42.00,1,42.00,shipped,phone
+ENT-001,Northwind Supply Co,NW-10442,2025-02-26,Kenneth Larsen,kenneth.larsen501@example.com,Portland,OR,Bluetooth Speaker,Electronics,54.99,1,54.99,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10443,2025-02-12,Mark Hill,mark.hill559@mailbox.test,Austin,TX,Yoga Mat,Lifestyle,29.99,1,29.99,pending,in_store
+ENT-001,Northwind Supply Co,NW-10444,2025-12-15,Sandra Flores,sandra.flores278@mailbox.test,Los Angeles,CA,Bluetooth Speaker,Electronics,54.99,1,54.99,pending,phone
+ENT-001,Northwind Supply Co,NW-10445,2025-07-27,Andrew Rossi,andrew.rossi643@example.com,San Diego,CA,Laptop Stand,Office,34.50,1,34.50,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10446,2025-05-16,Sarah Perez,sarah.perez360@demo.org,Phoenix,AZ,Webcam HD,Electronics,69.99,1,69.99,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10447,2025-03-04,Aiko Hill,aiko.hill10@example.com,San Antonio,TX,Notebook Set,Office,12.99,1,12.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10448,2025-03-25,Joshua Rossi,joshua.rossi566@demo.org,Dallas,TX,Webcam HD,Electronics,69.99,2,139.98,shipped,phone
+ENT-001,Northwind Supply Co,NW-10449,2025-06-10,Mark Jones,mark.jones273@fakemail.net,Minneapolis,MN,Insulated Tumbler,Lifestyle,25.00,1,25.00,pending,mobile_app
+ENT-001,Northwind Supply Co,NW-10450,2025-01-27,Mateo Baker,mateo.baker709@example.com,Los Angeles,CA,Running Shoes,Lifestyle,119.00,1,119.00,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10451,2025-01-11,Anthony Lewis,anthony.lewis747@demo.org,Austin,TX,Phone Case,Electronics,19.99,4,79.96,cancelled,web
+ENT-001,Northwind Supply Co,NW-10452,2025-07-06,James Ferreira,james.ferreira941@example.com,Dallas,TX,Desk Lamp,Office,27.95,1,27.95,shipped,phone
+ENT-001,Northwind Supply Co,NW-10453,2025-11-03,Ronald Thomas,ronald.thomas562@demo.org,Austin,TX,Desk Organizer,Office,22.50,1,22.50,pending,mobile_app
+ENT-001,Northwind Supply Co,NW-10454,2025-01-26,Dorothy White,dorothy.white589@demo.org,Dallas,TX,Monitor 27in,Electronics,229.00,1,229.00,refunded,web
+ENT-001,Northwind Supply Co,NW-10455,2025-05-24,Luca Rodriguez,luca.rodriguez64@mailbox.test,San Antonio,TX,Phone Case,Electronics,19.99,3,59.97,refunded,web
+ENT-001,Northwind Supply Co,NW-10456,2025-12-06,Amanda Martin,amanda.martin393@fakemail.net,Los Angeles,CA,Travel Adapter,Electronics,16.99,1,16.99,shipped,web
+ENT-001,Northwind Supply Co,NW-10457,2025-02-22,Luca Walker,luca.walker449@demo.org,San Antonio,TX,Insulated Tumbler,Lifestyle,25.00,1,25.00,shipped,web
+ENT-001,Northwind Supply Co,NW-10458,2025-09-27,Betty Lee,betty.lee209@demo.org,Boston,MA,Running Shoes,Lifestyle,119.00,1,119.00,pending,phone
+ENT-001,Northwind Supply Co,NW-10459,2025-11-18,William Roberts,william.roberts776@demo.org,Seattle,WA,Mechanical Keyboard,Electronics,89.99,1,89.99,pending,in_store
+ENT-001,Northwind Supply Co,NW-10460,2025-11-04,John Moore,john.moore406@fakemail.net,Boston,MA,Webcam HD,Electronics,69.99,2,139.98,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10461,2025-06-20,Deborah Smith,deborah.smith581@fakemail.net,Los Angeles,CA,Desk Organizer,Office,22.50,3,67.50,shipped,web
+ENT-001,Northwind Supply Co,NW-10462,2025-12-04,Jessica Haddad,jessica.haddad618@demo.org,Chicago,IL,Desk Organizer,Office,22.50,1,22.50,shipped,web
+ENT-001,Northwind Supply Co,NW-10463,2025-07-13,Carol Lopez,carol.lopez963@fakemail.net,Houston,TX,Ergonomic Chair Cushion,Office,42.00,1,42.00,cancelled,in_store
+ENT-001,Northwind Supply Co,NW-10464,2025-11-10,Lisa Thompson,lisa.thompson534@demo.org,Philadelphia,PA,Desk Lamp,Office,27.95,2,55.90,completed,web
+ENT-001,Northwind Supply Co,NW-10465,2025-10-14,Lisa Baker,lisa.baker4@mailbox.test,Chicago,IL,Whiteboard,Office,49.99,1,49.99,pending,web
+ENT-001,Northwind Supply Co,NW-10466,2025-09-04,Joshua Campbell,joshua.campbell688@mailbox.test,Dallas,TX,Desk Lamp,Office,27.95,1,27.95,shipped,web
+ENT-001,Northwind Supply Co,NW-10467,2025-10-09,Melissa Kowalski,melissa.kowalski722@demo.org,Boston,MA,Bluetooth Speaker,Electronics,54.99,1,54.99,completed,in_store
+ENT-001,Northwind Supply Co,NW-10468,2025-05-04,Kenneth Hill,kenneth.hill926@mailbox.test,Minneapolis,MN,Coffee Mug,Lifestyle,14.50,2,29.00,shipped,phone
+ENT-001,Northwind Supply Co,NW-10469,2025-02-27,Joshua Haddad,joshua.haddad530@example.com,Chicago,IL,Webcam HD,Electronics,69.99,1,69.99,shipped,web
+ENT-001,Northwind Supply Co,NW-10470,2025-10-18,James Robinson,james.robinson61@demo.org,Phoenix,AZ,Yoga Mat,Lifestyle,29.99,1,29.99,completed,web
+ENT-001,Northwind Supply Co,NW-10471,2025-06-17,Andrew Kowalski,andrew.kowalski302@fakemail.net,Miami,FL,Laptop Stand,Office,34.50,1,34.50,completed,web
+ENT-001,Northwind Supply Co,NW-10472,2025-04-25,Emily Tanaka,emily.tanaka829@example.com,San Antonio,TX,Bluetooth Speaker,Electronics,54.99,3,164.97,completed,web
+ENT-001,Northwind Supply Co,NW-10473,2025-12-03,Mateo Allen,mateo.allen978@fakemail.net,Dallas,TX,Whiteboard,Office,49.99,1,49.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10474,2025-06-18,Anthony Allen,anthony.allen889@example.com,Nashville,TN,Whiteboard,Office,49.99,1,49.99,shipped,phone
+ENT-001,Northwind Supply Co,NW-10475,2025-04-11,Thomas Jones,thomas.jones465@demo.org,Atlanta,GA,Travel Adapter,Electronics,16.99,1,16.99,completed,web
+ENT-001,Northwind Supply Co,NW-10476,2025-08-25,Betty Hernandez,betty.hernandez919@example.com,Austin,TX,Water Bottle,Lifestyle,18.00,1,18.00,completed,in_store
+ENT-001,Northwind Supply Co,NW-10477,2025-12-26,Dorothy Mitchell,dorothy.mitchell774@fakemail.net,San Antonio,TX,Coffee Mug,Lifestyle,14.50,1,14.50,completed,phone
+ENT-001,Northwind Supply Co,NW-10478,2025-11-24,Edward Flores,edward.flores428@example.com,New York,NY,USB-C Hub,Electronics,39.99,1,39.99,refunded,web
+ENT-001,Northwind Supply Co,NW-10479,2025-02-02,Emily Thompson,emily.thompson364@fakemail.net,Philadelphia,PA,Travel Adapter,Electronics,16.99,2,33.98,completed,phone
+ENT-001,Northwind Supply Co,NW-10480,2025-03-12,Matthew Clark,matthew.clark352@example.com,New York,NY,Yoga Mat,Lifestyle,29.99,3,89.97,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10481,2025-02-17,Jennifer Okafor,jennifer.okafor842@mailbox.test,Seattle,WA,Monitor 27in,Electronics,229.00,1,229.00,shipped,mobile_app
+ENT-001,Northwind Supply Co,NW-10482,2025-12-09,Anthony Wilson,anthony.wilson961@mailbox.test,Denver,CO,Coffee Mug,Lifestyle,14.50,2,29.00,refunded,mobile_app
+ENT-001,Northwind Supply Co,NW-10483,2025-03-05,Deborah Campbell,deborah.campbell862@demo.org,Boston,MA,Notebook Set,Office,12.99,3,38.97,completed,web
+ENT-001,Northwind Supply Co,NW-10484,2025-08-25,Susan Campbell,susan.campbell10@example.com,Nashville,TN,Desk Organizer,Office,22.50,1,22.50,completed,web
+ENT-001,Northwind Supply Co,NW-10485,2025-08-25,Fatima Torres,fatima.torres347@demo.org,Detroit,MI,USB-C Hub,Electronics,39.99,3,119.97,completed,web
+ENT-001,Northwind Supply Co,NW-10486,2025-04-15,Jessica Wilson,jessica.wilson101@mailbox.test,Denver,CO,Ergonomic Chair Cushion,Office,42.00,4,168.00,cancelled,mobile_app
+ENT-001,Northwind Supply Co,NW-10487,2025-08-06,Donna Okafor,donna.okafor737@example.com,Miami,FL,USB-C Hub,Electronics,39.99,2,79.98,pending,phone
+ENT-001,Northwind Supply Co,NW-10488,2025-02-16,Amanda Kim,amanda.kim484@mailbox.test,San Diego,CA,Running Shoes,Lifestyle,119.00,2,238.00,pending,web
+ENT-001,Northwind Supply Co,NW-10489,2025-11-24,George Thomas,george.thomas807@mailbox.test,San Diego,CA,Wireless Mouse,Electronics,24.99,1,24.99,completed,web
+ENT-001,Northwind Supply Co,NW-10490,2025-04-08,Michael Okafor,michael.okafor50@demo.org,San Antonio,TX,Wireless Mouse,Electronics,24.99,1,24.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10491,2025-08-25,Kevin Torres,kevin.torres480@example.com,Portland,OR,Coffee Mug,Lifestyle,14.50,1,14.50,completed,in_store
+ENT-001,Northwind Supply Co,NW-10492,2025-10-17,Fatima Rivera,fatima.rivera542@mailbox.test,Houston,TX,Notebook Set,Office,12.99,1,12.99,shipped,web
+ENT-001,Northwind Supply Co,NW-10493,2025-09-18,Paul Tanaka,paul.tanaka31@example.com,Boston,MA,Wireless Mouse,Electronics,24.99,1,24.99,refunded,web
+ENT-001,Northwind Supply Co,NW-10494,2025-09-24,Dorothy Brown,dorothy.brown407@example.com,Detroit,MI,Insulated Tumbler,Lifestyle,25.00,1,25.00,completed,web
+ENT-001,Northwind Supply Co,NW-10495,2025-11-14,Barbara Petrov,barbara.petrov726@mailbox.test,Minneapolis,MN,Yoga Mat,Lifestyle,29.99,1,29.99,completed,mobile_app
+ENT-001,Northwind Supply Co,NW-10496,2025-02-03,Jennifer Wright,jennifer.wright90@mailbox.test,Minneapolis,MN,Webcam HD,Electronics,69.99,2,139.98,shipped,web
+ENT-001,Northwind Supply Co,NW-10497,2025-04-01,Karen Martin,karen.martin591@fakemail.net,Austin,TX,Desk Lamp,Office,27.95,1,27.95,completed,web
+ENT-001,Northwind Supply Co,NW-10498,2025-10-19,Robert Davis,robert.davis467@demo.org,Charlotte,NC,Water Bottle,Lifestyle,18.00,2,36.00,completed,in_store
+ENT-001,Northwind Supply Co,NW-10499,2025-11-22,Edward Carter,edward.carter734@example.com,Chicago,IL,Wireless Mouse,Electronics,24.99,3,74.97,completed,in_store

@@ -1,0 +1,166 @@
+# {# Resolve tenant ID — check direct JWT claim first, then Cube Cloud user attribute #}
+# {% set _sc = COMPILE_CONTEXT.securityContext %}
+# {% if _sc and _sc.company_id %}
+#   {% set tenant_id = _sc.company_id ~ '' %}
+# {% elif _sc and _sc.cubeCloud and _sc.cubeCloud.userAttributes and _sc.cubeCloud.userAttributes.customer_id %}
+#   {% set tenant_id = _sc.cubeCloud.userAttributes.customer_id ~ '' %}
+# {% else %}
+#   {% set tenant_id = '1' %}
+# {% endif %}
+
+# cubes:
+#   - name: me_company_orders
+#     public: false
+#     data_source: duckdb
+#     sql: |
+#       SELECT * FROM read_csv(
+#         'tables/multitenancy_example/company_orders_{{ tenant_id | safe }}.csv',
+#         header=true,
+#         auto_detect=true
+#       )
+
+#     dimensions:
+#       - name: company_id
+#         sql: company_id
+#         type: string
+
+#       - name: company_name
+#         sql: company_name
+#         type: string
+        
+#       - name: order_id
+#         sql: order_id
+#         type: string
+#         primary_key: true
+
+#       - name: order_date
+#         sql: order_date
+#         type: time
+
+#       - name: customer_name
+#         sql: customer_name
+#         type: string
+
+#       - name: email
+#         sql: email
+#         type: string
+
+#       - name: city
+#         sql: city
+#         type: string
+
+#       - name: state
+#         sql: state
+#         type: string
+
+#       - name: product_name
+#         sql: product_name
+#         type: string
+
+#       - name: category
+#         sql: category
+#         type: string
+
+#       - name: unit_price
+#         sql: unit_price
+#         type: number
+
+#       - name: quantity
+#         sql: quantity
+#         type: number
+
+#       - name: total_amount
+#         sql: total_amount
+#         type: number
+
+#       - name: status
+#         sql: status
+#         type: string
+
+#       - name: sales_channel
+#         sql: sales_channel
+#         type: string
+
+         
+#     measures:
+#       - name: count
+#         type: count
+#         description: Total number of orders
+
+#       - name: total_revenue
+#         sql: total_amount
+#         type: sum
+#         description: Total revenue from orders
+
+#       - name: avg_order_value
+#         sql: total_amount
+#         type: avg
+#         description: Average order value
+
+#       - name: completed_count
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status = 'completed'"
+#         description: Number of completed orders
+
+#       - name: pending_count
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status = 'pending'"
+#         description: Number of pending orders
+
+#       - name: cancelled_count
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status = 'cancelled'"
+#         description: Number of cancelled orders
+
+#       - name: shipped_count
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status = 'shipped'"
+#         description: Number of shipped orders
+
+#       - name: refunded_count
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status = 'refunded'"
+#         description: Number of refunded orders
+
+#       - name: completed_revenue
+#         sql: total_amount
+#         type: sum
+#         filters:
+#           - sql: "{CUBE}.status = 'completed'"
+#         description: Revenue from completed orders
+
+#       - name: revenue_per_completed
+#         multi_stage: true
+#         sql: "1.0 * {total_revenue} / NULLIF({completed_count}, 0)"
+#         type: number
+#         format: percent
+
+#     pre_aggregations:
+#       - name: orders_rollup
+#         measures:
+#           - count
+#           - total_revenue
+#           - completed_count
+#           - pending_count
+#           - cancelled_count
+#           - shipped_count
+#           - refunded_count
+#           - completed_revenue
+#         dimensions:
+#           - status
+#           - sales_channel
+#           - category
+#           - state
+#           - city
+#           - company_name
+#           - order_id
+#         time_dimension: order_date
+#         granularity: day
+#         partition_granularity: month
+#         refresh_key:
+#           every: 1 hour

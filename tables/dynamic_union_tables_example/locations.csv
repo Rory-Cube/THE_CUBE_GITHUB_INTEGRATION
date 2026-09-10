@@ -1,0 +1,8 @@
+city,state,country,timezone
+New York,NY,USA,America/New_York
+Boston,MA,USA,America/New_York
+Miami,FL,USA,America/New_York
+Chicago,IL,USA,America/Chicago
+Austin,TX,USA,America/Chicago
+San Francisco,CA,USA,America/Los_Angeles
+Seattle,WA,USA,America/Los_Angeles

@@ -1,0 +1,9 @@
+views:
+  - name: food_delivery_service_view
+    description: >
+      Query-ready view for the food delivery service dataset.
+      Covers orders, customers, restaurants, drivers, fees, ratings, and delivery performance.
+
+    cubes:
+      - join_path: food_delivery_service
+        includes: "*"

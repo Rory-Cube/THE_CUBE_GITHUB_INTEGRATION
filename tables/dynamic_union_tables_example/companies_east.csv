@@ -1,0 +1,4 @@
+id,business_name,industry,headquarters,founded_year,employee_count,annual_revenue,ceo,ceo_email,is_public,ticker_symbol
+1,Acme Corporation,Technology,New York,2005,8200,142500000.00,Jane Smith,jane.smith@acme.com,true,ACME
+2,Umbrella Corp,Healthcare,Boston,1992,15600,412000000.00,Charles Ray,cray@umbrella.com,true,UMBR
+3,Prestige Worldwide,Logistics,Miami,2015,870,19400000.00,Brennan Huff,bhuff@pww.com,false,

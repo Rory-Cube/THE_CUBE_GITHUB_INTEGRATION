@@ -1,0 +1,24 @@
+cubes:
+  - name: region
+    public: false
+    sql_table: TPCH_SF100.REGION
+
+    dimensions:
+      - name: region_key
+        sql: R_REGIONKEY
+        type: number
+        primary_key: true
+
+      - name: name
+        sql: R_NAME
+        type: string
+        description: Region name (e.g. AMERICA, EUROPE, ASIA)
+
+      - name: comment
+        sql: R_COMMENT
+        type: string
+
+    measures:
+      - name: count
+        type: count
+        description: Total number of regions

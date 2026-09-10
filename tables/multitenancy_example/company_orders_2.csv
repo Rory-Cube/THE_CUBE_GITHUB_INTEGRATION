@@ -1,0 +1,501 @@
+company_id,company_name,order_id,order_date,customer_name,email,city,state,product_name,category,unit_price,quantity,total_amount,status,sales_channel
+ENT-002,Cascade Retail Group,CR-10000,2025-05-23,Yuki Ramirez,yuki.ramirez301@demo.org,Los Angeles,CA,Notebook Set,Office,12.99,2,25.98,completed,web
+ENT-002,Cascade Retail Group,CR-10001,2025-08-06,Aiko Martin,aiko.martin97@mailbox.test,Denver,CO,Wireless Mouse,Electronics,24.99,1,24.99,cancelled,in_store
+ENT-002,Cascade Retail Group,CR-10002,2025-09-01,Michelle Petrov,michelle.petrov14@demo.org,Seattle,WA,Coffee Mug,Lifestyle,14.50,3,43.50,shipped,web
+ENT-002,Cascade Retail Group,CR-10003,2025-06-26,Andrew Haddad,andrew.haddad790@mailbox.test,Denver,CO,Monitor 27in,Electronics,229.00,1,229.00,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10004,2025-02-18,William Miller,william.miller346@fakemail.net,Los Angeles,CA,Monitor 27in,Electronics,229.00,1,229.00,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10005,2025-07-17,William Wilson,william.wilson552@mailbox.test,Minneapolis,MN,Mechanical Keyboard,Electronics,89.99,2,179.98,completed,phone
+ENT-002,Cascade Retail Group,CR-10006,2025-03-20,Susan Wilson,susan.wilson442@example.com,Austin,TX,Wireless Mouse,Electronics,24.99,2,49.98,cancelled,mobile_app
+ENT-002,Cascade Retail Group,CR-10007,2025-02-23,Amanda Hernandez,amanda.hernandez264@example.com,Austin,TX,Ergonomic Chair Cushion,Office,42.00,1,42.00,completed,phone
+ENT-002,Cascade Retail Group,CR-10008,2025-12-13,Thomas Flores,thomas.flores613@example.com,Nashville,TN,Desk Lamp,Office,27.95,2,55.90,shipped,web
+ENT-002,Cascade Retail Group,CR-10009,2025-03-18,John Campbell,john.campbell371@example.com,Chicago,IL,Desk Organizer,Office,22.50,1,22.50,completed,phone
+ENT-002,Cascade Retail Group,CR-10010,2025-02-09,Ashley Adams,ashley.adams461@mailbox.test,Minneapolis,MN,Coffee Mug,Lifestyle,14.50,4,58.00,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10011,2025-08-11,Mark Hall,mark.hall900@example.com,Philadelphia,PA,Yoga Mat,Lifestyle,29.99,5,149.95,shipped,in_store
+ENT-002,Cascade Retail Group,CR-10012,2025-11-11,Susan Johnson,susan.johnson214@fakemail.net,Boston,MA,Backpack,Lifestyle,64.99,1,64.99,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10013,2025-11-09,James Silva,james.silva162@fakemail.net,San Antonio,TX,USB-C Hub,Electronics,39.99,4,159.96,completed,web
+ENT-002,Cascade Retail Group,CR-10014,2025-10-19,Elizabeth Walker,elizabeth.walker668@example.com,Houston,TX,Mechanical Keyboard,Electronics,89.99,1,89.99,completed,web
+ENT-002,Cascade Retail Group,CR-10015,2025-06-18,John Jackson,john.jackson134@fakemail.net,New York,NY,Coffee Mug,Lifestyle,14.50,3,43.50,completed,web
+ENT-002,Cascade Retail Group,CR-10016,2025-04-26,Nancy Tanaka,nancy.tanaka536@example.com,Dallas,TX,Webcam HD,Electronics,69.99,1,69.99,completed,web
+ENT-002,Cascade Retail Group,CR-10017,2025-07-28,Ronald Harris,ronald.harris908@mailbox.test,New York,NY,Backpack,Lifestyle,64.99,2,129.98,shipped,web
+ENT-002,Cascade Retail Group,CR-10018,2025-11-13,Carol Larsen,carol.larsen52@example.com,Atlanta,GA,Coffee Mug,Lifestyle,14.50,3,43.50,shipped,web
+ENT-002,Cascade Retail Group,CR-10019,2025-09-23,Charles Johnson,charles.johnson113@demo.org,Atlanta,GA,Yoga Mat,Lifestyle,29.99,1,29.99,cancelled,web
+ENT-002,Cascade Retail Group,CR-10020,2025-07-15,Betty Davis,betty.davis932@mailbox.test,Atlanta,GA,Running Shoes,Lifestyle,119.00,4,476.00,completed,web
+ENT-002,Cascade Retail Group,CR-10021,2025-09-02,Richard Jones,richard.jones245@fakemail.net,Dallas,TX,Webcam HD,Electronics,69.99,1,69.99,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10022,2025-02-02,Joseph Walker,joseph.walker986@demo.org,San Antonio,TX,Travel Adapter,Electronics,16.99,2,33.98,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10023,2025-02-03,Patricia Thomas,patricia.thomas324@mailbox.test,Minneapolis,MN,Notebook Set,Office,12.99,2,25.98,cancelled,web
+ENT-002,Cascade Retail Group,CR-10024,2025-02-07,Sandra Ferreira,sandra.ferreira464@fakemail.net,Miami,FL,Desk Lamp,Office,27.95,1,27.95,shipped,phone
+ENT-002,Cascade Retail Group,CR-10025,2025-05-06,Aiko White,aiko.white487@demo.org,Chicago,IL,Laptop Stand,Office,34.50,2,69.00,refunded,web
+ENT-002,Cascade Retail Group,CR-10026,2025-09-21,Kevin Adams,kevin.adams704@example.com,Minneapolis,MN,Wireless Mouse,Electronics,24.99,2,49.98,completed,in_store
+ENT-002,Cascade Retail Group,CR-10027,2025-06-24,Ashley Nelson,ashley.nelson149@demo.org,Charlotte,NC,Desk Lamp,Office,27.95,2,55.90,completed,in_store
+ENT-002,Cascade Retail Group,CR-10028,2025-08-07,Ingrid White,ingrid.white470@example.com,Philadelphia,PA,Backpack,Lifestyle,64.99,1,64.99,completed,web
+ENT-002,Cascade Retail Group,CR-10029,2025-02-13,Donald Rodriguez,donald.rodriguez598@mailbox.test,San Antonio,TX,Bluetooth Speaker,Electronics,54.99,2,109.98,completed,phone
+ENT-002,Cascade Retail Group,CR-10030,2025-09-28,William Smith,william.smith489@fakemail.net,Denver,CO,Running Shoes,Lifestyle,119.00,1,119.00,cancelled,phone
+ENT-002,Cascade Retail Group,CR-10031,2025-08-09,Susan Flores,susan.flores207@fakemail.net,San Antonio,TX,Water Bottle,Lifestyle,18.00,3,54.00,completed,in_store
+ENT-002,Cascade Retail Group,CR-10032,2025-10-12,Daniel Williams,daniel.williams685@example.com,Portland,OR,Notebook Set,Office,12.99,1,12.99,completed,web
+ENT-002,Cascade Retail Group,CR-10033,2025-08-18,Priya Petrov,priya.petrov265@demo.org,New York,NY,Desk Lamp,Office,27.95,2,55.90,refunded,phone
+ENT-002,Cascade Retail Group,CR-10034,2025-03-05,Anthony Rodriguez,anthony.rodriguez281@demo.org,Dallas,TX,Backpack,Lifestyle,64.99,2,129.98,refunded,web
+ENT-002,Cascade Retail Group,CR-10035,2025-10-27,Donna Lee,donna.lee172@example.com,Los Angeles,CA,Notebook Set,Office,12.99,1,12.99,cancelled,in_store
+ENT-002,Cascade Retail Group,CR-10036,2025-12-14,Mark Taylor,mark.taylor980@fakemail.net,Nashville,TN,Backpack,Lifestyle,64.99,3,194.97,completed,web
+ENT-002,Cascade Retail Group,CR-10037,2025-03-28,Margaret Okafor,margaret.okafor73@fakemail.net,Houston,TX,Wireless Mouse,Electronics,24.99,4,99.96,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10038,2025-08-08,John King,john.king670@example.com,Boston,MA,Bluetooth Speaker,Electronics,54.99,3,164.97,cancelled,phone
+ENT-002,Cascade Retail Group,CR-10039,2025-02-19,Kimberly Nguyen,kimberly.nguyen198@demo.org,Denver,CO,Phone Case,Electronics,19.99,5,99.95,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10040,2025-11-27,Anthony Lopez,anthony.lopez980@fakemail.net,Dallas,TX,Backpack,Lifestyle,64.99,1,64.99,completed,phone
+ENT-002,Cascade Retail Group,CR-10041,2025-08-16,Melissa Brown,melissa.brown336@example.com,Charlotte,NC,Running Shoes,Lifestyle,119.00,1,119.00,shipped,phone
+ENT-002,Cascade Retail Group,CR-10042,2025-07-03,Ronald Rivera,ronald.rivera805@mailbox.test,Philadelphia,PA,Yoga Mat,Lifestyle,29.99,5,149.95,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10043,2025-07-22,Mark Sanchez,mark.sanchez726@fakemail.net,Phoenix,AZ,Backpack,Lifestyle,64.99,1,64.99,cancelled,in_store
+ENT-002,Cascade Retail Group,CR-10044,2025-09-05,Nancy Rodriguez,nancy.rodriguez116@example.com,San Diego,CA,Water Bottle,Lifestyle,18.00,4,72.00,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10045,2025-10-18,Mark Adams,mark.adams965@fakemail.net,Chicago,IL,Running Shoes,Lifestyle,119.00,2,238.00,shipped,web
+ENT-002,Cascade Retail Group,CR-10046,2025-11-22,Dorothy Carter,dorothy.carter494@example.com,Portland,OR,Monitor 27in,Electronics,229.00,1,229.00,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10047,2025-12-19,Nancy Davis,nancy.davis650@mailbox.test,Austin,TX,Desk Organizer,Office,22.50,2,45.00,completed,web
+ENT-002,Cascade Retail Group,CR-10048,2025-11-25,Deborah Silva,deborah.silva67@demo.org,Austin,TX,Coffee Mug,Lifestyle,14.50,1,14.50,completed,web
+ENT-002,Cascade Retail Group,CR-10049,2025-01-03,Luca Smith,luca.smith575@fakemail.net,Charlotte,NC,Desk Organizer,Office,22.50,1,22.50,completed,in_store
+ENT-002,Cascade Retail Group,CR-10050,2025-12-26,Barbara Garcia,barbara.garcia179@fakemail.net,San Diego,CA,Wireless Mouse,Electronics,24.99,1,24.99,completed,web
+ENT-002,Cascade Retail Group,CR-10051,2025-06-03,Mary Davis,mary.davis153@demo.org,Chicago,IL,USB-C Hub,Electronics,39.99,5,199.95,refunded,web
+ENT-002,Cascade Retail Group,CR-10052,2025-02-09,Daniel Jackson,daniel.jackson342@example.com,Portland,OR,Running Shoes,Lifestyle,119.00,4,476.00,completed,web
+ENT-002,Cascade Retail Group,CR-10053,2025-12-11,Jennifer Jones,jennifer.jones270@mailbox.test,Charlotte,NC,Mechanical Keyboard,Electronics,89.99,2,179.98,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10054,2025-03-27,Ashley Martinez,ashley.martinez574@example.com,San Antonio,TX,Insulated Tumbler,Lifestyle,25.00,4,100.00,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10055,2025-02-03,Charles Rivera,charles.rivera74@demo.org,New York,NY,Backpack,Lifestyle,64.99,1,64.99,completed,web
+ENT-002,Cascade Retail Group,CR-10056,2025-11-16,Aiko Rivera,aiko.rivera237@example.com,Miami,FL,Yoga Mat,Lifestyle,29.99,3,89.97,pending,web
+ENT-002,Cascade Retail Group,CR-10057,2025-04-25,James Gonzalez,james.gonzalez650@demo.org,Nashville,TN,Water Bottle,Lifestyle,18.00,1,18.00,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10058,2025-12-01,Margaret King,margaret.king32@mailbox.test,Detroit,MI,Monitor 27in,Electronics,229.00,2,458.00,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10059,2025-05-22,Charles Wilson,charles.wilson189@mailbox.test,Miami,FL,Insulated Tumbler,Lifestyle,25.00,1,25.00,shipped,web
+ENT-002,Cascade Retail Group,CR-10060,2025-07-11,William Brown,william.brown847@fakemail.net,San Diego,CA,Yoga Mat,Lifestyle,29.99,3,89.97,refunded,phone
+ENT-002,Cascade Retail Group,CR-10061,2025-09-08,Karen Brown,karen.brown51@fakemail.net,Charlotte,NC,Monitor 27in,Electronics,229.00,1,229.00,completed,web
+ENT-002,Cascade Retail Group,CR-10062,2025-09-23,Diego Green,diego.green329@example.com,San Diego,CA,Yoga Mat,Lifestyle,29.99,1,29.99,refunded,in_store
+ENT-002,Cascade Retail Group,CR-10063,2025-11-03,Nancy Baker,nancy.baker77@example.com,Atlanta,GA,Phone Case,Electronics,19.99,1,19.99,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10064,2025-12-14,Steven Jones,steven.jones326@demo.org,Dallas,TX,Phone Case,Electronics,19.99,1,19.99,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10065,2025-02-21,Donald Roberts,donald.roberts788@demo.org,Seattle,WA,Insulated Tumbler,Lifestyle,25.00,1,25.00,shipped,web
+ENT-002,Cascade Retail Group,CR-10066,2025-05-22,Robert Silva,robert.silva701@example.com,Detroit,MI,Desk Lamp,Office,27.95,1,27.95,completed,in_store
+ENT-002,Cascade Retail Group,CR-10067,2025-12-04,Ronald Nelson,ronald.nelson149@demo.org,Seattle,WA,Whiteboard,Office,49.99,2,99.98,completed,web
+ENT-002,Cascade Retail Group,CR-10068,2025-03-27,Charles Okafor,charles.okafor73@fakemail.net,Phoenix,AZ,Phone Case,Electronics,19.99,1,19.99,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10069,2025-12-11,Omar Clark,omar.clark784@demo.org,Philadelphia,PA,Backpack,Lifestyle,64.99,1,64.99,shipped,web
+ENT-002,Cascade Retail Group,CR-10070,2025-08-08,Luca Thomas,luca.thomas266@demo.org,Miami,FL,Desk Organizer,Office,22.50,1,22.50,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10071,2025-12-07,Mateo Jackson,mateo.jackson752@mailbox.test,Miami,FL,Ergonomic Chair Cushion,Office,42.00,2,84.00,cancelled,web
+ENT-002,Cascade Retail Group,CR-10072,2025-09-16,Chen Kowalski,chen.kowalski29@fakemail.net,Minneapolis,MN,Monitor 27in,Electronics,229.00,3,687.00,completed,in_store
+ENT-002,Cascade Retail Group,CR-10073,2025-11-07,Michelle Lee,michelle.lee870@fakemail.net,Seattle,WA,Notebook Set,Office,12.99,2,25.98,pending,web
+ENT-002,Cascade Retail Group,CR-10074,2025-10-02,Priya Smith,priya.smith807@fakemail.net,San Diego,CA,Travel Adapter,Electronics,16.99,1,16.99,completed,web
+ENT-002,Cascade Retail Group,CR-10075,2025-10-12,Joseph Silva,joseph.silva309@fakemail.net,Seattle,WA,Coffee Mug,Lifestyle,14.50,4,58.00,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10076,2025-11-26,Charles Davis,charles.davis421@mailbox.test,San Diego,CA,Wireless Mouse,Electronics,24.99,4,99.96,completed,phone
+ENT-002,Cascade Retail Group,CR-10077,2025-07-14,William Carter,william.carter672@fakemail.net,Phoenix,AZ,Bluetooth Speaker,Electronics,54.99,1,54.99,shipped,web
+ENT-002,Cascade Retail Group,CR-10078,2025-06-25,Jessica Wright,jessica.wright865@mailbox.test,Seattle,WA,Mechanical Keyboard,Electronics,89.99,1,89.99,completed,in_store
+ENT-002,Cascade Retail Group,CR-10079,2025-06-16,Melissa Kim,melissa.kim863@demo.org,Detroit,MI,Mechanical Keyboard,Electronics,89.99,3,269.97,cancelled,in_store
+ENT-002,Cascade Retail Group,CR-10080,2025-02-11,Melissa Kim,melissa.kim66@example.com,San Antonio,TX,Monitor 27in,Electronics,229.00,1,229.00,completed,in_store
+ENT-002,Cascade Retail Group,CR-10081,2025-04-28,Mary Anderson,mary.anderson510@example.com,Denver,CO,USB-C Hub,Electronics,39.99,2,79.98,cancelled,phone
+ENT-002,Cascade Retail Group,CR-10082,2025-06-12,Betty Martin,betty.martin648@demo.org,Atlanta,GA,Ergonomic Chair Cushion,Office,42.00,1,42.00,shipped,phone
+ENT-002,Cascade Retail Group,CR-10083,2025-08-15,Chen Thompson,chen.thompson850@example.com,Nashville,TN,Laptop Stand,Office,34.50,2,69.00,pending,web
+ENT-002,Cascade Retail Group,CR-10084,2025-11-23,Fatima Nelson,fatima.nelson556@fakemail.net,San Diego,CA,Water Bottle,Lifestyle,18.00,1,18.00,completed,phone
+ENT-002,Cascade Retail Group,CR-10085,2025-12-05,Yuki Torres,yuki.torres443@example.com,Los Angeles,CA,Yoga Mat,Lifestyle,29.99,2,59.98,pending,web
+ENT-002,Cascade Retail Group,CR-10086,2025-04-26,Barbara King,barbara.king366@example.com,Austin,TX,Phone Case,Electronics,19.99,3,59.97,completed,web
+ENT-002,Cascade Retail Group,CR-10087,2025-07-07,Nancy Haddad,nancy.haddad727@example.com,Portland,OR,Notebook Set,Office,12.99,1,12.99,shipped,web
+ENT-002,Cascade Retail Group,CR-10088,2025-11-28,Lisa Allen,lisa.allen513@example.com,Philadelphia,PA,Running Shoes,Lifestyle,119.00,2,238.00,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10089,2025-10-12,Anthony Petrov,anthony.petrov933@example.com,Detroit,MI,Notebook Set,Office,12.99,1,12.99,completed,web
+ENT-002,Cascade Retail Group,CR-10090,2025-09-15,Susan Allen,susan.allen732@mailbox.test,New York,NY,Phone Case,Electronics,19.99,3,59.97,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10091,2025-10-23,Susan Martinez,susan.martinez435@mailbox.test,Phoenix,AZ,Yoga Mat,Lifestyle,29.99,3,89.97,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10092,2025-02-25,Sarah Anderson,sarah.anderson480@example.com,Portland,OR,Water Bottle,Lifestyle,18.00,2,36.00,completed,in_store
+ENT-002,Cascade Retail Group,CR-10093,2025-04-20,Lisa Larsen,lisa.larsen238@mailbox.test,Philadelphia,PA,Backpack,Lifestyle,64.99,2,129.98,completed,in_store
+ENT-002,Cascade Retail Group,CR-10094,2025-05-27,Richard Nguyen,richard.nguyen728@mailbox.test,Houston,TX,Yoga Mat,Lifestyle,29.99,2,59.98,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10095,2025-09-22,Patricia Young,patricia.young890@example.com,New York,NY,Yoga Mat,Lifestyle,29.99,3,89.97,pending,web
+ENT-002,Cascade Retail Group,CR-10096,2025-12-08,Daniel Robinson,daniel.robinson345@demo.org,Philadelphia,PA,Water Bottle,Lifestyle,18.00,5,90.00,completed,web
+ENT-002,Cascade Retail Group,CR-10097,2025-03-21,William Kim,william.kim311@fakemail.net,Portland,OR,Webcam HD,Electronics,69.99,2,139.98,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10098,2025-03-14,Jennifer Martinez,jennifer.martinez517@fakemail.net,San Antonio,TX,Travel Adapter,Electronics,16.99,1,16.99,cancelled,in_store
+ENT-002,Cascade Retail Group,CR-10099,2025-09-07,Donald Roberts,donald.roberts284@demo.org,Nashville,TN,Running Shoes,Lifestyle,119.00,1,119.00,cancelled,mobile_app
+ENT-002,Cascade Retail Group,CR-10100,2025-02-13,Paul Martinez,paul.martinez361@demo.org,Minneapolis,MN,Notebook Set,Office,12.99,1,12.99,completed,web
+ENT-002,Cascade Retail Group,CR-10101,2025-11-05,Edward Ramirez,edward.ramirez861@demo.org,Seattle,WA,Webcam HD,Electronics,69.99,2,139.98,cancelled,in_store
+ENT-002,Cascade Retail Group,CR-10102,2025-06-17,Omar Torres,omar.torres804@demo.org,Detroit,MI,Wireless Mouse,Electronics,24.99,1,24.99,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10103,2025-11-05,Michelle Martin,michelle.martin765@example.com,Philadelphia,PA,Desk Organizer,Office,22.50,2,45.00,shipped,phone
+ENT-002,Cascade Retail Group,CR-10104,2025-03-18,Ingrid Sanchez,ingrid.sanchez225@fakemail.net,Seattle,WA,Travel Adapter,Electronics,16.99,2,33.98,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10105,2025-10-11,Carol Lopez,carol.lopez927@example.com,Austin,TX,Laptop Stand,Office,34.50,1,34.50,cancelled,mobile_app
+ENT-002,Cascade Retail Group,CR-10106,2025-11-16,Ashley Moore,ashley.moore359@fakemail.net,Denver,CO,Phone Case,Electronics,19.99,4,79.96,completed,web
+ENT-002,Cascade Retail Group,CR-10107,2025-01-12,Thomas Harris,thomas.harris878@fakemail.net,Charlotte,NC,Insulated Tumbler,Lifestyle,25.00,2,50.00,pending,web
+ENT-002,Cascade Retail Group,CR-10108,2025-08-06,Nancy Rossi,nancy.rossi341@fakemail.net,Detroit,MI,Wireless Mouse,Electronics,24.99,1,24.99,pending,web
+ENT-002,Cascade Retail Group,CR-10109,2025-05-08,John Gonzalez,john.gonzalez144@mailbox.test,San Antonio,TX,Mechanical Keyboard,Electronics,89.99,2,179.98,completed,web
+ENT-002,Cascade Retail Group,CR-10110,2025-03-14,Margaret Taylor,margaret.taylor565@example.com,Houston,TX,Laptop Stand,Office,34.50,4,138.00,completed,web
+ENT-002,Cascade Retail Group,CR-10111,2025-10-05,Melissa Young,melissa.young894@mailbox.test,Boston,MA,Whiteboard,Office,49.99,1,49.99,shipped,web
+ENT-002,Cascade Retail Group,CR-10112,2025-02-15,Jennifer Brown,jennifer.brown336@mailbox.test,Philadelphia,PA,Laptop Stand,Office,34.50,1,34.50,completed,web
+ENT-002,Cascade Retail Group,CR-10113,2025-06-04,Barbara Gonzalez,barbara.gonzalez993@mailbox.test,Charlotte,NC,Webcam HD,Electronics,69.99,2,139.98,pending,web
+ENT-002,Cascade Retail Group,CR-10114,2025-11-23,Betty Clark,betty.clark999@example.com,Dallas,TX,Yoga Mat,Lifestyle,29.99,1,29.99,completed,web
+ENT-002,Cascade Retail Group,CR-10115,2025-08-17,Barbara Larsen,barbara.larsen671@example.com,Phoenix,AZ,Webcam HD,Electronics,69.99,2,139.98,completed,in_store
+ENT-002,Cascade Retail Group,CR-10116,2025-10-21,Donald Scott,donald.scott903@example.com,Nashville,TN,Wireless Mouse,Electronics,24.99,1,24.99,shipped,phone
+ENT-002,Cascade Retail Group,CR-10117,2025-08-06,Betty Allen,betty.allen575@mailbox.test,Phoenix,AZ,Mechanical Keyboard,Electronics,89.99,4,359.96,pending,web
+ENT-002,Cascade Retail Group,CR-10118,2025-06-14,George Adams,george.adams805@example.com,New York,NY,Phone Case,Electronics,19.99,3,59.97,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10119,2025-06-13,Anthony Campbell,anthony.campbell979@mailbox.test,Portland,OR,Monitor 27in,Electronics,229.00,5,1145.00,completed,web
+ENT-002,Cascade Retail Group,CR-10120,2025-06-21,Luca Wilson,luca.wilson705@fakemail.net,Charlotte,NC,Wireless Mouse,Electronics,24.99,5,124.95,refunded,web
+ENT-002,Cascade Retail Group,CR-10121,2025-05-28,Mateo Flores,mateo.flores560@demo.org,Seattle,WA,Notebook Set,Office,12.99,2,25.98,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10122,2025-05-19,Diego Petrov,diego.petrov85@demo.org,Los Angeles,CA,Desk Lamp,Office,27.95,1,27.95,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10123,2025-07-09,Dorothy Ferreira,dorothy.ferreira137@example.com,New York,NY,USB-C Hub,Electronics,39.99,2,79.98,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10124,2025-02-02,Chen Ramirez,chen.ramirez460@fakemail.net,Miami,FL,Coffee Mug,Lifestyle,14.50,1,14.50,cancelled,in_store
+ENT-002,Cascade Retail Group,CR-10125,2025-04-17,Edward Martin,edward.martin285@fakemail.net,San Antonio,TX,USB-C Hub,Electronics,39.99,2,79.98,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10126,2025-07-22,Margaret Roberts,margaret.roberts885@fakemail.net,Nashville,TN,Coffee Mug,Lifestyle,14.50,1,14.50,cancelled,web
+ENT-002,Cascade Retail Group,CR-10127,2025-06-21,Robert Mitchell,robert.mitchell886@mailbox.test,Phoenix,AZ,Bluetooth Speaker,Electronics,54.99,1,54.99,pending,in_store
+ENT-002,Cascade Retail Group,CR-10128,2025-02-28,Jessica Taylor,jessica.taylor27@example.com,Minneapolis,MN,Mechanical Keyboard,Electronics,89.99,1,89.99,completed,web
+ENT-002,Cascade Retail Group,CR-10129,2025-03-21,Sandra Hill,sandra.hill352@mailbox.test,Atlanta,GA,USB-C Hub,Electronics,39.99,2,79.98,completed,phone
+ENT-002,Cascade Retail Group,CR-10130,2025-08-28,Barbara Petrov,barbara.petrov168@mailbox.test,Minneapolis,MN,Coffee Mug,Lifestyle,14.50,1,14.50,completed,web
+ENT-002,Cascade Retail Group,CR-10131,2025-02-21,Thomas Okafor,thomas.okafor628@fakemail.net,Los Angeles,CA,Backpack,Lifestyle,64.99,1,64.99,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10132,2025-06-22,Michelle Silva,michelle.silva936@demo.org,Miami,FL,Water Bottle,Lifestyle,18.00,1,18.00,completed,phone
+ENT-002,Cascade Retail Group,CR-10133,2025-05-06,Anthony Anderson,anthony.anderson986@mailbox.test,Miami,FL,Running Shoes,Lifestyle,119.00,3,357.00,refunded,phone
+ENT-002,Cascade Retail Group,CR-10134,2025-08-16,Linda Scott,linda.scott937@mailbox.test,Seattle,WA,Ergonomic Chair Cushion,Office,42.00,4,168.00,cancelled,web
+ENT-002,Cascade Retail Group,CR-10135,2025-03-11,Joshua White,joshua.white998@fakemail.net,Houston,TX,Desk Organizer,Office,22.50,1,22.50,completed,web
+ENT-002,Cascade Retail Group,CR-10136,2025-07-19,Anthony Davis,anthony.davis991@fakemail.net,Phoenix,AZ,Running Shoes,Lifestyle,119.00,2,238.00,refunded,web
+ENT-002,Cascade Retail Group,CR-10137,2025-08-21,Daniel Roberts,daniel.roberts127@fakemail.net,New York,NY,Monitor 27in,Electronics,229.00,1,229.00,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10138,2025-09-28,Deborah Baker,deborah.baker650@mailbox.test,Denver,CO,Running Shoes,Lifestyle,119.00,4,476.00,completed,web
+ENT-002,Cascade Retail Group,CR-10139,2025-12-19,Richard Hill,richard.hill727@mailbox.test,San Antonio,TX,Bluetooth Speaker,Electronics,54.99,1,54.99,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10140,2025-04-22,James Wilson,james.wilson520@example.com,Detroit,MI,USB-C Hub,Electronics,39.99,1,39.99,completed,phone
+ENT-002,Cascade Retail Group,CR-10141,2025-05-02,Charles Ferreira,charles.ferreira731@example.com,Houston,TX,Water Bottle,Lifestyle,18.00,2,36.00,pending,web
+ENT-002,Cascade Retail Group,CR-10142,2025-01-19,Sarah Lee,sarah.lee359@mailbox.test,Nashville,TN,Wireless Mouse,Electronics,24.99,2,49.98,completed,web
+ENT-002,Cascade Retail Group,CR-10143,2025-10-24,Luca Petrov,luca.petrov125@fakemail.net,San Diego,CA,Laptop Stand,Office,34.50,1,34.50,refunded,web
+ENT-002,Cascade Retail Group,CR-10144,2025-02-27,Amanda Harris,amanda.harris851@demo.org,Boston,MA,Wireless Mouse,Electronics,24.99,1,24.99,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10145,2025-10-18,Elizabeth Ramirez,elizabeth.ramirez56@demo.org,Denver,CO,Wireless Mouse,Electronics,24.99,5,124.95,pending,web
+ENT-002,Cascade Retail Group,CR-10146,2025-05-18,Nancy Campbell,nancy.campbell942@fakemail.net,Denver,CO,Desk Organizer,Office,22.50,1,22.50,completed,web
+ENT-002,Cascade Retail Group,CR-10147,2025-03-10,William Martinez,william.martinez821@example.com,Phoenix,AZ,Laptop Stand,Office,34.50,2,69.00,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10148,2025-12-02,Joshua Miller,joshua.miller557@example.com,Detroit,MI,Running Shoes,Lifestyle,119.00,1,119.00,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10149,2025-02-27,David Thomas,david.thomas366@mailbox.test,New York,NY,Backpack,Lifestyle,64.99,4,259.96,cancelled,mobile_app
+ENT-002,Cascade Retail Group,CR-10150,2025-08-17,Anthony Ramirez,anthony.ramirez228@example.com,Seattle,WA,Running Shoes,Lifestyle,119.00,3,357.00,completed,web
+ENT-002,Cascade Retail Group,CR-10151,2025-02-11,Kenneth Ferreira,kenneth.ferreira85@fakemail.net,Philadelphia,PA,Water Bottle,Lifestyle,18.00,1,18.00,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10152,2025-11-05,Ronald Martin,ronald.martin458@mailbox.test,Chicago,IL,Phone Case,Electronics,19.99,3,59.97,completed,web
+ENT-002,Cascade Retail Group,CR-10153,2025-08-04,Margaret Lee,margaret.lee170@example.com,Houston,TX,Phone Case,Electronics,19.99,1,19.99,completed,in_store
+ENT-002,Cascade Retail Group,CR-10154,2025-02-17,Kevin Tanaka,kevin.tanaka344@example.com,Los Angeles,CA,Bluetooth Speaker,Electronics,54.99,2,109.98,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10155,2025-02-08,Betty Hernandez,betty.hernandez678@demo.org,San Diego,CA,Water Bottle,Lifestyle,18.00,1,18.00,cancelled,web
+ENT-002,Cascade Retail Group,CR-10156,2025-06-11,George Anderson,george.anderson90@fakemail.net,Boston,MA,Laptop Stand,Office,34.50,1,34.50,completed,web
+ENT-002,Cascade Retail Group,CR-10157,2025-02-05,Brian Nelson,brian.nelson427@demo.org,Seattle,WA,Backpack,Lifestyle,64.99,1,64.99,completed,web
+ENT-002,Cascade Retail Group,CR-10158,2025-09-22,Patricia Wright,patricia.wright103@demo.org,San Antonio,TX,Coffee Mug,Lifestyle,14.50,4,58.00,cancelled,web
+ENT-002,Cascade Retail Group,CR-10159,2025-10-27,Richard Miller,richard.miller299@example.com,Atlanta,GA,Travel Adapter,Electronics,16.99,3,50.97,cancelled,web
+ENT-002,Cascade Retail Group,CR-10160,2025-12-06,Elizabeth Jones,elizabeth.jones703@example.com,Atlanta,GA,Whiteboard,Office,49.99,1,49.99,completed,in_store
+ENT-002,Cascade Retail Group,CR-10161,2025-04-19,Dorothy Tanaka,dorothy.tanaka246@example.com,Chicago,IL,Laptop Stand,Office,34.50,3,103.50,shipped,web
+ENT-002,Cascade Retail Group,CR-10162,2025-08-15,William Hall,william.hall284@mailbox.test,Denver,CO,Whiteboard,Office,49.99,2,99.98,completed,web
+ENT-002,Cascade Retail Group,CR-10163,2025-11-28,David Garcia,david.garcia653@mailbox.test,Detroit,MI,Whiteboard,Office,49.99,3,149.97,shipped,phone
+ENT-002,Cascade Retail Group,CR-10164,2025-01-28,Linda Davis,linda.davis4@mailbox.test,Boston,MA,USB-C Hub,Electronics,39.99,2,79.98,shipped,web
+ENT-002,Cascade Retail Group,CR-10165,2025-11-26,Chen Martin,chen.martin767@demo.org,Nashville,TN,Monitor 27in,Electronics,229.00,3,687.00,refunded,web
+ENT-002,Cascade Retail Group,CR-10166,2025-06-17,Karen King,karen.king130@fakemail.net,San Antonio,TX,Running Shoes,Lifestyle,119.00,2,238.00,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10167,2025-07-22,Joseph Flores,joseph.flores23@demo.org,Dallas,TX,Phone Case,Electronics,19.99,1,19.99,completed,web
+ENT-002,Cascade Retail Group,CR-10168,2025-06-17,Andrew Jackson,andrew.jackson721@demo.org,Dallas,TX,Laptop Stand,Office,34.50,3,103.50,cancelled,web
+ENT-002,Cascade Retail Group,CR-10169,2025-07-27,Dorothy Ferreira,dorothy.ferreira298@fakemail.net,Minneapolis,MN,Desk Organizer,Office,22.50,1,22.50,completed,in_store
+ENT-002,Cascade Retail Group,CR-10170,2025-12-10,Thomas Walker,thomas.walker883@fakemail.net,Seattle,WA,Water Bottle,Lifestyle,18.00,2,36.00,cancelled,web
+ENT-002,Cascade Retail Group,CR-10171,2025-11-24,Jennifer Carter,jennifer.carter804@demo.org,Denver,CO,Water Bottle,Lifestyle,18.00,3,54.00,shipped,phone
+ENT-002,Cascade Retail Group,CR-10172,2025-07-02,Nancy Hall,nancy.hall350@fakemail.net,New York,NY,Coffee Mug,Lifestyle,14.50,2,29.00,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10173,2025-12-26,Kimberly Haddad,kimberly.haddad484@example.com,Austin,TX,Backpack,Lifestyle,64.99,1,64.99,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10174,2025-06-28,Michael White,michael.white45@mailbox.test,San Antonio,TX,Coffee Mug,Lifestyle,14.50,4,58.00,pending,in_store
+ENT-002,Cascade Retail Group,CR-10175,2025-12-06,Donald Jackson,donald.jackson998@mailbox.test,Portland,OR,Desk Lamp,Office,27.95,1,27.95,shipped,web
+ENT-002,Cascade Retail Group,CR-10176,2025-07-14,Patricia Ferreira,patricia.ferreira178@example.com,San Diego,CA,Monitor 27in,Electronics,229.00,1,229.00,completed,web
+ENT-002,Cascade Retail Group,CR-10177,2025-08-17,Deborah Tanaka,deborah.tanaka925@fakemail.net,Denver,CO,Phone Case,Electronics,19.99,1,19.99,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10178,2025-12-12,Thomas Johnson,thomas.johnson801@example.com,Boston,MA,Ergonomic Chair Cushion,Office,42.00,1,42.00,completed,in_store
+ENT-002,Cascade Retail Group,CR-10179,2025-01-19,Daniel Perez,daniel.perez193@mailbox.test,Phoenix,AZ,Mechanical Keyboard,Electronics,89.99,2,179.98,completed,web
+ENT-002,Cascade Retail Group,CR-10180,2025-02-02,Michael Gonzalez,michael.gonzalez791@fakemail.net,San Diego,CA,Backpack,Lifestyle,64.99,1,64.99,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10181,2025-04-15,Carol Silva,carol.silva126@mailbox.test,Charlotte,NC,USB-C Hub,Electronics,39.99,2,79.98,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10182,2025-11-28,Yuki White,yuki.white410@mailbox.test,New York,NY,Backpack,Lifestyle,64.99,1,64.99,pending,web
+ENT-002,Cascade Retail Group,CR-10183,2025-05-16,Lisa Nguyen,lisa.nguyen533@fakemail.net,San Diego,CA,Ergonomic Chair Cushion,Office,42.00,2,84.00,cancelled,mobile_app
+ENT-002,Cascade Retail Group,CR-10184,2025-10-27,James Brown,james.brown640@mailbox.test,Boston,MA,Yoga Mat,Lifestyle,29.99,1,29.99,cancelled,mobile_app
+ENT-002,Cascade Retail Group,CR-10185,2025-02-10,Anthony Hernandez,anthony.hernandez766@demo.org,Houston,TX,Coffee Mug,Lifestyle,14.50,3,43.50,cancelled,in_store
+ENT-002,Cascade Retail Group,CR-10186,2025-06-01,Susan Hall,susan.hall94@mailbox.test,New York,NY,USB-C Hub,Electronics,39.99,1,39.99,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10187,2025-02-17,Paul Robinson,paul.robinson731@mailbox.test,Austin,TX,Webcam HD,Electronics,69.99,2,139.98,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10188,2025-06-28,Linda White,linda.white899@demo.org,Austin,TX,Desk Organizer,Office,22.50,1,22.50,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10189,2025-02-12,Michelle Scott,michelle.scott87@fakemail.net,Nashville,TN,Coffee Mug,Lifestyle,14.50,1,14.50,refunded,phone
+ENT-002,Cascade Retail Group,CR-10190,2025-06-08,Daniel Rodriguez,daniel.rodriguez428@example.com,Seattle,WA,Laptop Stand,Office,34.50,1,34.50,pending,web
+ENT-002,Cascade Retail Group,CR-10191,2025-04-06,William Nelson,william.nelson416@fakemail.net,San Antonio,TX,Desk Organizer,Office,22.50,1,22.50,cancelled,web
+ENT-002,Cascade Retail Group,CR-10192,2025-11-13,Omar Okafor,omar.okafor225@fakemail.net,Denver,CO,Mechanical Keyboard,Electronics,89.99,1,89.99,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10193,2025-12-06,Andrew Walker,andrew.walker661@mailbox.test,San Antonio,TX,Desk Organizer,Office,22.50,1,22.50,shipped,in_store
+ENT-002,Cascade Retail Group,CR-10194,2025-05-18,Carol Allen,carol.allen675@fakemail.net,Phoenix,AZ,Insulated Tumbler,Lifestyle,25.00,3,75.00,refunded,web
+ENT-002,Cascade Retail Group,CR-10195,2025-11-07,Dorothy Walker,dorothy.walker317@fakemail.net,Charlotte,NC,Laptop Stand,Office,34.50,1,34.50,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10196,2025-10-05,Aiko Roberts,aiko.roberts761@fakemail.net,Nashville,TN,Backpack,Lifestyle,64.99,2,129.98,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10197,2025-10-20,Donald Scott,donald.scott110@example.com,Philadelphia,PA,Mechanical Keyboard,Electronics,89.99,2,179.98,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10198,2025-03-27,Diego Hall,diego.hall867@example.com,Minneapolis,MN,Desk Lamp,Office,27.95,1,27.95,refunded,web
+ENT-002,Cascade Retail Group,CR-10199,2025-09-08,Mary Flores,mary.flores846@demo.org,San Diego,CA,Yoga Mat,Lifestyle,29.99,1,29.99,completed,web
+ENT-002,Cascade Retail Group,CR-10200,2025-02-03,Daniel Larsen,daniel.larsen345@fakemail.net,Seattle,WA,Insulated Tumbler,Lifestyle,25.00,1,25.00,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10201,2025-05-24,Edward Davis,edward.davis688@fakemail.net,Los Angeles,CA,Notebook Set,Office,12.99,2,25.98,completed,in_store
+ENT-002,Cascade Retail Group,CR-10202,2025-12-10,Susan Lewis,susan.lewis6@example.com,Charlotte,NC,Coffee Mug,Lifestyle,14.50,2,29.00,completed,web
+ENT-002,Cascade Retail Group,CR-10203,2025-07-23,Jennifer Ferreira,jennifer.ferreira883@mailbox.test,Detroit,MI,Running Shoes,Lifestyle,119.00,2,238.00,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10204,2025-05-24,Anthony Tanaka,anthony.tanaka226@fakemail.net,Miami,FL,Water Bottle,Lifestyle,18.00,4,72.00,refunded,web
+ENT-002,Cascade Retail Group,CR-10205,2025-08-26,David Hall,david.hall98@mailbox.test,Austin,TX,Ergonomic Chair Cushion,Office,42.00,1,42.00,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10206,2025-07-07,Paul Thompson,paul.thompson772@fakemail.net,Minneapolis,MN,Running Shoes,Lifestyle,119.00,1,119.00,completed,web
+ENT-002,Cascade Retail Group,CR-10207,2025-03-16,Ashley Campbell,ashley.campbell158@demo.org,Boston,MA,Notebook Set,Office,12.99,2,25.98,refunded,web
+ENT-002,Cascade Retail Group,CR-10208,2025-05-09,Aiko Gonzalez,aiko.gonzalez923@example.com,San Diego,CA,Webcam HD,Electronics,69.99,2,139.98,shipped,phone
+ENT-002,Cascade Retail Group,CR-10209,2025-06-14,Linda Walker,linda.walker862@mailbox.test,Austin,TX,Ergonomic Chair Cushion,Office,42.00,2,84.00,completed,in_store
+ENT-002,Cascade Retail Group,CR-10210,2025-12-25,Mateo Martin,mateo.martin616@mailbox.test,Dallas,TX,Desk Lamp,Office,27.95,2,55.90,completed,web
+ENT-002,Cascade Retail Group,CR-10211,2025-04-28,Amanda Kim,amanda.kim448@demo.org,Houston,TX,Whiteboard,Office,49.99,3,149.97,completed,web
+ENT-002,Cascade Retail Group,CR-10212,2025-07-09,Mark Lopez,mark.lopez660@demo.org,Minneapolis,MN,Desk Lamp,Office,27.95,1,27.95,completed,web
+ENT-002,Cascade Retail Group,CR-10213,2025-08-21,Barbara Campbell,barbara.campbell601@mailbox.test,Nashville,TN,Water Bottle,Lifestyle,18.00,1,18.00,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10214,2025-09-14,Omar Miller,omar.miller911@example.com,New York,NY,Water Bottle,Lifestyle,18.00,1,18.00,completed,in_store
+ENT-002,Cascade Retail Group,CR-10215,2025-06-04,Deborah Martin,deborah.martin177@fakemail.net,Charlotte,NC,Backpack,Lifestyle,64.99,4,259.96,cancelled,in_store
+ENT-002,Cascade Retail Group,CR-10216,2025-01-27,John Adams,john.adams564@example.com,Philadelphia,PA,Bluetooth Speaker,Electronics,54.99,1,54.99,completed,web
+ENT-002,Cascade Retail Group,CR-10217,2025-08-06,Jessica Wilson,jessica.wilson89@fakemail.net,Chicago,IL,Coffee Mug,Lifestyle,14.50,1,14.50,shipped,web
+ENT-002,Cascade Retail Group,CR-10218,2025-02-25,Karen Okafor,karen.okafor808@demo.org,Miami,FL,Backpack,Lifestyle,64.99,1,64.99,completed,in_store
+ENT-002,Cascade Retail Group,CR-10219,2025-04-07,James Davis,james.davis503@example.com,Seattle,WA,Laptop Stand,Office,34.50,1,34.50,shipped,web
+ENT-002,Cascade Retail Group,CR-10220,2025-04-10,Daniel Carter,daniel.carter547@demo.org,Boston,MA,Whiteboard,Office,49.99,2,99.98,pending,web
+ENT-002,Cascade Retail Group,CR-10221,2025-05-06,Michelle Rossi,michelle.rossi599@demo.org,Minneapolis,MN,Yoga Mat,Lifestyle,29.99,2,59.98,pending,in_store
+ENT-002,Cascade Retail Group,CR-10222,2025-09-17,Mark Wilson,mark.wilson976@mailbox.test,Los Angeles,CA,Desk Organizer,Office,22.50,1,22.50,completed,web
+ENT-002,Cascade Retail Group,CR-10223,2025-11-06,Amanda White,amanda.white643@demo.org,Portland,OR,Wireless Mouse,Electronics,24.99,1,24.99,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10224,2025-03-21,Priya Rodriguez,priya.rodriguez746@mailbox.test,Austin,TX,Whiteboard,Office,49.99,2,99.98,pending,phone
+ENT-002,Cascade Retail Group,CR-10225,2025-09-20,James Nelson,james.nelson738@fakemail.net,Austin,TX,Wireless Mouse,Electronics,24.99,1,24.99,completed,web
+ENT-002,Cascade Retail Group,CR-10226,2025-05-26,John Rodriguez,john.rodriguez810@fakemail.net,Los Angeles,CA,USB-C Hub,Electronics,39.99,1,39.99,refunded,phone
+ENT-002,Cascade Retail Group,CR-10227,2025-01-25,Mateo Hernandez,mateo.hernandez70@fakemail.net,Houston,TX,USB-C Hub,Electronics,39.99,2,79.98,shipped,phone
+ENT-002,Cascade Retail Group,CR-10228,2025-02-17,Barbara Flores,barbara.flores917@example.com,Boston,MA,Phone Case,Electronics,19.99,2,39.98,cancelled,web
+ENT-002,Cascade Retail Group,CR-10229,2025-04-11,Ashley Lewis,ashley.lewis234@demo.org,Boston,MA,Laptop Stand,Office,34.50,1,34.50,cancelled,phone
+ENT-002,Cascade Retail Group,CR-10230,2025-02-19,Dorothy Petrov,dorothy.petrov570@fakemail.net,Boston,MA,Ergonomic Chair Cushion,Office,42.00,2,84.00,completed,phone
+ENT-002,Cascade Retail Group,CR-10231,2025-06-05,Donald Taylor,donald.taylor782@fakemail.net,San Antonio,TX,Desk Lamp,Office,27.95,1,27.95,refunded,web
+ENT-002,Cascade Retail Group,CR-10232,2025-02-02,Margaret Martinez,margaret.martinez18@demo.org,Dallas,TX,Backpack,Lifestyle,64.99,1,64.99,cancelled,phone
+ENT-002,Cascade Retail Group,CR-10233,2025-02-26,Yuki Tanaka,yuki.tanaka782@example.com,Austin,TX,Travel Adapter,Electronics,16.99,1,16.99,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10234,2025-02-01,Karen Allen,karen.allen818@demo.org,New York,NY,Ergonomic Chair Cushion,Office,42.00,1,42.00,completed,web
+ENT-002,Cascade Retail Group,CR-10235,2025-03-10,Paul Anderson,paul.anderson619@example.com,Chicago,IL,USB-C Hub,Electronics,39.99,2,79.98,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10236,2025-09-22,Thomas Nguyen,thomas.nguyen49@example.com,San Diego,CA,Monitor 27in,Electronics,229.00,3,687.00,pending,web
+ENT-002,Cascade Retail Group,CR-10237,2025-10-27,Kenneth Brown,kenneth.brown586@mailbox.test,Houston,TX,Laptop Stand,Office,34.50,1,34.50,shipped,phone
+ENT-002,Cascade Retail Group,CR-10238,2025-10-11,Ashley Jackson,ashley.jackson289@demo.org,Philadelphia,PA,Travel Adapter,Electronics,16.99,1,16.99,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10239,2025-06-08,Sarah Green,sarah.green529@demo.org,Minneapolis,MN,USB-C Hub,Electronics,39.99,1,39.99,shipped,web
+ENT-002,Cascade Retail Group,CR-10240,2025-07-17,Daniel Allen,daniel.allen383@mailbox.test,Minneapolis,MN,Bluetooth Speaker,Electronics,54.99,2,109.98,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10241,2025-03-18,Kenneth Larsen,kenneth.larsen264@mailbox.test,San Diego,CA,Whiteboard,Office,49.99,4,199.96,completed,in_store
+ENT-002,Cascade Retail Group,CR-10242,2025-06-09,Mateo Scott,mateo.scott721@mailbox.test,New York,NY,USB-C Hub,Electronics,39.99,1,39.99,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10243,2025-08-21,Sandra Lopez,sandra.lopez107@mailbox.test,Houston,TX,Bluetooth Speaker,Electronics,54.99,2,109.98,refunded,phone
+ENT-002,Cascade Retail Group,CR-10244,2025-06-22,Mark Williams,mark.williams436@mailbox.test,San Antonio,TX,Ergonomic Chair Cushion,Office,42.00,1,42.00,refunded,phone
+ENT-002,Cascade Retail Group,CR-10245,2025-07-05,Carol Jackson,carol.jackson406@mailbox.test,Boston,MA,Travel Adapter,Electronics,16.99,1,16.99,refunded,in_store
+ENT-002,Cascade Retail Group,CR-10246,2025-12-18,Lisa Scott,lisa.scott247@example.com,Miami,FL,Mechanical Keyboard,Electronics,89.99,3,269.97,completed,in_store
+ENT-002,Cascade Retail Group,CR-10247,2025-03-28,Nancy Haddad,nancy.haddad320@fakemail.net,Dallas,TX,Yoga Mat,Lifestyle,29.99,1,29.99,refunded,phone
+ENT-002,Cascade Retail Group,CR-10248,2025-08-11,Barbara Hernandez,barbara.hernandez543@mailbox.test,Chicago,IL,Desk Lamp,Office,27.95,4,111.80,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10249,2025-05-10,Elizabeth Martinez,elizabeth.martinez832@fakemail.net,Detroit,MI,Backpack,Lifestyle,64.99,5,324.95,completed,web
+ENT-002,Cascade Retail Group,CR-10250,2025-08-28,Susan Sanchez,susan.sanchez478@example.com,New York,NY,Whiteboard,Office,49.99,1,49.99,pending,in_store
+ENT-002,Cascade Retail Group,CR-10251,2025-08-23,James Miller,james.miller25@example.com,San Diego,CA,Ergonomic Chair Cushion,Office,42.00,1,42.00,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10252,2025-06-19,Brian Allen,brian.allen219@example.com,Chicago,IL,Backpack,Lifestyle,64.99,1,64.99,completed,in_store
+ENT-002,Cascade Retail Group,CR-10253,2025-09-05,Linda Carter,linda.carter601@demo.org,Nashville,TN,Wireless Mouse,Electronics,24.99,2,49.98,pending,web
+ENT-002,Cascade Retail Group,CR-10254,2025-02-23,Luca Wright,luca.wright165@mailbox.test,Miami,FL,Coffee Mug,Lifestyle,14.50,1,14.50,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10255,2025-09-12,Margaret Ferreira,margaret.ferreira334@example.com,San Antonio,TX,Bluetooth Speaker,Electronics,54.99,2,109.98,refunded,web
+ENT-002,Cascade Retail Group,CR-10256,2025-09-15,Robert Perez,robert.perez960@demo.org,Dallas,TX,Coffee Mug,Lifestyle,14.50,2,29.00,cancelled,mobile_app
+ENT-002,Cascade Retail Group,CR-10257,2025-02-08,Sandra Carter,sandra.carter706@mailbox.test,Nashville,TN,Monitor 27in,Electronics,229.00,4,916.00,completed,web
+ENT-002,Cascade Retail Group,CR-10258,2025-08-26,David Wilson,david.wilson342@demo.org,Atlanta,GA,Monitor 27in,Electronics,229.00,1,229.00,completed,phone
+ENT-002,Cascade Retail Group,CR-10259,2025-01-01,Omar Lopez,omar.lopez69@demo.org,Los Angeles,CA,Notebook Set,Office,12.99,1,12.99,cancelled,phone
+ENT-002,Cascade Retail Group,CR-10260,2025-10-14,Mark Allen,mark.allen142@example.com,Chicago,IL,Whiteboard,Office,49.99,1,49.99,completed,web
+ENT-002,Cascade Retail Group,CR-10261,2025-06-02,Karen Green,karen.green662@example.com,Atlanta,GA,Whiteboard,Office,49.99,1,49.99,pending,web
+ENT-002,Cascade Retail Group,CR-10262,2025-08-23,Joseph Perez,joseph.perez57@demo.org,New York,NY,Wireless Mouse,Electronics,24.99,1,24.99,cancelled,web
+ENT-002,Cascade Retail Group,CR-10263,2025-11-09,Omar Miller,omar.miller13@demo.org,Nashville,TN,Ergonomic Chair Cushion,Office,42.00,2,84.00,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10264,2025-07-22,John Young,john.young504@example.com,Detroit,MI,Phone Case,Electronics,19.99,1,19.99,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10265,2025-05-02,Edward Ramirez,edward.ramirez750@demo.org,Minneapolis,MN,Insulated Tumbler,Lifestyle,25.00,1,25.00,pending,phone
+ENT-002,Cascade Retail Group,CR-10266,2025-10-15,Kenneth Moore,kenneth.moore254@fakemail.net,New York,NY,Running Shoes,Lifestyle,119.00,4,476.00,pending,web
+ENT-002,Cascade Retail Group,CR-10267,2025-10-13,Charles Green,charles.green315@mailbox.test,Charlotte,NC,Insulated Tumbler,Lifestyle,25.00,1,25.00,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10268,2025-05-21,Sandra Haddad,sandra.haddad639@demo.org,Detroit,MI,Travel Adapter,Electronics,16.99,5,84.95,refunded,web
+ENT-002,Cascade Retail Group,CR-10269,2025-04-01,Dorothy Jackson,dorothy.jackson898@example.com,New York,NY,Desk Lamp,Office,27.95,1,27.95,completed,in_store
+ENT-002,Cascade Retail Group,CR-10270,2025-10-19,Thomas Thomas,thomas.thomas736@fakemail.net,Boston,MA,Backpack,Lifestyle,64.99,2,129.98,completed,in_store
+ENT-002,Cascade Retail Group,CR-10271,2025-06-05,Deborah Kowalski,deborah.kowalski908@demo.org,Houston,TX,Backpack,Lifestyle,64.99,1,64.99,cancelled,web
+ENT-002,Cascade Retail Group,CR-10272,2025-01-04,Ingrid Scott,ingrid.scott278@demo.org,Austin,TX,Webcam HD,Electronics,69.99,1,69.99,completed,in_store
+ENT-002,Cascade Retail Group,CR-10273,2025-06-11,Omar Smith,omar.smith765@example.com,Boston,MA,Desk Organizer,Office,22.50,2,45.00,completed,web
+ENT-002,Cascade Retail Group,CR-10274,2025-08-17,Anthony Rodriguez,anthony.rodriguez595@example.com,Austin,TX,Desk Organizer,Office,22.50,2,45.00,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10275,2025-04-01,Priya Petrov,priya.petrov158@fakemail.net,Houston,TX,Water Bottle,Lifestyle,18.00,4,72.00,completed,in_store
+ENT-002,Cascade Retail Group,CR-10276,2025-11-17,Yuki Kowalski,yuki.kowalski187@demo.org,Dallas,TX,Laptop Stand,Office,34.50,4,138.00,shipped,in_store
+ENT-002,Cascade Retail Group,CR-10277,2025-11-19,David Okafor,david.okafor403@mailbox.test,Philadelphia,PA,Monitor 27in,Electronics,229.00,2,458.00,cancelled,web
+ENT-002,Cascade Retail Group,CR-10278,2025-03-08,Mateo Taylor,mateo.taylor630@fakemail.net,Charlotte,NC,Desk Organizer,Office,22.50,1,22.50,completed,phone
+ENT-002,Cascade Retail Group,CR-10279,2025-02-24,Chen Davis,chen.davis314@fakemail.net,San Antonio,TX,Bluetooth Speaker,Electronics,54.99,3,164.97,shipped,in_store
+ENT-002,Cascade Retail Group,CR-10280,2025-07-06,Amanda Robinson,amanda.robinson96@fakemail.net,Detroit,MI,Notebook Set,Office,12.99,1,12.99,completed,web
+ENT-002,Cascade Retail Group,CR-10281,2025-03-08,John Ferreira,john.ferreira411@example.com,New York,NY,USB-C Hub,Electronics,39.99,4,159.96,cancelled,phone
+ENT-002,Cascade Retail Group,CR-10282,2025-04-08,Patricia Kim,patricia.kim407@fakemail.net,Portland,OR,Yoga Mat,Lifestyle,29.99,1,29.99,pending,phone
+ENT-002,Cascade Retail Group,CR-10283,2025-07-03,Matthew Tanaka,matthew.tanaka872@mailbox.test,Miami,FL,Desk Organizer,Office,22.50,1,22.50,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10284,2025-04-28,Charles Jackson,charles.jackson456@fakemail.net,Houston,TX,Water Bottle,Lifestyle,18.00,1,18.00,cancelled,web
+ENT-002,Cascade Retail Group,CR-10285,2025-07-09,Anthony Flores,anthony.flores581@demo.org,Chicago,IL,Laptop Stand,Office,34.50,1,34.50,cancelled,web
+ENT-002,Cascade Retail Group,CR-10286,2025-09-14,Betty Miller,betty.miller657@mailbox.test,San Diego,CA,Phone Case,Electronics,19.99,2,39.98,completed,web
+ENT-002,Cascade Retail Group,CR-10287,2025-07-22,Steven Haddad,steven.haddad127@example.com,Boston,MA,Monitor 27in,Electronics,229.00,1,229.00,completed,web
+ENT-002,Cascade Retail Group,CR-10288,2025-05-28,Mark Allen,mark.allen851@demo.org,Phoenix,AZ,Bluetooth Speaker,Electronics,54.99,1,54.99,cancelled,mobile_app
+ENT-002,Cascade Retail Group,CR-10289,2025-07-23,Michelle Rodriguez,michelle.rodriguez894@example.com,Philadelphia,PA,Coffee Mug,Lifestyle,14.50,2,29.00,completed,web
+ENT-002,Cascade Retail Group,CR-10290,2025-07-25,Ingrid Wright,ingrid.wright895@mailbox.test,Atlanta,GA,Webcam HD,Electronics,69.99,4,279.96,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10291,2025-07-07,Mark Campbell,mark.campbell227@fakemail.net,San Antonio,TX,USB-C Hub,Electronics,39.99,1,39.99,pending,web
+ENT-002,Cascade Retail Group,CR-10292,2025-02-10,Joshua Nelson,joshua.nelson111@mailbox.test,Miami,FL,Whiteboard,Office,49.99,1,49.99,refunded,web
+ENT-002,Cascade Retail Group,CR-10293,2025-11-06,Donna Mitchell,donna.mitchell585@demo.org,Miami,FL,Whiteboard,Office,49.99,2,99.98,completed,phone
+ENT-002,Cascade Retail Group,CR-10294,2025-08-24,Donna Allen,donna.allen395@fakemail.net,Detroit,MI,Whiteboard,Office,49.99,1,49.99,cancelled,web
+ENT-002,Cascade Retail Group,CR-10295,2025-01-12,Ashley Torres,ashley.torres833@mailbox.test,Minneapolis,MN,Water Bottle,Lifestyle,18.00,2,36.00,shipped,in_store
+ENT-002,Cascade Retail Group,CR-10296,2025-09-14,Jennifer Haddad,jennifer.haddad306@demo.org,San Antonio,TX,Backpack,Lifestyle,64.99,1,64.99,refunded,web
+ENT-002,Cascade Retail Group,CR-10297,2025-07-05,Robert Campbell,robert.campbell706@example.com,Chicago,IL,Notebook Set,Office,12.99,2,25.98,refunded,in_store
+ENT-002,Cascade Retail Group,CR-10298,2025-04-04,Melissa Martin,melissa.martin333@demo.org,Denver,CO,USB-C Hub,Electronics,39.99,1,39.99,completed,web
+ENT-002,Cascade Retail Group,CR-10299,2025-08-08,Ashley Lee,ashley.lee286@fakemail.net,Los Angeles,CA,Ergonomic Chair Cushion,Office,42.00,2,84.00,shipped,web
+ENT-002,Cascade Retail Group,CR-10300,2025-03-20,Sandra Lopez,sandra.lopez923@fakemail.net,Philadelphia,PA,Yoga Mat,Lifestyle,29.99,4,119.96,pending,in_store
+ENT-002,Cascade Retail Group,CR-10301,2025-09-08,Emily Jones,emily.jones689@fakemail.net,San Antonio,TX,Bluetooth Speaker,Electronics,54.99,5,274.95,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10302,2025-08-23,Lisa Harris,lisa.harris14@example.com,San Diego,CA,Insulated Tumbler,Lifestyle,25.00,3,75.00,pending,in_store
+ENT-002,Cascade Retail Group,CR-10303,2025-05-07,Kevin Campbell,kevin.campbell587@mailbox.test,Denver,CO,Bluetooth Speaker,Electronics,54.99,1,54.99,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10304,2025-02-28,Ronald Walker,ronald.walker943@demo.org,Nashville,TN,Webcam HD,Electronics,69.99,3,209.97,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10305,2025-08-07,Fatima Carter,fatima.carter398@fakemail.net,New York,NY,Travel Adapter,Electronics,16.99,2,33.98,pending,in_store
+ENT-002,Cascade Retail Group,CR-10306,2025-04-11,Carol Scott,carol.scott38@demo.org,Charlotte,NC,Water Bottle,Lifestyle,18.00,1,18.00,cancelled,in_store
+ENT-002,Cascade Retail Group,CR-10307,2025-11-25,James Hall,james.hall783@mailbox.test,Dallas,TX,Bluetooth Speaker,Electronics,54.99,2,109.98,cancelled,in_store
+ENT-002,Cascade Retail Group,CR-10308,2025-12-07,Edward Flores,edward.flores613@mailbox.test,San Antonio,TX,Bluetooth Speaker,Electronics,54.99,2,109.98,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10309,2025-10-05,Lisa Johnson,lisa.johnson748@mailbox.test,Houston,TX,Bluetooth Speaker,Electronics,54.99,1,54.99,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10310,2025-05-09,Edward Jackson,edward.jackson152@example.com,Houston,TX,Webcam HD,Electronics,69.99,3,209.97,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10311,2025-05-22,Sarah Adams,sarah.adams695@fakemail.net,Miami,FL,Bluetooth Speaker,Electronics,54.99,3,164.97,completed,web
+ENT-002,Cascade Retail Group,CR-10312,2025-01-24,Lisa Anderson,lisa.anderson270@fakemail.net,Seattle,WA,Water Bottle,Lifestyle,18.00,3,54.00,shipped,web
+ENT-002,Cascade Retail Group,CR-10313,2025-06-04,James Allen,james.allen120@fakemail.net,Dallas,TX,Desk Lamp,Office,27.95,1,27.95,refunded,web
+ENT-002,Cascade Retail Group,CR-10314,2025-06-17,Margaret Taylor,margaret.taylor511@fakemail.net,Chicago,IL,Travel Adapter,Electronics,16.99,4,67.96,refunded,in_store
+ENT-002,Cascade Retail Group,CR-10315,2025-09-06,Priya Campbell,priya.campbell638@fakemail.net,Los Angeles,CA,Monitor 27in,Electronics,229.00,1,229.00,cancelled,mobile_app
+ENT-002,Cascade Retail Group,CR-10316,2025-04-08,Lisa Okafor,lisa.okafor623@example.com,Phoenix,AZ,Backpack,Lifestyle,64.99,4,259.96,completed,web
+ENT-002,Cascade Retail Group,CR-10317,2025-06-28,Richard Hall,richard.hall698@demo.org,Minneapolis,MN,Backpack,Lifestyle,64.99,1,64.99,cancelled,web
+ENT-002,Cascade Retail Group,CR-10318,2025-01-23,Brian Brown,brian.brown488@mailbox.test,San Antonio,TX,Backpack,Lifestyle,64.99,1,64.99,shipped,web
+ENT-002,Cascade Retail Group,CR-10319,2025-11-04,Jennifer Moore,jennifer.moore526@mailbox.test,Denver,CO,Laptop Stand,Office,34.50,1,34.50,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10320,2025-08-03,Elizabeth Kim,elizabeth.kim597@fakemail.net,Boston,MA,Desk Lamp,Office,27.95,1,27.95,cancelled,web
+ENT-002,Cascade Retail Group,CR-10321,2025-04-07,Aiko Sanchez,aiko.sanchez504@demo.org,San Antonio,TX,Webcam HD,Electronics,69.99,1,69.99,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10322,2025-03-04,Linda Hall,linda.hall103@fakemail.net,Miami,FL,Backpack,Lifestyle,64.99,2,129.98,completed,in_store
+ENT-002,Cascade Retail Group,CR-10323,2025-09-02,Emily Campbell,emily.campbell421@example.com,Seattle,WA,Webcam HD,Electronics,69.99,2,139.98,shipped,phone
+ENT-002,Cascade Retail Group,CR-10324,2025-09-27,Anthony Rossi,anthony.rossi351@fakemail.net,Miami,FL,Running Shoes,Lifestyle,119.00,1,119.00,completed,web
+ENT-002,Cascade Retail Group,CR-10325,2025-04-24,Ashley Lopez,ashley.lopez694@demo.org,Chicago,IL,Water Bottle,Lifestyle,18.00,3,54.00,completed,phone
+ENT-002,Cascade Retail Group,CR-10326,2025-08-20,Jennifer King,jennifer.king540@demo.org,Los Angeles,CA,Insulated Tumbler,Lifestyle,25.00,1,25.00,shipped,web
+ENT-002,Cascade Retail Group,CR-10327,2025-03-15,Yuki Johnson,yuki.johnson43@fakemail.net,Portland,OR,Travel Adapter,Electronics,16.99,1,16.99,completed,phone
+ENT-002,Cascade Retail Group,CR-10328,2025-03-16,Chen Wilson,chen.wilson652@fakemail.net,San Diego,CA,Desk Lamp,Office,27.95,1,27.95,pending,web
+ENT-002,Cascade Retail Group,CR-10329,2025-08-19,Luca Smith,luca.smith519@example.com,Portland,OR,Whiteboard,Office,49.99,2,99.98,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10330,2025-03-17,George Rodriguez,george.rodriguez797@demo.org,Atlanta,GA,Running Shoes,Lifestyle,119.00,1,119.00,pending,web
+ENT-002,Cascade Retail Group,CR-10331,2025-10-04,Sarah Garcia,sarah.garcia664@fakemail.net,San Diego,CA,Laptop Stand,Office,34.50,1,34.50,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10332,2025-04-11,Paul Lopez,paul.lopez95@fakemail.net,Minneapolis,MN,Water Bottle,Lifestyle,18.00,1,18.00,completed,web
+ENT-002,Cascade Retail Group,CR-10333,2025-11-23,Patricia Clark,patricia.clark490@demo.org,Philadelphia,PA,Mechanical Keyboard,Electronics,89.99,1,89.99,completed,in_store
+ENT-002,Cascade Retail Group,CR-10334,2025-08-06,Mark Martin,mark.martin610@demo.org,San Antonio,TX,Desk Lamp,Office,27.95,2,55.90,completed,web
+ENT-002,Cascade Retail Group,CR-10335,2025-08-04,Emily Kowalski,emily.kowalski122@mailbox.test,San Antonio,TX,Monitor 27in,Electronics,229.00,5,1145.00,completed,phone
+ENT-002,Cascade Retail Group,CR-10336,2025-11-21,Melissa Mitchell,melissa.mitchell529@mailbox.test,Seattle,WA,Phone Case,Electronics,19.99,3,59.97,completed,phone
+ENT-002,Cascade Retail Group,CR-10337,2025-03-11,Sarah Nguyen,sarah.nguyen432@example.com,New York,NY,Running Shoes,Lifestyle,119.00,2,238.00,pending,phone
+ENT-002,Cascade Retail Group,CR-10338,2025-03-14,Mark Jones,mark.jones371@demo.org,Portland,OR,Backpack,Lifestyle,64.99,2,129.98,shipped,web
+ENT-002,Cascade Retail Group,CR-10339,2025-07-16,Karen Hill,karen.hill739@example.com,Chicago,IL,Yoga Mat,Lifestyle,29.99,1,29.99,cancelled,web
+ENT-002,Cascade Retail Group,CR-10340,2025-01-23,Donna Davis,donna.davis16@mailbox.test,Denver,CO,Mechanical Keyboard,Electronics,89.99,1,89.99,shipped,in_store
+ENT-002,Cascade Retail Group,CR-10341,2025-08-09,Sandra Baker,sandra.baker241@mailbox.test,Seattle,WA,Mechanical Keyboard,Electronics,89.99,4,359.96,cancelled,mobile_app
+ENT-002,Cascade Retail Group,CR-10342,2025-02-12,Anthony Davis,anthony.davis885@fakemail.net,San Diego,CA,Notebook Set,Office,12.99,3,38.97,cancelled,web
+ENT-002,Cascade Retail Group,CR-10343,2025-10-05,Patricia Ramirez,patricia.ramirez456@demo.org,San Antonio,TX,USB-C Hub,Electronics,39.99,2,79.98,completed,phone
+ENT-002,Cascade Retail Group,CR-10344,2025-10-08,Donna Smith,donna.smith951@example.com,Portland,OR,Whiteboard,Office,49.99,1,49.99,cancelled,web
+ENT-002,Cascade Retail Group,CR-10345,2025-12-24,Susan Torres,susan.torres833@mailbox.test,Seattle,WA,USB-C Hub,Electronics,39.99,1,39.99,refunded,web
+ENT-002,Cascade Retail Group,CR-10346,2025-10-06,Edward Jones,edward.jones257@demo.org,Seattle,WA,Insulated Tumbler,Lifestyle,25.00,1,25.00,refunded,web
+ENT-002,Cascade Retail Group,CR-10347,2025-05-18,Omar Williams,omar.williams211@mailbox.test,Miami,FL,Laptop Stand,Office,34.50,1,34.50,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10348,2025-05-09,Sarah Taylor,sarah.taylor744@mailbox.test,Nashville,TN,Coffee Mug,Lifestyle,14.50,1,14.50,cancelled,web
+ENT-002,Cascade Retail Group,CR-10349,2025-12-11,Yuki Hill,yuki.hill135@mailbox.test,Philadelphia,PA,Travel Adapter,Electronics,16.99,1,16.99,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10350,2025-06-02,Priya Carter,priya.carter406@mailbox.test,Austin,TX,Ergonomic Chair Cushion,Office,42.00,3,126.00,pending,in_store
+ENT-002,Cascade Retail Group,CR-10351,2025-11-07,Yuki Adams,yuki.adams538@fakemail.net,Dallas,TX,Notebook Set,Office,12.99,5,64.95,pending,web
+ENT-002,Cascade Retail Group,CR-10352,2025-09-17,Priya Rodriguez,priya.rodriguez839@demo.org,Phoenix,AZ,Webcam HD,Electronics,69.99,5,349.95,completed,web
+ENT-002,Cascade Retail Group,CR-10353,2025-03-03,Barbara Adams,barbara.adams690@demo.org,Seattle,WA,Desk Organizer,Office,22.50,1,22.50,shipped,web
+ENT-002,Cascade Retail Group,CR-10354,2025-05-27,Susan Miller,susan.miller613@mailbox.test,Austin,TX,Desk Organizer,Office,22.50,1,22.50,shipped,in_store
+ENT-002,Cascade Retail Group,CR-10355,2025-01-06,Matthew Baker,matthew.baker117@example.com,Los Angeles,CA,Travel Adapter,Electronics,16.99,2,33.98,shipped,in_store
+ENT-002,Cascade Retail Group,CR-10356,2025-08-02,Kimberly Garcia,kimberly.garcia501@fakemail.net,Nashville,TN,Whiteboard,Office,49.99,1,49.99,shipped,web
+ENT-002,Cascade Retail Group,CR-10357,2025-12-04,Ingrid Roberts,ingrid.roberts365@fakemail.net,Houston,TX,Ergonomic Chair Cushion,Office,42.00,2,84.00,completed,in_store
+ENT-002,Cascade Retail Group,CR-10358,2025-04-25,Ingrid Hill,ingrid.hill625@example.com,Seattle,WA,Bluetooth Speaker,Electronics,54.99,1,54.99,completed,web
+ENT-002,Cascade Retail Group,CR-10359,2025-05-08,Michelle Harris,michelle.harris447@fakemail.net,Denver,CO,Travel Adapter,Electronics,16.99,1,16.99,completed,in_store
+ENT-002,Cascade Retail Group,CR-10360,2025-09-06,Kevin Nelson,kevin.nelson592@example.com,Minneapolis,MN,Phone Case,Electronics,19.99,1,19.99,completed,web
+ENT-002,Cascade Retail Group,CR-10361,2025-10-15,Nancy Allen,nancy.allen974@demo.org,Minneapolis,MN,Running Shoes,Lifestyle,119.00,1,119.00,completed,web
+ENT-002,Cascade Retail Group,CR-10362,2025-01-20,Nancy Petrov,nancy.petrov857@mailbox.test,Chicago,IL,Wireless Mouse,Electronics,24.99,2,49.98,completed,in_store
+ENT-002,Cascade Retail Group,CR-10363,2025-09-22,Barbara Rodriguez,barbara.rodriguez888@example.com,Austin,TX,Bluetooth Speaker,Electronics,54.99,3,164.97,completed,in_store
+ENT-002,Cascade Retail Group,CR-10364,2025-03-15,Luca Clark,luca.clark327@mailbox.test,Phoenix,AZ,Desk Organizer,Office,22.50,2,45.00,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10365,2025-09-08,Betty Lopez,betty.lopez565@fakemail.net,Phoenix,AZ,Bluetooth Speaker,Electronics,54.99,1,54.99,pending,web
+ENT-002,Cascade Retail Group,CR-10366,2025-12-04,Mateo Tanaka,mateo.tanaka956@demo.org,Chicago,IL,Phone Case,Electronics,19.99,1,19.99,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10367,2025-03-11,Aiko Green,aiko.green625@example.com,Nashville,TN,Laptop Stand,Office,34.50,2,69.00,shipped,in_store
+ENT-002,Cascade Retail Group,CR-10368,2025-05-11,Mark Johnson,mark.johnson723@demo.org,Detroit,MI,Laptop Stand,Office,34.50,1,34.50,completed,web
+ENT-002,Cascade Retail Group,CR-10369,2025-08-15,Melissa Carter,melissa.carter352@mailbox.test,Dallas,TX,Laptop Stand,Office,34.50,1,34.50,completed,web
+ENT-002,Cascade Retail Group,CR-10370,2025-06-23,Karen Lee,karen.lee904@example.com,Minneapolis,MN,Laptop Stand,Office,34.50,2,69.00,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10371,2025-05-05,Amanda Kim,amanda.kim372@demo.org,Denver,CO,Desk Organizer,Office,22.50,2,45.00,completed,in_store
+ENT-002,Cascade Retail Group,CR-10372,2025-01-26,Chen Martin,chen.martin441@example.com,Chicago,IL,Water Bottle,Lifestyle,18.00,2,36.00,refunded,web
+ENT-002,Cascade Retail Group,CR-10373,2025-03-08,Emily Okafor,emily.okafor571@example.com,Detroit,MI,Notebook Set,Office,12.99,1,12.99,completed,phone
+ENT-002,Cascade Retail Group,CR-10374,2025-04-02,David Baker,david.baker710@example.com,Miami,FL,Insulated Tumbler,Lifestyle,25.00,3,75.00,completed,web
+ENT-002,Cascade Retail Group,CR-10375,2025-03-28,Edward Thomas,edward.thomas789@mailbox.test,Phoenix,AZ,Ergonomic Chair Cushion,Office,42.00,2,84.00,refunded,in_store
+ENT-002,Cascade Retail Group,CR-10376,2025-01-27,Luca Carter,luca.carter829@fakemail.net,Nashville,TN,Ergonomic Chair Cushion,Office,42.00,5,210.00,completed,phone
+ENT-002,Cascade Retail Group,CR-10377,2025-07-05,Daniel Martin,daniel.martin36@fakemail.net,Detroit,MI,Running Shoes,Lifestyle,119.00,4,476.00,cancelled,web
+ENT-002,Cascade Retail Group,CR-10378,2025-09-28,Joshua Hill,joshua.hill8@demo.org,Minneapolis,MN,Monitor 27in,Electronics,229.00,5,1145.00,refunded,web
+ENT-002,Cascade Retail Group,CR-10379,2025-01-04,James Perez,james.perez29@demo.org,Atlanta,GA,Ergonomic Chair Cushion,Office,42.00,1,42.00,cancelled,web
+ENT-002,Cascade Retail Group,CR-10380,2025-11-03,Jennifer Torres,jennifer.torres671@demo.org,Boston,MA,Monitor 27in,Electronics,229.00,1,229.00,cancelled,mobile_app
+ENT-002,Cascade Retail Group,CR-10381,2025-08-28,Omar Silva,omar.silva544@fakemail.net,Detroit,MI,Yoga Mat,Lifestyle,29.99,2,59.98,completed,in_store
+ENT-002,Cascade Retail Group,CR-10382,2025-09-14,Margaret Jones,margaret.jones730@mailbox.test,Portland,OR,Laptop Stand,Office,34.50,2,69.00,completed,web
+ENT-002,Cascade Retail Group,CR-10383,2025-01-01,Joseph Thomas,joseph.thomas281@fakemail.net,San Diego,CA,Monitor 27in,Electronics,229.00,1,229.00,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10384,2025-08-15,Karen Okafor,karen.okafor308@mailbox.test,Detroit,MI,Ergonomic Chair Cushion,Office,42.00,2,84.00,cancelled,in_store
+ENT-002,Cascade Retail Group,CR-10385,2025-03-21,Charles Sanchez,charles.sanchez632@fakemail.net,Los Angeles,CA,Laptop Stand,Office,34.50,1,34.50,refunded,web
+ENT-002,Cascade Retail Group,CR-10386,2025-06-01,Ingrid Campbell,ingrid.campbell379@example.com,Atlanta,GA,Notebook Set,Office,12.99,1,12.99,shipped,web
+ENT-002,Cascade Retail Group,CR-10387,2025-05-05,Anthony Hill,anthony.hill735@fakemail.net,Houston,TX,Monitor 27in,Electronics,229.00,1,229.00,completed,in_store
+ENT-002,Cascade Retail Group,CR-10388,2025-04-17,Mary Nguyen,mary.nguyen751@fakemail.net,Chicago,IL,Yoga Mat,Lifestyle,29.99,2,59.98,completed,web
+ENT-002,Cascade Retail Group,CR-10389,2025-09-01,Nancy Wilson,nancy.wilson340@fakemail.net,Portland,OR,Desk Organizer,Office,22.50,1,22.50,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10390,2025-10-09,Thomas Hall,thomas.hall570@demo.org,Detroit,MI,Webcam HD,Electronics,69.99,1,69.99,completed,web
+ENT-002,Cascade Retail Group,CR-10391,2025-04-18,Mark Johnson,mark.johnson51@example.com,Austin,TX,Coffee Mug,Lifestyle,14.50,1,14.50,refunded,phone
+ENT-002,Cascade Retail Group,CR-10392,2025-06-04,Sandra Miller,sandra.miller714@fakemail.net,Charlotte,NC,Monitor 27in,Electronics,229.00,1,229.00,completed,web
+ENT-002,Cascade Retail Group,CR-10393,2025-12-18,Melissa Tanaka,melissa.tanaka994@mailbox.test,Miami,FL,Yoga Mat,Lifestyle,29.99,3,89.97,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10394,2025-02-28,Lisa Kowalski,lisa.kowalski573@mailbox.test,Atlanta,GA,Coffee Mug,Lifestyle,14.50,1,14.50,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10395,2025-06-06,Andrew Silva,andrew.silva945@demo.org,Nashville,TN,Mechanical Keyboard,Electronics,89.99,1,89.99,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10396,2025-12-18,Ingrid Nguyen,ingrid.nguyen699@example.com,Austin,TX,Whiteboard,Office,49.99,1,49.99,completed,web
+ENT-002,Cascade Retail Group,CR-10397,2025-10-28,Thomas Lewis,thomas.lewis773@example.com,Nashville,TN,Notebook Set,Office,12.99,2,25.98,shipped,web
+ENT-002,Cascade Retail Group,CR-10398,2025-08-07,Mary Brown,mary.brown603@example.com,Portland,OR,Coffee Mug,Lifestyle,14.50,1,14.50,completed,phone
+ENT-002,Cascade Retail Group,CR-10399,2025-06-14,George Anderson,george.anderson450@example.com,Houston,TX,Backpack,Lifestyle,64.99,1,64.99,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10400,2025-08-06,Diego Hernandez,diego.hernandez332@demo.org,Boston,MA,Running Shoes,Lifestyle,119.00,2,238.00,refunded,web
+ENT-002,Cascade Retail Group,CR-10401,2025-02-24,Amanda Green,amanda.green506@example.com,Houston,TX,Yoga Mat,Lifestyle,29.99,2,59.98,completed,phone
+ENT-002,Cascade Retail Group,CR-10402,2025-08-16,Aiko White,aiko.white777@demo.org,Phoenix,AZ,USB-C Hub,Electronics,39.99,2,79.98,pending,phone
+ENT-002,Cascade Retail Group,CR-10403,2025-09-04,David Flores,david.flores475@fakemail.net,Portland,OR,Running Shoes,Lifestyle,119.00,1,119.00,refunded,web
+ENT-002,Cascade Retail Group,CR-10404,2025-04-15,Lisa White,lisa.white757@mailbox.test,San Diego,CA,Insulated Tumbler,Lifestyle,25.00,2,50.00,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10405,2025-02-03,Ashley Ramirez,ashley.ramirez354@fakemail.net,Detroit,MI,Desk Lamp,Office,27.95,1,27.95,shipped,web
+ENT-002,Cascade Retail Group,CR-10406,2025-09-14,Steven Lopez,steven.lopez74@example.com,Miami,FL,Yoga Mat,Lifestyle,29.99,1,29.99,completed,web
+ENT-002,Cascade Retail Group,CR-10407,2025-06-07,Kimberly Green,kimberly.green353@demo.org,Phoenix,AZ,Water Bottle,Lifestyle,18.00,3,54.00,shipped,phone
+ENT-002,Cascade Retail Group,CR-10408,2025-04-11,Michelle Gonzalez,michelle.gonzalez925@example.com,Detroit,MI,Coffee Mug,Lifestyle,14.50,1,14.50,refunded,web
+ENT-002,Cascade Retail Group,CR-10409,2025-01-25,Robert Nelson,robert.nelson829@example.com,Austin,TX,Wireless Mouse,Electronics,24.99,2,49.98,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10410,2025-11-24,Omar Clark,omar.clark942@example.com,Miami,FL,Webcam HD,Electronics,69.99,5,349.95,cancelled,web
+ENT-002,Cascade Retail Group,CR-10411,2025-01-10,Donna Williams,donna.williams274@demo.org,Philadelphia,PA,Yoga Mat,Lifestyle,29.99,1,29.99,shipped,web
+ENT-002,Cascade Retail Group,CR-10412,2025-02-26,Mary Jones,mary.jones5@demo.org,Chicago,IL,Yoga Mat,Lifestyle,29.99,3,89.97,cancelled,in_store
+ENT-002,Cascade Retail Group,CR-10413,2025-09-27,Omar Tanaka,omar.tanaka399@example.com,Chicago,IL,Laptop Stand,Office,34.50,1,34.50,refunded,web
+ENT-002,Cascade Retail Group,CR-10414,2025-12-17,Betty Silva,betty.silva623@example.com,San Diego,CA,Laptop Stand,Office,34.50,2,69.00,pending,phone
+ENT-002,Cascade Retail Group,CR-10415,2025-02-06,Deborah Rossi,deborah.rossi543@example.com,Nashville,TN,Travel Adapter,Electronics,16.99,1,16.99,completed,web
+ENT-002,Cascade Retail Group,CR-10416,2025-07-22,Barbara Lee,barbara.lee62@fakemail.net,Seattle,WA,Ergonomic Chair Cushion,Office,42.00,5,210.00,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10417,2025-06-14,Priya Young,priya.young786@mailbox.test,San Antonio,TX,Bluetooth Speaker,Electronics,54.99,2,109.98,completed,phone
+ENT-002,Cascade Retail Group,CR-10418,2025-10-08,Donald Hall,donald.hall347@demo.org,San Diego,CA,Bluetooth Speaker,Electronics,54.99,1,54.99,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10419,2025-08-02,Anthony Jones,anthony.jones555@example.com,Chicago,IL,Laptop Stand,Office,34.50,1,34.50,completed,phone
+ENT-002,Cascade Retail Group,CR-10420,2025-10-19,George Flores,george.flores129@mailbox.test,Los Angeles,CA,Water Bottle,Lifestyle,18.00,1,18.00,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10421,2025-03-15,Jessica Moore,jessica.moore348@demo.org,Denver,CO,Desk Lamp,Office,27.95,2,55.90,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10422,2025-10-22,Sandra Brown,sandra.brown494@fakemail.net,Austin,TX,Water Bottle,Lifestyle,18.00,2,36.00,refunded,web
+ENT-002,Cascade Retail Group,CR-10423,2025-01-06,Carol Smith,carol.smith228@mailbox.test,Detroit,MI,Desk Lamp,Office,27.95,1,27.95,cancelled,web
+ENT-002,Cascade Retail Group,CR-10424,2025-01-27,James Wright,james.wright211@demo.org,Dallas,TX,Webcam HD,Electronics,69.99,1,69.99,shipped,phone
+ENT-002,Cascade Retail Group,CR-10425,2025-06-05,Jessica Silva,jessica.silva369@fakemail.net,Seattle,WA,Desk Lamp,Office,27.95,1,27.95,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10426,2025-02-16,Omar Martin,omar.martin666@mailbox.test,Charlotte,NC,Running Shoes,Lifestyle,119.00,2,238.00,cancelled,phone
+ENT-002,Cascade Retail Group,CR-10427,2025-09-04,Susan Petrov,susan.petrov514@demo.org,Atlanta,GA,Desk Lamp,Office,27.95,1,27.95,completed,web
+ENT-002,Cascade Retail Group,CR-10428,2025-09-03,Barbara Flores,barbara.flores636@demo.org,Detroit,MI,Water Bottle,Lifestyle,18.00,2,36.00,completed,web
+ENT-002,Cascade Retail Group,CR-10429,2025-08-12,Omar Torres,omar.torres119@mailbox.test,Austin,TX,USB-C Hub,Electronics,39.99,4,159.96,completed,web
+ENT-002,Cascade Retail Group,CR-10430,2025-10-04,Joshua Kim,joshua.kim267@demo.org,Boston,MA,Coffee Mug,Lifestyle,14.50,4,58.00,pending,web
+ENT-002,Cascade Retail Group,CR-10431,2025-03-05,Thomas Harris,thomas.harris543@mailbox.test,Portland,OR,Laptop Stand,Office,34.50,1,34.50,shipped,web
+ENT-002,Cascade Retail Group,CR-10432,2025-08-18,Kevin Nelson,kevin.nelson713@mailbox.test,Phoenix,AZ,Phone Case,Electronics,19.99,3,59.97,completed,web
+ENT-002,Cascade Retail Group,CR-10433,2025-11-22,Jessica Lopez,jessica.lopez359@fakemail.net,Phoenix,AZ,Ergonomic Chair Cushion,Office,42.00,1,42.00,completed,web
+ENT-002,Cascade Retail Group,CR-10434,2025-02-25,John Nguyen,john.nguyen97@example.com,Minneapolis,MN,Wireless Mouse,Electronics,24.99,1,24.99,shipped,web
+ENT-002,Cascade Retail Group,CR-10435,2025-10-14,Diego Nguyen,diego.nguyen384@demo.org,Portland,OR,Phone Case,Electronics,19.99,5,99.95,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10436,2025-05-25,Omar Hall,omar.hall821@example.com,Philadelphia,PA,Desk Organizer,Office,22.50,4,90.00,completed,web
+ENT-002,Cascade Retail Group,CR-10437,2025-04-24,William Torres,william.torres442@demo.org,Boston,MA,Yoga Mat,Lifestyle,29.99,4,119.96,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10438,2025-12-09,Aiko Ramirez,aiko.ramirez993@demo.org,Portland,OR,Coffee Mug,Lifestyle,14.50,2,29.00,cancelled,phone
+ENT-002,Cascade Retail Group,CR-10439,2025-03-18,Robert Lewis,robert.lewis670@demo.org,Atlanta,GA,Webcam HD,Electronics,69.99,2,139.98,shipped,web
+ENT-002,Cascade Retail Group,CR-10440,2025-08-12,Michael Young,michael.young176@demo.org,Atlanta,GA,USB-C Hub,Electronics,39.99,1,39.99,cancelled,mobile_app
+ENT-002,Cascade Retail Group,CR-10441,2025-11-18,Sarah King,sarah.king470@example.com,Seattle,WA,Ergonomic Chair Cushion,Office,42.00,2,84.00,completed,web
+ENT-002,Cascade Retail Group,CR-10442,2025-10-26,Charles Martinez,charles.martinez423@demo.org,Denver,CO,Monitor 27in,Electronics,229.00,1,229.00,completed,web
+ENT-002,Cascade Retail Group,CR-10443,2025-10-15,David Wilson,david.wilson395@mailbox.test,Denver,CO,Backpack,Lifestyle,64.99,1,64.99,refunded,web
+ENT-002,Cascade Retail Group,CR-10444,2025-09-19,Carol Nguyen,carol.nguyen37@mailbox.test,Charlotte,NC,Backpack,Lifestyle,64.99,1,64.99,completed,phone
+ENT-002,Cascade Retail Group,CR-10445,2025-04-09,Karen White,karen.white941@fakemail.net,Portland,OR,Running Shoes,Lifestyle,119.00,1,119.00,refunded,web
+ENT-002,Cascade Retail Group,CR-10446,2025-04-16,Joseph Young,joseph.young561@example.com,Dallas,TX,Notebook Set,Office,12.99,1,12.99,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10447,2025-06-16,Paul Tanaka,paul.tanaka912@example.com,Dallas,TX,USB-C Hub,Electronics,39.99,1,39.99,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10448,2025-03-02,Jennifer Larsen,jennifer.larsen155@demo.org,Atlanta,GA,Webcam HD,Electronics,69.99,1,69.99,completed,phone
+ENT-002,Cascade Retail Group,CR-10449,2025-08-09,Chen Gonzalez,chen.gonzalez155@mailbox.test,Nashville,TN,Running Shoes,Lifestyle,119.00,3,357.00,cancelled,web
+ENT-002,Cascade Retail Group,CR-10450,2025-02-10,Michael Sanchez,michael.sanchez625@fakemail.net,Dallas,TX,Backpack,Lifestyle,64.99,2,129.98,completed,web
+ENT-002,Cascade Retail Group,CR-10451,2025-03-16,Chen Green,chen.green631@demo.org,Philadelphia,PA,Backpack,Lifestyle,64.99,2,129.98,completed,web
+ENT-002,Cascade Retail Group,CR-10452,2025-06-15,Susan Rivera,susan.rivera854@example.com,Detroit,MI,Webcam HD,Electronics,69.99,1,69.99,completed,web
+ENT-002,Cascade Retail Group,CR-10453,2025-03-08,Anthony Taylor,anthony.taylor762@example.com,Miami,FL,Desk Lamp,Office,27.95,1,27.95,refunded,web
+ENT-002,Cascade Retail Group,CR-10454,2025-09-13,Fatima Kim,fatima.kim468@fakemail.net,Miami,FL,Notebook Set,Office,12.99,1,12.99,completed,web
+ENT-002,Cascade Retail Group,CR-10455,2025-02-25,Elizabeth Moore,elizabeth.moore495@example.com,Boston,MA,Wireless Mouse,Electronics,24.99,3,74.97,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10456,2025-02-21,Diego Hernandez,diego.hernandez49@fakemail.net,San Diego,CA,Laptop Stand,Office,34.50,1,34.50,completed,in_store
+ENT-002,Cascade Retail Group,CR-10457,2025-09-17,Anthony King,anthony.king36@mailbox.test,Denver,CO,Laptop Stand,Office,34.50,2,69.00,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10458,2025-02-13,Donna Mitchell,donna.mitchell336@example.com,Miami,FL,Monitor 27in,Electronics,229.00,1,229.00,completed,web
+ENT-002,Cascade Retail Group,CR-10459,2025-06-28,Patricia Thomas,patricia.thomas992@example.com,Dallas,TX,Insulated Tumbler,Lifestyle,25.00,2,50.00,shipped,web
+ENT-002,Cascade Retail Group,CR-10460,2025-04-23,Kevin Tanaka,kevin.tanaka122@mailbox.test,Atlanta,GA,Backpack,Lifestyle,64.99,2,129.98,completed,web
+ENT-002,Cascade Retail Group,CR-10461,2025-05-19,Michelle Rodriguez,michelle.rodriguez80@mailbox.test,Charlotte,NC,Wireless Mouse,Electronics,24.99,5,124.95,shipped,web
+ENT-002,Cascade Retail Group,CR-10462,2025-09-20,Chen Okafor,chen.okafor919@mailbox.test,Houston,TX,Laptop Stand,Office,34.50,3,103.50,completed,web
+ENT-002,Cascade Retail Group,CR-10463,2025-02-04,Kenneth Gonzalez,kenneth.gonzalez530@example.com,Charlotte,NC,Whiteboard,Office,49.99,3,149.97,completed,web
+ENT-002,Cascade Retail Group,CR-10464,2025-09-13,Carol Brown,carol.brown750@demo.org,Chicago,IL,Laptop Stand,Office,34.50,1,34.50,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10465,2025-06-22,Robert Nguyen,robert.nguyen876@example.com,San Diego,CA,USB-C Hub,Electronics,39.99,2,79.98,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10466,2025-10-16,Joshua Harris,joshua.harris597@fakemail.net,Charlotte,NC,Whiteboard,Office,49.99,1,49.99,completed,phone
+ENT-002,Cascade Retail Group,CR-10467,2025-08-21,Elizabeth Johnson,elizabeth.johnson614@demo.org,Minneapolis,MN,Coffee Mug,Lifestyle,14.50,1,14.50,completed,web
+ENT-002,Cascade Retail Group,CR-10468,2025-07-25,Linda Taylor,linda.taylor888@mailbox.test,Phoenix,AZ,Phone Case,Electronics,19.99,1,19.99,cancelled,web
+ENT-002,Cascade Retail Group,CR-10469,2025-04-10,Matthew Perez,matthew.perez924@fakemail.net,Dallas,TX,Desk Lamp,Office,27.95,3,83.85,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10470,2025-06-20,Kevin Flores,kevin.flores696@fakemail.net,New York,NY,Wireless Mouse,Electronics,24.99,3,74.97,cancelled,web
+ENT-002,Cascade Retail Group,CR-10471,2025-11-15,Amanda Martin,amanda.martin806@example.com,Philadelphia,PA,Ergonomic Chair Cushion,Office,42.00,1,42.00,completed,web
+ENT-002,Cascade Retail Group,CR-10472,2025-08-18,Susan King,susan.king662@demo.org,Dallas,TX,Mechanical Keyboard,Electronics,89.99,1,89.99,pending,mobile_app
+ENT-002,Cascade Retail Group,CR-10473,2025-07-01,Mary King,mary.king55@demo.org,Denver,CO,Bluetooth Speaker,Electronics,54.99,1,54.99,shipped,web
+ENT-002,Cascade Retail Group,CR-10474,2025-04-25,Richard Garcia,richard.garcia488@fakemail.net,Charlotte,NC,Wireless Mouse,Electronics,24.99,2,49.98,completed,web
+ENT-002,Cascade Retail Group,CR-10475,2025-01-13,Betty Johnson,betty.johnson669@example.com,Denver,CO,Ergonomic Chair Cushion,Office,42.00,2,84.00,cancelled,mobile_app
+ENT-002,Cascade Retail Group,CR-10476,2025-09-25,Omar Johnson,omar.johnson128@example.com,Charlotte,NC,Desk Lamp,Office,27.95,1,27.95,completed,web
+ENT-002,Cascade Retail Group,CR-10477,2025-06-22,Dorothy Petrov,dorothy.petrov830@demo.org,Chicago,IL,Coffee Mug,Lifestyle,14.50,1,14.50,completed,web
+ENT-002,Cascade Retail Group,CR-10478,2025-02-20,Chen Nguyen,chen.nguyen959@demo.org,Denver,CO,Wireless Mouse,Electronics,24.99,1,24.99,shipped,web
+ENT-002,Cascade Retail Group,CR-10479,2025-03-25,Ronald Perez,ronald.perez918@mailbox.test,Phoenix,AZ,Yoga Mat,Lifestyle,29.99,2,59.98,completed,web
+ENT-002,Cascade Retail Group,CR-10480,2025-02-11,Aiko Kim,aiko.kim369@demo.org,Nashville,TN,Desk Organizer,Office,22.50,1,22.50,completed,in_store
+ENT-002,Cascade Retail Group,CR-10481,2025-12-08,Omar Wright,omar.wright262@fakemail.net,Phoenix,AZ,Running Shoes,Lifestyle,119.00,2,238.00,cancelled,mobile_app
+ENT-002,Cascade Retail Group,CR-10482,2025-03-10,Sarah Okafor,sarah.okafor234@mailbox.test,Portland,OR,Bluetooth Speaker,Electronics,54.99,2,109.98,cancelled,web
+ENT-002,Cascade Retail Group,CR-10483,2025-11-10,Brian Harris,brian.harris61@fakemail.net,Chicago,IL,Coffee Mug,Lifestyle,14.50,1,14.50,completed,web
+ENT-002,Cascade Retail Group,CR-10484,2025-08-26,Michael Young,michael.young721@demo.org,Phoenix,AZ,Monitor 27in,Electronics,229.00,1,229.00,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10485,2025-02-19,Donna Lopez,donna.lopez318@fakemail.net,Chicago,IL,Running Shoes,Lifestyle,119.00,1,119.00,refunded,in_store
+ENT-002,Cascade Retail Group,CR-10486,2025-11-12,Dorothy Robinson,dorothy.robinson566@example.com,Atlanta,GA,Desk Lamp,Office,27.95,1,27.95,pending,web
+ENT-002,Cascade Retail Group,CR-10487,2025-05-15,Thomas Allen,thomas.allen876@mailbox.test,Chicago,IL,Webcam HD,Electronics,69.99,1,69.99,completed,phone
+ENT-002,Cascade Retail Group,CR-10488,2025-05-01,William Hill,william.hill556@mailbox.test,Dallas,TX,Bluetooth Speaker,Electronics,54.99,3,164.97,pending,web
+ENT-002,Cascade Retail Group,CR-10489,2025-09-17,Nancy Scott,nancy.scott502@demo.org,Chicago,IL,Travel Adapter,Electronics,16.99,2,33.98,cancelled,web
+ENT-002,Cascade Retail Group,CR-10490,2025-04-26,Patricia Thompson,patricia.thompson510@fakemail.net,Chicago,IL,Desk Lamp,Office,27.95,2,55.90,completed,web
+ENT-002,Cascade Retail Group,CR-10491,2025-02-04,Mary Ferreira,mary.ferreira527@mailbox.test,Charlotte,NC,Monitor 27in,Electronics,229.00,1,229.00,shipped,web
+ENT-002,Cascade Retail Group,CR-10492,2025-06-09,John Wright,john.wright781@mailbox.test,Minneapolis,MN,Laptop Stand,Office,34.50,5,172.50,completed,phone
+ENT-002,Cascade Retail Group,CR-10493,2025-07-14,Ingrid Hill,ingrid.hill710@mailbox.test,San Diego,CA,USB-C Hub,Electronics,39.99,2,79.98,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10494,2025-08-03,Nancy King,nancy.king9@example.com,Denver,CO,Desk Organizer,Office,22.50,1,22.50,completed,phone
+ENT-002,Cascade Retail Group,CR-10495,2025-01-11,Nancy Allen,nancy.allen651@mailbox.test,Atlanta,GA,Wireless Mouse,Electronics,24.99,1,24.99,refunded,mobile_app
+ENT-002,Cascade Retail Group,CR-10496,2025-03-12,Melissa King,melissa.king992@fakemail.net,Philadelphia,PA,Desk Lamp,Office,27.95,3,83.85,completed,mobile_app
+ENT-002,Cascade Retail Group,CR-10497,2025-08-28,Sandra Kowalski,sandra.kowalski71@fakemail.net,Detroit,MI,Notebook Set,Office,12.99,3,38.97,completed,web
+ENT-002,Cascade Retail Group,CR-10498,2025-10-06,Steven Wright,steven.wright336@example.com,Los Angeles,CA,Mechanical Keyboard,Electronics,89.99,1,89.99,shipped,mobile_app
+ENT-002,Cascade Retail Group,CR-10499,2025-09-15,Nancy Silva,nancy.silva910@demo.org,Chicago,IL,Desk Organizer,Office,22.50,1,22.50,refunded,web

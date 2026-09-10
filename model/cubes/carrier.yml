@@ -1,0 +1,46 @@
+cubes:
+  - name: carrier
+    public: false
+    sql: >
+      SELECT 1 AS load_id, '2026-04-13T22:10:00'::TIMESTAMP AS load_complete_time, 'C.H. Robinson' AS carrier, 110 AS lobsters UNION ALL
+      SELECT 2 AS load_id, '2026-04-13T22:25:00'::TIMESTAMP AS load_complete_time, 'C.H. Robinson' AS carrier, 130 AS lobsters UNION ALL
+      SELECT 3 AS load_id, '2026-04-13T22:40:00'::TIMESTAMP AS load_complete_time, 'C.H. Robinson' AS carrier, 95 AS lobsters UNION ALL
+      SELECT 4 AS load_id, '2026-04-13T22:50:00'::TIMESTAMP AS load_complete_time, 'C.H. Robinson' AS carrier, 125 AS lobsters UNION ALL
+      SELECT 5 AS load_id, '2026-04-13T23:00:00'::TIMESTAMP AS load_complete_time, 'C.H. Robinson' AS carrier, 140 AS lobsters UNION ALL
+      SELECT 6 AS load_id, '2026-04-14T00:00:00'::TIMESTAMP AS load_complete_time, 'C.H. Robinson' AS carrier, 85 AS lobsters UNION ALL
+      SELECT 7 AS load_id, '2026-04-14T00:15:00'::TIMESTAMP AS load_complete_time, 'C.H. Robinson' AS carrier, 75 AS lobsters UNION ALL
+      SELECT 8 AS load_id, '2026-04-14T00:30:00'::TIMESTAMP AS load_complete_time, 'C.H. Robinson' AS carrier, 150 AS lobsters UNION ALL
+      SELECT 9 AS load_id, '2026-04-14T22:00:00'::TIMESTAMP AS load_complete_time, 'C.H. Robinson' AS carrier, 95 AS lobsters UNION ALL
+      SELECT 10 AS load_id, '2026-04-14T21:05:00'::TIMESTAMP AS load_complete_time, 'ACME' AS carrier, 200 AS lobsters UNION ALL
+      SELECT 11 AS load_id, '2026-04-14T21:15:00'::TIMESTAMP AS load_complete_time, 'ACME' AS carrier, 180 AS lobsters UNION ALL
+      SELECT 12 AS load_id, '2026-04-14T21:25:00'::TIMESTAMP AS load_complete_time, 'ACME' AS carrier, 210 AS lobsters UNION ALL
+      SELECT 13 AS load_id, '2026-04-14T21:35:00'::TIMESTAMP AS load_complete_time, 'ACME' AS carrier, 190 AS lobsters UNION ALL
+      SELECT 14 AS load_id, '2026-04-14T21:45:00'::TIMESTAMP AS load_complete_time, 'ACME' AS carrier, 205 AS lobsters UNION ALL
+      SELECT 15 AS load_id, '2026-04-14T21:55:00'::TIMESTAMP AS load_complete_time, 'ACME' AS carrier, 175 AS lobsters UNION ALL
+      SELECT 16 AS load_id, '2026-04-14T22:05:00'::TIMESTAMP AS load_complete_time, 'ACME' AS carrier, 220 AS lobsters UNION ALL
+      SELECT 17 AS load_id, '2026-04-14T22:15:00'::TIMESTAMP AS load_complete_time, 'ACME' AS carrier, 195 AS lobsters UNION ALL
+      SELECT 18 AS load_id, '2026-04-14T22:30:00'::TIMESTAMP AS load_complete_time, 'ACME' AS carrier, 200 AS lobsters UNION ALL
+      SELECT 19 AS load_id, '2026-04-14T22:40:00'::TIMESTAMP AS load_complete_time, 'ACME' AS carrier, 185 AS lobsters UNION ALL
+      SELECT 20 AS load_id, '2026-04-14T22:50:00'::TIMESTAMP AS load_complete_time, 'ACME' AS carrier, 215 AS lobsters UNION ALL
+      SELECT 21 AS load_id, '2026-04-14T23:00:00'::TIMESTAMP AS load_complete_time, 'ACME' AS carrier, 190 AS lobsters UNION ALL
+      SELECT 22 AS load_id, '2026-04-14T23:10:00'::TIMESTAMP AS load_complete_time, 'ACME' AS carrier, 205 AS lobsters UNION ALL
+      SELECT 23 AS load_id, '2026-04-14T23:20:00'::TIMESTAMP AS load_complete_time, 'ACME' AS carrier, 210 AS lobsters
+
+    dimensions:
+      - name: load_id
+        sql: load_id
+        type: number
+        primary_key: true
+      - name: load_complete_time
+        sql: load_complete_time
+        type: time
+      - name: carrier
+        sql: carrier
+        type: string
+
+    measures:
+      - name: load_count
+        type: count
+      - name: total_lobsters
+        sql: lobsters
+        type: sum

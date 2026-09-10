@@ -1,0 +1,9 @@
+# views:
+#   - name: me_company_orders_view
+#     description: >
+#       Per-tenant view of company orders. Each tenant sees only their own orders,
+#       loaded from their dedicated CSV file via the company_id security context claim.
+
+#     cubes:
+#       - join_path: me_company_orders
+#         includes: "*"

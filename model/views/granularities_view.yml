@@ -1,0 +1,12 @@
+views:
+  - name: granularities_view
+
+    cubes:
+      - join_path: granularities
+        includes:
+          # dimensions
+          - id
+          - time
+          #  measures
+          - sum_id
+          - sum_id_ly

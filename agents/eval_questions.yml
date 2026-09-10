@@ -1,0 +1,97 @@
+# Benchmark eval questions grounded in real query-history usage (2026-08-07).
+# Two primary query patterns observed:
+#   1. three_time_values (REST) — total_value / count by description with
+#      created_time date-range + optional updated_time recency filter (5 runs)
+#   2. carrier_view (SQL API) — sum_of_loads by carrier / from_the_sea (1 run)
+
+eval_questions:
+
+  # ── carrier_view ──────────────────────────────────────────────────────────
+
+  - name: total_loads_by_carrier_and_sea
+    question: >
+      What is the total sum of loads for each carrier, broken down by the
+      from_the_sea category?
+    sql: |
+      SELECT
+        carrier_view.carrier,
+        carrier_view.from_the_sea,
+        MEASURE(carrier_view.sum_of_loads)
+      FROM carrier_view
+      GROUP BY 1, 2
+      ORDER BY 1, 2
+
+  - name: total_loads_per_carrier
+    question: Which carrier has the most loads, and what is the total per carrier?
+    sql: |
+      SELECT
+        carrier_view.carrier,
+        MEASURE(carrier_view.sum_of_loads)
+      FROM carrier_view
+      GROUP BY 1
+      ORDER BY 2 DESC
+
+  - name: total_loads_all_carriers
+    question: What is the total number of loads across all carriers?
+    sql: |
+      SELECT
+        MEASURE(carrier_view.sum_of_loads)
+      FROM carrier_view
+
+  # ── three_time_values ─────────────────────────────────────────────────────
+
+  - name: total_value_by_description_created_aug_2026
+    question: >
+      What is the total value for each description where the record was created
+      between August 1 and August 7, 2026?
+    sql: |
+      SELECT
+        three_time_values.description,
+        MEASURE(three_time_values.total_value)
+      FROM three_time_values
+      WHERE three_time_values.created_time >= '2026-08-01'
+        AND three_time_values.created_time <= '2026-08-07'
+      GROUP BY 1
+      ORDER BY 1
+
+  - name: total_value_by_description_recently_updated_or_never
+    question: >
+      Show total value by description for records created in August 2026 that
+      have either never been updated or were updated after August 4, 2026.
+    sql: |
+      SELECT
+        three_time_values.description,
+        MEASURE(three_time_values.total_value)
+      FROM three_time_values
+      WHERE three_time_values.created_time >= '2026-08-01'
+        AND three_time_values.created_time <= '2026-08-07'
+        AND (
+          three_time_values.updated_time IS NULL
+          OR three_time_values.updated_time > '2026-08-04'
+        )
+      GROUP BY 1
+      ORDER BY 1
+
+  - name: record_count_by_description
+    question: How many records are there for each description in three_time_values?
+    sql: |
+      SELECT
+        three_time_values.description,
+        MEASURE(three_time_values.count)
+      FROM three_time_values
+      GROUP BY 1
+      ORDER BY 1
+
+  - name: avg_min_max_value_by_description
+    question: >
+      What are the average, minimum, and maximum values for each description
+      in three_time_values?
+    sql: |
+      SELECT
+        three_time_values.description,
+        MEASURE(three_time_values.avg_value),
+        MEASURE(three_time_values.min_value),
+        MEASURE(three_time_values.max_value)
+      FROM three_time_values
+      GROUP BY 1
+      ORDER BY 1

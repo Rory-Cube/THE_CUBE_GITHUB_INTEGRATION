@@ -1,0 +1,66 @@
+views:
+  - name: lineitem_view
+    description: Line item view combining shipment data with order, part, supplier, nation, and region details
+
+    cubes:
+      - join_path: lineitem
+        includes:
+          - order_key
+          - line_number
+          - quantity
+          - extended_price
+          - discount
+          - tax
+          - return_flag
+          - line_status
+          - ship_date
+          - commit_date
+          - receipt_date
+          - ship_instruct
+          - ship_mode
+          - count
+          - total_quantity
+          - total_extended_price
+          - total_revenue
+          - total_revenue_after_tax
+          - avg_discount
+          - avg_quantity
+          - avg_extended_price
+          - returned_count
+          - total_discount_amount
+          - receipt_date_or_nation_key_sum
+
+      - join_path: lineitem.orders
+        prefix: true
+        includes:
+          - order_status
+          - order_date
+          - order_priority
+
+      - join_path: lineitem.part
+        prefix: true
+        includes:
+          - name
+          - brand
+          - type
+          - mfgr
+          - container
+
+      - join_path: lineitem.supplier
+        prefix: true
+        includes:
+          - name
+          - nation_key
+
+      - join_path: lineitem.supplier.nation
+        prefix: true
+        includes:
+          - name
+
+      - join_path: lineitem.supplier.nation.region
+        prefix: true
+        includes:
+          - name
+
+    access_policy:
+      - group: "rory"

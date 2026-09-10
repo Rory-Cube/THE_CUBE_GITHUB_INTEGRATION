@@ -1,0 +1,33 @@
+cubes:
+  - name: nation
+    public: false
+    sql_table: TPCH_SF100.NATION
+
+    joins:
+      - name: region
+        sql: "{CUBE}.N_REGIONKEY = {region}.R_REGIONKEY"
+        relationship: many_to_one
+
+    dimensions:
+      - name: nation_key
+        sql: N_NATIONKEY
+        type: number
+        primary_key: true
+
+      - name: name
+        sql: N_NAME
+        type: string
+        description: Nation name
+
+      - name: region_key
+        sql: N_REGIONKEY
+        type: number
+
+      - name: comment
+        sql: N_COMMENT
+        type: string
+
+    measures:
+      - name: count
+        type: count
+        description: Total number of nations

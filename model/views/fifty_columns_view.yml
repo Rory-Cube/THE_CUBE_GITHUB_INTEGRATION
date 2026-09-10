@@ -1,0 +1,6 @@
+views:
+  - name: fifty_columns_view
+    description: Query-ready view over the 50_columns dataset
+    cubes:
+      - join_path: fifty_columns
+        includes: "*"

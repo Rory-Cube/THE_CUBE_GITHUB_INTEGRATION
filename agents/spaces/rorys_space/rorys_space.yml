@@ -1,0 +1,59 @@
+spaces:
+  - name: rorys_space
+
+    certified_queries:
+    - name: Loads
+      description: "The number of truck loads"
+      user_request: "How many loads?"
+      # space: rorys_space
+      sql_query: |
+        SELECT
+          carrier_view.carrier,
+          MEASURE(carrier_view.load_count)
+        FROM carrier_view
+        GROUP BY 1
+        ORDER BY 1 DESC
+        LIMIT 1000
+  
+    - name: Lobsters
+      user_request: "How many lobsters?"
+      # space: rorys_space
+      sql_query: |
+        SELECT
+          carrier_view.carrier,
+          MEASURE(carrier_view.total_lobsters)
+        FROM carrier_view
+        GROUP BY 1
+        ORDER BY 1 DESC
+        LIMIT 1000
+
+    skills:
+    - name: Lobster-test-skill
+      title: "Lobster Test skill"
+      description: "A lobster test skill"
+      instructions: |
+        Produce a report about carriers:
+        1. Run the Loads certified query.
+        2. Run the Lobsters certified query.
+        3. Highlight who has the most lobsters per load.
+        
+    - name: slow-multistep-test
+      title: "Slow multistep test"
+      description: "Long serial carrier analysis used to test MCP timeouts"
+      instructions: |
+        Work through these steps STRICTLY one at a time. Do not combine them.
+        Issue each query as its own separate tool call — never run two queries
+        in parallel. After each step, write a short paragraph reporting that
+        step's result before you begin the next step.
+
+        1. Query total loads per carrier.
+        2. Query total lobsters per carrier.
+        3. Compute lobsters per load for each carrier and report the ranking.
+        4. Query loads for ACME only.
+        5. Query lobsters for ACME only.
+        6. Query loads for C.H. Robinson only.
+        7. Query lobsters for C.H. Robinson only.
+        8. Compute the overall average lobsters per load across all carriers.
+        9. For each carrier, state how far above or below that average it sits.
+        10. Write a closing summary of the whole analysis.
+

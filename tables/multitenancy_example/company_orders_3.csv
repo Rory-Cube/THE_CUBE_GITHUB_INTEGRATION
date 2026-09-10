@@ -1,0 +1,501 @@
+company_id,company_name,order_id,order_date,customer_name,email,city,state,product_name,category,unit_price,quantity,total_amount,status,sales_channel
+ENT-003,Harborline Goods Inc,HL-10000,2025-07-14,Carol King,carol.king543@example.com,Atlanta,GA,Desk Lamp,Office,27.95,1,27.95,completed,web
+ENT-003,Harborline Goods Inc,HL-10001,2025-05-17,Mark Ferreira,mark.ferreira564@mailbox.test,Phoenix,AZ,Mechanical Keyboard,Electronics,89.99,5,449.95,pending,web
+ENT-003,Harborline Goods Inc,HL-10002,2025-01-17,Ronald Robinson,ronald.robinson821@fakemail.net,Portland,OR,Whiteboard,Office,49.99,1,49.99,completed,phone
+ENT-003,Harborline Goods Inc,HL-10003,2025-06-22,David Roberts,david.roberts356@example.com,Detroit,MI,Webcam HD,Electronics,69.99,1,69.99,shipped,web
+ENT-003,Harborline Goods Inc,HL-10004,2025-05-22,Diego Martin,diego.martin547@example.com,Portland,OR,Water Bottle,Lifestyle,18.00,1,18.00,cancelled,mobile_app
+ENT-003,Harborline Goods Inc,HL-10005,2025-12-20,Kevin Rivera,kevin.rivera598@fakemail.net,Seattle,WA,Bluetooth Speaker,Electronics,54.99,1,54.99,pending,mobile_app
+ENT-003,Harborline Goods Inc,HL-10006,2025-11-25,Jennifer Jackson,jennifer.jackson189@mailbox.test,Houston,TX,Running Shoes,Lifestyle,119.00,1,119.00,shipped,web
+ENT-003,Harborline Goods Inc,HL-10007,2025-12-22,Yuki Petrov,yuki.petrov475@mailbox.test,San Diego,CA,Backpack,Lifestyle,64.99,3,194.97,shipped,web
+ENT-003,Harborline Goods Inc,HL-10008,2025-12-03,Mateo Jones,mateo.jones784@demo.org,Atlanta,GA,Whiteboard,Office,49.99,3,149.97,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10009,2025-06-10,Diego White,diego.white793@example.com,Houston,TX,USB-C Hub,Electronics,39.99,1,39.99,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10010,2025-06-28,Thomas Johnson,thomas.johnson906@mailbox.test,San Antonio,TX,Desk Lamp,Office,27.95,1,27.95,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10011,2025-10-09,Omar Ramirez,omar.ramirez384@fakemail.net,New York,NY,Desk Lamp,Office,27.95,1,27.95,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10012,2025-04-04,David Ramirez,david.ramirez506@fakemail.net,Nashville,TN,Desk Lamp,Office,27.95,2,55.90,shipped,in_store
+ENT-003,Harborline Goods Inc,HL-10013,2025-01-27,Margaret Torres,margaret.torres668@fakemail.net,Nashville,TN,Bluetooth Speaker,Electronics,54.99,3,164.97,completed,web
+ENT-003,Harborline Goods Inc,HL-10014,2025-03-16,Omar Adams,omar.adams59@example.com,Phoenix,AZ,Desk Organizer,Office,22.50,3,67.50,refunded,in_store
+ENT-003,Harborline Goods Inc,HL-10015,2025-01-08,Priya Adams,priya.adams313@mailbox.test,San Antonio,TX,Ergonomic Chair Cushion,Office,42.00,1,42.00,completed,phone
+ENT-003,Harborline Goods Inc,HL-10016,2025-06-04,David Williams,david.williams556@demo.org,Minneapolis,MN,USB-C Hub,Electronics,39.99,5,199.95,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10017,2025-07-23,Daniel Sanchez,daniel.sanchez518@example.com,Detroit,MI,Mechanical Keyboard,Electronics,89.99,1,89.99,shipped,web
+ENT-003,Harborline Goods Inc,HL-10018,2025-09-02,Charles Lopez,charles.lopez684@mailbox.test,Boston,MA,Insulated Tumbler,Lifestyle,25.00,1,25.00,completed,phone
+ENT-003,Harborline Goods Inc,HL-10019,2025-04-21,Ingrid Hernandez,ingrid.hernandez23@mailbox.test,Nashville,TN,Phone Case,Electronics,19.99,1,19.99,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10020,2025-01-07,Brian Ramirez,brian.ramirez982@demo.org,Minneapolis,MN,Notebook Set,Office,12.99,1,12.99,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10021,2025-01-23,Susan Davis,susan.davis475@mailbox.test,Boston,MA,USB-C Hub,Electronics,39.99,2,79.98,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10022,2025-08-22,Anthony Hall,anthony.hall438@fakemail.net,Atlanta,GA,Insulated Tumbler,Lifestyle,25.00,1,25.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10023,2025-05-16,Nancy Larsen,nancy.larsen615@mailbox.test,Minneapolis,MN,Travel Adapter,Electronics,16.99,3,50.97,completed,web
+ENT-003,Harborline Goods Inc,HL-10024,2025-07-10,Elizabeth Perez,elizabeth.perez860@demo.org,Minneapolis,MN,Wireless Mouse,Electronics,24.99,2,49.98,pending,phone
+ENT-003,Harborline Goods Inc,HL-10025,2025-08-20,Omar Wright,omar.wright14@mailbox.test,Charlotte,NC,Water Bottle,Lifestyle,18.00,1,18.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10026,2025-03-12,Omar Rodriguez,omar.rodriguez231@example.com,Chicago,IL,Mechanical Keyboard,Electronics,89.99,4,359.96,pending,in_store
+ENT-003,Harborline Goods Inc,HL-10027,2025-09-14,Kenneth Johnson,kenneth.johnson520@example.com,Detroit,MI,Webcam HD,Electronics,69.99,4,279.96,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10028,2025-09-16,Mark Lopez,mark.lopez780@example.com,Houston,TX,Yoga Mat,Lifestyle,29.99,4,119.96,shipped,web
+ENT-003,Harborline Goods Inc,HL-10029,2025-06-24,Michael Flores,michael.flores902@mailbox.test,Chicago,IL,Phone Case,Electronics,19.99,2,39.98,cancelled,in_store
+ENT-003,Harborline Goods Inc,HL-10030,2025-08-14,Richard Walker,richard.walker344@mailbox.test,Phoenix,AZ,Running Shoes,Lifestyle,119.00,1,119.00,shipped,in_store
+ENT-003,Harborline Goods Inc,HL-10031,2025-07-23,Chen Young,chen.young229@demo.org,Boston,MA,Wireless Mouse,Electronics,24.99,1,24.99,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10032,2025-09-10,Ingrid Nelson,ingrid.nelson357@fakemail.net,Atlanta,GA,Wireless Mouse,Electronics,24.99,1,24.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10033,2025-09-05,Diego Jones,diego.jones949@example.com,Chicago,IL,Water Bottle,Lifestyle,18.00,1,18.00,completed,phone
+ENT-003,Harborline Goods Inc,HL-10034,2025-08-18,Sarah Okafor,sarah.okafor314@mailbox.test,Minneapolis,MN,Monitor 27in,Electronics,229.00,1,229.00,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10035,2025-09-15,Kenneth Davis,kenneth.davis614@example.com,Houston,TX,Phone Case,Electronics,19.99,1,19.99,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10036,2025-07-06,Melissa Larsen,melissa.larsen622@mailbox.test,Charlotte,NC,Notebook Set,Office,12.99,4,51.96,completed,phone
+ENT-003,Harborline Goods Inc,HL-10037,2025-08-25,Melissa Rossi,melissa.rossi39@fakemail.net,Phoenix,AZ,USB-C Hub,Electronics,39.99,2,79.98,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10038,2025-05-16,Luca Mitchell,luca.mitchell634@demo.org,New York,NY,Phone Case,Electronics,19.99,1,19.99,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10039,2025-01-11,Dorothy Nelson,dorothy.nelson820@mailbox.test,Phoenix,AZ,Notebook Set,Office,12.99,1,12.99,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10040,2025-03-07,Robert Rossi,robert.rossi714@example.com,Phoenix,AZ,Water Bottle,Lifestyle,18.00,1,18.00,shipped,web
+ENT-003,Harborline Goods Inc,HL-10041,2025-03-12,George Davis,george.davis518@demo.org,San Antonio,TX,Webcam HD,Electronics,69.99,1,69.99,cancelled,phone
+ENT-003,Harborline Goods Inc,HL-10042,2025-04-19,Linda Young,linda.young940@example.com,Minneapolis,MN,USB-C Hub,Electronics,39.99,1,39.99,refunded,web
+ENT-003,Harborline Goods Inc,HL-10043,2025-10-01,William Wilson,william.wilson201@fakemail.net,Seattle,WA,Laptop Stand,Office,34.50,1,34.50,shipped,web
+ENT-003,Harborline Goods Inc,HL-10044,2025-09-12,Deborah White,deborah.white868@fakemail.net,Nashville,TN,Webcam HD,Electronics,69.99,1,69.99,completed,phone
+ENT-003,Harborline Goods Inc,HL-10045,2025-03-21,Betty Nguyen,betty.nguyen308@example.com,Nashville,TN,Coffee Mug,Lifestyle,14.50,1,14.50,refunded,web
+ENT-003,Harborline Goods Inc,HL-10046,2025-09-05,Dorothy Garcia,dorothy.garcia489@example.com,Seattle,WA,Wireless Mouse,Electronics,24.99,1,24.99,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10047,2025-12-01,George Taylor,george.taylor478@fakemail.net,Atlanta,GA,Water Bottle,Lifestyle,18.00,1,18.00,shipped,web
+ENT-003,Harborline Goods Inc,HL-10048,2025-08-22,Emily Carter,emily.carter984@demo.org,New York,NY,Laptop Stand,Office,34.50,2,69.00,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10049,2025-03-10,Yuki Scott,yuki.scott839@demo.org,Charlotte,NC,Yoga Mat,Lifestyle,29.99,1,29.99,shipped,phone
+ENT-003,Harborline Goods Inc,HL-10050,2025-04-02,Linda Kim,linda.kim857@fakemail.net,Boston,MA,Wireless Mouse,Electronics,24.99,1,24.99,refunded,phone
+ENT-003,Harborline Goods Inc,HL-10051,2025-10-16,Richard Robinson,richard.robinson753@demo.org,Boston,MA,Monitor 27in,Electronics,229.00,2,458.00,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10052,2025-12-09,Andrew Wilson,andrew.wilson867@fakemail.net,Dallas,TX,Running Shoes,Lifestyle,119.00,3,357.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10053,2025-07-07,Kevin Torres,kevin.torres455@fakemail.net,Philadelphia,PA,Phone Case,Electronics,19.99,1,19.99,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10054,2025-05-26,Patricia Jones,patricia.jones154@example.com,Austin,TX,Coffee Mug,Lifestyle,14.50,1,14.50,pending,in_store
+ENT-003,Harborline Goods Inc,HL-10055,2025-11-01,David Taylor,david.taylor462@fakemail.net,Minneapolis,MN,Whiteboard,Office,49.99,1,49.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10056,2025-09-21,James Campbell,james.campbell844@mailbox.test,Dallas,TX,Whiteboard,Office,49.99,1,49.99,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10057,2025-02-19,Dorothy Rivera,dorothy.rivera744@example.com,Seattle,WA,Phone Case,Electronics,19.99,4,79.96,completed,phone
+ENT-003,Harborline Goods Inc,HL-10058,2025-10-06,Ingrid Perez,ingrid.perez825@demo.org,San Diego,CA,Desk Lamp,Office,27.95,3,83.85,completed,web
+ENT-003,Harborline Goods Inc,HL-10059,2025-08-22,Jessica Okafor,jessica.okafor46@example.com,Atlanta,GA,USB-C Hub,Electronics,39.99,1,39.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10060,2025-09-19,Fatima Mitchell,fatima.mitchell814@fakemail.net,Phoenix,AZ,Webcam HD,Electronics,69.99,2,139.98,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10061,2025-11-14,Andrew Harris,andrew.harris979@fakemail.net,Minneapolis,MN,Insulated Tumbler,Lifestyle,25.00,1,25.00,shipped,phone
+ENT-003,Harborline Goods Inc,HL-10062,2025-05-20,Luca Haddad,luca.haddad949@example.com,Houston,TX,Notebook Set,Office,12.99,2,25.98,shipped,in_store
+ENT-003,Harborline Goods Inc,HL-10063,2025-10-20,Edward Roberts,edward.roberts902@fakemail.net,Denver,CO,USB-C Hub,Electronics,39.99,1,39.99,pending,web
+ENT-003,Harborline Goods Inc,HL-10064,2025-05-09,Sandra Rodriguez,sandra.rodriguez456@fakemail.net,Detroit,MI,Travel Adapter,Electronics,16.99,2,33.98,completed,phone
+ENT-003,Harborline Goods Inc,HL-10065,2025-09-11,Linda Wright,linda.wright369@example.com,New York,NY,Backpack,Lifestyle,64.99,1,64.99,shipped,web
+ENT-003,Harborline Goods Inc,HL-10066,2025-08-19,Ashley Jones,ashley.jones16@fakemail.net,San Diego,CA,Water Bottle,Lifestyle,18.00,2,36.00,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10067,2025-10-02,Linda Allen,linda.allen716@example.com,Seattle,WA,USB-C Hub,Electronics,39.99,1,39.99,cancelled,in_store
+ENT-003,Harborline Goods Inc,HL-10068,2025-08-02,Jessica Adams,jessica.adams411@example.com,Charlotte,NC,Bluetooth Speaker,Electronics,54.99,1,54.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10069,2025-11-10,Joseph Rodriguez,joseph.rodriguez662@mailbox.test,Los Angeles,CA,Travel Adapter,Electronics,16.99,1,16.99,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10070,2025-01-11,Betty Walker,betty.walker646@mailbox.test,San Antonio,TX,Ergonomic Chair Cushion,Office,42.00,4,168.00,refunded,web
+ENT-003,Harborline Goods Inc,HL-10071,2025-09-26,Donna Hill,donna.hill285@mailbox.test,Atlanta,GA,Desk Organizer,Office,22.50,2,45.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10072,2025-08-17,James Sanchez,james.sanchez521@example.com,Minneapolis,MN,Desk Lamp,Office,27.95,1,27.95,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10073,2025-06-10,Kimberly Smith,kimberly.smith266@demo.org,Los Angeles,CA,Whiteboard,Office,49.99,1,49.99,shipped,web
+ENT-003,Harborline Goods Inc,HL-10074,2025-03-25,Ashley Jackson,ashley.jackson381@fakemail.net,Miami,FL,Backpack,Lifestyle,64.99,2,129.98,shipped,in_store
+ENT-003,Harborline Goods Inc,HL-10075,2025-08-12,Anthony King,anthony.king486@demo.org,Houston,TX,Monitor 27in,Electronics,229.00,2,458.00,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10076,2025-03-12,Ronald Campbell,ronald.campbell785@fakemail.net,Portland,OR,Ergonomic Chair Cushion,Office,42.00,4,168.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10077,2025-08-05,Patricia Gonzalez,patricia.gonzalez682@demo.org,Seattle,WA,Monitor 27in,Electronics,229.00,4,916.00,pending,web
+ENT-003,Harborline Goods Inc,HL-10078,2025-12-25,Jessica Lee,jessica.lee852@mailbox.test,New York,NY,Monitor 27in,Electronics,229.00,1,229.00,shipped,web
+ENT-003,Harborline Goods Inc,HL-10079,2025-09-08,Jessica Hall,jessica.hall909@example.com,Boston,MA,Desk Lamp,Office,27.95,1,27.95,completed,web
+ENT-003,Harborline Goods Inc,HL-10080,2025-04-24,Charles Kim,charles.kim660@example.com,Portland,OR,Desk Lamp,Office,27.95,2,55.90,completed,web
+ENT-003,Harborline Goods Inc,HL-10081,2025-04-07,Jessica Thomas,jessica.thomas742@example.com,Chicago,IL,Mechanical Keyboard,Electronics,89.99,3,269.97,completed,web
+ENT-003,Harborline Goods Inc,HL-10082,2025-11-05,Yuki Tanaka,yuki.tanaka69@mailbox.test,Chicago,IL,Bluetooth Speaker,Electronics,54.99,1,54.99,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10083,2025-06-24,Michelle Rossi,michelle.rossi2@fakemail.net,Austin,TX,Laptop Stand,Office,34.50,3,103.50,completed,web
+ENT-003,Harborline Goods Inc,HL-10084,2025-07-09,Michael Scott,michael.scott994@mailbox.test,Phoenix,AZ,Phone Case,Electronics,19.99,2,39.98,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10085,2025-10-15,Ingrid Hall,ingrid.hall794@example.com,Houston,TX,Desk Lamp,Office,27.95,1,27.95,shipped,web
+ENT-003,Harborline Goods Inc,HL-10086,2025-12-15,Ronald Wright,ronald.wright486@fakemail.net,New York,NY,Water Bottle,Lifestyle,18.00,1,18.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10087,2025-11-24,Omar Rossi,omar.rossi133@demo.org,Nashville,TN,Webcam HD,Electronics,69.99,4,279.96,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10088,2025-06-26,Deborah Young,deborah.young424@mailbox.test,Los Angeles,CA,Water Bottle,Lifestyle,18.00,2,36.00,pending,web
+ENT-003,Harborline Goods Inc,HL-10089,2025-09-05,Joseph Silva,joseph.silva468@mailbox.test,Austin,TX,Water Bottle,Lifestyle,18.00,4,72.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10090,2025-11-03,Susan Mitchell,susan.mitchell940@demo.org,Houston,TX,Ergonomic Chair Cushion,Office,42.00,1,42.00,shipped,in_store
+ENT-003,Harborline Goods Inc,HL-10091,2025-11-05,Linda Johnson,linda.johnson912@fakemail.net,Nashville,TN,Notebook Set,Office,12.99,1,12.99,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10092,2025-04-03,Donna Carter,donna.carter149@mailbox.test,Charlotte,NC,Desk Lamp,Office,27.95,3,83.85,shipped,phone
+ENT-003,Harborline Goods Inc,HL-10093,2025-11-13,Deborah Campbell,deborah.campbell787@fakemail.net,Charlotte,NC,Coffee Mug,Lifestyle,14.50,4,58.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10094,2025-07-24,Deborah Brown,deborah.brown76@fakemail.net,New York,NY,Monitor 27in,Electronics,229.00,2,458.00,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10095,2025-09-07,Priya Jones,priya.jones120@fakemail.net,Minneapolis,MN,Travel Adapter,Electronics,16.99,3,50.97,completed,web
+ENT-003,Harborline Goods Inc,HL-10096,2025-07-14,Joseph Kim,joseph.kim960@mailbox.test,Portland,OR,Desk Lamp,Office,27.95,2,55.90,completed,web
+ENT-003,Harborline Goods Inc,HL-10097,2025-02-10,Mark Brown,mark.brown829@mailbox.test,New York,NY,Laptop Stand,Office,34.50,1,34.50,refunded,web
+ENT-003,Harborline Goods Inc,HL-10098,2025-07-02,Kimberly Thomas,kimberly.thomas693@mailbox.test,New York,NY,Phone Case,Electronics,19.99,1,19.99,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10099,2025-10-18,Steven Rivera,steven.rivera81@example.com,Denver,CO,Mechanical Keyboard,Electronics,89.99,2,179.98,refunded,web
+ENT-003,Harborline Goods Inc,HL-10100,2025-12-01,Deborah Sanchez,deborah.sanchez367@fakemail.net,Houston,TX,Backpack,Lifestyle,64.99,2,129.98,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10101,2025-02-27,Dorothy Ramirez,dorothy.ramirez58@demo.org,Austin,TX,Phone Case,Electronics,19.99,2,39.98,pending,web
+ENT-003,Harborline Goods Inc,HL-10102,2025-12-01,Michael Sanchez,michael.sanchez832@demo.org,Minneapolis,MN,Travel Adapter,Electronics,16.99,3,50.97,pending,web
+ENT-003,Harborline Goods Inc,HL-10103,2025-03-10,Dorothy Campbell,dorothy.campbell17@mailbox.test,San Antonio,TX,Backpack,Lifestyle,64.99,2,129.98,shipped,phone
+ENT-003,Harborline Goods Inc,HL-10104,2025-10-15,Linda Johnson,linda.johnson972@example.com,Chicago,IL,Laptop Stand,Office,34.50,5,172.50,completed,web
+ENT-003,Harborline Goods Inc,HL-10105,2025-09-13,Richard Roberts,richard.roberts86@example.com,Seattle,WA,Monitor 27in,Electronics,229.00,1,229.00,refunded,phone
+ENT-003,Harborline Goods Inc,HL-10106,2025-06-25,Mark Lopez,mark.lopez260@mailbox.test,Nashville,TN,Webcam HD,Electronics,69.99,5,349.95,cancelled,mobile_app
+ENT-003,Harborline Goods Inc,HL-10107,2025-08-12,Sandra Flores,sandra.flores287@mailbox.test,Houston,TX,Backpack,Lifestyle,64.99,1,64.99,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10108,2025-04-27,Joshua Rivera,joshua.rivera578@fakemail.net,Miami,FL,Running Shoes,Lifestyle,119.00,1,119.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10109,2025-07-17,Kevin Perez,kevin.perez152@fakemail.net,Dallas,TX,Whiteboard,Office,49.99,2,99.98,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10110,2025-06-25,Omar Torres,omar.torres802@demo.org,Denver,CO,Water Bottle,Lifestyle,18.00,5,90.00,pending,mobile_app
+ENT-003,Harborline Goods Inc,HL-10111,2025-11-02,Lisa Hall,lisa.hall603@demo.org,Los Angeles,CA,Desk Organizer,Office,22.50,1,22.50,completed,web
+ENT-003,Harborline Goods Inc,HL-10112,2025-10-09,Diego Ferreira,diego.ferreira371@example.com,Boston,MA,Desk Lamp,Office,27.95,3,83.85,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10113,2025-08-25,Susan Thomas,susan.thomas820@example.com,Seattle,WA,Wireless Mouse,Electronics,24.99,2,49.98,pending,web
+ENT-003,Harborline Goods Inc,HL-10114,2025-06-23,James Hall,james.hall344@mailbox.test,Denver,CO,Whiteboard,Office,49.99,2,99.98,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10115,2025-07-08,Joseph Tanaka,joseph.tanaka864@example.com,Seattle,WA,Running Shoes,Lifestyle,119.00,1,119.00,completed,phone
+ENT-003,Harborline Goods Inc,HL-10116,2025-02-04,Ashley Davis,ashley.davis416@demo.org,Miami,FL,Insulated Tumbler,Lifestyle,25.00,4,100.00,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10117,2025-06-06,Kenneth Hernandez,kenneth.hernandez280@demo.org,Charlotte,NC,Mechanical Keyboard,Electronics,89.99,1,89.99,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10118,2025-04-03,Sarah Roberts,sarah.roberts337@example.com,Seattle,WA,Monitor 27in,Electronics,229.00,2,458.00,shipped,phone
+ENT-003,Harborline Goods Inc,HL-10119,2025-01-25,Ingrid Lee,ingrid.lee909@mailbox.test,Houston,TX,Water Bottle,Lifestyle,18.00,2,36.00,cancelled,mobile_app
+ENT-003,Harborline Goods Inc,HL-10120,2025-02-10,Susan Lopez,susan.lopez753@mailbox.test,Houston,TX,Yoga Mat,Lifestyle,29.99,1,29.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10121,2025-12-09,Edward Ferreira,edward.ferreira459@mailbox.test,Atlanta,GA,Wireless Mouse,Electronics,24.99,5,124.95,completed,web
+ENT-003,Harborline Goods Inc,HL-10122,2025-06-22,Kevin Robinson,kevin.robinson203@example.com,Charlotte,NC,Phone Case,Electronics,19.99,3,59.97,completed,web
+ENT-003,Harborline Goods Inc,HL-10123,2025-01-27,Fatima Young,fatima.young182@demo.org,Houston,TX,Desk Lamp,Office,27.95,2,55.90,completed,phone
+ENT-003,Harborline Goods Inc,HL-10124,2025-06-04,Thomas Gonzalez,thomas.gonzalez823@fakemail.net,Nashville,TN,Insulated Tumbler,Lifestyle,25.00,1,25.00,shipped,web
+ENT-003,Harborline Goods Inc,HL-10125,2025-10-12,John Wright,john.wright764@example.com,Los Angeles,CA,Phone Case,Electronics,19.99,2,39.98,completed,web
+ENT-003,Harborline Goods Inc,HL-10126,2025-05-15,Jennifer Torres,jennifer.torres10@example.com,Austin,TX,Yoga Mat,Lifestyle,29.99,1,29.99,shipped,web
+ENT-003,Harborline Goods Inc,HL-10127,2025-04-12,Fatima Thompson,fatima.thompson463@demo.org,Charlotte,NC,Desk Organizer,Office,22.50,1,22.50,shipped,in_store
+ENT-003,Harborline Goods Inc,HL-10128,2025-04-01,Patricia Haddad,patricia.haddad685@mailbox.test,Boston,MA,Bluetooth Speaker,Electronics,54.99,3,164.97,completed,phone
+ENT-003,Harborline Goods Inc,HL-10129,2025-11-25,Sarah Roberts,sarah.roberts65@fakemail.net,Phoenix,AZ,Monitor 27in,Electronics,229.00,1,229.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10130,2025-09-17,Yuki Rodriguez,yuki.rodriguez673@mailbox.test,Portland,OR,Coffee Mug,Lifestyle,14.50,2,29.00,shipped,web
+ENT-003,Harborline Goods Inc,HL-10131,2025-01-05,Patricia Carter,patricia.carter879@demo.org,Detroit,MI,USB-C Hub,Electronics,39.99,1,39.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10132,2025-01-16,Jessica Scott,jessica.scott992@demo.org,Dallas,TX,Phone Case,Electronics,19.99,1,19.99,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10133,2025-09-08,Kenneth Haddad,kenneth.haddad521@fakemail.net,Chicago,IL,Ergonomic Chair Cushion,Office,42.00,2,84.00,completed,phone
+ENT-003,Harborline Goods Inc,HL-10134,2025-05-14,Aiko Okafor,aiko.okafor122@fakemail.net,Portland,OR,Laptop Stand,Office,34.50,1,34.50,pending,web
+ENT-003,Harborline Goods Inc,HL-10135,2025-12-28,Kimberly Anderson,kimberly.anderson582@example.com,Los Angeles,CA,Monitor 27in,Electronics,229.00,2,458.00,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10136,2025-06-06,Kenneth Rivera,kenneth.rivera706@example.com,Seattle,WA,Ergonomic Chair Cushion,Office,42.00,1,42.00,refunded,phone
+ENT-003,Harborline Goods Inc,HL-10137,2025-03-11,Steven Harris,steven.harris632@demo.org,Dallas,TX,Bluetooth Speaker,Electronics,54.99,1,54.99,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10138,2025-11-19,Michael Campbell,michael.campbell274@demo.org,Phoenix,AZ,Whiteboard,Office,49.99,4,199.96,completed,web
+ENT-003,Harborline Goods Inc,HL-10139,2025-11-05,Susan Nguyen,susan.nguyen253@fakemail.net,Miami,FL,Monitor 27in,Electronics,229.00,1,229.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10140,2025-05-20,Ashley Rodriguez,ashley.rodriguez327@mailbox.test,Dallas,TX,Travel Adapter,Electronics,16.99,1,16.99,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10141,2025-06-21,Brian Rivera,brian.rivera960@demo.org,Atlanta,GA,Desk Organizer,Office,22.50,3,67.50,completed,web
+ENT-003,Harborline Goods Inc,HL-10142,2025-10-15,Ashley Adams,ashley.adams169@demo.org,Charlotte,NC,Wireless Mouse,Electronics,24.99,1,24.99,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10143,2025-05-13,Linda Anderson,linda.anderson56@fakemail.net,Miami,FL,Water Bottle,Lifestyle,18.00,2,36.00,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10144,2025-07-05,Charles Jones,charles.jones971@mailbox.test,Nashville,TN,Mechanical Keyboard,Electronics,89.99,1,89.99,shipped,web
+ENT-003,Harborline Goods Inc,HL-10145,2025-11-01,Anthony Hernandez,anthony.hernandez599@example.com,Minneapolis,MN,Yoga Mat,Lifestyle,29.99,3,89.97,completed,web
+ENT-003,Harborline Goods Inc,HL-10146,2025-08-24,Margaret Martin,margaret.martin238@fakemail.net,Atlanta,GA,Desk Lamp,Office,27.95,1,27.95,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10147,2025-05-05,George Adams,george.adams905@example.com,Phoenix,AZ,Running Shoes,Lifestyle,119.00,2,238.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10148,2025-02-24,Luca Hall,luca.hall303@example.com,Los Angeles,CA,USB-C Hub,Electronics,39.99,2,79.98,shipped,in_store
+ENT-003,Harborline Goods Inc,HL-10149,2025-06-19,Daniel Lee,daniel.lee718@fakemail.net,New York,NY,Bluetooth Speaker,Electronics,54.99,2,109.98,shipped,web
+ENT-003,Harborline Goods Inc,HL-10150,2025-10-15,Mateo Rossi,mateo.rossi204@demo.org,Boston,MA,Webcam HD,Electronics,69.99,3,209.97,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10151,2025-05-14,Mateo Campbell,mateo.campbell98@demo.org,Phoenix,AZ,Running Shoes,Lifestyle,119.00,1,119.00,shipped,in_store
+ENT-003,Harborline Goods Inc,HL-10152,2025-06-17,Nancy Rivera,nancy.rivera185@example.com,Phoenix,AZ,Desk Organizer,Office,22.50,5,112.50,shipped,web
+ENT-003,Harborline Goods Inc,HL-10153,2025-01-23,Deborah Smith,deborah.smith955@fakemail.net,Phoenix,AZ,Mechanical Keyboard,Electronics,89.99,1,89.99,shipped,in_store
+ENT-003,Harborline Goods Inc,HL-10154,2025-09-06,Aiko Smith,aiko.smith160@demo.org,Seattle,WA,Running Shoes,Lifestyle,119.00,3,357.00,pending,mobile_app
+ENT-003,Harborline Goods Inc,HL-10155,2025-06-19,Daniel Walker,daniel.walker916@demo.org,Nashville,TN,Running Shoes,Lifestyle,119.00,2,238.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10156,2025-07-12,Amanda Baker,amanda.baker963@example.com,Boston,MA,Wireless Mouse,Electronics,24.99,4,99.96,pending,mobile_app
+ENT-003,Harborline Goods Inc,HL-10157,2025-06-24,Joshua Williams,joshua.williams66@mailbox.test,Detroit,MI,Bluetooth Speaker,Electronics,54.99,4,219.96,pending,phone
+ENT-003,Harborline Goods Inc,HL-10158,2025-12-28,Robert Carter,robert.carter200@mailbox.test,Miami,FL,Whiteboard,Office,49.99,2,99.98,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10159,2025-07-16,Ashley Robinson,ashley.robinson825@demo.org,Minneapolis,MN,Webcam HD,Electronics,69.99,3,209.97,completed,phone
+ENT-003,Harborline Goods Inc,HL-10160,2025-05-20,Yuki Kim,yuki.kim391@fakemail.net,Philadelphia,PA,Backpack,Lifestyle,64.99,3,194.97,completed,web
+ENT-003,Harborline Goods Inc,HL-10161,2025-04-01,Omar Tanaka,omar.tanaka108@fakemail.net,Atlanta,GA,Travel Adapter,Electronics,16.99,2,33.98,shipped,web
+ENT-003,Harborline Goods Inc,HL-10162,2025-08-24,Kimberly Jones,kimberly.jones400@demo.org,San Diego,CA,Ergonomic Chair Cushion,Office,42.00,1,42.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10163,2025-04-28,Mateo Clark,mateo.clark158@demo.org,Austin,TX,Webcam HD,Electronics,69.99,4,279.96,completed,web
+ENT-003,Harborline Goods Inc,HL-10164,2025-07-16,Jennifer Tanaka,jennifer.tanaka307@mailbox.test,Detroit,MI,Phone Case,Electronics,19.99,2,39.98,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10165,2025-01-25,Thomas Davis,thomas.davis656@mailbox.test,Minneapolis,MN,Phone Case,Electronics,19.99,1,19.99,shipped,phone
+ENT-003,Harborline Goods Inc,HL-10166,2025-10-24,Joshua Moore,joshua.moore333@fakemail.net,Philadelphia,PA,Mechanical Keyboard,Electronics,89.99,2,179.98,shipped,phone
+ENT-003,Harborline Goods Inc,HL-10167,2025-09-23,Richard Mitchell,richard.mitchell864@example.com,Boston,MA,Water Bottle,Lifestyle,18.00,1,18.00,pending,phone
+ENT-003,Harborline Goods Inc,HL-10168,2025-06-08,Deborah Scott,deborah.scott430@demo.org,Portland,OR,Wireless Mouse,Electronics,24.99,2,49.98,pending,mobile_app
+ENT-003,Harborline Goods Inc,HL-10169,2025-08-28,Barbara Smith,barbara.smith588@mailbox.test,Charlotte,NC,Notebook Set,Office,12.99,1,12.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10170,2025-06-17,Richard Taylor,richard.taylor311@fakemail.net,Houston,TX,Mechanical Keyboard,Electronics,89.99,3,269.97,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10171,2025-05-02,Charles Jones,charles.jones363@mailbox.test,Denver,CO,USB-C Hub,Electronics,39.99,2,79.98,pending,mobile_app
+ENT-003,Harborline Goods Inc,HL-10172,2025-02-09,Ashley Campbell,ashley.campbell328@fakemail.net,Houston,TX,Desk Lamp,Office,27.95,3,83.85,completed,phone
+ENT-003,Harborline Goods Inc,HL-10173,2025-06-02,Michael Hernandez,michael.hernandez955@example.com,Boston,MA,Whiteboard,Office,49.99,2,99.98,cancelled,mobile_app
+ENT-003,Harborline Goods Inc,HL-10174,2025-07-19,Daniel Allen,daniel.allen951@fakemail.net,Minneapolis,MN,Running Shoes,Lifestyle,119.00,5,595.00,refunded,web
+ENT-003,Harborline Goods Inc,HL-10175,2025-12-07,Matthew Perez,matthew.perez85@fakemail.net,Portland,OR,Ergonomic Chair Cushion,Office,42.00,4,168.00,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10176,2025-11-07,Charles Davis,charles.davis119@demo.org,Nashville,TN,Insulated Tumbler,Lifestyle,25.00,3,75.00,completed,phone
+ENT-003,Harborline Goods Inc,HL-10177,2025-05-13,Kevin Baker,kevin.baker311@fakemail.net,San Diego,CA,Running Shoes,Lifestyle,119.00,1,119.00,cancelled,phone
+ENT-003,Harborline Goods Inc,HL-10178,2025-12-10,Richard Campbell,richard.campbell404@mailbox.test,Miami,FL,Running Shoes,Lifestyle,119.00,1,119.00,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10179,2025-12-09,Donna Brown,donna.brown739@demo.org,San Antonio,TX,Phone Case,Electronics,19.99,1,19.99,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10180,2025-09-25,Charles Hill,charles.hill371@example.com,Los Angeles,CA,Backpack,Lifestyle,64.99,1,64.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10181,2025-04-18,Kenneth Miller,kenneth.miller105@fakemail.net,Atlanta,GA,Yoga Mat,Lifestyle,29.99,1,29.99,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10182,2025-04-26,Chen Kowalski,chen.kowalski54@example.com,Houston,TX,Coffee Mug,Lifestyle,14.50,1,14.50,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10183,2025-12-07,Priya Hernandez,priya.hernandez759@example.com,Chicago,IL,Laptop Stand,Office,34.50,2,69.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10184,2025-03-28,Lisa Okafor,lisa.okafor29@example.com,Philadelphia,PA,Ergonomic Chair Cushion,Office,42.00,1,42.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10185,2025-06-03,Daniel Robinson,daniel.robinson881@fakemail.net,Seattle,WA,Yoga Mat,Lifestyle,29.99,2,59.98,completed,web
+ENT-003,Harborline Goods Inc,HL-10186,2025-02-24,Elizabeth Silva,elizabeth.silva827@mailbox.test,Boston,MA,Notebook Set,Office,12.99,5,64.95,refunded,web
+ENT-003,Harborline Goods Inc,HL-10187,2025-03-20,Michelle Jones,michelle.jones775@demo.org,Chicago,IL,Desk Lamp,Office,27.95,2,55.90,refunded,web
+ENT-003,Harborline Goods Inc,HL-10188,2025-07-02,Luca Perez,luca.perez870@mailbox.test,Portland,OR,Mechanical Keyboard,Electronics,89.99,2,179.98,shipped,web
+ENT-003,Harborline Goods Inc,HL-10189,2025-05-07,Robert Taylor,robert.taylor952@mailbox.test,San Antonio,TX,Phone Case,Electronics,19.99,1,19.99,shipped,phone
+ENT-003,Harborline Goods Inc,HL-10190,2025-05-10,Joseph Hall,joseph.hall762@fakemail.net,Chicago,IL,Whiteboard,Office,49.99,2,99.98,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10191,2025-02-22,Yuki Allen,yuki.allen921@fakemail.net,Dallas,TX,Insulated Tumbler,Lifestyle,25.00,1,25.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10192,2025-02-13,Patricia Jackson,patricia.jackson330@fakemail.net,Denver,CO,Whiteboard,Office,49.99,1,49.99,refunded,phone
+ENT-003,Harborline Goods Inc,HL-10193,2025-04-26,Linda Campbell,linda.campbell407@mailbox.test,Miami,FL,Wireless Mouse,Electronics,24.99,3,74.97,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10194,2025-04-25,John Martin,john.martin391@demo.org,Detroit,MI,Laptop Stand,Office,34.50,1,34.50,pending,web
+ENT-003,Harborline Goods Inc,HL-10195,2025-01-01,Barbara Okafor,barbara.okafor355@fakemail.net,Portland,OR,Insulated Tumbler,Lifestyle,25.00,2,50.00,shipped,phone
+ENT-003,Harborline Goods Inc,HL-10196,2025-06-06,Robert Adams,robert.adams969@example.com,Phoenix,AZ,Coffee Mug,Lifestyle,14.50,1,14.50,completed,web
+ENT-003,Harborline Goods Inc,HL-10197,2025-01-10,Luca Ferreira,luca.ferreira609@demo.org,Charlotte,NC,Coffee Mug,Lifestyle,14.50,1,14.50,cancelled,mobile_app
+ENT-003,Harborline Goods Inc,HL-10198,2025-01-21,Yuki Martin,yuki.martin45@mailbox.test,San Antonio,TX,Desk Organizer,Office,22.50,2,45.00,pending,web
+ENT-003,Harborline Goods Inc,HL-10199,2025-12-03,Elizabeth Adams,elizabeth.adams843@demo.org,Denver,CO,Notebook Set,Office,12.99,1,12.99,cancelled,mobile_app
+ENT-003,Harborline Goods Inc,HL-10200,2025-12-04,Andrew Davis,andrew.davis780@example.com,Charlotte,NC,USB-C Hub,Electronics,39.99,2,79.98,shipped,web
+ENT-003,Harborline Goods Inc,HL-10201,2025-08-22,Ronald Carter,ronald.carter931@fakemail.net,Miami,FL,Laptop Stand,Office,34.50,1,34.50,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10202,2025-06-03,George Adams,george.adams721@mailbox.test,Chicago,IL,Phone Case,Electronics,19.99,1,19.99,completed,phone
+ENT-003,Harborline Goods Inc,HL-10203,2025-04-14,Sandra Martinez,sandra.martinez342@example.com,Detroit,MI,Running Shoes,Lifestyle,119.00,2,238.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10204,2025-10-25,Kevin King,kevin.king532@demo.org,San Antonio,TX,Water Bottle,Lifestyle,18.00,3,54.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10205,2025-10-16,Steven Sanchez,steven.sanchez399@example.com,Charlotte,NC,Backpack,Lifestyle,64.99,3,194.97,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10206,2025-12-10,Luca Ramirez,luca.ramirez799@demo.org,New York,NY,Laptop Stand,Office,34.50,2,69.00,pending,mobile_app
+ENT-003,Harborline Goods Inc,HL-10207,2025-04-26,Ashley Brown,ashley.brown407@fakemail.net,Portland,OR,USB-C Hub,Electronics,39.99,4,159.96,shipped,web
+ENT-003,Harborline Goods Inc,HL-10208,2025-06-24,John Taylor,john.taylor771@mailbox.test,Seattle,WA,Webcam HD,Electronics,69.99,2,139.98,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10209,2025-10-02,David Hall,david.hall773@example.com,Atlanta,GA,Desk Lamp,Office,27.95,1,27.95,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10210,2025-02-12,Barbara Scott,barbara.scott14@fakemail.net,Minneapolis,MN,Insulated Tumbler,Lifestyle,25.00,1,25.00,pending,phone
+ENT-003,Harborline Goods Inc,HL-10211,2025-03-05,Lisa Tanaka,lisa.tanaka473@fakemail.net,Seattle,WA,Laptop Stand,Office,34.50,1,34.50,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10212,2025-09-27,Yuki Rivera,yuki.rivera473@example.com,New York,NY,Webcam HD,Electronics,69.99,2,139.98,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10213,2025-07-28,Kenneth Ramirez,kenneth.ramirez732@demo.org,Seattle,WA,Whiteboard,Office,49.99,3,149.97,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10214,2025-04-24,Ronald Okafor,ronald.okafor972@example.com,Nashville,TN,Notebook Set,Office,12.99,2,25.98,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10215,2025-05-15,Fatima Moore,fatima.moore754@fakemail.net,Seattle,WA,Travel Adapter,Electronics,16.99,1,16.99,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10216,2025-09-28,Thomas Rossi,thomas.rossi222@demo.org,Portland,OR,Desk Lamp,Office,27.95,4,111.80,completed,web
+ENT-003,Harborline Goods Inc,HL-10217,2025-07-21,Barbara Jackson,barbara.jackson858@demo.org,New York,NY,Mechanical Keyboard,Electronics,89.99,3,269.97,refunded,phone
+ENT-003,Harborline Goods Inc,HL-10218,2025-09-28,Amanda Kim,amanda.kim22@mailbox.test,Chicago,IL,Running Shoes,Lifestyle,119.00,1,119.00,shipped,web
+ENT-003,Harborline Goods Inc,HL-10219,2025-10-07,Michael Hill,michael.hill497@example.com,Phoenix,AZ,Ergonomic Chair Cushion,Office,42.00,1,42.00,pending,web
+ENT-003,Harborline Goods Inc,HL-10220,2025-02-09,Ashley Carter,ashley.carter990@fakemail.net,Boston,MA,Coffee Mug,Lifestyle,14.50,3,43.50,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10221,2025-08-04,James Clark,james.clark733@demo.org,Boston,MA,Insulated Tumbler,Lifestyle,25.00,1,25.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10222,2025-04-27,Lisa Martin,lisa.martin415@example.com,San Antonio,TX,Desk Lamp,Office,27.95,3,83.85,completed,web
+ENT-003,Harborline Goods Inc,HL-10223,2025-04-25,Margaret Wilson,margaret.wilson589@fakemail.net,Charlotte,NC,Mechanical Keyboard,Electronics,89.99,1,89.99,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10224,2025-08-17,Betty Lopez,betty.lopez292@fakemail.net,Portland,OR,Travel Adapter,Electronics,16.99,2,33.98,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10225,2025-04-28,Margaret Taylor,margaret.taylor358@example.com,Minneapolis,MN,Notebook Set,Office,12.99,1,12.99,pending,mobile_app
+ENT-003,Harborline Goods Inc,HL-10226,2025-02-09,Emily Williams,emily.williams896@mailbox.test,Denver,CO,Laptop Stand,Office,34.50,1,34.50,completed,web
+ENT-003,Harborline Goods Inc,HL-10227,2025-12-11,Mateo Scott,mateo.scott641@mailbox.test,Detroit,MI,Water Bottle,Lifestyle,18.00,1,18.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10228,2025-05-06,Richard Jones,richard.jones332@mailbox.test,Charlotte,NC,Webcam HD,Electronics,69.99,1,69.99,pending,web
+ENT-003,Harborline Goods Inc,HL-10229,2025-08-23,Brian Hall,brian.hall113@fakemail.net,Miami,FL,Phone Case,Electronics,19.99,3,59.97,completed,web
+ENT-003,Harborline Goods Inc,HL-10230,2025-07-14,Ashley Lopez,ashley.lopez410@demo.org,Portland,OR,Coffee Mug,Lifestyle,14.50,2,29.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10231,2025-04-01,Mateo Lopez,mateo.lopez455@example.com,Dallas,TX,Yoga Mat,Lifestyle,29.99,1,29.99,pending,mobile_app
+ENT-003,Harborline Goods Inc,HL-10232,2025-07-19,Karen Haddad,karen.haddad3@fakemail.net,Detroit,MI,Phone Case,Electronics,19.99,5,99.95,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10233,2025-09-13,Patricia Williams,patricia.williams909@fakemail.net,Phoenix,AZ,Desk Lamp,Office,27.95,1,27.95,cancelled,in_store
+ENT-003,Harborline Goods Inc,HL-10234,2025-01-14,Charles Lewis,charles.lewis642@example.com,Philadelphia,PA,Yoga Mat,Lifestyle,29.99,2,59.98,completed,web
+ENT-003,Harborline Goods Inc,HL-10235,2025-02-04,James Jackson,james.jackson923@fakemail.net,New York,NY,Webcam HD,Electronics,69.99,2,139.98,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10236,2025-08-09,Priya Taylor,priya.taylor385@example.com,Detroit,MI,Webcam HD,Electronics,69.99,1,69.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10237,2025-01-27,Matthew Anderson,matthew.anderson750@example.com,Austin,TX,Whiteboard,Office,49.99,3,149.97,completed,phone
+ENT-003,Harborline Goods Inc,HL-10238,2025-01-17,Dorothy Davis,dorothy.davis334@fakemail.net,San Antonio,TX,Whiteboard,Office,49.99,2,99.98,shipped,web
+ENT-003,Harborline Goods Inc,HL-10239,2025-06-06,Amanda Scott,amanda.scott241@demo.org,Portland,OR,Ergonomic Chair Cushion,Office,42.00,1,42.00,cancelled,mobile_app
+ENT-003,Harborline Goods Inc,HL-10240,2025-06-17,Nancy King,nancy.king457@fakemail.net,Denver,CO,Notebook Set,Office,12.99,1,12.99,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10241,2025-04-19,Anthony Perez,anthony.perez841@mailbox.test,San Antonio,TX,Desk Organizer,Office,22.50,1,22.50,pending,mobile_app
+ENT-003,Harborline Goods Inc,HL-10242,2025-09-23,David Rodriguez,david.rodriguez782@mailbox.test,Chicago,IL,Mechanical Keyboard,Electronics,89.99,1,89.99,shipped,web
+ENT-003,Harborline Goods Inc,HL-10243,2025-07-22,Paul Roberts,paul.roberts979@example.com,Houston,TX,Mechanical Keyboard,Electronics,89.99,1,89.99,pending,mobile_app
+ENT-003,Harborline Goods Inc,HL-10244,2025-10-21,Paul Martin,paul.martin851@fakemail.net,Los Angeles,CA,Webcam HD,Electronics,69.99,4,279.96,cancelled,mobile_app
+ENT-003,Harborline Goods Inc,HL-10245,2025-10-20,Mateo Rodriguez,mateo.rodriguez257@demo.org,New York,NY,Running Shoes,Lifestyle,119.00,1,119.00,shipped,web
+ENT-003,Harborline Goods Inc,HL-10246,2025-08-27,Kenneth Baker,kenneth.baker131@example.com,Boston,MA,Whiteboard,Office,49.99,1,49.99,cancelled,mobile_app
+ENT-003,Harborline Goods Inc,HL-10247,2025-08-25,Kevin Lewis,kevin.lewis734@example.com,Austin,TX,Wireless Mouse,Electronics,24.99,4,99.96,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10248,2025-11-08,Daniel Hall,daniel.hall228@fakemail.net,Atlanta,GA,Mechanical Keyboard,Electronics,89.99,2,179.98,pending,web
+ENT-003,Harborline Goods Inc,HL-10249,2025-11-26,Charles Mitchell,charles.mitchell219@example.com,Houston,TX,Whiteboard,Office,49.99,1,49.99,shipped,web
+ENT-003,Harborline Goods Inc,HL-10250,2025-11-20,Melissa Walker,melissa.walker56@demo.org,Philadelphia,PA,Wireless Mouse,Electronics,24.99,2,49.98,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10251,2025-08-20,Michael Kowalski,michael.kowalski335@demo.org,Chicago,IL,Desk Organizer,Office,22.50,1,22.50,completed,phone
+ENT-003,Harborline Goods Inc,HL-10252,2025-08-05,Jennifer Petrov,jennifer.petrov415@demo.org,Miami,FL,Wireless Mouse,Electronics,24.99,1,24.99,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10253,2025-03-20,Amanda Kowalski,amanda.kowalski18@mailbox.test,Detroit,MI,Whiteboard,Office,49.99,1,49.99,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10254,2025-03-28,Charles Campbell,charles.campbell766@fakemail.net,Houston,TX,Phone Case,Electronics,19.99,5,99.95,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10255,2025-02-15,William Hall,william.hall971@demo.org,Houston,TX,Backpack,Lifestyle,64.99,1,64.99,completed,phone
+ENT-003,Harborline Goods Inc,HL-10256,2025-05-04,Priya Martinez,priya.martinez227@mailbox.test,Denver,CO,Monitor 27in,Electronics,229.00,2,458.00,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10257,2025-03-08,Richard Lewis,richard.lewis712@example.com,Houston,TX,Water Bottle,Lifestyle,18.00,2,36.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10258,2025-01-27,Donna Green,donna.green561@demo.org,Chicago,IL,Desk Lamp,Office,27.95,2,55.90,pending,phone
+ENT-003,Harborline Goods Inc,HL-10259,2025-12-25,Priya Ferreira,priya.ferreira63@demo.org,Minneapolis,MN,Backpack,Lifestyle,64.99,1,64.99,refunded,web
+ENT-003,Harborline Goods Inc,HL-10260,2025-09-14,Sandra Thompson,sandra.thompson975@fakemail.net,Boston,MA,Mechanical Keyboard,Electronics,89.99,1,89.99,refunded,web
+ENT-003,Harborline Goods Inc,HL-10261,2025-05-14,Carol Young,carol.young964@fakemail.net,Philadelphia,PA,Running Shoes,Lifestyle,119.00,3,357.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10262,2025-06-16,Charles Clark,charles.clark281@demo.org,San Diego,CA,Bluetooth Speaker,Electronics,54.99,2,109.98,completed,web
+ENT-003,Harborline Goods Inc,HL-10263,2025-09-24,Priya Hall,priya.hall27@demo.org,Denver,CO,Bluetooth Speaker,Electronics,54.99,1,54.99,refunded,in_store
+ENT-003,Harborline Goods Inc,HL-10264,2025-07-25,Kimberly Thomas,kimberly.thomas67@demo.org,Dallas,TX,Desk Organizer,Office,22.50,1,22.50,shipped,web
+ENT-003,Harborline Goods Inc,HL-10265,2025-10-14,Diego Lopez,diego.lopez662@example.com,Detroit,MI,Yoga Mat,Lifestyle,29.99,4,119.96,shipped,web
+ENT-003,Harborline Goods Inc,HL-10266,2025-05-15,Elizabeth Rossi,elizabeth.rossi779@mailbox.test,Minneapolis,MN,Whiteboard,Office,49.99,2,99.98,completed,web
+ENT-003,Harborline Goods Inc,HL-10267,2025-06-27,Kimberly Wright,kimberly.wright367@demo.org,Los Angeles,CA,Monitor 27in,Electronics,229.00,1,229.00,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10268,2025-03-11,Edward Mitchell,edward.mitchell400@mailbox.test,Nashville,TN,Travel Adapter,Electronics,16.99,2,33.98,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10269,2025-04-23,Daniel Rivera,daniel.rivera538@demo.org,New York,NY,Yoga Mat,Lifestyle,29.99,3,89.97,completed,web
+ENT-003,Harborline Goods Inc,HL-10270,2025-09-14,Emily Rodriguez,emily.rodriguez890@demo.org,Nashville,TN,Desk Organizer,Office,22.50,1,22.50,shipped,in_store
+ENT-003,Harborline Goods Inc,HL-10271,2025-08-21,Richard Clark,richard.clark374@mailbox.test,Portland,OR,Monitor 27in,Electronics,229.00,2,458.00,refunded,web
+ENT-003,Harborline Goods Inc,HL-10272,2025-07-15,Melissa White,melissa.white506@mailbox.test,Minneapolis,MN,Webcam HD,Electronics,69.99,2,139.98,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10273,2025-11-23,Michael Campbell,michael.campbell240@fakemail.net,Nashville,TN,Backpack,Lifestyle,64.99,3,194.97,shipped,web
+ENT-003,Harborline Goods Inc,HL-10274,2025-05-10,Kenneth King,kenneth.king537@mailbox.test,Los Angeles,CA,Wireless Mouse,Electronics,24.99,3,74.97,refunded,web
+ENT-003,Harborline Goods Inc,HL-10275,2025-07-03,Melissa Allen,melissa.allen237@fakemail.net,Philadelphia,PA,Whiteboard,Office,49.99,1,49.99,shipped,phone
+ENT-003,Harborline Goods Inc,HL-10276,2025-11-10,Ronald White,ronald.white624@mailbox.test,Nashville,TN,Notebook Set,Office,12.99,1,12.99,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10277,2025-09-22,Brian Thomas,brian.thomas561@mailbox.test,Phoenix,AZ,Wireless Mouse,Electronics,24.99,5,124.95,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10278,2025-12-26,Joseph Campbell,joseph.campbell107@mailbox.test,San Antonio,TX,Insulated Tumbler,Lifestyle,25.00,3,75.00,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10279,2025-03-16,Michael Ferreira,michael.ferreira196@mailbox.test,San Diego,CA,Phone Case,Electronics,19.99,1,19.99,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10280,2025-12-13,Charles Thomas,charles.thomas219@demo.org,New York,NY,Wireless Mouse,Electronics,24.99,1,24.99,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10281,2025-06-25,Steven Walker,steven.walker886@fakemail.net,San Antonio,TX,Desk Lamp,Office,27.95,1,27.95,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10282,2025-07-08,Nancy Sanchez,nancy.sanchez422@fakemail.net,Detroit,MI,Backpack,Lifestyle,64.99,1,64.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10283,2025-04-18,Joseph Rodriguez,joseph.rodriguez233@example.com,Boston,MA,Desk Organizer,Office,22.50,2,45.00,cancelled,mobile_app
+ENT-003,Harborline Goods Inc,HL-10284,2025-08-02,Patricia Rodriguez,patricia.rodriguez175@demo.org,Philadelphia,PA,Notebook Set,Office,12.99,2,25.98,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10285,2025-05-14,David Lee,david.lee44@fakemail.net,Miami,FL,Webcam HD,Electronics,69.99,1,69.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10286,2025-06-08,Ronald Clark,ronald.clark856@mailbox.test,Portland,OR,Desk Lamp,Office,27.95,1,27.95,completed,web
+ENT-003,Harborline Goods Inc,HL-10287,2025-07-24,Ingrid Scott,ingrid.scott948@demo.org,Miami,FL,Desk Lamp,Office,27.95,1,27.95,pending,web
+ENT-003,Harborline Goods Inc,HL-10288,2025-11-22,Michael Hernandez,michael.hernandez923@example.com,Dallas,TX,Water Bottle,Lifestyle,18.00,1,18.00,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10289,2025-04-14,Margaret Lopez,margaret.lopez22@example.com,Austin,TX,Coffee Mug,Lifestyle,14.50,1,14.50,shipped,in_store
+ENT-003,Harborline Goods Inc,HL-10290,2025-07-26,Kevin Taylor,kevin.taylor894@fakemail.net,Philadelphia,PA,Mechanical Keyboard,Electronics,89.99,3,269.97,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10291,2025-05-15,Joshua Rivera,joshua.rivera683@demo.org,Austin,TX,Laptop Stand,Office,34.50,1,34.50,completed,phone
+ENT-003,Harborline Goods Inc,HL-10292,2025-08-19,Edward Clark,edward.clark672@mailbox.test,Chicago,IL,Webcam HD,Electronics,69.99,2,139.98,completed,web
+ENT-003,Harborline Goods Inc,HL-10293,2025-07-28,Amanda Hill,amanda.hill122@demo.org,Houston,TX,Desk Organizer,Office,22.50,2,45.00,completed,phone
+ENT-003,Harborline Goods Inc,HL-10294,2025-02-04,Andrew Young,andrew.young623@demo.org,Nashville,TN,Bluetooth Speaker,Electronics,54.99,4,219.96,pending,in_store
+ENT-003,Harborline Goods Inc,HL-10295,2025-02-23,Thomas Scott,thomas.scott618@demo.org,Austin,TX,Whiteboard,Office,49.99,3,149.97,pending,mobile_app
+ENT-003,Harborline Goods Inc,HL-10296,2025-04-17,Kimberly Thompson,kimberly.thompson633@demo.org,Denver,CO,Wireless Mouse,Electronics,24.99,2,49.98,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10297,2025-09-18,Edward Flores,edward.flores140@fakemail.net,San Antonio,TX,Notebook Set,Office,12.99,2,25.98,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10298,2025-10-06,Patricia Clark,patricia.clark693@demo.org,Phoenix,AZ,Backpack,Lifestyle,64.99,2,129.98,completed,phone
+ENT-003,Harborline Goods Inc,HL-10299,2025-06-10,Robert Thompson,robert.thompson605@demo.org,Detroit,MI,Webcam HD,Electronics,69.99,2,139.98,shipped,web
+ENT-003,Harborline Goods Inc,HL-10300,2025-08-23,Yuki Okafor,yuki.okafor32@mailbox.test,Atlanta,GA,Coffee Mug,Lifestyle,14.50,1,14.50,completed,web
+ENT-003,Harborline Goods Inc,HL-10301,2025-11-24,Kevin Davis,kevin.davis751@example.com,Chicago,IL,Insulated Tumbler,Lifestyle,25.00,2,50.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10302,2025-08-27,Robert Perez,robert.perez229@demo.org,Dallas,TX,Phone Case,Electronics,19.99,1,19.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10303,2025-12-17,Ingrid Robinson,ingrid.robinson617@demo.org,Chicago,IL,Wireless Mouse,Electronics,24.99,1,24.99,shipped,web
+ENT-003,Harborline Goods Inc,HL-10304,2025-07-15,Jessica Nguyen,jessica.nguyen632@mailbox.test,Houston,TX,Coffee Mug,Lifestyle,14.50,1,14.50,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10305,2025-05-06,Lisa Lewis,lisa.lewis608@fakemail.net,Dallas,TX,Notebook Set,Office,12.99,1,12.99,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10306,2025-05-01,Margaret Martin,margaret.martin614@demo.org,Seattle,WA,Wireless Mouse,Electronics,24.99,2,49.98,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10307,2025-11-10,Diego Haddad,diego.haddad931@fakemail.net,Miami,FL,Phone Case,Electronics,19.99,1,19.99,shipped,phone
+ENT-003,Harborline Goods Inc,HL-10308,2025-06-07,Michael Perez,michael.perez197@demo.org,Philadelphia,PA,Laptop Stand,Office,34.50,1,34.50,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10309,2025-09-14,James Rossi,james.rossi31@mailbox.test,New York,NY,Insulated Tumbler,Lifestyle,25.00,2,50.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10310,2025-08-06,Steven Lee,steven.lee222@demo.org,Charlotte,NC,Wireless Mouse,Electronics,24.99,2,49.98,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10311,2025-03-22,Nancy Garcia,nancy.garcia806@example.com,Detroit,MI,Backpack,Lifestyle,64.99,1,64.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10312,2025-01-13,Donald Ferreira,donald.ferreira344@fakemail.net,Detroit,MI,Water Bottle,Lifestyle,18.00,5,90.00,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10313,2025-03-19,Kimberly Wilson,kimberly.wilson622@demo.org,Charlotte,NC,Coffee Mug,Lifestyle,14.50,1,14.50,pending,web
+ENT-003,Harborline Goods Inc,HL-10314,2025-07-03,Mateo Adams,mateo.adams692@mailbox.test,Seattle,WA,Webcam HD,Electronics,69.99,2,139.98,pending,web
+ENT-003,Harborline Goods Inc,HL-10315,2025-06-10,Nancy Anderson,nancy.anderson41@mailbox.test,Minneapolis,MN,Laptop Stand,Office,34.50,1,34.50,shipped,web
+ENT-003,Harborline Goods Inc,HL-10316,2025-01-18,John White,john.white512@demo.org,Detroit,MI,Whiteboard,Office,49.99,3,149.97,cancelled,in_store
+ENT-003,Harborline Goods Inc,HL-10317,2025-03-03,Brian King,brian.king190@mailbox.test,Minneapolis,MN,Insulated Tumbler,Lifestyle,25.00,1,25.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10318,2025-04-25,Robert Williams,robert.williams945@example.com,Detroit,MI,Whiteboard,Office,49.99,1,49.99,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10319,2025-09-25,Charles Flores,charles.flores313@example.com,New York,NY,Whiteboard,Office,49.99,4,199.96,shipped,web
+ENT-003,Harborline Goods Inc,HL-10320,2025-02-25,Melissa Harris,melissa.harris681@demo.org,Denver,CO,Backpack,Lifestyle,64.99,1,64.99,shipped,phone
+ENT-003,Harborline Goods Inc,HL-10321,2025-08-11,Diego Harris,diego.harris326@mailbox.test,Los Angeles,CA,Whiteboard,Office,49.99,1,49.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10322,2025-03-04,Susan Lee,susan.lee636@mailbox.test,New York,NY,Phone Case,Electronics,19.99,1,19.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10323,2025-01-24,Matthew Haddad,matthew.haddad74@mailbox.test,Nashville,TN,Whiteboard,Office,49.99,1,49.99,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10324,2025-05-10,Michelle Nguyen,michelle.nguyen624@example.com,Los Angeles,CA,Phone Case,Electronics,19.99,2,39.98,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10325,2025-11-09,Donna Flores,donna.flores347@example.com,Seattle,WA,Running Shoes,Lifestyle,119.00,1,119.00,cancelled,phone
+ENT-003,Harborline Goods Inc,HL-10326,2025-08-16,Diego Scott,diego.scott682@fakemail.net,Minneapolis,MN,USB-C Hub,Electronics,39.99,2,79.98,completed,web
+ENT-003,Harborline Goods Inc,HL-10327,2025-11-14,Matthew Young,matthew.young304@mailbox.test,San Diego,CA,Desk Organizer,Office,22.50,4,90.00,pending,web
+ENT-003,Harborline Goods Inc,HL-10328,2025-11-26,Margaret Rodriguez,margaret.rodriguez91@example.com,Dallas,TX,Running Shoes,Lifestyle,119.00,2,238.00,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10329,2025-01-19,Jessica Brown,jessica.brown692@demo.org,Los Angeles,CA,Notebook Set,Office,12.99,1,12.99,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10330,2025-12-09,Robert Rodriguez,robert.rodriguez362@demo.org,Los Angeles,CA,Phone Case,Electronics,19.99,2,39.98,shipped,web
+ENT-003,Harborline Goods Inc,HL-10331,2025-04-23,Kimberly Adams,kimberly.adams340@fakemail.net,Charlotte,NC,Ergonomic Chair Cushion,Office,42.00,1,42.00,pending,in_store
+ENT-003,Harborline Goods Inc,HL-10332,2025-04-13,James Sanchez,james.sanchez25@example.com,San Diego,CA,Coffee Mug,Lifestyle,14.50,1,14.50,refunded,phone
+ENT-003,Harborline Goods Inc,HL-10333,2025-06-01,Joseph Garcia,joseph.garcia913@demo.org,Boston,MA,Bluetooth Speaker,Electronics,54.99,3,164.97,completed,web
+ENT-003,Harborline Goods Inc,HL-10334,2025-03-10,Kimberly Harris,kimberly.harris585@example.com,Dallas,TX,Notebook Set,Office,12.99,1,12.99,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10335,2025-11-21,Dorothy Clark,dorothy.clark164@fakemail.net,Charlotte,NC,Water Bottle,Lifestyle,18.00,1,18.00,shipped,web
+ENT-003,Harborline Goods Inc,HL-10336,2025-05-13,Steven Hall,steven.hall239@example.com,Phoenix,AZ,Wireless Mouse,Electronics,24.99,2,49.98,refunded,web
+ENT-003,Harborline Goods Inc,HL-10337,2025-09-22,Daniel Harris,daniel.harris523@demo.org,Denver,CO,Whiteboard,Office,49.99,5,249.95,refunded,in_store
+ENT-003,Harborline Goods Inc,HL-10338,2025-04-09,Margaret Davis,margaret.davis954@mailbox.test,Dallas,TX,Bluetooth Speaker,Electronics,54.99,2,109.98,completed,web
+ENT-003,Harborline Goods Inc,HL-10339,2025-12-21,Michael Adams,michael.adams517@mailbox.test,Austin,TX,Phone Case,Electronics,19.99,3,59.97,cancelled,mobile_app
+ENT-003,Harborline Goods Inc,HL-10340,2025-06-22,Kimberly Allen,kimberly.allen353@mailbox.test,Phoenix,AZ,Webcam HD,Electronics,69.99,1,69.99,shipped,web
+ENT-003,Harborline Goods Inc,HL-10341,2025-09-07,William Thomas,william.thomas955@mailbox.test,Portland,OR,Travel Adapter,Electronics,16.99,3,50.97,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10342,2025-09-08,Ingrid Petrov,ingrid.petrov495@example.com,Houston,TX,USB-C Hub,Electronics,39.99,1,39.99,pending,phone
+ENT-003,Harborline Goods Inc,HL-10343,2025-04-03,Kevin Nelson,kevin.nelson190@fakemail.net,Detroit,MI,Yoga Mat,Lifestyle,29.99,1,29.99,completed,phone
+ENT-003,Harborline Goods Inc,HL-10344,2025-12-11,Mark Roberts,mark.roberts130@demo.org,Austin,TX,Whiteboard,Office,49.99,2,99.98,completed,web
+ENT-003,Harborline Goods Inc,HL-10345,2025-12-24,Richard Rossi,richard.rossi101@example.com,Miami,FL,Travel Adapter,Electronics,16.99,2,33.98,shipped,web
+ENT-003,Harborline Goods Inc,HL-10346,2025-05-14,Jessica Harris,jessica.harris699@fakemail.net,Portland,OR,Coffee Mug,Lifestyle,14.50,2,29.00,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10347,2025-08-23,Mateo Wright,mateo.wright632@fakemail.net,Charlotte,NC,Laptop Stand,Office,34.50,3,103.50,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10348,2025-05-22,Donald Nguyen,donald.nguyen764@example.com,Nashville,TN,Bluetooth Speaker,Electronics,54.99,1,54.99,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10349,2025-01-25,Betty Sanchez,betty.sanchez393@fakemail.net,San Diego,CA,Wireless Mouse,Electronics,24.99,2,49.98,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10350,2025-05-04,Mary Sanchez,mary.sanchez958@example.com,Phoenix,AZ,Mechanical Keyboard,Electronics,89.99,2,179.98,shipped,in_store
+ENT-003,Harborline Goods Inc,HL-10351,2025-06-07,Chen Nelson,chen.nelson135@demo.org,Boston,MA,Insulated Tumbler,Lifestyle,25.00,1,25.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10352,2025-11-26,Jennifer Perez,jennifer.perez194@demo.org,Houston,TX,Whiteboard,Office,49.99,1,49.99,completed,phone
+ENT-003,Harborline Goods Inc,HL-10353,2025-10-07,Steven Kim,steven.kim403@demo.org,San Diego,CA,Whiteboard,Office,49.99,2,99.98,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10354,2025-11-15,Charles Hall,charles.hall621@demo.org,Philadelphia,PA,Bluetooth Speaker,Electronics,54.99,1,54.99,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10355,2025-04-08,Anthony Hill,anthony.hill470@demo.org,Boston,MA,Whiteboard,Office,49.99,2,99.98,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10356,2025-09-20,Steven Anderson,steven.anderson114@mailbox.test,Minneapolis,MN,Laptop Stand,Office,34.50,5,172.50,refunded,web
+ENT-003,Harborline Goods Inc,HL-10357,2025-08-07,Thomas Nelson,thomas.nelson392@example.com,Chicago,IL,Insulated Tumbler,Lifestyle,25.00,1,25.00,shipped,in_store
+ENT-003,Harborline Goods Inc,HL-10358,2025-09-22,Kevin Rodriguez,kevin.rodriguez375@demo.org,Nashville,TN,Whiteboard,Office,49.99,4,199.96,refunded,web
+ENT-003,Harborline Goods Inc,HL-10359,2025-02-01,Brian White,brian.white415@demo.org,Miami,FL,Running Shoes,Lifestyle,119.00,2,238.00,cancelled,mobile_app
+ENT-003,Harborline Goods Inc,HL-10360,2025-08-22,Charles Torres,charles.torres720@demo.org,Philadelphia,PA,USB-C Hub,Electronics,39.99,2,79.98,pending,in_store
+ENT-003,Harborline Goods Inc,HL-10361,2025-06-13,Susan Anderson,susan.anderson552@demo.org,New York,NY,Travel Adapter,Electronics,16.99,5,84.95,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10362,2025-10-14,Jessica Thomas,jessica.thomas286@demo.org,Chicago,IL,Monitor 27in,Electronics,229.00,3,687.00,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10363,2025-05-12,David Wright,david.wright932@demo.org,Detroit,MI,Bluetooth Speaker,Electronics,54.99,5,274.95,completed,web
+ENT-003,Harborline Goods Inc,HL-10364,2025-01-17,Mateo Garcia,mateo.garcia723@fakemail.net,Houston,TX,Desk Organizer,Office,22.50,1,22.50,completed,web
+ENT-003,Harborline Goods Inc,HL-10365,2025-03-23,Chen Martin,chen.martin996@mailbox.test,Minneapolis,MN,Water Bottle,Lifestyle,18.00,1,18.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10366,2025-06-09,Jennifer Robinson,jennifer.robinson378@fakemail.net,Minneapolis,MN,Monitor 27in,Electronics,229.00,3,687.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10367,2025-09-20,Chen Jackson,chen.jackson946@mailbox.test,Boston,MA,Desk Organizer,Office,22.50,1,22.50,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10368,2025-09-22,Michelle Petrov,michelle.petrov655@mailbox.test,Phoenix,AZ,Wireless Mouse,Electronics,24.99,1,24.99,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10369,2025-02-04,John Thompson,john.thompson3@mailbox.test,Seattle,WA,Monitor 27in,Electronics,229.00,4,916.00,cancelled,mobile_app
+ENT-003,Harborline Goods Inc,HL-10370,2025-01-24,Brian Jones,brian.jones252@demo.org,Miami,FL,Whiteboard,Office,49.99,1,49.99,shipped,web
+ENT-003,Harborline Goods Inc,HL-10371,2025-07-10,Sarah Rodriguez,sarah.rodriguez908@demo.org,Austin,TX,Bluetooth Speaker,Electronics,54.99,1,54.99,refunded,web
+ENT-003,Harborline Goods Inc,HL-10372,2025-05-02,Brian Jones,brian.jones44@mailbox.test,Denver,CO,Whiteboard,Office,49.99,1,49.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10373,2025-05-27,Jessica Garcia,jessica.garcia673@fakemail.net,Austin,TX,Travel Adapter,Electronics,16.99,2,33.98,refunded,web
+ENT-003,Harborline Goods Inc,HL-10374,2025-04-13,Lisa Wilson,lisa.wilson640@example.com,Nashville,TN,Whiteboard,Office,49.99,1,49.99,refunded,web
+ENT-003,Harborline Goods Inc,HL-10375,2025-02-28,Richard King,richard.king657@mailbox.test,Miami,FL,Wireless Mouse,Electronics,24.99,1,24.99,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10376,2025-01-17,Priya Scott,priya.scott906@demo.org,Portland,OR,Webcam HD,Electronics,69.99,2,139.98,pending,web
+ENT-003,Harborline Goods Inc,HL-10377,2025-05-08,David Hill,david.hill82@demo.org,Miami,FL,Coffee Mug,Lifestyle,14.50,2,29.00,cancelled,phone
+ENT-003,Harborline Goods Inc,HL-10378,2025-11-02,James Silva,james.silva85@demo.org,Houston,TX,USB-C Hub,Electronics,39.99,4,159.96,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10379,2025-10-06,Diego Campbell,diego.campbell445@demo.org,San Antonio,TX,Monitor 27in,Electronics,229.00,5,1145.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10380,2025-01-25,Melissa Lee,melissa.lee238@example.com,Nashville,TN,Desk Lamp,Office,27.95,1,27.95,completed,web
+ENT-003,Harborline Goods Inc,HL-10381,2025-10-24,Yuki Torres,yuki.torres689@example.com,Houston,TX,Coffee Mug,Lifestyle,14.50,1,14.50,shipped,in_store
+ENT-003,Harborline Goods Inc,HL-10382,2025-11-21,Sandra Jones,sandra.jones611@demo.org,Boston,MA,Laptop Stand,Office,34.50,1,34.50,completed,phone
+ENT-003,Harborline Goods Inc,HL-10383,2025-08-24,Sarah Hernandez,sarah.hernandez54@mailbox.test,Nashville,TN,Whiteboard,Office,49.99,3,149.97,completed,web
+ENT-003,Harborline Goods Inc,HL-10384,2025-01-05,Thomas Rossi,thomas.rossi144@fakemail.net,Seattle,WA,USB-C Hub,Electronics,39.99,1,39.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10385,2025-04-08,Yuki Adams,yuki.adams445@mailbox.test,Austin,TX,Bluetooth Speaker,Electronics,54.99,1,54.99,pending,web
+ENT-003,Harborline Goods Inc,HL-10386,2025-11-12,Elizabeth Ramirez,elizabeth.ramirez438@mailbox.test,Charlotte,NC,Insulated Tumbler,Lifestyle,25.00,1,25.00,shipped,web
+ENT-003,Harborline Goods Inc,HL-10387,2025-08-06,Thomas King,thomas.king258@fakemail.net,Minneapolis,MN,Backpack,Lifestyle,64.99,1,64.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10388,2025-10-06,Carol Williams,carol.williams591@demo.org,Phoenix,AZ,Water Bottle,Lifestyle,18.00,2,36.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10389,2025-09-23,Nancy Larsen,nancy.larsen909@mailbox.test,Chicago,IL,USB-C Hub,Electronics,39.99,1,39.99,refunded,web
+ENT-003,Harborline Goods Inc,HL-10390,2025-08-05,Charles Young,charles.young498@fakemail.net,Detroit,MI,Desk Organizer,Office,22.50,4,90.00,completed,phone
+ENT-003,Harborline Goods Inc,HL-10391,2025-06-18,Sandra Hill,sandra.hill471@fakemail.net,Houston,TX,Monitor 27in,Electronics,229.00,2,458.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10392,2025-04-05,Carol Smith,carol.smith405@demo.org,Chicago,IL,Whiteboard,Office,49.99,1,49.99,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10393,2025-06-20,Jessica Rossi,jessica.rossi260@example.com,Portland,OR,Notebook Set,Office,12.99,2,25.98,completed,web
+ENT-003,Harborline Goods Inc,HL-10394,2025-07-15,William Lewis,william.lewis339@mailbox.test,Dallas,TX,Insulated Tumbler,Lifestyle,25.00,1,25.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10395,2025-02-11,Michael Green,michael.green514@fakemail.net,Minneapolis,MN,Notebook Set,Office,12.99,1,12.99,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10396,2025-10-23,Paul Wilson,paul.wilson861@demo.org,Chicago,IL,Wireless Mouse,Electronics,24.99,2,49.98,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10397,2025-09-14,Kevin Young,kevin.young10@fakemail.net,Chicago,IL,USB-C Hub,Electronics,39.99,1,39.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10398,2025-08-08,Sarah Green,sarah.green691@mailbox.test,Houston,TX,Water Bottle,Lifestyle,18.00,1,18.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10399,2025-08-11,Michael Kowalski,michael.kowalski680@mailbox.test,Denver,CO,USB-C Hub,Electronics,39.99,1,39.99,completed,phone
+ENT-003,Harborline Goods Inc,HL-10400,2025-09-20,Steven King,steven.king462@fakemail.net,Seattle,WA,USB-C Hub,Electronics,39.99,1,39.99,pending,in_store
+ENT-003,Harborline Goods Inc,HL-10401,2025-04-09,Elizabeth Green,elizabeth.green827@mailbox.test,San Antonio,TX,Laptop Stand,Office,34.50,2,69.00,refunded,in_store
+ENT-003,Harborline Goods Inc,HL-10402,2025-09-16,Deborah Rivera,deborah.rivera543@example.com,Seattle,WA,Notebook Set,Office,12.99,1,12.99,refunded,web
+ENT-003,Harborline Goods Inc,HL-10403,2025-12-01,Ronald Sanchez,ronald.sanchez634@example.com,Phoenix,AZ,Insulated Tumbler,Lifestyle,25.00,1,25.00,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10404,2025-12-18,Carol Haddad,carol.haddad25@example.com,Los Angeles,CA,Laptop Stand,Office,34.50,1,34.50,pending,web
+ENT-003,Harborline Goods Inc,HL-10405,2025-04-21,Susan Lewis,susan.lewis134@example.com,San Diego,CA,Webcam HD,Electronics,69.99,3,209.97,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10406,2025-07-05,Melissa Lewis,melissa.lewis198@demo.org,Dallas,TX,Laptop Stand,Office,34.50,1,34.50,pending,mobile_app
+ENT-003,Harborline Goods Inc,HL-10407,2025-10-24,Mary Scott,mary.scott40@mailbox.test,Portland,OR,Laptop Stand,Office,34.50,1,34.50,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10408,2025-10-20,James Kim,james.kim581@example.com,San Diego,CA,Phone Case,Electronics,19.99,2,39.98,completed,phone
+ENT-003,Harborline Goods Inc,HL-10409,2025-07-17,Luca Wilson,luca.wilson294@demo.org,Miami,FL,Water Bottle,Lifestyle,18.00,3,54.00,shipped,web
+ENT-003,Harborline Goods Inc,HL-10410,2025-11-21,William Silva,william.silva308@mailbox.test,Boston,MA,Desk Organizer,Office,22.50,4,90.00,shipped,web
+ENT-003,Harborline Goods Inc,HL-10411,2025-06-02,George Brown,george.brown337@fakemail.net,Detroit,MI,Water Bottle,Lifestyle,18.00,3,54.00,shipped,web
+ENT-003,Harborline Goods Inc,HL-10412,2025-06-05,Patricia Thomas,patricia.thomas201@fakemail.net,Philadelphia,PA,Running Shoes,Lifestyle,119.00,3,357.00,shipped,web
+ENT-003,Harborline Goods Inc,HL-10413,2025-09-22,Ronald Ramirez,ronald.ramirez264@fakemail.net,Chicago,IL,Backpack,Lifestyle,64.99,2,129.98,completed,web
+ENT-003,Harborline Goods Inc,HL-10414,2025-12-07,Joshua Green,joshua.green455@demo.org,Dallas,TX,Mechanical Keyboard,Electronics,89.99,2,179.98,completed,phone
+ENT-003,Harborline Goods Inc,HL-10415,2025-04-10,James Thompson,james.thompson426@example.com,Philadelphia,PA,USB-C Hub,Electronics,39.99,4,159.96,completed,web
+ENT-003,Harborline Goods Inc,HL-10416,2025-06-26,David Mitchell,david.mitchell259@fakemail.net,Detroit,MI,Coffee Mug,Lifestyle,14.50,1,14.50,completed,phone
+ENT-003,Harborline Goods Inc,HL-10417,2025-05-03,Ashley Hill,ashley.hill546@mailbox.test,Denver,CO,Desk Lamp,Office,27.95,3,83.85,completed,web
+ENT-003,Harborline Goods Inc,HL-10418,2025-12-26,Melissa Williams,melissa.williams538@example.com,Seattle,WA,Desk Organizer,Office,22.50,1,22.50,shipped,web
+ENT-003,Harborline Goods Inc,HL-10419,2025-04-16,Sandra Johnson,sandra.johnson783@demo.org,Portland,OR,Ergonomic Chair Cushion,Office,42.00,3,126.00,completed,phone
+ENT-003,Harborline Goods Inc,HL-10420,2025-01-23,Fatima Williams,fatima.williams912@example.com,Los Angeles,CA,Desk Organizer,Office,22.50,1,22.50,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10421,2025-09-26,Aiko Young,aiko.young133@mailbox.test,New York,NY,Water Bottle,Lifestyle,18.00,2,36.00,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10422,2025-03-11,Aiko Okafor,aiko.okafor374@demo.org,Detroit,MI,Notebook Set,Office,12.99,1,12.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10423,2025-07-20,Melissa Green,melissa.green141@fakemail.net,Philadelphia,PA,Coffee Mug,Lifestyle,14.50,1,14.50,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10424,2025-04-16,Chen Rodriguez,chen.rodriguez610@example.com,Philadelphia,PA,Water Bottle,Lifestyle,18.00,2,36.00,completed,phone
+ENT-003,Harborline Goods Inc,HL-10425,2025-08-15,Matthew Torres,matthew.torres342@mailbox.test,Charlotte,NC,Coffee Mug,Lifestyle,14.50,2,29.00,shipped,phone
+ENT-003,Harborline Goods Inc,HL-10426,2025-03-21,James Anderson,james.anderson50@example.com,Charlotte,NC,Travel Adapter,Electronics,16.99,1,16.99,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10427,2025-06-08,Linda Baker,linda.baker610@mailbox.test,Chicago,IL,Bluetooth Speaker,Electronics,54.99,3,164.97,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10428,2025-05-09,Linda Scott,linda.scott577@demo.org,Boston,MA,Travel Adapter,Electronics,16.99,1,16.99,shipped,web
+ENT-003,Harborline Goods Inc,HL-10429,2025-04-21,Luca Nguyen,luca.nguyen283@mailbox.test,New York,NY,Water Bottle,Lifestyle,18.00,1,18.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10430,2025-06-25,Mary Nguyen,mary.nguyen40@mailbox.test,Denver,CO,USB-C Hub,Electronics,39.99,1,39.99,shipped,web
+ENT-003,Harborline Goods Inc,HL-10431,2025-02-23,George Wilson,george.wilson154@fakemail.net,Minneapolis,MN,USB-C Hub,Electronics,39.99,1,39.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10432,2025-06-17,Barbara Anderson,barbara.anderson50@demo.org,Charlotte,NC,Phone Case,Electronics,19.99,1,19.99,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10433,2025-01-10,Brian Davis,brian.davis142@fakemail.net,Portland,OR,Notebook Set,Office,12.99,3,38.97,refunded,web
+ENT-003,Harborline Goods Inc,HL-10434,2025-10-20,Karen Larsen,karen.larsen861@fakemail.net,Atlanta,GA,Phone Case,Electronics,19.99,1,19.99,refunded,in_store
+ENT-003,Harborline Goods Inc,HL-10435,2025-04-23,Paul Anderson,paul.anderson452@mailbox.test,Minneapolis,MN,Webcam HD,Electronics,69.99,1,69.99,completed,phone
+ENT-003,Harborline Goods Inc,HL-10436,2025-04-22,Betty Scott,betty.scott534@mailbox.test,Austin,TX,Ergonomic Chair Cushion,Office,42.00,1,42.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10437,2025-04-10,Kimberly Sanchez,kimberly.sanchez435@demo.org,Phoenix,AZ,Wireless Mouse,Electronics,24.99,1,24.99,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10438,2025-11-24,Karen Ferreira,karen.ferreira358@mailbox.test,Dallas,TX,Water Bottle,Lifestyle,18.00,3,54.00,shipped,web
+ENT-003,Harborline Goods Inc,HL-10439,2025-04-17,Linda Roberts,linda.roberts625@mailbox.test,Philadelphia,PA,USB-C Hub,Electronics,39.99,2,79.98,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10440,2025-05-09,Lisa Tanaka,lisa.tanaka157@example.com,Nashville,TN,Notebook Set,Office,12.99,1,12.99,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10441,2025-04-20,Ingrid Hall,ingrid.hall279@fakemail.net,Dallas,TX,Backpack,Lifestyle,64.99,4,259.96,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10442,2025-08-06,Lisa Miller,lisa.miller589@mailbox.test,Houston,TX,Wireless Mouse,Electronics,24.99,5,124.95,completed,web
+ENT-003,Harborline Goods Inc,HL-10443,2025-05-05,Yuki Jackson,yuki.jackson210@fakemail.net,San Diego,CA,Water Bottle,Lifestyle,18.00,3,54.00,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10444,2025-08-05,Thomas Jackson,thomas.jackson886@mailbox.test,Charlotte,NC,Travel Adapter,Electronics,16.99,1,16.99,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10445,2025-12-01,Yuki Sanchez,yuki.sanchez561@example.com,Miami,FL,Webcam HD,Electronics,69.99,4,279.96,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10446,2025-03-13,Michael Gonzalez,michael.gonzalez442@fakemail.net,Houston,TX,Desk Organizer,Office,22.50,4,90.00,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10447,2025-01-08,Donald Rossi,donald.rossi4@fakemail.net,New York,NY,Laptop Stand,Office,34.50,2,69.00,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10448,2025-01-28,Mary Sanchez,mary.sanchez907@mailbox.test,Boston,MA,Whiteboard,Office,49.99,1,49.99,pending,in_store
+ENT-003,Harborline Goods Inc,HL-10449,2025-12-13,Kimberly Sanchez,kimberly.sanchez652@example.com,Dallas,TX,Desk Lamp,Office,27.95,4,111.80,completed,phone
+ENT-003,Harborline Goods Inc,HL-10450,2025-07-08,Brian Williams,brian.williams331@example.com,Denver,CO,Bluetooth Speaker,Electronics,54.99,1,54.99,pending,in_store
+ENT-003,Harborline Goods Inc,HL-10451,2025-07-14,Omar Gonzalez,omar.gonzalez263@fakemail.net,Phoenix,AZ,Notebook Set,Office,12.99,1,12.99,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10452,2025-08-16,Priya Robinson,priya.robinson122@example.com,Los Angeles,CA,Monitor 27in,Electronics,229.00,1,229.00,cancelled,phone
+ENT-003,Harborline Goods Inc,HL-10453,2025-06-10,Diego Ferreira,diego.ferreira61@fakemail.net,Atlanta,GA,Running Shoes,Lifestyle,119.00,2,238.00,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10454,2025-10-21,Ronald Baker,ronald.baker131@mailbox.test,Detroit,MI,Coffee Mug,Lifestyle,14.50,1,14.50,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10455,2025-08-15,John Young,john.young909@fakemail.net,Seattle,WA,Whiteboard,Office,49.99,3,149.97,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10456,2025-02-15,Steven Garcia,steven.garcia53@demo.org,Phoenix,AZ,Desk Lamp,Office,27.95,1,27.95,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10457,2025-06-23,David Ferreira,david.ferreira556@example.com,Detroit,MI,Monitor 27in,Electronics,229.00,5,1145.00,pending,in_store
+ENT-003,Harborline Goods Inc,HL-10458,2025-03-13,Patricia Davis,patricia.davis305@mailbox.test,Phoenix,AZ,Phone Case,Electronics,19.99,2,39.98,shipped,in_store
+ENT-003,Harborline Goods Inc,HL-10459,2025-04-18,Jessica Thomas,jessica.thomas187@mailbox.test,Detroit,MI,Water Bottle,Lifestyle,18.00,1,18.00,completed,phone
+ENT-003,Harborline Goods Inc,HL-10460,2025-04-16,Susan Thomas,susan.thomas453@mailbox.test,San Diego,CA,Whiteboard,Office,49.99,1,49.99,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10461,2025-01-07,Mark Wilson,mark.wilson93@demo.org,Philadelphia,PA,Webcam HD,Electronics,69.99,1,69.99,shipped,web
+ENT-003,Harborline Goods Inc,HL-10462,2025-09-14,Karen Walker,karen.walker817@demo.org,San Antonio,TX,Insulated Tumbler,Lifestyle,25.00,2,50.00,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10463,2025-06-13,Patricia Thompson,patricia.thompson213@demo.org,Philadelphia,PA,Notebook Set,Office,12.99,1,12.99,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10464,2025-11-24,William Gonzalez,william.gonzalez771@demo.org,Chicago,IL,Phone Case,Electronics,19.99,1,19.99,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10465,2025-12-10,Daniel Wilson,daniel.wilson371@fakemail.net,Dallas,TX,Mechanical Keyboard,Electronics,89.99,1,89.99,shipped,web
+ENT-003,Harborline Goods Inc,HL-10466,2025-08-08,Richard Lopez,richard.lopez868@example.com,Charlotte,NC,Coffee Mug,Lifestyle,14.50,1,14.50,completed,web
+ENT-003,Harborline Goods Inc,HL-10467,2025-05-14,William Haddad,william.haddad959@demo.org,San Diego,CA,Mechanical Keyboard,Electronics,89.99,2,179.98,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10468,2025-04-18,Chen Ferreira,chen.ferreira396@example.com,Dallas,TX,Backpack,Lifestyle,64.99,2,129.98,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10469,2025-04-24,Fatima Rodriguez,fatima.rodriguez184@fakemail.net,San Diego,CA,Ergonomic Chair Cushion,Office,42.00,1,42.00,shipped,in_store
+ENT-003,Harborline Goods Inc,HL-10470,2025-12-17,Steven Lewis,steven.lewis372@mailbox.test,Philadelphia,PA,Running Shoes,Lifestyle,119.00,4,476.00,refunded,web
+ENT-003,Harborline Goods Inc,HL-10471,2025-06-26,Michelle Robinson,michelle.robinson230@fakemail.net,San Antonio,TX,Phone Case,Electronics,19.99,1,19.99,shipped,mobile_app
+ENT-003,Harborline Goods Inc,HL-10472,2025-05-12,Dorothy Hall,dorothy.hall533@demo.org,Boston,MA,Running Shoes,Lifestyle,119.00,1,119.00,refunded,in_store
+ENT-003,Harborline Goods Inc,HL-10473,2025-12-18,George Thomas,george.thomas210@fakemail.net,Boston,MA,Yoga Mat,Lifestyle,29.99,1,29.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10474,2025-04-03,Michael Roberts,michael.roberts934@fakemail.net,Phoenix,AZ,Travel Adapter,Electronics,16.99,1,16.99,pending,mobile_app
+ENT-003,Harborline Goods Inc,HL-10475,2025-05-08,Betty Flores,betty.flores911@fakemail.net,Chicago,IL,Whiteboard,Office,49.99,1,49.99,pending,mobile_app
+ENT-003,Harborline Goods Inc,HL-10476,2025-08-19,Dorothy Scott,dorothy.scott687@example.com,Detroit,MI,Backpack,Lifestyle,64.99,1,64.99,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10477,2025-10-19,Thomas Jackson,thomas.jackson396@demo.org,Houston,TX,Desk Lamp,Office,27.95,1,27.95,completed,mobile_app
+ENT-003,Harborline Goods Inc,HL-10478,2025-11-09,Omar Martinez,omar.martinez514@mailbox.test,Dallas,TX,Mechanical Keyboard,Electronics,89.99,2,179.98,pending,web
+ENT-003,Harborline Goods Inc,HL-10479,2025-01-23,Karen Miller,karen.miller302@mailbox.test,Seattle,WA,Wireless Mouse,Electronics,24.99,1,24.99,completed,phone
+ENT-003,Harborline Goods Inc,HL-10480,2025-05-22,Aiko Johnson,aiko.johnson814@fakemail.net,Philadelphia,PA,Whiteboard,Office,49.99,2,99.98,pending,phone
+ENT-003,Harborline Goods Inc,HL-10481,2025-10-26,Sandra Mitchell,sandra.mitchell895@mailbox.test,Boston,MA,Travel Adapter,Electronics,16.99,2,33.98,shipped,web
+ENT-003,Harborline Goods Inc,HL-10482,2025-05-01,Amanda Davis,amanda.davis221@fakemail.net,San Antonio,TX,Laptop Stand,Office,34.50,2,69.00,shipped,phone
+ENT-003,Harborline Goods Inc,HL-10483,2025-09-01,Diego Lopez,diego.lopez844@example.com,Houston,TX,Insulated Tumbler,Lifestyle,25.00,1,25.00,shipped,web
+ENT-003,Harborline Goods Inc,HL-10484,2025-10-16,Ronald Perez,ronald.perez938@demo.org,Seattle,WA,Backpack,Lifestyle,64.99,4,259.96,shipped,web
+ENT-003,Harborline Goods Inc,HL-10485,2025-08-07,Lisa Jackson,lisa.jackson974@example.com,Los Angeles,CA,USB-C Hub,Electronics,39.99,1,39.99,completed,web
+ENT-003,Harborline Goods Inc,HL-10486,2025-05-23,John Kowalski,john.kowalski255@example.com,San Antonio,TX,USB-C Hub,Electronics,39.99,2,79.98,completed,web
+ENT-003,Harborline Goods Inc,HL-10487,2025-03-23,Richard Garcia,richard.garcia192@demo.org,Phoenix,AZ,Running Shoes,Lifestyle,119.00,1,119.00,pending,mobile_app
+ENT-003,Harborline Goods Inc,HL-10488,2025-10-01,Elizabeth Perez,elizabeth.perez556@fakemail.net,Chicago,IL,Notebook Set,Office,12.99,1,12.99,shipped,web
+ENT-003,Harborline Goods Inc,HL-10489,2025-08-21,Fatima Jones,fatima.jones699@fakemail.net,Miami,FL,Desk Organizer,Office,22.50,1,22.50,refunded,web
+ENT-003,Harborline Goods Inc,HL-10490,2025-12-07,Ronald Baker,ronald.baker100@fakemail.net,Seattle,WA,USB-C Hub,Electronics,39.99,2,79.98,completed,phone
+ENT-003,Harborline Goods Inc,HL-10491,2025-06-17,Matthew Silva,matthew.silva111@mailbox.test,Charlotte,NC,Notebook Set,Office,12.99,2,25.98,completed,phone
+ENT-003,Harborline Goods Inc,HL-10492,2025-10-27,Mary Torres,mary.torres171@example.com,Portland,OR,Water Bottle,Lifestyle,18.00,1,18.00,cancelled,web
+ENT-003,Harborline Goods Inc,HL-10493,2025-09-26,Emily Gonzalez,emily.gonzalez939@mailbox.test,Seattle,WA,Water Bottle,Lifestyle,18.00,1,18.00,completed,web
+ENT-003,Harborline Goods Inc,HL-10494,2025-08-22,Mateo Rodriguez,mateo.rodriguez327@demo.org,Houston,TX,Laptop Stand,Office,34.50,1,34.50,completed,in_store
+ENT-003,Harborline Goods Inc,HL-10495,2025-04-01,Margaret Martinez,margaret.martinez393@fakemail.net,Nashville,TN,Coffee Mug,Lifestyle,14.50,1,14.50,pending,web
+ENT-003,Harborline Goods Inc,HL-10496,2025-12-08,Melissa Campbell,melissa.campbell421@mailbox.test,Austin,TX,USB-C Hub,Electronics,39.99,1,39.99,refunded,mobile_app
+ENT-003,Harborline Goods Inc,HL-10497,2025-07-02,Amanda Sanchez,amanda.sanchez418@fakemail.net,Boston,MA,Desk Organizer,Office,22.50,1,22.50,pending,mobile_app
+ENT-003,Harborline Goods Inc,HL-10498,2025-10-05,Luca Larsen,luca.larsen382@mailbox.test,Boston,MA,Bluetooth Speaker,Electronics,54.99,3,164.97,cancelled,mobile_app
+ENT-003,Harborline Goods Inc,HL-10499,2025-04-05,Joshua Smith,joshua.smith873@example.com,Detroit,MI,Yoga Mat,Lifestyle,29.99,2,59.98,completed,mobile_app

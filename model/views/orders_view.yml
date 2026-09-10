@@ -1,0 +1,41 @@
+views:
+  - name: orders_view
+    description: Orders view combining order data with customer, nation, and region information
+
+    cubes:
+      - join_path: orders
+        includes:
+          - order_key
+          - order_status
+          - order_date
+          - order_priority
+          - clerk
+          - total_price
+          - count
+          - total_revenue
+          - avg_order_value
+          - fulfilled_count
+          - open_count
+          - pending_count
+          - fulfilled_revenue
+
+      - join_path: orders.customer
+        prefix: true
+        includes:
+          - name
+          - mkt_segment
+          - acct_bal
+
+      - join_path: orders.customer.nation
+        prefix: true
+        includes:
+          - name
+
+      - join_path: orders.customer.nation.region
+        prefix: true
+        includes:
+          - name
+
+
+    access_policy:
+      - group: "rory"

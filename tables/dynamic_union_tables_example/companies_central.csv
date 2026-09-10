@@ -1,0 +1,3 @@
+id,company_name,industry,headquarters,founded_year,employee_count,annual_revenue,ceo,ceo_email,is_public,ticker_symbol
+1,Globex Industries,Manufacturing,Chicago,1998,3400,67800000.00,Bob Johnson,bjohnson@globex.com,false,
+2,Soylent LLC,Food & Beverage,Austin,2018,320,8100000.00,Diana Marsh,dmarsh@soylent.com,false,

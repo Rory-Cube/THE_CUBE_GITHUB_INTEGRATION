@@ -1,0 +1,185 @@
+cubes:
+  - name: food_delivery_service
+    data_source: duckdb
+    sql: >
+      SELECT * FROM read_csv('tables/food_delivery_service/food_delivery_service.csv', header=true, auto_detect=true)
+    public: false
+
+    dimensions:
+      - name: order_id
+        sql: "{CUBE}.\"Order ID\""
+        type: string
+        primary_key: true
+        public: true
+
+      - name: order_date
+        sql: "{CUBE}.\"Order Date\""
+        type: time
+
+      - name: customer_id
+        sql: "{CUBE}.\"Customer ID\""
+        type: string
+
+      - name: membership_status
+        sql: "{CUBE}.\"Membership Status\""
+        type: string
+
+      - name: restaurant_name
+        sql: "{CUBE}.\"Restaurant Name\""
+        type: string
+
+      - name: cuisine_type
+        sql: "{CUBE}.\"Cuisine Type\""
+        type: string
+
+      - name: city
+        sql: "{CUBE}.\"City\""
+        type: string
+
+      - name: order_status
+        sql: "{CUBE}.\"Order Status\""
+        type: string
+
+      - name: payment_method
+        sql: "{CUBE}.\"Payment Method\""
+        type: string
+
+      - name: driver_id
+        sql: "{CUBE}.\"Driver ID\""
+        type: string
+
+      - name: promo_code_used
+        sql: "{CUBE}.\"Promo Code Used\""
+        type: string
+
+    measures:
+      - name: count
+        type: count
+        description: Total number of orders
+        drill_members:
+          - order_id
+          - order_date
+          - customer_id
+          - restaurant_name
+          - order_status
+
+      - name: total_revenue
+        sql: "{CUBE}.\"Order Total\""
+        type: sum
+        description: Sum of all order totals
+        format: currency
+        drill_members:
+          - order_id
+          - order_date
+          - customer_id
+          - restaurant_name
+          - order_status
+
+      - name: total_subtotal
+        sql: "{CUBE}.\"Subtotal\""
+        type: sum
+        description: Sum of order subtotals (before fees and tips)
+        format: currency
+
+      - name: total_tips
+        sql: "{CUBE}.\"Tip Amount\""
+        type: sum
+        description: Total tip amounts collected
+        format: currency
+
+      - name: total_service_fees
+        sql: "{CUBE}.\"Service Fee\""
+        type: sum
+        description: Total service fees collected
+        format: currency
+
+      - name: total_base_delivery_fees
+        sql: "{CUBE}.\"Base Delivery Fee\""
+        type: sum
+        description: Total base delivery fees charged
+        format: currency
+
+### TEST START
+      
+      # - name: total_jet_plus_fees_funded
+      - name: jet_plus_fees_funded
+        title: JET+ Delivery Fees Funded
+        sql: "{CUBE}.\"JET+ Delivery Fees Funded\""
+        type: sum
+        # description: The delivery fee covered by the JET+ membership program ($0 for non-members)
+        format: currency
+
+      - name: jet_plus_logistics_delivery_fee_share
+        title: JET+ Logistics Delivery Fee Share
+        sql: "{CUBE}.\"JET+ Logistics Delivery Fee Share\""
+        type: sum
+        # description: The portion of the base delivery fee allocated to the logistics partner
+        format: currency
+
+### TEST END      
+
+      - name: avg_order_total
+        sql: "{CUBE}.\"Order Total\""
+        type: avg
+        description: Average order total
+        format: currency
+
+      - name: avg_delivery_time
+        sql: "{CUBE}.\"Delivery Time (min)\""
+        type: avg
+        description: Average delivery time in minutes
+
+      - name: avg_customer_rating
+        sql: "{CUBE}.\"Customer Rating\""
+        type: avg
+        description: Average customer rating (1–5)
+
+      - name: total_items
+        sql: "{CUBE}.\"Items Count\""
+        type: sum
+        description: Total number of items ordered
+
+      - name: unique_customers
+        sql: "{CUBE}.\"Customer ID\""
+        type: count_distinct
+        description: Number of unique customers
+
+      - name: unique_restaurants
+        sql: "{CUBE}.\"Restaurant Name\""
+        type: count_distinct
+        description: Number of unique restaurants
+
+      - name: unique_drivers
+        sql: "{CUBE}.\"Driver ID\""
+        type: count_distinct
+        description: Number of unique drivers
+
+      - name: delivered_count
+        type: count
+        description: Number of successfully delivered orders
+        filters:
+          - sql: "{CUBE}.\"Order Status\" = 'Delivered'"
+
+      - name: cancelled_count
+        type: count
+        description: Number of cancelled orders
+        filters:
+          - sql: "{CUBE}.\"Order Status\" = 'Cancelled'"
+
+      - name: jet_plus_member_orders
+        type: count
+        description: Number of orders placed by JET+ members
+        filters:
+          - sql: "{CUBE}.\"Membership Status\" = 'JET+ Member'"
+
+      - name: promo_orders
+        type: count
+        description: Number of orders where a promo code was used
+        filters:
+          - sql: "{CUBE}.\"Promo Code Used\" IS NOT NULL"
+
+      - name: delivery_rate
+        sql: "(1.0 * {CUBE.delivered_count} / NULLIF({CUBE.count}, 0))"
+        type: number
+        description: Percentage of orders successfully delivered
+        format: percent

@@ -1,0 +1,6 @@
+views:
+  - name: author_view
+   
+    cubes:
+      - join_path: author
+        includes: "*"

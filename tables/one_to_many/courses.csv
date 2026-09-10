@@ -1,0 +1,11 @@
+course_id,course_name,category,instructor,price_usd,max_seats
+101,Intro to Pottery,Art,M. Osei,120,12
+102,Sourdough Basics,Cooking,R. Delgado,85,10
+103,Watercolor Landscapes,Art,K. Yamamoto,95,15
+104,Beginner Woodworking,Craft,T. Lindqvist,150,8
+105,Digital Photography,Art,A. Farah,110,20
+106,Conversational Spanish,Language,L. Herrera,200,16
+107,Urban Gardening,Outdoors,J. Park,60,25
+108,Home Brewing,Cooking,R. Delgado,90,10
+109,Bookbinding by Hand,Craft,K. Yamamoto,130,8
+110,Knife Skills,Cooking,S. Novak,75,12

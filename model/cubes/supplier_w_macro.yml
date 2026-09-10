@@ -1,0 +1,60 @@
+{% from "macros/macro_1.yml" import macro_1 %}
+cubes:
+  - name: supplier_w_macro
+    public: false
+    sql_table: TPCH_SF100.SUPPLIER
+
+    joins:
+      - name: nation
+        sql: "{CUBE}.S_NATIONKEY = {nation}.N_NATIONKEY"
+        relationship: many_to_one
+
+    dimensions:
+  
+       {{ macro_1() }}
+        
+      - name: supp_key
+        sql: S_SUPPKEY
+        type: number
+        primary_key: true
+
+      - name: name
+        sql: S_NAME
+        type: string
+        description: Supplier name
+
+      - name: address
+        sql: S_ADDRESS
+        type: string
+
+      - name: nation_key
+        sql: S_NATIONKEY
+        type: number
+
+      - name: phone
+        sql: S_PHONE
+        type: string
+
+      - name: acct_bal
+        sql: S_ACCTBAL
+        type: number
+        description: Supplier account balance
+
+      - name: comment
+        sql: S_COMMENT
+        type: string
+
+    measures:
+      - name: count
+        type: count
+        description: Total number of suppliers
+
+      - name: total_acct_bal
+        sql: S_ACCTBAL
+        type: sum
+        description: Sum of all supplier account balances
+
+      - name: avg_acct_bal
+        sql: S_ACCTBAL
+        type: avg
+        description: Average supplier account balance

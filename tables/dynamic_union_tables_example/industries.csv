@@ -1,0 +1,8 @@
+industry,sector,is_regulated
+Technology,Tech & Data,false
+Manufacturing,Industrials,false
+Finance,Financial Services,true
+Healthcare,Life Sciences,true
+Food & Beverage,Consumer,true
+Biotechnology,Life Sciences,true
+Logistics,Industrials,false

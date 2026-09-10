@@ -1,0 +1,8 @@
+{%- macro macro_1() -%}
+
+# --- test_dimension ---
+      - name: test_dimension
+        sql: "3"
+        type: number
+
+{%- endmacro -%}
