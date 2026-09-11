@@ -1,0 +1,105 @@
+# cubes:
+#   - name: orders
+#     public: false
+#     sql_table: TPCH_SF100.ORDERS
+
+#     joins:
+#       - name: customer
+#         sql: "{CUBE}.O_CUSTKEY = {customer}.C_CUSTKEY"
+#         relationship: many_to_one
+
+#     dimensions:
+#       - name: order_key
+#         sql: O_ORDERKEY
+#         type: number
+#         primary_key: true
+
+#       - name: cust_key
+#         sql: O_CUSTKEY
+#         type: number
+
+#       - name: order_status
+#         sql: O_ORDERSTATUS
+#         type: string
+#         description: Order status (O=Open, F=Fulfilled, P=Pending)
+
+#       - name: total_price
+#         sql: O_TOTALPRICE
+#         type: number
+#         description: Total price of the order
+
+#       - name: order_date
+#         sql: O_ORDERDATE
+#         type: time
+#         description: Date when the order was placed
+#         format: "%Y-%m-%d"
+
+#       - name: order_priority
+#         sql: O_ORDERPRIORITY
+#         type: string
+#         description: Order priority (1-URGENT, 2-HIGH, 3-MEDIUM, 4-NOT SPECIFIED, 5-LOW)
+
+#       - name: clerk
+#         sql: O_CLERK
+#         type: string
+#         description: Clerk who handled the order
+
+#       - name: ship_priority
+#         sql: O_SHIPPRIORITY
+#         type: number
+#         description: Shipping priority
+
+#       - name: comment
+#         sql: O_COMMENT
+#         type: string
+
+#     measures:
+#       - name: count
+#         type: count
+#         description: Total number of orders
+
+#       - name: total_revenue
+#         sql: O_TOTALPRICE
+#         type: sum
+#         description: Total revenue across all orders
+
+#       - name: avg_order_value
+#         sql: O_TOTALPRICE
+#         type: avg
+#         description: Average order value
+
+#       - name: fulfilled_count
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.O_ORDERSTATUS = 'F'"
+#         description: Number of fulfilled orders
+
+#       - name: open_count
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.O_ORDERSTATUS = 'O'"
+#         description: Number of open orders
+
+#       - name: pending_count
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.O_ORDERSTATUS = 'P'"
+#         description: Number of pending orders
+
+#       - name: fulfilled_revenue
+#         sql: O_TOTALPRICE
+#         type: sum
+#         filters:
+#           - sql: "{CUBE}.O_ORDERSTATUS = 'F'"
+#         description: Revenue from fulfilled orders
+
+
+#     # access_policy:
+#     #   - group: "*"
+#     #     # member_level:
+#     #     #   includes: "*"
+#     #     row_level:
+#     #       filters:
+#     #         - member: order_status
+#     #           operator: equals
+#     #           values: [ "{ securityContext.order_status }" ]

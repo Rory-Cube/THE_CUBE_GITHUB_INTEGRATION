@@ -1,0 +1,209 @@
+# cubes:
+#   - name: lineitem
+#     # public: false
+#     sql_table: TPCH_SF100.LINEITEM
+#     public: false
+
+#     joins:
+#       - name: orders
+#         sql: "{CUBE}.L_ORDERKEY = {orders}.O_ORDERKEY"
+#         relationship: many_to_one
+
+#       - name: part
+#         sql: "{CUBE}.L_PARTKEY = {part}.P_PARTKEY"
+#         relationship: many_to_one
+
+#       - name: supplier
+#         sql: "{CUBE}.L_SUPPKEY = {supplier}.S_SUPPKEY"
+#         relationship: many_to_one
+
+#     dimensions:
+#       - name: id
+#         sql: "CONCAT(CAST(L_ORDERKEY AS VARCHAR), '_', CAST(L_LINENUMBER AS VARCHAR))"
+#         type: string
+#         primary_key: true
+
+#       - name: order_key
+#         sql: L_ORDERKEY
+#         type: number
+
+#       - name: part_key
+#         sql: L_PARTKEY
+#         type: number
+
+#       - name: supp_key
+#         sql: L_SUPPKEY
+#         type: number
+
+#       - name: line_number
+#         sql: L_LINENUMBER
+#         type: number
+
+#       - name: quantity
+#         sql: L_QUANTITY
+#         type: number
+#         description: Quantity ordered
+
+#       - name: extended_price
+#         sql: L_EXTENDEDPRICE
+#         type: number
+#         description: Extended (gross) price before discount and tax
+
+#       - name: discount
+#         sql: L_DISCOUNT
+#         type: number
+#         description: Discount fraction (e.g. 0.05 = 5%)
+
+#       - name: tax
+#         sql: L_TAX
+#         type: number
+#         description: Tax rate fraction
+
+#       - name: return_flag
+#         sql: L_RETURNFLAG
+#         type: string
+#         description: Return flag (R=Returned, A=Accepted, N=Not returned)
+
+#       - name: line_status
+#         sql: L_LINESTATUS
+#         type: string
+#         description: Line item status (O=Open, F=Fulfilled)
+
+#       - name: ship_date
+#         sql: L_SHIPDATE
+#         type: time
+#         description: Shipment date
+
+#       - name: commit_date
+#         sql: L_COMMITDATE
+#         type: time
+#         description: Committed delivery date
+
+#       - name: receipt_date
+#         sql: L_RECEIPTDATE
+#         type: time
+#         description: Date item was received
+
+#       - name: ship_instruct
+#         sql: L_SHIPINSTRUCT
+#         type: string
+#         description: Shipping instructions
+
+#       - name: ship_mode
+#         sql: L_SHIPMODE
+#         type: string
+#         description: Mode of shipment (AIR, SHIP, TRUCK, RAIL, MAIL, FOB, REG AIR)
+
+#       - name: comment
+#         sql: L_COMMENT
+#         type: string
+
+#       - name: out_of_time_range
+#         sql: '1'
+#         type: number
+
+#     measures:
+#       - name: count
+#         type: count
+#         description: Total number of line items
+
+#       - name: total_quantity
+#         sql: L_QUANTITY
+#         type: sum
+#         description: Total quantity across all line items
+
+#       - name: total_extended_price
+#         sql: L_EXTENDEDPRICE
+#         type: sum
+#         description: Sum of gross extended prices
+
+#       - name: total_revenue
+#         sql: "L_EXTENDEDPRICE * (1 - L_DISCOUNT)"
+#         type: sum
+#         description: Net revenue after discounts (extended price * (1 - discount))
+
+#       - name: total_revenue_after_tax
+#         sql: "L_EXTENDEDPRICE * (1 - L_DISCOUNT) * (1 + L_TAX)"
+#         type: sum
+#         description: Net revenue after discount and tax
+
+#       - name: avg_discount
+#         sql: L_DISCOUNT
+#         type: avg
+#         description: Average discount rate
+
+#       - name: avg_quantity
+#         sql: L_QUANTITY
+#         type: avg
+#         description: Average quantity per line item
+
+#       - name: avg_extended_price
+#         sql: L_EXTENDEDPRICE
+#         type: avg
+#         description: Average extended price per line item
+
+#       - name: returned_count
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.L_RETURNFLAG = 'R'"
+#         description: Number of returned line items
+
+#       - name: total_discount_amount
+#         sql: "L_EXTENDEDPRICE * L_DISCOUNT"
+#         type: sum
+#         description: Total discount amount given
+
+#       - name: receipt_date_or_nation_key_sum
+#         type: sum
+#         sql: "CASE WHEN {receipt_date} > '1995-01-01' THEN 1 ELSE {supplier.nation_key} END"
+#         description: SUM of 1 when receipt date is after 1995-01-01, otherwise supplier nation key
+
+#     pre_aggregations:
+#       - name: lineitem_rollup
+#         measures:
+#           - count
+#           - total_quantity
+#           - total_extended_price
+#           - total_revenue
+#           - total_revenue_after_tax
+#           - avg_discount
+#           - avg_quantity
+#           - avg_extended_price
+#           - returned_count
+#           - total_discount_amount
+#         dimensions:
+#           - order_key
+#           - return_flag
+#           - line_status
+#           - ship_mode
+#           - ship_instruct
+#           - comment
+#         time_dimension: ship_date
+#         granularity: day
+#         partition_granularity: month
+#         refresh_key:
+#           every: 1 day
+#         build_range_start:
+#           sql: SELECT CURRENT_DATE - INTERVAL '35 year'
+#         build_range_end:
+#           sql: SELECT CURRENT_DATE
+#         indexes:
+#           - name: return_flag_groupby_index
+#             # type: aggregate
+#             columns:
+#               - return_flag
+#               - ship_mode
+#               - ship_instruct
+#               - line_status
+#               # - "{'lineitem__ship_date_day'}"
+
+#     # access_policy:
+#     #   - groups: ["*"]
+#     #     member_level:
+#     #       includes: "*"
+#     #     row_level:
+#     #       filters:
+#     #         - member: return_flag
+#     #           operator: equals
+#     #           values: [ "{ securityContext.return_flag }" ]
+

@@ -1,58 +1,58 @@
 # this is just a test. I forgot what the test was for.
 # Still don't know.
-cubes:
-  - name: test_supplier
-    public: false
-    sql_table: TPCH_SF100.SUPPLIER
+# cubes:
+#   - name: test_supplier
+#     public: false
+#     sql_table: TPCH_SF100.SUPPLIER
 
-    joins:
-      - name: nation
-        sql: "{CUBE}.S_NATIONKEY = {nation}.N_NATIONKEY"
-        relationship: many_to_one
+#     joins:
+#       - name: nation
+#         sql: "{CUBE}.S_NATIONKEY = {nation}.N_NATIONKEY"
+#         relationship: many_to_one
 
-    dimensions:
-      - name: supp_key
-        sql: S_SUPPKEY
-        type: number
-        primary_key: true
+#     dimensions:
+#       - name: supp_key
+#         sql: S_SUPPKEY
+#         type: number
+#         primary_key: true
 
-      - name: name
-        sql: S_NAME
-        type: string
-        description: Supplier name
+#       - name: name
+#         sql: S_NAME
+#         type: string
+#         description: Supplier name
 
-      - name: address
-        sql: S_ADDRESS
-        type: string
+#       - name: address
+#         sql: S_ADDRESS
+#         type: string
 
-      - name: nation_key
-        sql: S_NATIONKEY
-        type: number
+#       - name: nation_key
+#         sql: S_NATIONKEY
+#         type: number
 
-      - name: phone
-        sql: S_PHONE
-        type: string
+#       - name: phone
+#         sql: S_PHONE
+#         type: string
 
-      - name: acct_bal
-        sql: S_ACCTBAL
-        type: number
-        description: Supplier account balance
+#       - name: acct_bal
+#         sql: S_ACCTBAL
+#         type: number
+#         description: Supplier account balance
 
-      - name: comment
-        sql: S_COMMENT
-        type: string
+#       - name: comment
+#         sql: S_COMMENT
+#         type: string
 
-    measures:
-      - name: count
-        type: count
-        description: Total number of suppliers
+#     measures:
+#       - name: count
+#         type: count
+#         description: Total number of suppliers
 
-      - name: total_acct_bal
-        sql: S_ACCTBAL
-        type: sum
-        description: Sum of all supplier account balances
+#       - name: total_acct_bal
+#         sql: S_ACCTBAL
+#         type: sum
+#         description: Sum of all supplier account balances
 
-      - name: avg_acct_bal
-        sql: S_ACCTBAL
-        type: avg
-        description: Average supplier account balance
+#       - name: avg_acct_bal
+#         sql: S_ACCTBAL
+#         type: avg
+#         description: Average supplier account balance

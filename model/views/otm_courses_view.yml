@@ -1,27 +1,27 @@
-views:
-  - name: otm_courses_view
-    description: Courses view combining course details with enrollment metrics.
+# views:
+#   - name: otm_courses_view
+#     description: Courses view combining course details with enrollment metrics.
 
-    cubes:
-      - join_path: otm_courses
-        includes:
-          - course_id
-          - course_name
-          - category
-          - instructor
-          - price_usd
-          - max_seats
-          - count
-          - avg_price_usd
-          - total_seats
+#     cubes:
+#       - join_path: otm_courses
+#         includes:
+#           - course_id
+#           - course_name
+#           - category
+#           - instructor
+#           - price_usd
+#           - max_seats
+#           - count
+#           - avg_price_usd
+#           - total_seats
 
-      - join_path: otm_courses.otm_enrollments
-        prefix: true
-        includes:
-          - enrollment_id
-          - student_name
-          - enrolled_date
-          - status
-          - count
-          - total_revenue_usd
-          - completed_count
+#       - join_path: otm_courses.otm_enrollments
+#         prefix: true
+#         includes:
+#           - enrollment_id
+#           - student_name
+#           - enrolled_date
+#           - status
+#           - count
+#           - total_revenue_usd
+#           - completed_count

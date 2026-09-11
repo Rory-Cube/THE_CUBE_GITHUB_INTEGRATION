@@ -1,7 +1,7 @@
-views:
-  - name: pick_up_view
-    description: Carrier pick-ups with product volumes, appointment adherence, and dwell time
+# views:
+#   - name: pick_up_view
+#     description: Carrier pick-ups with product volumes, appointment adherence, and dwell time
 
-    cubes:
-      - join_path: pick_up
-        includes: "*"
+#     cubes:
+#       - join_path: pick_up
+#         includes: "*"

@@ -1,10 +1,10 @@
-views:
-  - name: carrier_view
+# views:
+#   - name: carrier_view
    
-    cubes:
-      - join_path: carrier
-        includes: "*"
+#     cubes:
+#       - join_path: carrier
+#         includes: "*"
 
-    # access_policy:
-    #   - group: "rory"
+#     # access_policy:
+#     #   - group: "rory"
         

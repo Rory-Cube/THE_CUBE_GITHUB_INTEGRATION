@@ -7,200 +7,200 @@
 #   - the stg.* lookup tables are now CSVs in the same directory
 # The hs_brands join is commented out because that table has no CSV here.
 
-cubes:
-  - name: fpe_merchant_approval_stats
-    data_source: duckdb
-    sql: |
-      SELECT
-        trx.remote_brand_id,
-        MAX(timestamp 'epoch' + trx.remote_created * interval '1 second') AS last_trx_date,
-        MAX(COALESCE(processor.psp, trx.psp, trx.pp, 'CHECK')) AS psp_unifier_trx,
-        MAX(COALESCE(payment_method.title, trx.paymentmethod, 'CHECK')) AS payment_method_trx,
-        MAX(CASE WHEN trx.transaction_type in ('deposit','sale','api_sale') THEN 'Sale'
-                 WHEN trx.transaction_type in ('payout','refund','withdrawal') THEN 'Payout/refund'
-                 ELSE 'Authorization' END) AS simplified_trx_type,
-        MAX(country_region.country) AS country,
-        SUM(CASE WHEN trx.status in (2,4,12) THEN 1 ELSE 0 END) AS approved_trxs,
-        SUM(CASE WHEN trx.status = 3
-                   AND NOT (trx.errordesc LIKE '%Transaction timed out. Old status pending. New status declined%'
-                            OR trx.errordesc LIKE '%Transaction timed out. Old status pending_async. New status declined%')
-                  THEN 1 ELSE 0 END) AS rejected_trxs_no_timeouts,
-        -- Total transaction volume for the merchant in the selected window,
-        -- of ANY transaction status. Exposed as a dimension so the min-volume
-        -- rule in the HAVING below is chosen by the user instead of hardcoded.
-        COUNT(*) AS scored_trxs,
-        100.0 * SUM(CASE WHEN trx.status in (2,4,12) THEN 1 ELSE 0 END)
-          / NULLIF(
-              SUM(CASE WHEN trx.status in (2,4,12) THEN 1 ELSE 0 END)
-              + SUM(CASE WHEN trx.status = 3
-                          AND NOT (trx.errordesc LIKE '%Transaction timed out. Old status pending. New status declined%'
-                                   OR trx.errordesc LIKE '%Transaction timed out. Old status pending_async. New status declined%')
-                         THEN 1 ELSE 0 END), 0
-            ) AS approval_ratio
-      FROM read_csv('tables/filter_params_example/fpe_merchant_applications.csv',
-                    header=true, auto_detect=true) AS trx
-      -- Gateway -> processor / payment_method chain, replicated as CSV lookups.
-      -- All three are many_to_one from a transaction, so these LEFT JOINs
-      -- cannot fan out the per-transaction grain.
-      LEFT JOIN read_csv('tables/filter_params_example/fpe_gateway.csv',
-                         header=true, auto_detect=true) gateway
-        ON gateway.remote_id = trx.remote_gateway_id
-      LEFT JOIN read_csv('tables/filter_params_example/fpe_processor.csv',
-                         header=true, auto_detect=true) processor
-        ON processor.remote_id = gateway.remote_payment_processor_id
-      LEFT JOIN read_csv('tables/filter_params_example/fpe_payment_method.csv',
-                         header=true, auto_detect=true) payment_method
-        ON payment_method.remote_id = gateway.remote_payment_method_id
-      -- Country NAME lookup: code matched against card_bin when present and
-      -- the registration country otherwise. code is unique in the CSV, so
-      -- this cannot fan out.
-      LEFT JOIN read_csv('tables/filter_params_example/fpe_country_region.csv',
-                         header=true, auto_detect=true) country_region
-        ON country_region.code = (CASE WHEN trx.card_bin IS NULL THEN trx.country ELSE trx.card_bin END)
-      WHERE trx.source = 'CY'   -- excludes Brazil; revisit when Brazil is back in scope
-        AND {FILTER_PARAMS.fpe_merchant_approval_stats.created_date.filter(
-              "(timestamp 'epoch' + trx.remote_created * interval '1 second')"
-            )}
-        AND {FILTER_PARAMS.fpe_merchant_approval_stats.psp_unifier_trx.filter(
-              "COALESCE(processor.psp, trx.psp, trx.pp, 'CHECK')"
-            )}
-        AND {FILTER_PARAMS.fpe_merchant_approval_stats.payment_method_trx.filter(
-              "COALESCE(payment_method.title, trx.paymentmethod, 'CHECK')"
-            )}
-        AND {FILTER_PARAMS.fpe_merchant_approval_stats.simplified_trx_type.filter(
-              "CASE WHEN trx.transaction_type in ('deposit','sale','api_sale') THEN 'Sale' WHEN trx.transaction_type in ('payout','refund','withdrawal') THEN 'Payout/refund' ELSE 'Authorization' END"
-            )}
-        AND {FILTER_PARAMS.fpe_merchant_approval_stats.country.filter("country_region.country")}
-      GROUP BY trx.remote_brand_id
-      -- Merchants with no scored transaction at all have a NULL approval_ratio
-      -- and would only pollute the distribution, so they are always dropped.
-      HAVING SUM(CASE WHEN trx.status in (2,4,12) THEN 1 ELSE 0 END)
-           + SUM(CASE WHEN trx.status = 3
-                        AND NOT (trx.errordesc LIKE '%Transaction timed out. Old status pending. New status declined%'
-                                 OR trx.errordesc LIKE '%Transaction timed out. Old status pending_async. New status declined%')
-                       THEN 1 ELSE 0 END) > 0
-        -- Min-volume population rule. Filtering scored_trxs (e.g. >= 30)
-        -- pushes the threshold down here, so the population is rebuilt at
-        -- whatever cut-off the user picks. With no filter this renders as
-        -- 1 = 1, i.e. no minimum volume.
-        AND {FILTER_PARAMS.fpe_merchant_approval_stats.scored_trxs.filter(
-              "COUNT(*)"
-            )}
+# cubes:
+#   - name: fpe_merchant_approval_stats
+#     data_source: duckdb
+#     sql: |
+#       SELECT
+#         trx.remote_brand_id,
+#         MAX(timestamp 'epoch' + trx.remote_created * interval '1 second') AS last_trx_date,
+#         MAX(COALESCE(processor.psp, trx.psp, trx.pp, 'CHECK')) AS psp_unifier_trx,
+#         MAX(COALESCE(payment_method.title, trx.paymentmethod, 'CHECK')) AS payment_method_trx,
+#         MAX(CASE WHEN trx.transaction_type in ('deposit','sale','api_sale') THEN 'Sale'
+#                  WHEN trx.transaction_type in ('payout','refund','withdrawal') THEN 'Payout/refund'
+#                  ELSE 'Authorization' END) AS simplified_trx_type,
+#         MAX(country_region.country) AS country,
+#         SUM(CASE WHEN trx.status in (2,4,12) THEN 1 ELSE 0 END) AS approved_trxs,
+#         SUM(CASE WHEN trx.status = 3
+#                    AND NOT (trx.errordesc LIKE '%Transaction timed out. Old status pending. New status declined%'
+#                             OR trx.errordesc LIKE '%Transaction timed out. Old status pending_async. New status declined%')
+#                   THEN 1 ELSE 0 END) AS rejected_trxs_no_timeouts,
+#         -- Total transaction volume for the merchant in the selected window,
+#         -- of ANY transaction status. Exposed as a dimension so the min-volume
+#         -- rule in the HAVING below is chosen by the user instead of hardcoded.
+#         COUNT(*) AS scored_trxs,
+#         100.0 * SUM(CASE WHEN trx.status in (2,4,12) THEN 1 ELSE 0 END)
+#           / NULLIF(
+#               SUM(CASE WHEN trx.status in (2,4,12) THEN 1 ELSE 0 END)
+#               + SUM(CASE WHEN trx.status = 3
+#                           AND NOT (trx.errordesc LIKE '%Transaction timed out. Old status pending. New status declined%'
+#                                    OR trx.errordesc LIKE '%Transaction timed out. Old status pending_async. New status declined%')
+#                          THEN 1 ELSE 0 END), 0
+#             ) AS approval_ratio
+#       FROM read_csv('tables/filter_params_example/fpe_merchant_applications.csv',
+#                     header=true, auto_detect=true) AS trx
+#       -- Gateway -> processor / payment_method chain, replicated as CSV lookups.
+#       -- All three are many_to_one from a transaction, so these LEFT JOINs
+#       -- cannot fan out the per-transaction grain.
+#       LEFT JOIN read_csv('tables/filter_params_example/fpe_gateway.csv',
+#                          header=true, auto_detect=true) gateway
+#         ON gateway.remote_id = trx.remote_gateway_id
+#       LEFT JOIN read_csv('tables/filter_params_example/fpe_processor.csv',
+#                          header=true, auto_detect=true) processor
+#         ON processor.remote_id = gateway.remote_payment_processor_id
+#       LEFT JOIN read_csv('tables/filter_params_example/fpe_payment_method.csv',
+#                          header=true, auto_detect=true) payment_method
+#         ON payment_method.remote_id = gateway.remote_payment_method_id
+#       -- Country NAME lookup: code matched against card_bin when present and
+#       -- the registration country otherwise. code is unique in the CSV, so
+#       -- this cannot fan out.
+#       LEFT JOIN read_csv('tables/filter_params_example/fpe_country_region.csv',
+#                          header=true, auto_detect=true) country_region
+#         ON country_region.code = (CASE WHEN trx.card_bin IS NULL THEN trx.country ELSE trx.card_bin END)
+#       WHERE trx.source = 'CY'   -- excludes Brazil; revisit when Brazil is back in scope
+#         AND {FILTER_PARAMS.fpe_merchant_approval_stats.created_date.filter(
+#               "(timestamp 'epoch' + trx.remote_created * interval '1 second')"
+#             )}
+#         AND {FILTER_PARAMS.fpe_merchant_approval_stats.psp_unifier_trx.filter(
+#               "COALESCE(processor.psp, trx.psp, trx.pp, 'CHECK')"
+#             )}
+#         AND {FILTER_PARAMS.fpe_merchant_approval_stats.payment_method_trx.filter(
+#               "COALESCE(payment_method.title, trx.paymentmethod, 'CHECK')"
+#             )}
+#         AND {FILTER_PARAMS.fpe_merchant_approval_stats.simplified_trx_type.filter(
+#               "CASE WHEN trx.transaction_type in ('deposit','sale','api_sale') THEN 'Sale' WHEN trx.transaction_type in ('payout','refund','withdrawal') THEN 'Payout/refund' ELSE 'Authorization' END"
+#             )}
+#         AND {FILTER_PARAMS.fpe_merchant_approval_stats.country.filter("country_region.country")}
+#       GROUP BY trx.remote_brand_id
+#       -- Merchants with no scored transaction at all have a NULL approval_ratio
+#       -- and would only pollute the distribution, so they are always dropped.
+#       HAVING SUM(CASE WHEN trx.status in (2,4,12) THEN 1 ELSE 0 END)
+#            + SUM(CASE WHEN trx.status = 3
+#                         AND NOT (trx.errordesc LIKE '%Transaction timed out. Old status pending. New status declined%'
+#                                  OR trx.errordesc LIKE '%Transaction timed out. Old status pending_async. New status declined%')
+#                        THEN 1 ELSE 0 END) > 0
+#         -- Min-volume population rule. Filtering scored_trxs (e.g. >= 30)
+#         -- pushes the threshold down here, so the population is rebuilt at
+#         -- whatever cut-off the user picks. With no filter this renders as
+#         -- 1 = 1, i.e. no minimum volume.
+#         AND {FILTER_PARAMS.fpe_merchant_approval_stats.scored_trxs.filter(
+#               "COUNT(*)"
+#             )}
 
-    # joins:
-    #   NO join to `transaction` on purpose (see original cube). hs_brands is
-    #   omitted in this demo because there is no CSV for it; restore when a
-    #   brands lookup exists.
-    #   - name: hs_brands
-    #     sql: "{fpe_merchant_approval_stats}.remote_brand_id = {hs_brands.brand_id}"
-    #     relationship: many_to_one
+#     # joins:
+#     #   NO join to `transaction` on purpose (see original cube). hs_brands is
+#     #   omitted in this demo because there is no CSV for it; restore when a
+#     #   brands lookup exists.
+#     #   - name: hs_brands
+#     #     sql: "{fpe_merchant_approval_stats}.remote_brand_id = {hs_brands.brand_id}"
+#     #     relationship: many_to_one
 
-    dimensions:
-      - name: created_date
-        title: "Transaction Date (window filter)"
-        description: >
-          Filter-only date binding. Filtering it pushes the window into the
-          inner per-transaction scan via FILTER_PARAMS, so the population is
-          rebuilt for that window. The stored value is the merchant's last
-          transaction date within the window, which always falls inside the
-          selected range — so the predicate Cube also applies out here is a
-          no-op and never drops merchants. Filter on it; don't group by it.
-        sql: last_trx_date
-        type: time
+#     dimensions:
+#       - name: created_date
+#         title: "Transaction Date (window filter)"
+#         description: >
+#           Filter-only date binding. Filtering it pushes the window into the
+#           inner per-transaction scan via FILTER_PARAMS, so the population is
+#           rebuilt for that window. The stored value is the merchant's last
+#           transaction date within the window, which always falls inside the
+#           selected range — so the predicate Cube also applies out here is a
+#           no-op and never drops merchants. Filter on it; don't group by it.
+#         sql: last_trx_date
+#         type: time
 
-      - name: psp_unifier_trx
-        title: "PSP Unifier (filter)"
-        description: "Mirrors transaction.psp_unifier_trx: COALESCE(processor.psp, psp, pp, 'CHECK')."
-        sql: psp_unifier_trx
-        type: string
+#       - name: psp_unifier_trx
+#         title: "PSP Unifier (filter)"
+#         description: "Mirrors transaction.psp_unifier_trx: COALESCE(processor.psp, psp, pp, 'CHECK')."
+#         sql: psp_unifier_trx
+#         type: string
 
-      - name: payment_method_trx
-        title: "Payment Method (filter)"
-        description: "Mirrors transaction.payment_method_trx: COALESCE(payment_method.title, paymentmethod, 'CHECK')."
-        sql: payment_method_trx
-        type: string
+#       - name: payment_method_trx
+#         title: "Payment Method (filter)"
+#         description: "Mirrors transaction.payment_method_trx: COALESCE(payment_method.title, paymentmethod, 'CHECK')."
+#         sql: payment_method_trx
+#         type: string
 
-      - name: simplified_trx_type
-        title: "Simplified Trx Type (filter)"
-        description: "Mirrors transaction.simplified_trx_type: Sale / Payout-refund / Authorization."
-        sql: simplified_trx_type
-        type: string
+#       - name: simplified_trx_type
+#         title: "Simplified Trx Type (filter)"
+#         description: "Mirrors transaction.simplified_trx_type: Sale / Payout-refund / Authorization."
+#         sql: simplified_trx_type
+#         type: string
 
-      - name: country
-        title: "Trx Country Name (filter)"
-        description: >
-          Full country NAME, looked up by trx_country (card_bin when present,
-          else the registration country). Values are names like 'Mexico', not
-          codes like 'MX'.
-        sql: country
-        type: string
+#       - name: country
+#         title: "Trx Country Name (filter)"
+#         description: >
+#           Full country NAME, looked up by trx_country (card_bin when present,
+#           else the registration country). Values are names like 'Mexico', not
+#           codes like 'MX'.
+#         sql: country
+#         type: string
 
-      - name: remote_brand_id
-        sql: remote_brand_id
-        type: number
-        primary_key: true
+#       - name: remote_brand_id
+#         sql: remote_brand_id
+#         type: number
+#         primary_key: true
 
-      - name: approved_trxs
-        sql: approved_trxs
-        type: number
+#       - name: approved_trxs
+#         sql: approved_trxs
+#         type: number
 
-      - name: rejected_trxs_no_timeouts
-        sql: rejected_trxs_no_timeouts
-        type: number
+#       - name: rejected_trxs_no_timeouts
+#         sql: rejected_trxs_no_timeouts
+#         type: number
 
-      - name: scored_trxs
-        title: "Scored Trxs (min-volume filter)"
-        description: >
-          Total transactions for the merchant in the selected window, of ANY
-          transaction status. NOT the denominator of approval_ratio, which
-          stays approved + rejected excluding timeouts. Filtering it
-          (e.g. >= 30) pushes the threshold into the inner scan's HAVING.
-          Unfiltered means no minimum volume at all.
-        sql: scored_trxs
-        type: number
+#       - name: scored_trxs
+#         title: "Scored Trxs (min-volume filter)"
+#         description: >
+#           Total transactions for the merchant in the selected window, of ANY
+#           transaction status. NOT the denominator of approval_ratio, which
+#           stays approved + rejected excluding timeouts. Filtering it
+#           (e.g. >= 30) pushes the threshold into the inner scan's HAVING.
+#           Unfiltered means no minimum volume at all.
+#         sql: scored_trxs
+#         type: number
 
-      - name: approval_ratio
-        title: "Approval Ratio(%)"
-        sql: approval_ratio
-        type: number
-        format: percent
+#       - name: approval_ratio
+#         title: "Approval Ratio(%)"
+#         sql: approval_ratio
+#         type: number
+#         format: percent
 
-    measures:
-      - name: merchant_count
-        type: count
-        description: "Number of merchants in the filtered population"
+#     measures:
+#       - name: merchant_count
+#         type: count
+#         description: "Number of merchants in the filtered population"
 
-      - name: avg_approval_ratio
-        title: "Avg Approval Ratio (%)"
-        sql: approval_ratio
-        type: avg
-        format: percent
+#       - name: avg_approval_ratio
+#         title: "Avg Approval Ratio (%)"
+#         sql: approval_ratio
+#         type: avg
+#         format: percent
 
-      - name: median_approval_ratio
-        title: "Median Approval Ratio (%)"
-        sql: "MEDIAN({CUBE.approval_ratio})"
-        type: number
-        format: percent
+#       - name: median_approval_ratio
+#         title: "Median Approval Ratio (%)"
+#         sql: "MEDIAN({CUBE.approval_ratio})"
+#         type: number
+#         format: percent
 
-      - name: stddev_approval_ratio
-        title: "Std Dev Approval Ratio"
-        sql: "STDDEV_SAMP({CUBE.approval_ratio})"
-        type: number
+#       - name: stddev_approval_ratio
+#         title: "Std Dev Approval Ratio"
+#         sql: "STDDEV_SAMP({CUBE.approval_ratio})"
+#         type: number
 
-      - name: p10_approval_ratio
-        title: "P10 Approval Ratio (%)"
-        sql: "PERCENTILE_CONT(0.10) WITHIN GROUP (ORDER BY {CUBE.approval_ratio})"
-        type: number
-        format: percent
+#       - name: p10_approval_ratio
+#         title: "P10 Approval Ratio (%)"
+#         sql: "PERCENTILE_CONT(0.10) WITHIN GROUP (ORDER BY {CUBE.approval_ratio})"
+#         type: number
+#         format: percent
 
-      - name: p90_approval_ratio
-        title: "P90 Approval Ratio (%)"
-        sql: "PERCENTILE_CONT(0.90) WITHIN GROUP (ORDER BY {CUBE.approval_ratio})"
-        type: number
-        format: percent
+#       - name: p90_approval_ratio
+#         title: "P90 Approval Ratio (%)"
+#         sql: "PERCENTILE_CONT(0.90) WITHIN GROUP (ORDER BY {CUBE.approval_ratio})"
+#         type: number
+#         format: percent
 
-      - name: global_approval_ratio
-        title: "Global Approval Ratio(%) (volume-weighted)"
-        sql: "100.0 * SUM({CUBE.approved_trxs}) / NULLIF(SUM({CUBE.approved_trxs}) + SUM({CUBE.rejected_trxs_no_timeouts}), 0)"
-        type: number
-        format: percent
+#       - name: global_approval_ratio
+#         title: "Global Approval Ratio(%) (volume-weighted)"
+#         sql: "100.0 * SUM({CUBE.approved_trxs}) / NULLIF(SUM({CUBE.approved_trxs}) + SUM({CUBE.rejected_trxs_no_timeouts}), 0)"
+#         type: number
+#         format: percent

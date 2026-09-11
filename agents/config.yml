@@ -1,5 +1,5 @@
 # agents/config.yml
-llm: gpt_5_mini
+# llm: gpt_5_mini
 runtime: plain
 # accessible_views:
 #   - orders_view

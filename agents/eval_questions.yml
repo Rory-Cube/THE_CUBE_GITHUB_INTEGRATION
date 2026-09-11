@@ -1,228 +1,228 @@
 space: rorys_space
 
-eval_questions:
-  - name: carrier_total_loads_and_lobsters
-    question: How many total loads and lobsters are there across all carriers?
-    sql: |
-      SELECT
-        MEASURE(carrier_view.load_count),
-        MEASURE(carrier_view.total_lobsters)
-      FROM carrier_view
-      LIMIT 1
+# eval_questions:
+#   - name: carrier_total_loads_and_lobsters
+#     question: How many total loads and lobsters are there across all carriers?
+#     sql: |
+#       SELECT
+#         MEASURE(carrier_view.load_count),
+#         MEASURE(carrier_view.total_lobsters)
+#       FROM carrier_view
+#       LIMIT 1
 
-  - name: carrier_lobsters_by_carrier
-    question: How many loads and lobsters did each carrier deliver?
-    sql: |
-      SELECT
-        carrier_view.carrier,
-        MEASURE(carrier_view.load_count),
-        MEASURE(carrier_view.total_lobsters)
-      FROM carrier_view
-      GROUP BY 1
-      ORDER BY 3 DESC
-      LIMIT 5000
+#   - name: carrier_lobsters_by_carrier
+#     question: How many loads and lobsters did each carrier deliver?
+#     sql: |
+#       SELECT
+#         carrier_view.carrier,
+#         MEASURE(carrier_view.load_count),
+#         MEASURE(carrier_view.total_lobsters)
+#       FROM carrier_view
+#       GROUP BY 1
+#       ORDER BY 3 DESC
+#       LIMIT 5000
 
-  - name: orders_total_count_and_revenue
-    question: What is the total number of orders and total revenue?
-    sql: |
-      SELECT
-        MEASURE(orders_view.count),
-        MEASURE(orders_view.total_revenue)
-      FROM orders_view
-      LIMIT 1
+#   - name: orders_total_count_and_revenue
+#     question: What is the total number of orders and total revenue?
+#     sql: |
+#       SELECT
+#         MEASURE(orders_view.count),
+#         MEASURE(orders_view.total_revenue)
+#       FROM orders_view
+#       LIMIT 1
 
-  - name: orders_revenue_by_status
-    question: What is the total revenue and order count broken down by order status?
-    sql: |
-      SELECT
-        orders_view.order_status,
-        MEASURE(orders_view.count),
-        MEASURE(orders_view.total_revenue)
-      FROM orders_view
-      GROUP BY 1
-      ORDER BY 3 DESC
-      LIMIT 5000
+#   - name: orders_revenue_by_status
+#     question: What is the total revenue and order count broken down by order status?
+#     sql: |
+#       SELECT
+#         orders_view.order_status,
+#         MEASURE(orders_view.count),
+#         MEASURE(orders_view.total_revenue)
+#       FROM orders_view
+#       GROUP BY 1
+#       ORDER BY 3 DESC
+#       LIMIT 5000
 
-  - name: orders_revenue_by_priority
-    question: What is the total revenue by order priority?
-    sql: |
-      SELECT
-        orders_view.order_priority,
-        MEASURE(orders_view.count),
-        MEASURE(orders_view.total_revenue)
-      FROM orders_view
-      GROUP BY 1
-      ORDER BY 2 DESC
-      LIMIT 5000
+#   - name: orders_revenue_by_priority
+#     question: What is the total revenue by order priority?
+#     sql: |
+#       SELECT
+#         orders_view.order_priority,
+#         MEASURE(orders_view.count),
+#         MEASURE(orders_view.total_revenue)
+#       FROM orders_view
+#       GROUP BY 1
+#       ORDER BY 2 DESC
+#       LIMIT 5000
 
-  - name: orders_avg_order_value_by_market_segment
-    question: What is the average order value by customer market segment?
-    sql: |
-      SELECT
-        orders_view.customer_mkt_segment,
-        MEASURE(orders_view.avg_order_value),
-        MEASURE(orders_view.count)
-      FROM orders_view
-      GROUP BY 1
-      ORDER BY 2 DESC
-      LIMIT 5000
+#   - name: orders_avg_order_value_by_market_segment
+#     question: What is the average order value by customer market segment?
+#     sql: |
+#       SELECT
+#         orders_view.customer_mkt_segment,
+#         MEASURE(orders_view.avg_order_value),
+#         MEASURE(orders_view.count)
+#       FROM orders_view
+#       GROUP BY 1
+#       ORDER BY 2 DESC
+#       LIMIT 5000
 
-  - name: lineitem_total_revenue_and_discount
-    question: What is the total net revenue (after discounts) and total discount amount across all line items?
-    sql: |
-      SELECT
-        MEASURE(lineitem_view.total_revenue),
-        MEASURE(lineitem_view.total_discount_amount),
-        MEASURE(lineitem_view.count)
-      FROM lineitem_view
-      LIMIT 1
+#   - name: lineitem_total_revenue_and_discount
+#     question: What is the total net revenue (after discounts) and total discount amount across all line items?
+#     sql: |
+#       SELECT
+#         MEASURE(lineitem_view.total_revenue),
+#         MEASURE(lineitem_view.total_discount_amount),
+#         MEASURE(lineitem_view.count)
+#       FROM lineitem_view
+#       LIMIT 1
 
-  - name: lineitem_revenue_by_ship_mode
-    question: What is the total revenue and average discount by shipping mode?
-    sql: |
-      SELECT
-        lineitem_view.ship_mode,
-        MEASURE(lineitem_view.total_revenue),
-        MEASURE(lineitem_view.avg_discount),
-        MEASURE(lineitem_view.count)
-      FROM lineitem_view
-      GROUP BY 1
-      ORDER BY 2 DESC
-      LIMIT 5000
+#   - name: lineitem_revenue_by_ship_mode
+#     question: What is the total revenue and average discount by shipping mode?
+#     sql: |
+#       SELECT
+#         lineitem_view.ship_mode,
+#         MEASURE(lineitem_view.total_revenue),
+#         MEASURE(lineitem_view.avg_discount),
+#         MEASURE(lineitem_view.count)
+#       FROM lineitem_view
+#       GROUP BY 1
+#       ORDER BY 2 DESC
+#       LIMIT 5000
 
-  - name: lineitem_returned_count_by_return_flag
-    question: How many line items were returned versus accepted?
-    sql: |
-      SELECT
-        lineitem_view.return_flag,
-        MEASURE(lineitem_view.count),
-        MEASURE(lineitem_view.returned_count)
-      FROM lineitem_view
-      GROUP BY 1
-      ORDER BY 2 DESC
-      LIMIT 5000
+#   - name: lineitem_returned_count_by_return_flag
+#     question: How many line items were returned versus accepted?
+#     sql: |
+#       SELECT
+#         lineitem_view.return_flag,
+#         MEASURE(lineitem_view.count),
+#         MEASURE(lineitem_view.returned_count)
+#       FROM lineitem_view
+#       GROUP BY 1
+#       ORDER BY 2 DESC
+#       LIMIT 5000
 
-  - name: lineitem_revenue_by_part_brand
-    question: What is the total revenue and quantity by part brand?
-    sql: |
-      SELECT
-        lineitem_view.part_brand,
-        MEASURE(lineitem_view.total_revenue),
-        MEASURE(lineitem_view.total_quantity)
-      FROM lineitem_view
-      GROUP BY 1
-      ORDER BY 2 DESC
-      LIMIT 5000
+#   - name: lineitem_revenue_by_part_brand
+#     question: What is the total revenue and quantity by part brand?
+#     sql: |
+#       SELECT
+#         lineitem_view.part_brand,
+#         MEASURE(lineitem_view.total_revenue),
+#         MEASURE(lineitem_view.total_quantity)
+#       FROM lineitem_view
+#       GROUP BY 1
+#       ORDER BY 2 DESC
+#       LIMIT 5000
 
-  - name: pickup_total_pickups_and_on_time
-    question: How many total pick-ups have there been, and how many were on time?
-    sql: |
-      SELECT
-        MEASURE(pick_up_view.count),
-        MEASURE(pick_up_view.on_time_count)
-      FROM pick_up_view
-      LIMIT 1
+#   - name: pickup_total_pickups_and_on_time
+#     question: How many total pick-ups have there been, and how many were on time?
+#     sql: |
+#       SELECT
+#         MEASURE(pick_up_view.count),
+#         MEASURE(pick_up_view.on_time_count)
+#       FROM pick_up_view
+#       LIMIT 1
 
-  - name: pickup_on_time_count_by_carrier
-    question: Which carriers have the most pick-ups and how many were on time?
-    sql: |
-      SELECT
-        pick_up_view.carrier,
-        MEASURE(pick_up_view.count),
-        MEASURE(pick_up_view.on_time_count)
-      FROM pick_up_view
-      GROUP BY 1
-      ORDER BY 2 DESC
-      LIMIT 5000
+#   - name: pickup_on_time_count_by_carrier
+#     question: Which carriers have the most pick-ups and how many were on time?
+#     sql: |
+#       SELECT
+#         pick_up_view.carrier,
+#         MEASURE(pick_up_view.count),
+#         MEASURE(pick_up_view.on_time_count)
+#       FROM pick_up_view
+#       GROUP BY 1
+#       ORDER BY 2 DESC
+#       LIMIT 5000
 
-  - name: pickup_count_by_product
-    question: Which products have the most pick-ups?
-    sql: |
-      SELECT
-        pick_up_view.product,
-        MEASURE(pick_up_view.count)
-      FROM pick_up_view
-      GROUP BY 1
-      ORDER BY 2 DESC
-      LIMIT 5000
+#   - name: pickup_count_by_product
+#     question: Which products have the most pick-ups?
+#     sql: |
+#       SELECT
+#         pick_up_view.product,
+#         MEASURE(pick_up_view.count)
+#       FROM pick_up_view
+#       GROUP BY 1
+#       ORDER BY 2 DESC
+#       LIMIT 5000
 
-  - name: otm_courses_enrollments_and_seats
-    question: How many courses, enrollments, and total seats are there?
-    sql: |
-      SELECT
-        MEASURE(otm_courses_view.count),
-        MEASURE(otm_courses_view.otm_enrollments_count),
-        MEASURE(otm_courses_view.total_seats)
-      FROM otm_courses_view
-      LIMIT 1
+#   - name: otm_courses_enrollments_and_seats
+#     question: How many courses, enrollments, and total seats are there?
+#     sql: |
+#       SELECT
+#         MEASURE(otm_courses_view.count),
+#         MEASURE(otm_courses_view.otm_enrollments_count),
+#         MEASURE(otm_courses_view.total_seats)
+#       FROM otm_courses_view
+#       LIMIT 1
 
-  - name: otm_enrollments_revenue_by_category
-    question: How many enrollments and what is the total enrollment revenue by course category?
-    sql: |
-      SELECT
-        otm_courses_view.category,
-        MEASURE(otm_courses_view.otm_enrollments_count),
-        MEASURE(otm_courses_view.otm_enrollments_total_revenue_usd)
-      FROM otm_courses_view
-      GROUP BY 1
-      ORDER BY 2 DESC
-      LIMIT 5000
+#   - name: otm_enrollments_revenue_by_category
+#     question: How many enrollments and what is the total enrollment revenue by course category?
+#     sql: |
+#       SELECT
+#         otm_courses_view.category,
+#         MEASURE(otm_courses_view.otm_enrollments_count),
+#         MEASURE(otm_courses_view.otm_enrollments_total_revenue_usd)
+#       FROM otm_courses_view
+#       GROUP BY 1
+#       ORDER BY 2 DESC
+#       LIMIT 5000
 
-  - name: otm_completions_by_instructor
-    question: How many course completions does each instructor have?
-    sql: |
-      SELECT
-        otm_courses_view.instructor,
-        MEASURE(otm_courses_view.count),
-        MEASURE(otm_courses_view.otm_enrollments_completed_count)
-      FROM otm_courses_view
-      GROUP BY 1
-      ORDER BY 3 DESC
-      LIMIT 5000
+#   - name: otm_completions_by_instructor
+#     question: How many course completions does each instructor have?
+#     sql: |
+#       SELECT
+#         otm_courses_view.instructor,
+#         MEASURE(otm_courses_view.count),
+#         MEASURE(otm_courses_view.otm_enrollments_completed_count)
+#       FROM otm_courses_view
+#       GROUP BY 1
+#       ORDER BY 3 DESC
+#       LIMIT 5000
 
-  - name: messages_read_vs_unread
-    question: How many total messages are there, and what is the breakdown of read vs unread, direct vs broadcast?
-    sql: |
-      SELECT
-        MEASURE(messages_view.count),
-        MEASURE(messages_view.direct_count),
-        MEASURE(messages_view.broadcast_count),
-        MEASURE(messages_view.read_count),
-        MEASURE(messages_view.unread_count)
-      FROM messages_view
-      LIMIT 1
+#   - name: messages_read_vs_unread
+#     question: How many total messages are there, and what is the breakdown of read vs unread, direct vs broadcast?
+#     sql: |
+#       SELECT
+#         MEASURE(messages_view.count),
+#         MEASURE(messages_view.direct_count),
+#         MEASURE(messages_view.broadcast_count),
+#         MEASURE(messages_view.read_count),
+#         MEASURE(messages_view.unread_count)
+#       FROM messages_view
+#       LIMIT 1
 
-  - name: fifty_columns_sessions_and_conversion_by_channel
-    question: What are the total sessions and average conversion rate by channel?
-    sql: |
-      SELECT
-        fifty_columns_view.channel,
-        MEASURE(fifty_columns_view.count),
-        MEASURE(fifty_columns_view.total_sessions),
-        MEASURE(fifty_columns_view.avg_conversion_rate)
-      FROM fifty_columns_view
-      GROUP BY 1
-      ORDER BY 2 DESC
-      LIMIT 5000
+#   - name: fifty_columns_sessions_and_conversion_by_channel
+#     question: What are the total sessions and average conversion rate by channel?
+#     sql: |
+#       SELECT
+#         fifty_columns_view.channel,
+#         MEASURE(fifty_columns_view.count),
+#         MEASURE(fifty_columns_view.total_sessions),
+#         MEASURE(fifty_columns_view.avg_conversion_rate)
+#       FROM fifty_columns_view
+#       GROUP BY 1
+#       ORDER BY 2 DESC
+#       LIMIT 5000
 
-  - name: fifty_columns_page_views_and_rating_by_status
-    question: What are the total page views and average rating broken down by status?
-    sql: |
-      SELECT
-        fifty_columns_view.status,
-        MEASURE(fifty_columns_view.count),
-        MEASURE(fifty_columns_view.total_page_views),
-        MEASURE(fifty_columns_view.avg_rating)
-      FROM fifty_columns_view
-      GROUP BY 1
-      ORDER BY 2 DESC
-      LIMIT 5000
+#   - name: fifty_columns_page_views_and_rating_by_status
+#     question: What are the total page views and average rating broken down by status?
+#     sql: |
+#       SELECT
+#         fifty_columns_view.status,
+#         MEASURE(fifty_columns_view.count),
+#         MEASURE(fifty_columns_view.total_page_views),
+#         MEASURE(fifty_columns_view.avg_rating)
+#       FROM fifty_columns_view
+#       GROUP BY 1
+#       ORDER BY 2 DESC
+#       LIMIT 5000
 
-  - name: food_delivery_total_orders_and_customers
-    question: How many total food delivery orders are there and how many unique customers placed them?
-    sql: |
-      SELECT
-        MEASURE(food_delivery_service_view.count),
-        MEASURE(food_delivery_service_view.unique_customers)
-      FROM food_delivery_service_view
-      LIMIT 1
+#   - name: food_delivery_total_orders_and_customers
+#     question: How many total food delivery orders are there and how many unique customers placed them?
+#     sql: |
+#       SELECT
+#         MEASURE(food_delivery_service_view.count),
+#         MEASURE(food_delivery_service_view.unique_customers)
+#       FROM food_delivery_service_view
+#       LIMIT 1

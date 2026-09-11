@@ -1,92 +1,92 @@
-cubes:
-  - name: otm_author
-    public: false
-    sql: >
-      SELECT 1 AS id, 'John' AS author, '2026-05-04T23:00:00'::TIMESTAMP AS timestamp, NULL AS awards UNION ALL
-      SELECT 2 AS id, 'Steve' AS author, '2026-05-05T00:00:00'::TIMESTAMP AS timestamp, 2 AS awards UNION ALL
-      SELECT 3 AS id, 'Mary' AS author, '2026-05-05T00:30:00'::TIMESTAMP AS timestamp, 1 AS awards UNION ALL
-      SELECT 4 AS id, 'Rebecca' AS author, '2026-05-05T22:00:00'::TIMESTAMP AS timestamp, 1 AS awards UNION ALL
-      SELECT 5 AS id, 'Rory' AS author, '2026-05-01T22:30:00'::TIMESTAMP AS timestamp, 0 AS awards
-    joins:
-      - name: otm_book
-        sql: "{otm_author}.id = {otm_book.author_id}"
-        relationship: one_to_many
-        # relationship: many_to_one
-    dimensions:
-      - name: id
-        sql: id
-        type: number
-        primary_key: true
-        public: true
-      - name: author_name
-        sql: author
-        type: string
-      - name: timestamp
-        sql: CAST({CUBE}.timestamp as timestamp)
-        type: time
-        granularities:
-          - name: one_week
-            interval: 1 week
-      - name: id_as_percent
-        sql: id
-        type: number
-        format: percent
-      - name: awards
-        sql: awards
-        type: number
-      - name: out_of_time_range
-        sql: '1'
-        type: number
+# cubes:
+#   - name: otm_author
+#     public: false
+#     sql: >
+#       SELECT 1 AS id, 'John' AS author, '2026-05-04T23:00:00'::TIMESTAMP AS timestamp, NULL AS awards UNION ALL
+#       SELECT 2 AS id, 'Steve' AS author, '2026-05-05T00:00:00'::TIMESTAMP AS timestamp, 2 AS awards UNION ALL
+#       SELECT 3 AS id, 'Mary' AS author, '2026-05-05T00:30:00'::TIMESTAMP AS timestamp, 1 AS awards UNION ALL
+#       SELECT 4 AS id, 'Rebecca' AS author, '2026-05-05T22:00:00'::TIMESTAMP AS timestamp, 1 AS awards UNION ALL
+#       SELECT 5 AS id, 'Rory' AS author, '2026-05-01T22:30:00'::TIMESTAMP AS timestamp, 0 AS awards
+#     joins:
+#       - name: otm_book
+#         sql: "{otm_author}.id = {otm_book.author_id}"
+#         relationship: one_to_many
+#         # relationship: many_to_one
+#     dimensions:
+#       - name: id
+#         sql: id
+#         type: number
+#         primary_key: true
+#         public: true
+#       - name: author_name
+#         sql: author
+#         type: string
+#       - name: timestamp
+#         sql: CAST({CUBE}.timestamp as timestamp)
+#         type: time
+#         granularities:
+#           - name: one_week
+#             interval: 1 week
+#       - name: id_as_percent
+#         sql: id
+#         type: number
+#         format: percent
+#       - name: awards
+#         sql: awards
+#         type: number
+#       - name: out_of_time_range
+#         sql: '1'
+#         type: number
 
 
-    measures:
-      - name: count
-        type: count
-      - name: awards_count
-        sql: awards
-        type: count
+#     measures:
+#       - name: count
+#         type: count
+#       - name: awards_count
+#         sql: awards
+#         type: count
 
-      - name: count_distinct
-        type: count_distinct
-        sql: "{id}"
+#       - name: count_distinct
+#         type: count_distinct
+#         sql: "{id}"
 
-      - name: count_distinct_ytd
-        sql: "{count_distinct}"
-        type: sum
-        multi_stage: true
-        rolling_window:
-          type: to_date
-          granularity: year
+#       - name: count_distinct_ytd
+#         sql: "{count_distinct}"
+#         type: sum
+#         multi_stage: true
+#         rolling_window:
+#           type: to_date
+#           granularity: year
 
-    pre_aggregations:
+#     pre_aggregations:
 
-      - name: author_rollup_by_day
-        measures:
-          - count
-          - awards_count
-        dimensions:
-          - author_name
-          - awards
-        time_dimension: timestamp
-        granularity: day
-        partition_granularity: month
-        build_range_start:
-          sql: SELECT CURRENT_DATE - INTERVAL '1 month'
-        build_range_end:
-          sql: SELECT CURRENT_DATE
+#       - name: author_rollup_by_day
+#         measures:
+#           - count
+#           - awards_count
+#         dimensions:
+#           - author_name
+#           - awards
+#         time_dimension: timestamp
+#         granularity: day
+#         partition_granularity: month
+#         build_range_start:
+#           sql: SELECT CURRENT_DATE - INTERVAL '1 month'
+#         build_range_end:
+#           sql: SELECT CURRENT_DATE
           
-      - name: author_rollup_by_minute
-        measures:
-          - count
-          - awards_count
-        dimensions:
-          - author_name
-          - awards
-        time_dimension: timestamp
-        granularity: minute
-        partition_granularity: day
-        build_range_start:
-          sql: SELECT CURRENT_DATE - INTERVAL '1 day'
-        build_range_end:
-          sql: SELECT CURRENT_DATE
+#       - name: author_rollup_by_minute
+#         measures:
+#           - count
+#           - awards_count
+#         dimensions:
+#           - author_name
+#           - awards
+#         time_dimension: timestamp
+#         granularity: minute
+#         partition_granularity: day
+#         build_range_start:
+#           sql: SELECT CURRENT_DATE - INTERVAL '1 day'
+#         build_range_end:
+#           sql: SELECT CURRENT_DATE
         

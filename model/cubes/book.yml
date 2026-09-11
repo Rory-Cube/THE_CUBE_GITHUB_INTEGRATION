@@ -1,38 +1,38 @@
-cubes:
-  - name: otm_book
-    public: false
-    sql: >
-      SELECT 1 AS id, 1 AS author_id, 'Right' AS book, 'John' AS author, 'yes' AS award UNION ALL
-      SELECT 2 AS id, 2 AS author_id, 'Left' AS book, 'Steve' AS author, 'yes' AS award UNION ALL
-      SELECT 3 AS id, 3 AS author_id, 'Up' AS book, 'Mary' AS author, 'yes' AS award UNION ALL
-      SELECT 4 AS id, 4 AS author_id, 'Down' AS book, 'Rebecca' AS author, 'yes' AS award UNION ALL
-      SELECT 5 AS id, 5 AS author_id, 'B' AS book, 'Rory' AS author, 'no' AS award UNION ALL
-      SELECT 6 AS id, 1 AS author_id, 'A' AS book, 'John' AS author, 'yes' AS award UNION ALL
-      SELECT 7 AS id, 2 AS author_id, 'Start' AS book, 'Steve' AS author, 'yes' AS award UNION ALL
-      SELECT 8 AS id, 3 AS author_id, 'Select' AS book, 'Mary' AS author, 'no' AS award UNION ALL
-      SELECT 9 AS id, 4 AS author_id, 'X' AS book, 'Rebecca' AS author, 'no' AS award UNION ALL
-      SELECT 10 AS id, 5 AS author_id, 'Y' AS book, 'Rory' AS author, 'no' AS award UNION ALL
-      SELECT 11 AS id, 1 AS author_id, 'Mega_book_123' AS book, 'John' AS author, 'no' AS award UNION ALL
-      SELECT 12 AS id, 1 AS author_id, 'Super' AS book, 'John' AS author, 'yes' AS award
+# cubes:
+#   - name: otm_book
+#     public: false
+#     sql: >
+#       SELECT 1 AS id, 1 AS author_id, 'Right' AS book, 'John' AS author, 'yes' AS award UNION ALL
+#       SELECT 2 AS id, 2 AS author_id, 'Left' AS book, 'Steve' AS author, 'yes' AS award UNION ALL
+#       SELECT 3 AS id, 3 AS author_id, 'Up' AS book, 'Mary' AS author, 'yes' AS award UNION ALL
+#       SELECT 4 AS id, 4 AS author_id, 'Down' AS book, 'Rebecca' AS author, 'yes' AS award UNION ALL
+#       SELECT 5 AS id, 5 AS author_id, 'B' AS book, 'Rory' AS author, 'no' AS award UNION ALL
+#       SELECT 6 AS id, 1 AS author_id, 'A' AS book, 'John' AS author, 'yes' AS award UNION ALL
+#       SELECT 7 AS id, 2 AS author_id, 'Start' AS book, 'Steve' AS author, 'yes' AS award UNION ALL
+#       SELECT 8 AS id, 3 AS author_id, 'Select' AS book, 'Mary' AS author, 'no' AS award UNION ALL
+#       SELECT 9 AS id, 4 AS author_id, 'X' AS book, 'Rebecca' AS author, 'no' AS award UNION ALL
+#       SELECT 10 AS id, 5 AS author_id, 'Y' AS book, 'Rory' AS author, 'no' AS award UNION ALL
+#       SELECT 11 AS id, 1 AS author_id, 'Mega_book_123' AS book, 'John' AS author, 'no' AS award UNION ALL
+#       SELECT 12 AS id, 1 AS author_id, 'Super' AS book, 'John' AS author, 'yes' AS award
  
-    dimensions:
-      - name: id
-        sql: id
-        type: number
-        primary_key: true
-      - name: author_id
-        sql: author_id
-        type: number
-      - name: book
-        sql: book
-        type: string
-      - name: author
-        sql: author
-        type: string
+#     dimensions:
+#       - name: id
+#         sql: id
+#         type: number
+#         primary_key: true
+#       - name: author_id
+#         sql: author_id
+#         type: number
+#       - name: book
+#         sql: book
+#         type: string
+#       - name: author
+#         sql: author
+#         type: string
 
-    measures:
-      - name: count
-        type: count
-      - name: award
-        sql: CASE WHEN award = 'yes' THEN 1 ELSE 0 END
-        type: sum
+#     measures:
+#       - name: count
+#         type: count
+#       - name: award
+#         sql: CASE WHEN award = 'yes' THEN 1 ELSE 0 END
+#         type: sum

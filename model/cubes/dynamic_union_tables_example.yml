@@ -4,140 +4,140 @@
   "West":    {"file": "companies_west",    "name_col": "company_name"}
 } -%}
 
-cubes:
-  - name: dute_companies
-    data_source: duckdb
-    sql: |
-      {%- for region, cfg in sources | items %}
-      SELECT id, {{ cfg.name_col | safe }} AS company_name, industry, headquarters,
-             founded_year, employee_count, annual_revenue, ceo, ceo_email,
-             is_public, ticker_symbol, '{{ region | safe }}' AS region
-      FROM read_csv_auto('tables/dynamic_union_tables_example/{{ cfg.file | safe }}.csv', header=true, auto_detect=true)
-      {% if not loop.last %}UNION ALL{% endif %}
-      {% endfor %}
+# cubes:
+#   - name: dute_companies
+#     data_source: duckdb
+#     sql: |
+#       {%- for region, cfg in sources | items %}
+#       SELECT id, {{ cfg.name_col | safe }} AS company_name, industry, headquarters,
+#              founded_year, employee_count, annual_revenue, ceo, ceo_email,
+#              is_public, ticker_symbol, '{{ region | safe }}' AS region
+#       FROM read_csv_auto('tables/dynamic_union_tables_example/{{ cfg.file | safe }}.csv', header=true, auto_detect=true)
+#       {% if not loop.last %}UNION ALL{% endif %}
+#       {% endfor %}
 
-    joins:
-      - name: dute_industries
-        sql: "{CUBE}.industry = {dute_industries}.industry"
-        relationship: many_to_one
-      - name: dute_locations
-        sql: "{CUBE}.headquarters = {dute_locations}.city"
-        relationship: many_to_one
-      - name: dute_regions
-        sql: "{CUBE}.region = {dute_regions}.region"
-        relationship: many_to_one
+#     joins:
+#       - name: dute_industries
+#         sql: "{CUBE}.industry = {dute_industries}.industry"
+#         relationship: many_to_one
+#       - name: dute_locations
+#         sql: "{CUBE}.headquarters = {dute_locations}.city"
+#         relationship: many_to_one
+#       - name: dute_regions
+#         sql: "{CUBE}.region = {dute_regions}.region"
+#         relationship: many_to_one
 
-    measures:
-      - name: count
-        type: count
-      - name: total_revenue
-        sql: annual_revenue
-        type: sum
-      - name: total_employees
-        sql: employee_count
-        type: sum
-      - name: avg_revenue
-        sql: annual_revenue
-        type: avg
+#     measures:
+#       - name: count
+#         type: count
+#       - name: total_revenue
+#         sql: annual_revenue
+#         type: sum
+#       - name: total_employees
+#         sql: employee_count
+#         type: sum
+#       - name: avg_revenue
+#         sql: annual_revenue
+#         type: avg
 
-    dimensions:
-      - name: id
-        sql: "{CUBE}.region || '-' || CAST({CUBE}.id AS VARCHAR)"
-        type: string
-        primary_key: true
-      - name: company_number
-        sql: id
-        type: number
-      - name: company_name
-        sql: company_name
-        type: string
-      - name: industry
-        sql: industry
-        type: string
-      - name: headquarters
-        sql: headquarters
-        type: string
-      - name: region
-        sql: region
-        type: string
-      - name: founded_year
-        sql: founded_year
-        type: number
-      - name: employee_count
-        sql: employee_count
-        type: number
-      - name: annual_revenue
-        sql: annual_revenue
-        type: number
-      - name: ceo
-        sql: ceo
-        type: string
-      - name: ceo_email
-        sql: ceo_email
-        type: string
-      - name: is_public
-        sql: is_public
-        type: boolean
-      - name: ticker_symbol
-        sql: ticker_symbol
-        type: string
+#     dimensions:
+#       - name: id
+#         sql: "{CUBE}.region || '-' || CAST({CUBE}.id AS VARCHAR)"
+#         type: string
+#         primary_key: true
+#       - name: company_number
+#         sql: id
+#         type: number
+#       - name: company_name
+#         sql: company_name
+#         type: string
+#       - name: industry
+#         sql: industry
+#         type: string
+#       - name: headquarters
+#         sql: headquarters
+#         type: string
+#       - name: region
+#         sql: region
+#         type: string
+#       - name: founded_year
+#         sql: founded_year
+#         type: number
+#       - name: employee_count
+#         sql: employee_count
+#         type: number
+#       - name: annual_revenue
+#         sql: annual_revenue
+#         type: number
+#       - name: ceo
+#         sql: ceo
+#         type: string
+#       - name: ceo_email
+#         sql: ceo_email
+#         type: string
+#       - name: is_public
+#         sql: is_public
+#         type: boolean
+#       - name: ticker_symbol
+#         sql: ticker_symbol
+#         type: string
 
-  - name: dute_industries
-    data_source: duckdb
-    sql: |
-      SELECT * FROM read_csv('tables/dynamic_union_tables_example/industries.csv', header=true, auto_detect=true)
-    measures:
-      - name: count
-        type: count
-    dimensions:
-      - name: industry
-        sql: industry
-        type: string
-        primary_key: true
-      - name: sector
-        sql: sector
-        type: string
-      - name: is_regulated
-        sql: is_regulated
-        type: boolean
+#   - name: dute_industries
+#     data_source: duckdb
+#     sql: |
+#       SELECT * FROM read_csv('tables/dynamic_union_tables_example/industries.csv', header=true, auto_detect=true)
+#     measures:
+#       - name: count
+#         type: count
+#     dimensions:
+#       - name: industry
+#         sql: industry
+#         type: string
+#         primary_key: true
+#       - name: sector
+#         sql: sector
+#         type: string
+#       - name: is_regulated
+#         sql: is_regulated
+#         type: boolean
 
-  - name: dute_locations
-    data_source: duckdb
-    sql: |
-      SELECT * FROM read_csv('tables/dynamic_union_tables_example/locations.csv', header=true, auto_detect=true)
-    measures:
-      - name: count
-        type: count
-    dimensions:
-      - name: city
-        sql: city
-        type: string
-        primary_key: true
-      - name: state
-        sql: state
-        type: string
-      - name: country
-        sql: country
-        type: string
-      - name: timezone
-        sql: timezone
-        type: string
+#   - name: dute_locations
+#     data_source: duckdb
+#     sql: |
+#       SELECT * FROM read_csv('tables/dynamic_union_tables_example/locations.csv', header=true, auto_detect=true)
+#     measures:
+#       - name: count
+#         type: count
+#     dimensions:
+#       - name: city
+#         sql: city
+#         type: string
+#         primary_key: true
+#       - name: state
+#         sql: state
+#         type: string
+#       - name: country
+#         sql: country
+#         type: string
+#       - name: timezone
+#         sql: timezone
+#         type: string
 
-  - name: dute_regions
-    data_source: duckdb
-    sql: |
-      SELECT * FROM read_csv('tables/dynamic_union_tables_example/regions.csv', header=true, auto_detect=true)
-    measures:
-      - name: count
-        type: count
-    dimensions:
-      - name: region
-        sql: region
-        type: string
-        primary_key: true
-      - name: region_manager
-        sql: region_manager
-        type: string
-      - name: target_revenue
-        sql: target_revenue
-        type: number
+#   - name: dute_regions
+#     data_source: duckdb
+#     sql: |
+#       SELECT * FROM read_csv('tables/dynamic_union_tables_example/regions.csv', header=true, auto_detect=true)
+#     measures:
+#       - name: count
+#         type: count
+#     dimensions:
+#       - name: region
+#         sql: region
+#         type: string
+#         primary_key: true
+#       - name: region_manager
+#         sql: region_manager
+#         type: string
+#       - name: target_revenue
+#         sql: target_revenue
+#         type: number

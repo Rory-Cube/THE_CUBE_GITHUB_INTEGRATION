@@ -1,5 +1,5 @@
 views:
-  - name: revenue_overview
+  - name: revenue_view
     description: >
       Surfaces every revenue-ish measure in one place. Prefixed members mean a
       question like "total revenue" now matches orders_total_revenue,

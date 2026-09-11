@@ -1,123 +1,123 @@
-cubes:
-  - name: pick_up
-    public: false
-    data_source: duckdb
-    description: Carrier pick-up appointments, including product volumes and appointment, arrival, and departure timestamps
-    sql: >
-      SELECT * FROM read_csv('tables/pick_up/pick_up.csv', header=true, auto_detect=true)
+# cubes:
+#   - name: pick_up
+#     public: false
+#     data_source: duckdb
+#     description: Carrier pick-up appointments, including product volumes and appointment, arrival, and departure timestamps
+#     sql: >
+#       SELECT * FROM read_csv('tables/pick_up/pick_up.csv', header=true, auto_detect=true)
 
-    dimensions:
-      - name: pickup_id
-        sql: pickup_id
-        type: string
-        primary_key: true
-        description: Unique identifier of the pick-up
+#     dimensions:
+#       - name: pickup_id
+#         sql: pickup_id
+#         type: string
+#         primary_key: true
+#         description: Unique identifier of the pick-up
 
-      - name: pickup_date
-        sql: pickup_date
-        type: time
-        description: Date the pick-up was scheduled for
+#       - name: pickup_date
+#         sql: pickup_date
+#         type: time
+#         description: Date the pick-up was scheduled for
 
-      - name: product
-        sql: product
-        type: string
-        description: Product being picked up
+#       - name: product
+#         sql: product
+#         type: string
+#         description: Product being picked up
 
-      - name: unit
-        sql: unit
-        type: string
-        description: Unit of measure for the product amount (cases, pallets, units)
+#       - name: unit
+#         sql: unit
+#         type: string
+#         description: Unit of measure for the product amount (cases, pallets, units)
 
-      - name: carrier
-        sql: carrier
-        type: string
-        description: Carrier performing the pick-up
+#       - name: carrier
+#         sql: carrier
+#         type: string
+#         description: Carrier performing the pick-up
 
-      - name: carrier_appointment_time
-        sql: carrier_appointment_time
-        type: time
-        description: Scheduled appointment time for the carrier
+#       - name: carrier_appointment_time
+#         sql: carrier_appointment_time
+#         type: time
+#         description: Scheduled appointment time for the carrier
 
-      - name: carrier_arrival_time
-        sql: carrier_arrival_time
-        type: time
-        description: Time the carrier actually arrived
+#       - name: carrier_arrival_time
+#         sql: carrier_arrival_time
+#         type: time
+#         description: Time the carrier actually arrived
 
-      - name: carrier_arrival_time_date
-        sql: carrier_arrival_time::DATE
-        type: time
-        description: Time the carrier actually arrived
+#       - name: carrier_arrival_time_date
+#         sql: carrier_arrival_time::DATE
+#         type: time
+#         description: Time the carrier actually arrived
 
-      - name: carrier_departure_time
-        sql: carrier_departure_time
-        type: time
-        description: Time the carrier departed
+#       - name: carrier_departure_time
+#         sql: carrier_departure_time
+#         type: time
+#         description: Time the carrier departed
 
-      - name: arrival_delay_minutes
-        sql: "DATE_DIFF('minute', {CUBE}.carrier_appointment_time, {CUBE}.carrier_arrival_time)"
-        type: number
-        description: Minutes between the appointment time and the actual arrival, negative when the carrier arrived early
+#       - name: arrival_delay_minutes
+#         sql: "DATE_DIFF('minute', {CUBE}.carrier_appointment_time, {CUBE}.carrier_arrival_time)"
+#         type: number
+#         description: Minutes between the appointment time and the actual arrival, negative when the carrier arrived early
 
-      - name: dwell_minutes
-        sql: "DATE_DIFF('minute', {CUBE}.carrier_arrival_time, {CUBE}.carrier_departure_time)"
-        type: number
-        description: Minutes the carrier spent on site, from arrival to departure
+#       - name: dwell_minutes
+#         sql: "DATE_DIFF('minute', {CUBE}.carrier_arrival_time, {CUBE}.carrier_departure_time)"
+#         type: number
+#         description: Minutes the carrier spent on site, from arrival to departure
 
-      - name: is_on_time
-        sql: "DATE_DIFF('minute', {CUBE}.carrier_appointment_time, {CUBE}.carrier_arrival_time) <= 0"
-        type: boolean
-        description: Whether the carrier arrived at or before the appointment time
+#       - name: is_on_time
+#         sql: "DATE_DIFF('minute', {CUBE}.carrier_appointment_time, {CUBE}.carrier_arrival_time) <= 0"
+#         type: boolean
+#         description: Whether the carrier arrived at or before the appointment time
 
-    measures:
-      - name: count
-        type: count
-        description: Total number of pick-ups
-        drill_members:
-          - pickup_id
-          - pickup_date
-          - product
-          - carrier
-          - carrier_appointment_time
+#     measures:
+#       - name: count
+#         type: count
+#         description: Total number of pick-ups
+#         drill_members:
+#           - pickup_id
+#           - pickup_date
+#           - product
+#           - carrier
+#           - carrier_appointment_time
 
-      - name: on_time_count
-        type: count
-        description: Number of pick-ups where the carrier arrived at or before the appointment time
-        filters:
-          - sql: "{CUBE.is_on_time}"
-        drill_members:
-          - pickup_id
-          - pickup_date
-          - product
-          - carrier
-          - carrier_appointment_time
+#       - name: on_time_count
+#         type: count
+#         description: Number of pick-ups where the carrier arrived at or before the appointment time
+#         filters:
+#           - sql: "{CUBE.is_on_time}"
+#         drill_members:
+#           - pickup_id
+#           - pickup_date
+#           - product
+#           - carrier
+#           - carrier_appointment_time
 
-      - name: on_time_percentage
-        sql: "(1.0 * {CUBE.on_time_count} / NULLIF({CUBE.count}, 0))"
-        type: number
-        format: percent
-        description: Share of pick-ups where the carrier arrived on time
+#       - name: on_time_percentage
+#         sql: "(1.0 * {CUBE.on_time_count} / NULLIF({CUBE.count}, 0))"
+#         type: number
+#         format: percent
+#         description: Share of pick-ups where the carrier arrived on time
 
-      - name: total_product_amount
-        sql: product_amount
-        type: sum
-        description: Total product amount picked up (mixed units)
+#       - name: total_product_amount
+#         sql: product_amount
+#         type: sum
+#         description: Total product amount picked up (mixed units)
 
-      - name: avg_product_amount
-        sql: product_amount
-        type: avg
-        description: Average product amount per pick-up
+#       - name: avg_product_amount
+#         sql: product_amount
+#         type: avg
+#         description: Average product amount per pick-up
 
-      - name: avg_arrival_delay_minutes
-        sql: "{CUBE.arrival_delay_minutes}"
-        type: avg
-        description: Average minutes late (or early, when negative) the carrier arrived
+#       - name: avg_arrival_delay_minutes
+#         sql: "{CUBE.arrival_delay_minutes}"
+#         type: avg
+#         description: Average minutes late (or early, when negative) the carrier arrived
 
-      - name: avg_dwell_minutes
-        sql: "{CUBE.dwell_minutes}"
-        type: avg
-        description: Average minutes carriers spent on site
+#       - name: avg_dwell_minutes
+#         sql: "{CUBE.dwell_minutes}"
+#         type: avg
+#         description: Average minutes carriers spent on site
 
-      - name: max_dwell_minutes
-        sql: "{CUBE.dwell_minutes}"
-        type: max
-        description: Longest time a carrier spent on site
+#       - name: max_dwell_minutes
+#         sql: "{CUBE.dwell_minutes}"
+#         type: max
+#         description: Longest time a carrier spent on site

@@ -1,48 +1,48 @@
-cubes:
-  - name: granularities
-    sql: |
-      SELECT 1 AS id, '2025-01-01T00:12:00.000Z'::TIMESTAMP AS time UNION ALL
-      SELECT 2 AS id, '2025-02-01T00:15:00.000Z'::TIMESTAMP AS time UNION ALL
-      SELECT 3 AS id, '2025-03-01T00:18:00.000Z'::TIMESTAMP AS time UNION ALL
-      SELECT 4 AS id, '2026-01-01T00:12:00.000Z'::TIMESTAMP AS time UNION ALL
-      SELECT 5 AS id, '2026-02-01T00:15:00.000Z'::TIMESTAMP AS time UNION ALL
-      SELECT 6 AS id, '2026-03-01T00:18:00.000Z'::TIMESTAMP AS time
+# cubes:
+#   - name: granularities
+#     sql: |
+#       SELECT 1 AS id, '2025-01-01T00:12:00.000Z'::TIMESTAMP AS time UNION ALL
+#       SELECT 2 AS id, '2025-02-01T00:15:00.000Z'::TIMESTAMP AS time UNION ALL
+#       SELECT 3 AS id, '2025-03-01T00:18:00.000Z'::TIMESTAMP AS time UNION ALL
+#       SELECT 4 AS id, '2026-01-01T00:12:00.000Z'::TIMESTAMP AS time UNION ALL
+#       SELECT 5 AS id, '2026-02-01T00:15:00.000Z'::TIMESTAMP AS time UNION ALL
+#       SELECT 6 AS id, '2026-03-01T00:18:00.000Z'::TIMESTAMP AS time
 
-    dimensions:
+#     dimensions:
 
-      - name: id
-        sql: id
-        type: number
+#       - name: id
+#         sql: id
+#         type: number
         
-      - name: time
-        sql: time
-        type: time
+#       - name: time
+#         sql: time
+#         type: time
 
-        granularities:
-          - name: quarter_hour
-            interval: 15 minutes
+#         granularities:
+#           - name: quarter_hour
+#             interval: 15 minutes
 
-          - name: week_starting_on_sunday
-            interval: 1 week
-            offset: -1 day
+#           - name: week_starting_on_sunday
+#             interval: 1 week
+#             offset: -1 day
 
-          - name: fiscal_year_starting_on_april_01
-            title: Corporate and government fiscal year in the United Kingdom
-            interval: 1 year
-            origin: "2024-04-01"
-            # You have to use quotes here to make `origin` a valid YAML string
+#           - name: fiscal_year_starting_on_april_01
+#             title: Corporate and government fiscal year in the United Kingdom
+#             interval: 1 year
+#             origin: "2024-04-01"
+#             # You have to use quotes here to make `origin` a valid YAML string
 
-    measures:
-      - name: sum_id
-        sql: id
-        type: sum
+#     measures:
+#       - name: sum_id
+#         sql: id
+#         type: sum
 
-      - name: sum_id_ly
-        title: Sum ID LY (Fiscal)
-        multi_stage: true
-        sql: "{sum_id}"
-        type: number
-        time_shift:
-          - time_dimension: time
-            interval: 1 year
-            type: prior
+#       - name: sum_id_ly
+#         title: Sum ID LY (Fiscal)
+#         multi_stage: true
+#         sql: "{sum_id}"
+#         type: number
+#         time_shift:
+#           - time_dimension: time
+#             interval: 1 year
+#             type: prior

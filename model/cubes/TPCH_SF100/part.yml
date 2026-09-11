@@ -1,0 +1,64 @@
+# cubes:
+#   - name: part
+#     public: false
+#     sql_table: TPCH_SF100.PART
+
+#     dimensions:
+#       - name: part_key
+#         sql: P_PARTKEY
+#         type: number
+#         primary_key: true
+
+#       - name: name
+#         sql: P_NAME
+#         type: string
+#         description: Part name
+
+#       - name: mfgr
+#         sql: P_MFGR
+#         type: string
+#         description: Part manufacturer
+
+#       - name: brand
+#         sql: P_BRAND
+#         type: string
+#         description: Part brand
+
+#       - name: type
+#         sql: P_TYPE
+#         type: string
+#         description: Part type
+
+#       - name: part_size
+#         sql: P_SIZE
+#         type: number
+#         description: Part size
+
+#       - name: container
+#         sql: P_CONTAINER
+#         type: string
+#         description: Part container type
+
+#       - name: retail_price
+#         sql: P_RETAILPRICE
+#         type: number
+#         description: Retail price of the part
+
+#       - name: comment
+#         sql: P_COMMENT
+#         type: string
+
+#     measures:
+#       - name: count
+#         type: count
+#         description: Total number of parts
+
+#       - name: avg_retail_price
+#         sql: P_RETAILPRICE
+#         type: avg
+#         description: Average retail price of parts
+
+#       - name: total_retail_price
+#         sql: P_RETAILPRICE
+#         type: sum
+#         description: Total retail price of all parts

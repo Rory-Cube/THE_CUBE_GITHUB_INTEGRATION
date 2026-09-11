@@ -1,6 +1,9 @@
 cubes:
   - name: orders
-    sql_table: public.orders
+    data_source: duckdb
+    sql: >
+      SELECT * FROM read_csv('tables/confusion/confusion_orders.csv', header=true, auto_detect=true)
+    public: false
     description: One-off purchase orders. Monetary fields differ subtly — see measure descriptions.
 
     joins:

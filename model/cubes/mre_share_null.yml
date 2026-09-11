@@ -1,69 +1,69 @@
-cubes:
-  - name: mre_share_null
-    sql: >
-      SELECT * FROM VALUES
-        (1, '2026-06-01'::date, 'North', 'BrandA', 100.0),
-        (2, '2026-06-01'::date, 'North', 'BrandB', 200.0),
-        (3, '2026-06-01'::date, 'North', 'BrandC', 300.0),
-        (4, '2026-06-01'::date, 'North', 'BrandD', 400.0),
-        (5, '2026-06-01'::date, 'North', 'BrandE', 500.0),
-        (6, '2026-06-01'::date, 'South', 'BrandA', 110.0),
-        (7, '2026-06-01'::date, 'South', 'BrandB', 210.0),
-        (8, '2026-06-01'::date, 'South', 'BrandC', 310.0),
-        (9, '2026-06-01'::date, 'South', 'BrandD', 410.0),
-        (10, '2026-06-01'::date, 'South', 'BrandE', 510.0),
-        (11, '2026-06-02'::date, 'North', 'BrandA', 120.0),
-        (12, '2026-06-02'::date, 'North', 'BrandB', 220.0),
-        (13, '2026-06-02'::date, 'North', 'BrandC', 320.0),
-        (14, '2026-06-02'::date, 'North', 'BrandD', 420.0),
-        (15, '2026-06-02'::date, 'North', 'BrandE', 520.0),
-        (16, '2026-06-02'::date, 'South', 'BrandA', 130.0),
-        (17, '2026-06-02'::date, 'South', 'BrandB', 230.0),
-        (18, '2026-06-02'::date, 'South', 'BrandC', 330.0),
-        (19, '2026-06-02'::date, 'South', 'BrandD', 430.0),
-        (20, '2026-06-02'::date, 'South', 'BrandE', 530.0)
-        AS t(ID, SALE_DATE, REGION, BRAND, SALE_DOLLARS)
+# cubes:
+#   - name: mre_share_null
+#     sql: >
+#       SELECT * FROM VALUES
+#         (1, '2026-06-01'::date, 'North', 'BrandA', 100.0),
+#         (2, '2026-06-01'::date, 'North', 'BrandB', 200.0),
+#         (3, '2026-06-01'::date, 'North', 'BrandC', 300.0),
+#         (4, '2026-06-01'::date, 'North', 'BrandD', 400.0),
+#         (5, '2026-06-01'::date, 'North', 'BrandE', 500.0),
+#         (6, '2026-06-01'::date, 'South', 'BrandA', 110.0),
+#         (7, '2026-06-01'::date, 'South', 'BrandB', 210.0),
+#         (8, '2026-06-01'::date, 'South', 'BrandC', 310.0),
+#         (9, '2026-06-01'::date, 'South', 'BrandD', 410.0),
+#         (10, '2026-06-01'::date, 'South', 'BrandE', 510.0),
+#         (11, '2026-06-02'::date, 'North', 'BrandA', 120.0),
+#         (12, '2026-06-02'::date, 'North', 'BrandB', 220.0),
+#         (13, '2026-06-02'::date, 'North', 'BrandC', 320.0),
+#         (14, '2026-06-02'::date, 'North', 'BrandD', 420.0),
+#         (15, '2026-06-02'::date, 'North', 'BrandE', 520.0),
+#         (16, '2026-06-02'::date, 'South', 'BrandA', 130.0),
+#         (17, '2026-06-02'::date, 'South', 'BrandB', 230.0),
+#         (18, '2026-06-02'::date, 'South', 'BrandC', 330.0),
+#         (19, '2026-06-02'::date, 'South', 'BrandD', 430.0),
+#         (20, '2026-06-02'::date, 'South', 'BrandE', 530.0)
+#         AS t(ID, SALE_DATE, REGION, BRAND, SALE_DOLLARS)
 
-    dimensions:
-      - name: id
-        sql: '{CUBE}.ID'
-        type: number
-        primary_key: true
+#     dimensions:
+#       - name: id
+#         sql: '{CUBE}.ID'
+#         type: number
+#         primary_key: true
       
-      - name: sale_date
-        sql: '{CUBE}.SALE_DATE'
-        type: time
+#       - name: sale_date
+#         sql: '{CUBE}.SALE_DATE'
+#         type: time
     
-      - name: region
-        sql: '{CUBE}.REGION'
-        type: string
+#       - name: region
+#         sql: '{CUBE}.REGION'
+#         type: string
     
-      - name: brand
-        sql: '{CUBE}.BRAND'
-        type: string
+#       - name: brand
+#         sql: '{CUBE}.BRAND'
+#         type: string
     
-    measures:
-     - name: sum_sale_dollars
-       sql: '{CUBE}.SALE_DOLLARS'
-       type: sum
+#     measures:
+#      - name: sum_sale_dollars
+#        sql: '{CUBE}.SALE_DOLLARS'
+#        type: sum
     
-     # Denominator: total across all brands in the same region/day, with the
-     # query's brand filter dropped via `filter.exclude`.
-     - name: brand_total_sale_dollars
-       multi_stage: true
-       sql: '{sum_sale_dollars}'
-       type: sum
-       group_by:
-        - '{CUBE.region}'
-        - '{CUBE.sale_date}'
-        - '{CUBE.sale_date.day}'
-       filter:
-        mode: relative
-        exclude:
-         - '{CUBE}.brand'
+#      # Denominator: total across all brands in the same region/day, with the
+#      # query's brand filter dropped via `filter.exclude`.
+#      - name: brand_total_sale_dollars
+#        multi_stage: true
+#        sql: '{sum_sale_dollars}'
+#        type: sum
+#        group_by:
+#         - '{CUBE.region}'
+#         - '{CUBE.sale_date}'
+#         - '{CUBE.sale_date.day}'
+#        filter:
+#         mode: relative
+#         exclude:
+#          - '{CUBE}.brand'
     
-     - name: brand_sales_share
-       multi_stage: true
-       sql: '1.0 * {sum_sale_dollars} / NULLIF({brand_total_sale_dollars}, 0)'
-       type: number
-       format: percent
+#      - name: brand_sales_share
+#        multi_stage: true
+#        sql: '1.0 * {sum_sale_dollars} / NULLIF({brand_total_sale_dollars}, 0)'
+#        type: number
+#        format: percent

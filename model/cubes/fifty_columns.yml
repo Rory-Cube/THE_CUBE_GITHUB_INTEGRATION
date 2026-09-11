@@ -1,478 +1,478 @@
-cubes:
-  - name: fifty_columns
-    public: false
-    data_source: duckdb
-    sql: >
-      SELECT * FROM read_csv('tables/fifty_columns/fifty_columns.csv', header=true, auto_detect=true)
-
-    dimensions:
-      - name: id
-        sql: id
-        type: number
-        primary_key: true
-
-      - name: first_name
-        sql: first_name
-        type: string
-
-      - name: last_name
-        sql: last_name
-        type: string
-
-      - name: email
-        sql: email
-        type: string
-
-      - name: phone
-        sql: phone
-        type: string
-
-      - name: date_of_birth
-        sql: date_of_birth
-        type: time
-
-      - name: signup_date
-        sql: signup_date
-        type: time
-
-      - name: country
-        sql: country
-        type: string
-
-      - name: state
-        sql: state
-        type: string
-
-      - name: city
-        sql: city
-        type: string
-
-      - name: zip_code
-        sql: zip_code
-        type: string
-
-      - name: address
-        sql: address
-        type: string
-
-      - name: company
-        sql: company
-        type: string
-
-      - name: department
-        sql: department
-        type: string
-
-      - name: job_title
-        sql: job_title
-        type: string
-
-      - name: status
-        sql: status
-        type: string
-
-      - name: category
-        sql: category
-        type: string
-
-      - name: segment
-        sql: segment
-        type: string
-
-      - name: score_1
-        sql: score_1
-        type: number
-
-      - name: score_2
-        sql: score_2
-        type: number
-
-      - name: score_3
-        sql: score_3
-        type: number
-
-      - name: metric_a
-        sql: metric_a
-        type: number
-
-      - name: metric_b
-        sql: metric_b
-        type: number
-
-      - name: metric_c
-        sql: metric_c
-        type: number
+# cubes:
+#   - name: fifty_columns
+#     public: false
+#     data_source: duckdb
+#     sql: >
+#       SELECT * FROM read_csv('tables/fifty_columns/fifty_columns.csv', header=true, auto_detect=true)
+
+#     dimensions:
+#       - name: id
+#         sql: id
+#         type: number
+#         primary_key: true
+
+#       - name: first_name
+#         sql: first_name
+#         type: string
+
+#       - name: last_name
+#         sql: last_name
+#         type: string
+
+#       - name: email
+#         sql: email
+#         type: string
+
+#       - name: phone
+#         sql: phone
+#         type: string
+
+#       - name: date_of_birth
+#         sql: date_of_birth
+#         type: time
+
+#       - name: signup_date
+#         sql: signup_date
+#         type: time
+
+#       - name: country
+#         sql: country
+#         type: string
+
+#       - name: state
+#         sql: state
+#         type: string
+
+#       - name: city
+#         sql: city
+#         type: string
+
+#       - name: zip_code
+#         sql: zip_code
+#         type: string
+
+#       - name: address
+#         sql: address
+#         type: string
+
+#       - name: company
+#         sql: company
+#         type: string
+
+#       - name: department
+#         sql: department
+#         type: string
+
+#       - name: job_title
+#         sql: job_title
+#         type: string
+
+#       - name: status
+#         sql: status
+#         type: string
+
+#       - name: category
+#         sql: category
+#         type: string
+
+#       - name: segment
+#         sql: segment
+#         type: string
+
+#       - name: score_1
+#         sql: score_1
+#         type: number
+
+#       - name: score_2
+#         sql: score_2
+#         type: number
+
+#       - name: score_3
+#         sql: score_3
+#         type: number
+
+#       - name: metric_a
+#         sql: metric_a
+#         type: number
+
+#       - name: metric_b
+#         sql: metric_b
+#         type: number
+
+#       - name: metric_c
+#         sql: metric_c
+#         type: number
 
-      - name: revenue
-        sql: revenue
-        type: number
+#       - name: revenue
+#         sql: revenue
+#         type: number
 
-      - name: cost
-        sql: cost
-        type: number
+#       - name: cost
+#         sql: cost
+#         type: number
 
-      - name: profit
-        sql: profit
-        type: number
-
-      - name: margin_pct
-        sql: margin_pct
-        type: number
-
-      - name: units_sold
-        sql: units_sold
-        type: number
-
-      - name: discount_pct
-        sql: discount_pct
-        type: number
-
-      - name: rating
-        sql: rating
-        type: number
-
-      - name: reviews_count
-        sql: reviews_count
-        type: number
-
-      - name: sessions
-        sql: sessions
-        type: number
-
-      - name: page_views
-        sql: page_views
-        type: number
-
-      - name: bounce_rate
-        sql: bounce_rate
-        type: number
-
-      - name: conversion_rate
-        sql: conversion_rate
-        type: number
-
-      - name: plan
-        sql: plan
-        type: string
-
-      - name: is_active
-        sql: is_active
-        type: boolean
-
-      - name: is_verified
-        sql: is_verified
-        type: boolean
-
-      - name: priority
-        sql: priority
-        type: string
-
-      - name: region
-        sql: region
-        type: string
-
-      - name: channel
-        sql: channel
-        type: string
-
-      - name: source
-        sql: source
-        type: string
-
-      - name: campaign
-        sql: campaign
-        type: string
-
-      - name: tags
-        sql: tags
-        type: string
-
-      - name: notes
-        sql: notes
-        type: string
-
-      - name: last_login
-        sql: last_login
-        type: time
-
-      - name: created_at
-        sql: created_at
-        type: time
-
-      - name: updated_at
-        sql: updated_at
-        type: time
-
-      - name: flag
-        sql: flag
-        type: number
-
-    measures:
-      - name: count
-        type: count
-        description: Total number of records
-        drill_members:
-          - id
-          - first_name
-          - last_name
-          - email
-          - company
-          - status
-          - signup_date
-
-      - name: total_revenue
-        sql: revenue
-        type: sum
-        description: Total revenue
-
-      - name: total_cost
-        sql: cost
-        type: sum
-        description: Total cost
-
-      - name: total_profit
-        sql: profit
-        type: sum
-        description: Total profit
-
-      - name: avg_margin_pct
-        sql: margin_pct
-        type: avg
-        description: Average margin percentage
-
-      - name: total_units_sold
-        sql: units_sold
-        type: sum
-        description: Total units sold
-
-      - name: avg_discount_pct
-        sql: discount_pct
-        type: avg
-        description: Average discount percentage
-
-      - name: avg_rating
-        sql: rating
-        type: avg
-        description: Average rating
-
-      - name: total_reviews_count
-        sql: reviews_count
-        type: sum
-        description: Total number of reviews
-
-      - name: avg_score_1
-        sql: score_1
-        type: avg
-        description: Average score 1
-
-      - name: avg_score_2
-        sql: score_2
-        type: avg
-        description: Average score 2
-
-      - name: avg_score_3
-        sql: score_3
-        type: avg
-        description: Average score 3
-
-      - name: avg_metric_a
-        sql: metric_a
-        type: avg
-        description: Average metric A
-
-      - name: avg_metric_b
-        sql: metric_b
-        type: avg
-        description: Average metric B
-
-      - name: avg_metric_c
-        sql: metric_c
-        type: avg
-        description: Average metric C
-
-      - name: total_sessions
-        sql: sessions
-        type: sum
-        description: Total sessions
-
-      - name: total_page_views
-        sql: page_views
-        type: sum
-        description: Total page views
-
-      - name: avg_bounce_rate
-        sql: bounce_rate
-        type: avg
-        description: Average bounce rate
-
-      - name: avg_conversion_rate
-        sql: conversion_rate
-        type: avg
-        description: Average conversion rate
-
-      - name: active_count
-        type: count
-        filters:
-          - sql: "{CUBE}.status = 'active'"
-        description: Number of active records
-
-      - name: pending_count
-        type: count
-        filters:
-          - sql: "{CUBE}.status = 'pending'"
-        description: Number of pending records
-
-      - name: inactive_count
-        type: count
-        filters:
-          - sql: "{CUBE}.status = 'inactive'"
-        description: Number of inactive records
-
-      # -----------------------------
-      # Multi-stage examples
-      # -----------------------------
-
-      # 1) Rank companies by total revenue within their region.
-      #    - grain.exclude: removes the company from the inner GROUP BY so the
-      #      inner aggregation is grouped by the query dimensions minus company
-      #      (typically region), which lets the outer stage compute ranks of
-      #      companies within each region.
-      #    - order_by: tells the outer stage to sort by total_revenue descending
-      #      when computing the rank.
-      - name: company_revenue_rank_within_region
-        multi_stage: true
-        sql: "{total_revenue}"
-        type: rank
-        order_by:
-          - sql: "{total_revenue}"
-            dir: desc
-        grain:
-          exclude:
-            - company
-        description: "Rank of company by revenue within its region"
-        drill_members:
-          - id
-          - company
-          - region
-          - total_revenue
-
-      # 2) Nested aggregate example: compute the average of per-company average profit.
-      #    - avg_profit: simple per-row average of profit (exposed as a base measure).
-      #    - avg_profit_across_companies: multi-stage measure that groups the inner
-      #      stage by company (via grain.include) to compute per-company averages,
-      #      then averages those per-company values in the outer stage.
-      - name: avg_profit
-        sql: profit
-        type: avg
-        description: "Per-row average profit"
-
-      - name: avg_profit_across_companies
-        multi_stage: true
-        sql: "{avg_profit}"
-        type: avg
-        grain:
-          include:
-            - company
-        description: "Average of per-company average profit (company-level first stage)"
-        drill_members:
-          - id
-          - company
-          - region
-
-      # # 3) Multi-stage running / cumulative sum example
-      # #    - Uses the inner aggregated measure `total_revenue` and applies a
-      # #      window function in the outer (post-aggregation) stage to compute a
-      # #      cumulative sum ordered by signup_date.
-      # - name: running_total_revenue_by_signup
-      #   multi_stage: true
-      #   type: number
-      #   grain:
-      #     keep_only:
-      #       - signup_date
-      #   sql: |
-      #     SUM({total_revenue}) OVER (
-      #       ORDER BY {signup_date}
-      #       ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
-      #     )
-      #   description: "Cumulative total revenue ordered by signup_date"
-      #   drill_members:
-      #     - id
-      #     - signup_date
-      #     - total_revenue
-
-      # 3b) Multi-stage running / cumulative sum example partitioned by country
-      #     - Similar to running_total_revenue_by_signup, but computes the running
-      #       total independently within each country via PARTITION BY {CUBE}.country.
-      - name: running_total_revenue_by_signup_by_country
-        multi_stage: true
-        type: number
-        grain:
-          keep_only:
-            - signup_date
-            - country
-        sql: |
-          SUM({total_revenue}) OVER (
-            PARTITION BY {CUBE.country}
-            ORDER BY {CUBE.signup_date}
-            ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
-          )
-        description: "Cumulative total revenue ordered by signup_date partitioned by country"
-        drill_members:
-          - id
-          - signup_date
-          - country
-          - total_revenue
-
-      - name: running_total_revenue_by_signup_by_region
-        multi_stage: true
-        type: number
-        grain:
-          keep_only:
-            - signup_date
-            - region
-        sql: |
-          SUM({total_revenue}) OVER (
-            PARTITION BY {CUBE.region}
-            ORDER BY {CUBE.signup_date}
-            ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
-          )
-        description: "Cumulative total revenue ordered by signup_date partitioned by region"
-        drill_members:
-          - id
-          - signup_date
-          - region
-          - total_revenue
-
-      - name: running_total_revenue_by_signup_by_plan
-        multi_stage: true
-        type: number
-        grain:
-          keep_only:
-            - signup_date
-            - plan
-        sql: |
-          SUM({total_revenue}) OVER (
-            PARTITION BY {CUBE.plan}
-            ORDER BY {CUBE.signup_date}
-            ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
-          )
-        description: "Cumulative total revenue ordered by signup_date partitioned by plan"
-        drill_members:
-          - id
-          - signup_date
-          - plan
-          - total_revenue
-
-      - name: running_total_revenue_dynamic_partition
-        multi_stage: true
-        sql: "{running_total_revenue_by_signup_by_country}"
-        type: number
-        description: "Convenience alias for partitioned running total. Choose specific measure (country/region/plan) in reports/dashboards."
-        drill_members:
-          - id
-          - signup_date
-          - country
-          - region
-          - plan
-          - total_revenue
+#       - name: profit
+#         sql: profit
+#         type: number
+
+#       - name: margin_pct
+#         sql: margin_pct
+#         type: number
+
+#       - name: units_sold
+#         sql: units_sold
+#         type: number
+
+#       - name: discount_pct
+#         sql: discount_pct
+#         type: number
+
+#       - name: rating
+#         sql: rating
+#         type: number
+
+#       - name: reviews_count
+#         sql: reviews_count
+#         type: number
+
+#       - name: sessions
+#         sql: sessions
+#         type: number
+
+#       - name: page_views
+#         sql: page_views
+#         type: number
+
+#       - name: bounce_rate
+#         sql: bounce_rate
+#         type: number
+
+#       - name: conversion_rate
+#         sql: conversion_rate
+#         type: number
+
+#       - name: plan
+#         sql: plan
+#         type: string
+
+#       - name: is_active
+#         sql: is_active
+#         type: boolean
+
+#       - name: is_verified
+#         sql: is_verified
+#         type: boolean
+
+#       - name: priority
+#         sql: priority
+#         type: string
+
+#       - name: region
+#         sql: region
+#         type: string
+
+#       - name: channel
+#         sql: channel
+#         type: string
+
+#       - name: source
+#         sql: source
+#         type: string
+
+#       - name: campaign
+#         sql: campaign
+#         type: string
+
+#       - name: tags
+#         sql: tags
+#         type: string
+
+#       - name: notes
+#         sql: notes
+#         type: string
+
+#       - name: last_login
+#         sql: last_login
+#         type: time
+
+#       - name: created_at
+#         sql: created_at
+#         type: time
+
+#       - name: updated_at
+#         sql: updated_at
+#         type: time
+
+#       - name: flag
+#         sql: flag
+#         type: number
+
+#     measures:
+#       - name: count
+#         type: count
+#         description: Total number of records
+#         drill_members:
+#           - id
+#           - first_name
+#           - last_name
+#           - email
+#           - company
+#           - status
+#           - signup_date
+
+#       - name: total_revenue
+#         sql: revenue
+#         type: sum
+#         description: Total revenue
+
+#       - name: total_cost
+#         sql: cost
+#         type: sum
+#         description: Total cost
+
+#       - name: total_profit
+#         sql: profit
+#         type: sum
+#         description: Total profit
+
+#       - name: avg_margin_pct
+#         sql: margin_pct
+#         type: avg
+#         description: Average margin percentage
+
+#       - name: total_units_sold
+#         sql: units_sold
+#         type: sum
+#         description: Total units sold
+
+#       - name: avg_discount_pct
+#         sql: discount_pct
+#         type: avg
+#         description: Average discount percentage
+
+#       - name: avg_rating
+#         sql: rating
+#         type: avg
+#         description: Average rating
+
+#       - name: total_reviews_count
+#         sql: reviews_count
+#         type: sum
+#         description: Total number of reviews
+
+#       - name: avg_score_1
+#         sql: score_1
+#         type: avg
+#         description: Average score 1
+
+#       - name: avg_score_2
+#         sql: score_2
+#         type: avg
+#         description: Average score 2
+
+#       - name: avg_score_3
+#         sql: score_3
+#         type: avg
+#         description: Average score 3
+
+#       - name: avg_metric_a
+#         sql: metric_a
+#         type: avg
+#         description: Average metric A
+
+#       - name: avg_metric_b
+#         sql: metric_b
+#         type: avg
+#         description: Average metric B
+
+#       - name: avg_metric_c
+#         sql: metric_c
+#         type: avg
+#         description: Average metric C
+
+#       - name: total_sessions
+#         sql: sessions
+#         type: sum
+#         description: Total sessions
+
+#       - name: total_page_views
+#         sql: page_views
+#         type: sum
+#         description: Total page views
+
+#       - name: avg_bounce_rate
+#         sql: bounce_rate
+#         type: avg
+#         description: Average bounce rate
+
+#       - name: avg_conversion_rate
+#         sql: conversion_rate
+#         type: avg
+#         description: Average conversion rate
+
+#       - name: active_count
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status = 'active'"
+#         description: Number of active records
+
+#       - name: pending_count
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status = 'pending'"
+#         description: Number of pending records
+
+#       - name: inactive_count
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status = 'inactive'"
+#         description: Number of inactive records
+
+#       # -----------------------------
+#       # Multi-stage examples
+#       # -----------------------------
+
+#       # 1) Rank companies by total revenue within their region.
+#       #    - grain.exclude: removes the company from the inner GROUP BY so the
+#       #      inner aggregation is grouped by the query dimensions minus company
+#       #      (typically region), which lets the outer stage compute ranks of
+#       #      companies within each region.
+#       #    - order_by: tells the outer stage to sort by total_revenue descending
+#       #      when computing the rank.
+#       - name: company_revenue_rank_within_region
+#         multi_stage: true
+#         sql: "{total_revenue}"
+#         type: rank
+#         order_by:
+#           - sql: "{total_revenue}"
+#             dir: desc
+#         grain:
+#           exclude:
+#             - company
+#         description: "Rank of company by revenue within its region"
+#         drill_members:
+#           - id
+#           - company
+#           - region
+#           - total_revenue
+
+#       # 2) Nested aggregate example: compute the average of per-company average profit.
+#       #    - avg_profit: simple per-row average of profit (exposed as a base measure).
+#       #    - avg_profit_across_companies: multi-stage measure that groups the inner
+#       #      stage by company (via grain.include) to compute per-company averages,
+#       #      then averages those per-company values in the outer stage.
+#       - name: avg_profit
+#         sql: profit
+#         type: avg
+#         description: "Per-row average profit"
+
+#       - name: avg_profit_across_companies
+#         multi_stage: true
+#         sql: "{avg_profit}"
+#         type: avg
+#         grain:
+#           include:
+#             - company
+#         description: "Average of per-company average profit (company-level first stage)"
+#         drill_members:
+#           - id
+#           - company
+#           - region
+
+#       # # 3) Multi-stage running / cumulative sum example
+#       # #    - Uses the inner aggregated measure `total_revenue` and applies a
+#       # #      window function in the outer (post-aggregation) stage to compute a
+#       # #      cumulative sum ordered by signup_date.
+#       # - name: running_total_revenue_by_signup
+#       #   multi_stage: true
+#       #   type: number
+#       #   grain:
+#       #     keep_only:
+#       #       - signup_date
+#       #   sql: |
+#       #     SUM({total_revenue}) OVER (
+#       #       ORDER BY {signup_date}
+#       #       ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+#       #     )
+#       #   description: "Cumulative total revenue ordered by signup_date"
+#       #   drill_members:
+#       #     - id
+#       #     - signup_date
+#       #     - total_revenue
+
+#       # 3b) Multi-stage running / cumulative sum example partitioned by country
+#       #     - Similar to running_total_revenue_by_signup, but computes the running
+#       #       total independently within each country via PARTITION BY {CUBE}.country.
+#       - name: running_total_revenue_by_signup_by_country
+#         multi_stage: true
+#         type: number
+#         grain:
+#           keep_only:
+#             - signup_date
+#             - country
+#         sql: |
+#           SUM({total_revenue}) OVER (
+#             PARTITION BY {CUBE.country}
+#             ORDER BY {CUBE.signup_date}
+#             ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+#           )
+#         description: "Cumulative total revenue ordered by signup_date partitioned by country"
+#         drill_members:
+#           - id
+#           - signup_date
+#           - country
+#           - total_revenue
+
+#       - name: running_total_revenue_by_signup_by_region
+#         multi_stage: true
+#         type: number
+#         grain:
+#           keep_only:
+#             - signup_date
+#             - region
+#         sql: |
+#           SUM({total_revenue}) OVER (
+#             PARTITION BY {CUBE.region}
+#             ORDER BY {CUBE.signup_date}
+#             ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+#           )
+#         description: "Cumulative total revenue ordered by signup_date partitioned by region"
+#         drill_members:
+#           - id
+#           - signup_date
+#           - region
+#           - total_revenue
+
+#       - name: running_total_revenue_by_signup_by_plan
+#         multi_stage: true
+#         type: number
+#         grain:
+#           keep_only:
+#             - signup_date
+#             - plan
+#         sql: |
+#           SUM({total_revenue}) OVER (
+#             PARTITION BY {CUBE.plan}
+#             ORDER BY {CUBE.signup_date}
+#             ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+#           )
+#         description: "Cumulative total revenue ordered by signup_date partitioned by plan"
+#         drill_members:
+#           - id
+#           - signup_date
+#           - plan
+#           - total_revenue
+
+#       - name: running_total_revenue_dynamic_partition
+#         multi_stage: true
+#         sql: "{running_total_revenue_by_signup_by_country}"
+#         type: number
+#         description: "Convenience alias for partitioned running total. Choose specific measure (country/region/plan) in reports/dashboards."
+#         drill_members:
+#           - id
+#           - signup_date
+#           - country
+#           - region
+#           - plan
+#           - total_revenue
 

@@ -1,58 +1,58 @@
-cubes:
-  - name: two_time_values
-    public: false
-    data_source: duckdb
-    sql: >
-      SELECT * FROM read_csv('tables/time_values/two_time_values.csv', header=true, auto_detect=true)
+# cubes:
+#   - name: two_time_values
+#     public: false
+#     data_source: duckdb
+#     sql: >
+#       SELECT * FROM read_csv('tables/time_values/two_time_values.csv', header=true, auto_detect=true)
 
-    dimensions:
-      - name: event_id
-        sql: event_id
-        type: number
-        primary_key: true
+#     dimensions:
+#       - name: event_id
+#         sql: event_id
+#         type: number
+#         primary_key: true
 
-      - name: description
-        sql: description
-        type: string
+#       - name: description
+#         sql: description
+#         type: string
 
-      - name: start_time
-        sql: start_time
-        type: time
+#       - name: start_time
+#         sql: start_time
+#         type: time
 
-      - name: end_time
-        sql: end_time
-        type: time
+#       - name: end_time
+#         sql: end_time
+#         type: time
 
-      - name: value
-        sql: value
-        type: number
+#       - name: value
+#         sql: value
+#         type: number
 
-    measures:
-      - name: count
-        type: count
-        description: Total number of events
-        drill_members:
-          - event_id
-          - description
-          - start_time
-          - end_time
+#     measures:
+#       - name: count
+#         type: count
+#         description: Total number of events
+#         drill_members:
+#           - event_id
+#           - description
+#           - start_time
+#           - end_time
 
-      - name: total_value
-        sql: value
-        type: sum
-        description: Total value across all events
+#       - name: total_value
+#         sql: value
+#         type: sum
+#         description: Total value across all events
 
-      - name: avg_value
-        sql: value
-        type: avg
-        description: Average value per event
+#       - name: avg_value
+#         sql: value
+#         type: avg
+#         description: Average value per event
 
-      - name: min_value
-        sql: value
-        type: min
-        description: Minimum value
+#       - name: min_value
+#         sql: value
+#         type: min
+#         description: Minimum value
 
-      - name: max_value
-        sql: value
-        type: max
-        description: Maximum value
+#       - name: max_value
+#         sql: value
+#         type: max
+#         description: Maximum value

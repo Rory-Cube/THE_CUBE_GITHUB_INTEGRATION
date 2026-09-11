@@ -1,63 +1,63 @@
-cubes:
-  - name: three_time_values
-    public: false
-    data_source: duckdb
-    sql: >
-      SELECT * FROM read_csv('tables/time_values/three_time_values.csv', header=true, auto_detect=true)
+# cubes:
+#   - name: three_time_values
+#     public: false
+#     data_source: duckdb
+#     sql: >
+#       SELECT * FROM read_csv('tables/time_values/three_time_values.csv', header=true, auto_detect=true)
 
-    dimensions:
-      - name: record_id
-        sql: record_id
-        type: number
-        primary_key: true
+#     dimensions:
+#       - name: record_id
+#         sql: record_id
+#         type: number
+#         primary_key: true
 
-      - name: description
-        sql: description
-        type: string
+#       - name: description
+#         sql: description
+#         type: string
 
-      - name: created_time
-        sql: created_time
-        type: time
+#       - name: created_time
+#         sql: created_time
+#         type: time
 
-      - name: updated_time
-        sql: updated_time
-        type: time
+#       - name: updated_time
+#         sql: updated_time
+#         type: time
 
-      - name: completed_time
-        sql: completed_time
-        type: time
+#       - name: completed_time
+#         sql: completed_time
+#         type: time
 
-      - name: value
-        sql: value
-        type: number
+#       - name: value
+#         sql: value
+#         type: number
 
-    measures:
-      - name: count
-        type: count
-        description: Total number of records
-        drill_members:
-          - record_id
-          - description
-          - created_time
-          - updated_time
-          - completed_time
+#     measures:
+#       - name: count
+#         type: count
+#         description: Total number of records
+#         drill_members:
+#           - record_id
+#           - description
+#           - created_time
+#           - updated_time
+#           - completed_time
 
-      - name: total_value
-        sql: value
-        type: sum
-        description: Total value across all records
+#       - name: total_value
+#         sql: value
+#         type: sum
+#         description: Total value across all records
 
-      - name: avg_value
-        sql: value
-        type: avg
-        description: Average value per record
+#       - name: avg_value
+#         sql: value
+#         type: avg
+#         description: Average value per record
 
-      - name: min_value
-        sql: value
-        type: min
-        description: Minimum value
+#       - name: min_value
+#         sql: value
+#         type: min
+#         description: Minimum value
 
-      - name: max_value
-        sql: value
-        type: max
-        description: Maximum value
+#       - name: max_value
+#         sql: value
+#         type: max
+#         description: Maximum value

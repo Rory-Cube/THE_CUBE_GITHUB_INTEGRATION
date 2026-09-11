@@ -1,42 +1,42 @@
-cubes:
-  - name: otm_enrollments
-    public: false
-    data_source: duckdb
-    sql: >
-      SELECT * FROM read_csv('tables/one_to_many/enrollments.csv', header=true, auto_detect=true)
-    description: Individual student enrollments — the "many" side of the join.
+# cubes:
+#   - name: otm_enrollments
+#     public: false
+#     data_source: duckdb
+#     sql: >
+#       SELECT * FROM read_csv('tables/one_to_many/enrollments.csv', header=true, auto_detect=true)
+#     description: Individual student enrollments — the "many" side of the join.
 
-    dimensions:
-      - name: enrollment_id
-        sql: enrollment_id
-        type: number
-        primary_key: true
+#     dimensions:
+#       - name: enrollment_id
+#         sql: enrollment_id
+#         type: number
+#         primary_key: true
 
-      - name: course_id
-        sql: course_id
-        type: number
+#       - name: course_id
+#         sql: course_id
+#         type: number
 
-      - name: student_name
-        sql: student_name
-        type: string
+#       - name: student_name
+#         sql: student_name
+#         type: string
 
-      - name: enrolled_date
-        sql: enrolled_date
-        type: time
+#       - name: enrolled_date
+#         sql: enrolled_date
+#         type: time
 
-      - name: status
-        sql: status
-        type: string
+#       - name: status
+#         sql: status
+#         type: string
 
-    measures:
-      - name: count
-        type: count
+#     measures:
+#       - name: count
+#         type: count
 
-      - name: total_revenue_usd
-        sql: amount_paid_usd
-        type: sum
+#       - name: total_revenue_usd
+#         sql: amount_paid_usd
+#         type: sum
 
-      - name: completed_count
-        type: count
-        filters:
-          - sql: "{CUBE}.status = 'completed'"
+#       - name: completed_count
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status = 'completed'"

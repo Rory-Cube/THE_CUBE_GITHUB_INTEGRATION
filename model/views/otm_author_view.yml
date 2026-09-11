@@ -1,14 +1,14 @@
-views:
-  - name: otm_author_view
+# views:
+#   - name: otm_author_view
 
-    cubes:
-      - join_path: otm_author
-        includes: "*"
+#     cubes:
+#       - join_path: otm_author
+#         includes: "*"
 
-      - join_path: otm_author.otm_book
-        prefix: true
-        includes:
-          - id
-          - book
-          - award
-          - count
+#       - join_path: otm_author.otm_book
+#         prefix: true
+#         includes:
+#           - id
+#           - book
+#           - award
+#           - count

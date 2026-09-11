@@ -1,6 +1,5 @@
-{% from "macros/macro_1.yml" import macro_1 %}
 # cubes:
-#   - name: supplier_w_macro
+#   - name: supplier
 #     public: false
 #     sql_table: TPCH_SF100.SUPPLIER
 
@@ -10,9 +9,6 @@
 #         relationship: many_to_one
 
 #     dimensions:
-  
-#        {{ macro_1() }}
-        
 #       - name: supp_key
 #         sql: S_SUPPKEY
 #         type: number

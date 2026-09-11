@@ -1,8 +1,8 @@
-cubes:
-  - name: messages_users_ext1
-    public: false
-    extends: messages_users
-    sql: |
-      SELECT id, name, email, status, created_at
-      FROM {messages_users.sql()}
-      WHERE created_at < '2024-03-11'
+# cubes:
+#   - name: messages_users_ext1
+#     public: false
+#     extends: messages_users
+#     sql: |
+#       SELECT id, name, email, status, created_at
+#       FROM {messages_users.sql()}
+#       WHERE created_at < '2024-03-11'

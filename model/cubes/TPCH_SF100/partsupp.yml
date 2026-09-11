@@ -1,0 +1,61 @@
+# cubes:
+#   - name: partsupp
+#     public: false
+#     sql_table: TPCH_SF100.PARTSUPP
+
+#     joins:
+#       - name: part
+#         sql: "{CUBE}.PS_PARTKEY = {part}.P_PARTKEY"
+#         relationship: many_to_one
+
+#       - name: supplier
+#         sql: "{CUBE}.PS_SUPPKEY = {supplier}.S_SUPPKEY"
+#         relationship: many_to_one
+
+#     dimensions:
+#       - name: id
+#         sql: "CONCAT(CAST(PS_PARTKEY AS VARCHAR), '_', CAST(PS_SUPPKEY AS VARCHAR))"
+#         type: string
+#         primary_key: true
+
+#       - name: part_key
+#         sql: PS_PARTKEY
+#         type: number
+
+#       - name: supp_key
+#         sql: PS_SUPPKEY
+#         type: number
+
+#       - name: avail_qty
+#         sql: PS_AVAILQTY
+#         type: number
+#         description: Available quantity from this supplier for this part
+
+#       - name: supply_cost
+#         sql: PS_SUPPLYCOST
+#         type: number
+#         description: Cost to supply this part from this supplier
+
+#       - name: comment
+#         sql: PS_COMMENT
+#         type: string
+
+#     measures:
+#       - name: count
+#         type: count
+#         description: Total number of part-supplier combinations
+
+#       - name: total_avail_qty
+#         sql: PS_AVAILQTY
+#         type: sum
+#         description: Total available quantity across all part-supplier combinations
+
+#       - name: avg_supply_cost
+#         sql: PS_SUPPLYCOST
+#         type: avg
+#         description: Average supply cost
+
+#       - name: total_supply_cost
+#         sql: PS_SUPPLYCOST
+#         type: sum
+#         description: Total supply cost across all part-supplier combinations

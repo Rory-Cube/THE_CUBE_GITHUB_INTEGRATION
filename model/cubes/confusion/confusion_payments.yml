@@ -1,6 +1,9 @@
 cubes:
   - name: payments
-    sql_table: public.payments
+    data_source: duckdb
+    sql: >
+      SELECT * FROM read_csv('tables/confusion/confusion_payments.csv', header=true, auto_detect=true)
+    public: false
     description: Cash movements. `amount` here includes tax and shipping, unlike orders.net_amount.
 
     joins:

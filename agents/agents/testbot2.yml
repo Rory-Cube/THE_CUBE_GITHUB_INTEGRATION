@@ -4,6 +4,6 @@ agents:
     description: "AI assistant lobsters 2"
     space: rorys_space              # Required: reference to a space
     # llm: claude_4_5_sonnet
-    accessible_views:
-      - author_view
-      - carrier_view
+    # accessible_views:
+    #   - author_view
+    #   - carrier_view

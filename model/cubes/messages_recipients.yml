@@ -1,34 +1,34 @@
-cubes:
-    - name: messages_recipients
-      public: false
-      sql: >
-        SELECT 1 AS id, 'Alice Chen' AS name, 'alice@example.com' AS email, 'active' AS status, '2024-01-15'::date AS created_at UNION ALL
-        SELECT 2, 'Bob Martinez', 'bob@example.com', 'active', '2024-02-03'::date UNION ALL
-        SELECT 3, 'Carol Singh', 'carol@example.com', 'inactive', '2024-02-20'::date UNION ALL
-        SELECT 4, 'David Kim', 'david@example.com', 'active', '2024-03-11'::date UNION ALL
-        SELECT 5, 'Eve Johansson', 'eve@example.com', 'pending', '2024-04-02'::date UNION ALL
-        SELECT 6, 'Frank Okafor', 'frank@example.com', 'active', '2024-04-18'::date UNION ALL
-        SELECT 7, 'Grace Liu', 'grace@example.com', 'active', '2024-05-07'::date UNION ALL
-        SELECT 8, 'Henry Patel', 'henry@example.com', 'inactive', '2024-05-22'::date
+# cubes:
+#     - name: messages_recipients
+#       public: false
+#       sql: >
+#         SELECT 1 AS id, 'Alice Chen' AS name, 'alice@example.com' AS email, 'active' AS status, '2024-01-15'::date AS created_at UNION ALL
+#         SELECT 2, 'Bob Martinez', 'bob@example.com', 'active', '2024-02-03'::date UNION ALL
+#         SELECT 3, 'Carol Singh', 'carol@example.com', 'inactive', '2024-02-20'::date UNION ALL
+#         SELECT 4, 'David Kim', 'david@example.com', 'active', '2024-03-11'::date UNION ALL
+#         SELECT 5, 'Eve Johansson', 'eve@example.com', 'pending', '2024-04-02'::date UNION ALL
+#         SELECT 6, 'Frank Okafor', 'frank@example.com', 'active', '2024-04-18'::date UNION ALL
+#         SELECT 7, 'Grace Liu', 'grace@example.com', 'active', '2024-05-07'::date UNION ALL
+#         SELECT 8, 'Henry Patel', 'henry@example.com', 'inactive', '2024-05-22'::date
   
-      dimensions:
-        - name: id
-          sql: id
-          type: number
-          primary_key: true
+#       dimensions:
+#         - name: id
+#           sql: id
+#           type: number
+#           primary_key: true
   
-        - name: name
-          sql: name
-          type: string
+#         - name: name
+#           sql: name
+#           type: string
   
-        - name: email
-          sql: email
-          type: string
+#         - name: email
+#           sql: email
+#           type: string
   
-        - name: status
-          sql: status
-          type: string
+#         - name: status
+#           sql: status
+#           type: string
   
-        - name: created_at
-          sql: created_at
-          type: time
+#         - name: created_at
+#           sql: created_at
+#           type: time

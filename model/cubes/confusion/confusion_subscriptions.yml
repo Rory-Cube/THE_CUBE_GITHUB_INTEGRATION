@@ -1,6 +1,9 @@
 cubes:
   - name: subscriptions
-    sql_table: public.subscriptions
+    data_source: duckdb
+    sql: >
+      SELECT * FROM read_csv('tables/confusion/confusion_subscriptions.csv', header=true, auto_detect=true)
+    public: false
     description: Recurring SaaS side. `amount` is the invoice per billing period (annual invoices are ~12x monthly); `mrr_amount` is the normalized monthly value.
 
     joins:
