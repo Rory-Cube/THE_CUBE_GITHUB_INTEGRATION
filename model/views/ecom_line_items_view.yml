@@ -1,0 +1,49 @@
+views:
+  - name: ecom_view
+
+    cubes:
+      # Fact table — line items
+      - join_path: ecom_line_items
+        includes:
+          - id
+          - created_at
+          - count
+          - quantity
+          - revenue
+
+      # Order details
+      - join_path: ecom_line_items.ecom_orders
+        prefix: true
+        includes:
+          - status
+          - created_at
+          - count
+          - completed_count
+          - shipping_cost
+
+      # Customer details
+      - join_path: ecom_line_items.ecom_orders.ecom_customers
+        prefix: true
+        includes:
+          - full_name
+          - city
+          - state
+          - signup_source
+          - count
+
+      # Product details
+      - join_path: ecom_line_items.ecom_products
+        prefix: true
+        includes:
+          - name
+          - category
+          - price
+          - count
+
+      # Supplier details
+      - join_path: ecom_line_items.ecom_products.ecom_suppliers
+        prefix: true
+        includes:
+          - company
+          - country
+          - count

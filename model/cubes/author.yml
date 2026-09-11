@@ -1,5 +1,5 @@
 cubes:
-  - name: author
+  - name: otm_author
     public: false
     sql: >
       SELECT 1 AS id, 'John' AS author, '2026-05-04T23:00:00'::TIMESTAMP AS timestamp, NULL AS awards UNION ALL
@@ -8,8 +8,8 @@ cubes:
       SELECT 4 AS id, 'Rebecca' AS author, '2026-05-05T22:00:00'::TIMESTAMP AS timestamp, 1 AS awards UNION ALL
       SELECT 5 AS id, 'Rory' AS author, '2026-05-01T22:30:00'::TIMESTAMP AS timestamp, 0 AS awards
     joins:
-      - name: book
-        sql: "{author}.id = {book.author_id}"
+      - name: otm_book
+        sql: "{otm_author}.id = {otm_book.author_id}"
         relationship: one_to_many
         # relationship: many_to_one
     dimensions:

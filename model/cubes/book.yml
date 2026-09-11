@@ -1,5 +1,5 @@
 cubes:
-  - name: book
+  - name: otm_book
     public: false
     sql: >
       SELECT 1 AS id, 1 AS author_id, 'Right' AS book, 'John' AS author, 'yes' AS award UNION ALL

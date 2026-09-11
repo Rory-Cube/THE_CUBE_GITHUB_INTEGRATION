@@ -1,6 +1,0 @@
-# views:
-#   - name: users_ext_test_view
-
-#     cubes:
-#       - join_path: users_ext1
-#         includes: "*"

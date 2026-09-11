@@ -1,0 +1,501 @@
+id,first_name,last_name,email,city,state,signup_source,created_at
+1,Rowan,Anderson,rowan.anderson1@example.com,Boston,MA,paid_search,2024-09-12
+2,Reese,Wilson,reese.wilson2@example.com,Austin,TX,organic,2024-02-15
+3,Sam,Martinez,sam.martinez3@example.com,Chicago,IL,paid_search,2024-04-20
+4,Dana,Thomas,dana.thomas4@example.com,Seattle,WA,referral,2023-11-06
+5,Morgan,Brown,morgan.brown5@example.com,Denver,CO,paid_search,2023-06-11
+6,Casey,Kim,casey.kim6@example.com,Denver,CO,paid_search,2022-11-27
+7,Taylor,Kim,taylor.kim7@example.com,New York,NY,paid_search,2024-07-17
+8,Rowan,Lee,rowan.lee8@example.com,Phoenix,AZ,paid_search,2024-05-24
+9,Riley,Brown,riley.brown9@example.com,Portland,OR,organic,2022-06-23
+10,Taylor,Kim,taylor.kim10@example.com,Phoenix,AZ,paid_search,2024-03-05
+11,Casey,Nguyen,casey.nguyen11@example.com,Atlanta,GA,paid_search,2022-08-15
+12,Taylor,Brown,taylor.brown12@example.com,Atlanta,GA,referral,2024-03-27
+13,Skyler,Wilson,skyler.wilson13@example.com,San Francisco,CA,paid_search,2024-06-13
+14,Morgan,Brown,morgan.brown14@example.com,Phoenix,AZ,organic,2022-09-26
+15,Emerson,Anderson,emerson.anderson15@example.com,Austin,TX,paid_search,2023-06-26
+16,Taylor,Anderson,taylor.anderson16@example.com,Austin,TX,organic,2022-09-20
+17,Alex,Garcia,alex.garcia17@example.com,Atlanta,GA,paid_search,2023-10-24
+18,Skyler,Johnson,skyler.johnson18@example.com,Atlanta,GA,paid_search,2024-09-12
+19,Dana,Davis,dana.davis19@example.com,Austin,TX,referral,2022-08-12
+20,Riley,Nguyen,riley.nguyen20@example.com,New York,NY,organic,2023-05-24
+21,Dana,Wilson,dana.wilson21@example.com,Portland,OR,referral,2024-10-23
+22,Emerson,Anderson,emerson.anderson22@example.com,Seattle,WA,referral,2023-02-26
+23,Taylor,Lee,taylor.lee23@example.com,Boston,MA,paid_search,2022-09-27
+24,Avery,Garcia,avery.garcia24@example.com,Seattle,WA,paid_search,2023-08-14
+25,Skyler,Nguyen,skyler.nguyen25@example.com,Boston,MA,social,2023-09-01
+26,Quinn,Patel,quinn.patel26@example.com,Atlanta,GA,paid_search,2024-01-18
+27,Reese,Moore,reese.moore27@example.com,Boston,MA,paid_search,2023-03-10
+28,Rowan,Brown,rowan.brown28@example.com,Atlanta,GA,referral,2024-10-08
+29,Reese,Thomas,reese.thomas29@example.com,Atlanta,GA,paid_search,2023-09-12
+30,Skyler,Garcia,skyler.garcia30@example.com,Denver,CO,referral,2023-02-13
+31,Avery,Nguyen,avery.nguyen31@example.com,Austin,TX,organic,2024-10-12
+32,Sam,Wilson,sam.wilson32@example.com,Denver,CO,organic,2024-09-10
+33,Casey,Patel,casey.patel33@example.com,Boston,MA,organic,2023-08-24
+34,Jordan,Garcia,jordan.garcia34@example.com,New York,NY,paid_search,2022-06-23
+35,Reese,Garcia,reese.garcia35@example.com,Seattle,WA,paid_search,2023-11-20
+36,Casey,Brown,casey.brown36@example.com,Atlanta,GA,paid_search,2023-10-13
+37,Taylor,Thomas,taylor.thomas37@example.com,New York,NY,organic,2022-10-12
+38,Skyler,Davis,skyler.davis38@example.com,Portland,OR,referral,2023-12-23
+39,Skyler,Davis,skyler.davis39@example.com,New York,NY,paid_search,2024-06-26
+40,Casey,Chen,casey.chen40@example.com,New York,NY,referral,2022-09-04
+41,Emerson,Kim,emerson.kim41@example.com,Boston,MA,referral,2024-03-12
+42,Avery,Anderson,avery.anderson42@example.com,Phoenix,AZ,referral,2022-10-05
+43,Jamie,Garcia,jamie.garcia43@example.com,Denver,CO,paid_search,2024-04-04
+44,Alex,Kim,alex.kim44@example.com,Chicago,IL,paid_search,2023-06-13
+45,Skyler,Kim,skyler.kim45@example.com,San Francisco,CA,referral,2022-06-06
+46,Rowan,Lee,rowan.lee46@example.com,Phoenix,AZ,paid_search,2024-10-17
+47,Rowan,Kim,rowan.kim47@example.com,Phoenix,AZ,paid_search,2022-10-28
+48,Alex,Johnson,alex.johnson48@example.com,New York,NY,organic,2023-11-19
+49,Jamie,Lee,jamie.lee49@example.com,Portland,OR,organic,2022-11-11
+50,Casey,Garcia,casey.garcia50@example.com,Atlanta,GA,organic,2024-09-17
+51,Skyler,Moore,skyler.moore51@example.com,New York,NY,organic,2024-03-26
+52,Emerson,Kim,emerson.kim52@example.com,Denver,CO,referral,2024-05-24
+53,Jamie,Smith,jamie.smith53@example.com,Boston,MA,organic,2023-06-24
+54,Casey,Garcia,casey.garcia54@example.com,Seattle,WA,referral,2023-07-26
+55,Dana,Smith,dana.smith55@example.com,Portland,OR,social,2023-12-23
+56,Taylor,Thomas,taylor.thomas56@example.com,Portland,OR,paid_search,2024-05-07
+57,Taylor,Lee,taylor.lee57@example.com,Atlanta,GA,paid_search,2024-07-02
+58,Quinn,Garcia,quinn.garcia58@example.com,Atlanta,GA,paid_search,2022-06-17
+59,Skyler,Patel,skyler.patel59@example.com,San Francisco,CA,paid_search,2024-01-19
+60,Reese,Wilson,reese.wilson60@example.com,Seattle,WA,referral,2022-09-07
+61,Jordan,Chen,jordan.chen61@example.com,Seattle,WA,paid_search,2023-02-15
+62,Rowan,Chen,rowan.chen62@example.com,Phoenix,AZ,paid_search,2024-06-16
+63,Riley,Kim,riley.kim63@example.com,Austin,TX,organic,2023-01-12
+64,Reese,Thomas,reese.thomas64@example.com,Austin,TX,organic,2024-05-18
+65,Skyler,Chen,skyler.chen65@example.com,Phoenix,AZ,referral,2023-07-22
+66,Skyler,Davis,skyler.davis66@example.com,Portland,OR,organic,2022-12-27
+67,Riley,Martinez,riley.martinez67@example.com,Chicago,IL,organic,2023-03-28
+68,Dana,Patel,dana.patel68@example.com,Portland,OR,referral,2023-09-21
+69,Emerson,Nguyen,emerson.nguyen69@example.com,Seattle,WA,paid_search,2024-04-19
+70,Casey,Martinez,casey.martinez70@example.com,Atlanta,GA,referral,2023-11-28
+71,Riley,Lee,riley.lee71@example.com,Boston,MA,social,2024-09-17
+72,Morgan,Davis,morgan.davis72@example.com,Boston,MA,referral,2024-07-20
+73,Jamie,Kim,jamie.kim73@example.com,Phoenix,AZ,organic,2024-04-09
+74,Emerson,Garcia,emerson.garcia74@example.com,Seattle,WA,organic,2023-11-25
+75,Jamie,Garcia,jamie.garcia75@example.com,Atlanta,GA,paid_search,2023-02-16
+76,Dana,Kim,dana.kim76@example.com,Chicago,IL,organic,2023-06-07
+77,Emerson,Patel,emerson.patel77@example.com,San Francisco,CA,paid_search,2022-09-16
+78,Casey,Anderson,casey.anderson78@example.com,Denver,CO,organic,2023-05-03
+79,Rowan,Davis,rowan.davis79@example.com,Denver,CO,paid_search,2024-09-11
+80,Avery,Garcia,avery.garcia80@example.com,Seattle,WA,organic,2023-06-19
+81,Riley,Nguyen,riley.nguyen81@example.com,Boston,MA,referral,2022-09-11
+82,Reese,Nguyen,reese.nguyen82@example.com,Atlanta,GA,paid_search,2024-01-08
+83,Alex,Johnson,alex.johnson83@example.com,Denver,CO,organic,2024-10-14
+84,Reese,Garcia,reese.garcia84@example.com,Denver,CO,paid_search,2024-07-20
+85,Casey,Nguyen,casey.nguyen85@example.com,Boston,MA,paid_search,2023-02-02
+86,Riley,Wilson,riley.wilson86@example.com,Boston,MA,organic,2023-07-14
+87,Reese,Nguyen,reese.nguyen87@example.com,Denver,CO,organic,2023-09-21
+88,Taylor,Johnson,taylor.johnson88@example.com,Austin,TX,organic,2023-01-10
+89,Reese,Brown,reese.brown89@example.com,San Francisco,CA,organic,2023-01-28
+90,Reese,Nguyen,reese.nguyen90@example.com,Denver,CO,referral,2022-12-30
+91,Skyler,Brown,skyler.brown91@example.com,Phoenix,AZ,organic,2024-11-12
+92,Sam,Thomas,sam.thomas92@example.com,Austin,TX,organic,2024-04-02
+93,Casey,Lee,casey.lee93@example.com,Denver,CO,organic,2024-06-26
+94,Avery,Lee,avery.lee94@example.com,Denver,CO,organic,2024-06-04
+95,Alex,Brown,alex.brown95@example.com,Denver,CO,paid_search,2024-10-11
+96,Jordan,Martinez,jordan.martinez96@example.com,Atlanta,GA,organic,2022-09-03
+97,Alex,Davis,alex.davis97@example.com,Denver,CO,paid_search,2024-08-02
+98,Jamie,Patel,jamie.patel98@example.com,San Francisco,CA,social,2022-07-30
+99,Morgan,Thomas,morgan.thomas99@example.com,Atlanta,GA,organic,2023-08-02
+100,Sam,Kim,sam.kim100@example.com,Atlanta,GA,organic,2023-11-17
+101,Dana,Martinez,dana.martinez101@example.com,Portland,OR,organic,2023-04-19
+102,Skyler,Davis,skyler.davis102@example.com,Denver,CO,organic,2022-10-10
+103,Taylor,Johnson,taylor.johnson103@example.com,Boston,MA,referral,2022-11-21
+104,Quinn,Davis,quinn.davis104@example.com,Phoenix,AZ,organic,2024-06-12
+105,Avery,Kim,avery.kim105@example.com,Atlanta,GA,social,2023-03-14
+106,Morgan,Thomas,morgan.thomas106@example.com,Phoenix,AZ,social,2023-03-07
+107,Morgan,Davis,morgan.davis107@example.com,Phoenix,AZ,organic,2024-09-09
+108,Reese,Johnson,reese.johnson108@example.com,Austin,TX,paid_search,2022-10-08
+109,Morgan,Martinez,morgan.martinez109@example.com,Seattle,WA,organic,2024-09-01
+110,Jordan,Brown,jordan.brown110@example.com,Seattle,WA,organic,2024-09-06
+111,Riley,Nguyen,riley.nguyen111@example.com,Phoenix,AZ,paid_search,2023-11-21
+112,Alex,Garcia,alex.garcia112@example.com,Denver,CO,referral,2022-10-27
+113,Reese,Thomas,reese.thomas113@example.com,Atlanta,GA,organic,2022-10-19
+114,Taylor,Moore,taylor.moore114@example.com,Denver,CO,referral,2023-02-12
+115,Dana,Davis,dana.davis115@example.com,Austin,TX,paid_search,2023-11-02
+116,Avery,Garcia,avery.garcia116@example.com,San Francisco,CA,social,2022-10-17
+117,Emerson,Lee,emerson.lee117@example.com,Seattle,WA,organic,2023-07-16
+118,Skyler,Chen,skyler.chen118@example.com,Phoenix,AZ,referral,2022-09-12
+119,Quinn,Moore,quinn.moore119@example.com,Denver,CO,paid_search,2023-09-30
+120,Jamie,Wilson,jamie.wilson120@example.com,Denver,CO,paid_search,2022-06-20
+121,Morgan,Brown,morgan.brown121@example.com,Boston,MA,paid_search,2024-02-29
+122,Sam,Davis,sam.davis122@example.com,Portland,OR,referral,2022-07-20
+123,Reese,Patel,reese.patel123@example.com,Phoenix,AZ,organic,2022-11-23
+124,Sam,Garcia,sam.garcia124@example.com,Phoenix,AZ,paid_search,2022-11-05
+125,Alex,Anderson,alex.anderson125@example.com,Denver,CO,paid_search,2024-06-17
+126,Skyler,Anderson,skyler.anderson126@example.com,San Francisco,CA,paid_search,2022-07-19
+127,Dana,Nguyen,dana.nguyen127@example.com,Denver,CO,organic,2023-06-22
+128,Quinn,Kim,quinn.kim128@example.com,Atlanta,GA,social,2023-11-15
+129,Jamie,Patel,jamie.patel129@example.com,New York,NY,organic,2023-09-08
+130,Dana,Johnson,dana.johnson130@example.com,San Francisco,CA,organic,2024-02-03
+131,Reese,Nguyen,reese.nguyen131@example.com,Denver,CO,paid_search,2024-05-23
+132,Riley,Thomas,riley.thomas132@example.com,Boston,MA,organic,2023-05-21
+133,Sam,Patel,sam.patel133@example.com,Denver,CO,organic,2024-06-15
+134,Skyler,Kim,skyler.kim134@example.com,Boston,MA,referral,2023-03-14
+135,Alex,Martinez,alex.martinez135@example.com,Boston,MA,paid_search,2024-11-02
+136,Alex,Garcia,alex.garcia136@example.com,Boston,MA,organic,2023-08-29
+137,Skyler,Nguyen,skyler.nguyen137@example.com,Atlanta,GA,referral,2024-03-24
+138,Taylor,Chen,taylor.chen138@example.com,Boston,MA,organic,2024-07-27
+139,Morgan,Nguyen,morgan.nguyen139@example.com,Atlanta,GA,organic,2024-05-14
+140,Dana,Davis,dana.davis140@example.com,Austin,TX,referral,2024-07-06
+141,Morgan,Brown,morgan.brown141@example.com,Portland,OR,paid_search,2023-09-26
+142,Sam,Garcia,sam.garcia142@example.com,Seattle,WA,paid_search,2022-07-10
+143,Sam,Martinez,sam.martinez143@example.com,San Francisco,CA,paid_search,2023-08-18
+144,Reese,Chen,reese.chen144@example.com,Boston,MA,referral,2022-11-11
+145,Riley,Thomas,riley.thomas145@example.com,Atlanta,GA,social,2024-08-09
+146,Taylor,Nguyen,taylor.nguyen146@example.com,Boston,MA,organic,2022-12-31
+147,Taylor,Moore,taylor.moore147@example.com,Phoenix,AZ,paid_search,2022-12-23
+148,Rowan,Lee,rowan.lee148@example.com,Seattle,WA,organic,2023-01-11
+149,Skyler,Thomas,skyler.thomas149@example.com,New York,NY,organic,2023-12-31
+150,Skyler,Brown,skyler.brown150@example.com,Denver,CO,referral,2023-10-28
+151,Morgan,Wilson,morgan.wilson151@example.com,Denver,CO,referral,2024-10-01
+152,Quinn,Martinez,quinn.martinez152@example.com,Atlanta,GA,referral,2023-06-10
+153,Jamie,Brown,jamie.brown153@example.com,Atlanta,GA,organic,2023-02-10
+154,Avery,Anderson,avery.anderson154@example.com,Boston,MA,organic,2022-07-15
+155,Rowan,Patel,rowan.patel155@example.com,Austin,TX,social,2022-06-07
+156,Taylor,Davis,taylor.davis156@example.com,New York,NY,organic,2023-05-03
+157,Skyler,Kim,skyler.kim157@example.com,Portland,OR,organic,2024-09-11
+158,Jamie,Wilson,jamie.wilson158@example.com,New York,NY,organic,2023-09-15
+159,Dana,Anderson,dana.anderson159@example.com,San Francisco,CA,paid_search,2024-08-13
+160,Alex,Lee,alex.lee160@example.com,Boston,MA,social,2022-08-31
+161,Casey,Thomas,casey.thomas161@example.com,Seattle,WA,referral,2022-08-23
+162,Jamie,Johnson,jamie.johnson162@example.com,Boston,MA,social,2024-06-20
+163,Alex,Wilson,alex.wilson163@example.com,San Francisco,CA,paid_search,2022-09-05
+164,Dana,Lee,dana.lee164@example.com,Seattle,WA,paid_search,2022-07-17
+165,Morgan,Patel,morgan.patel165@example.com,Phoenix,AZ,paid_search,2023-05-30
+166,Dana,Johnson,dana.johnson166@example.com,Chicago,IL,referral,2024-09-10
+167,Emerson,Brown,emerson.brown167@example.com,New York,NY,social,2024-02-11
+168,Dana,Wilson,dana.wilson168@example.com,Atlanta,GA,referral,2022-08-29
+169,Alex,Davis,alex.davis169@example.com,Seattle,WA,organic,2024-06-23
+170,Dana,Moore,dana.moore170@example.com,Denver,CO,social,2024-06-29
+171,Reese,Johnson,reese.johnson171@example.com,New York,NY,social,2024-05-21
+172,Skyler,Martinez,skyler.martinez172@example.com,Seattle,WA,paid_search,2024-08-21
+173,Reese,Chen,reese.chen173@example.com,Portland,OR,organic,2023-01-02
+174,Skyler,Smith,skyler.smith174@example.com,Denver,CO,organic,2024-10-29
+175,Riley,Lee,riley.lee175@example.com,Austin,TX,paid_search,2023-03-16
+176,Quinn,Martinez,quinn.martinez176@example.com,San Francisco,CA,organic,2024-05-22
+177,Sam,Davis,sam.davis177@example.com,New York,NY,paid_search,2023-11-04
+178,Taylor,Nguyen,taylor.nguyen178@example.com,Phoenix,AZ,organic,2024-05-02
+179,Jamie,Martinez,jamie.martinez179@example.com,Denver,CO,paid_search,2023-12-18
+180,Dana,Smith,dana.smith180@example.com,Atlanta,GA,social,2023-12-31
+181,Dana,Brown,dana.brown181@example.com,San Francisco,CA,organic,2023-12-07
+182,Casey,Davis,casey.davis182@example.com,Denver,CO,paid_search,2024-05-02
+183,Riley,Wilson,riley.wilson183@example.com,Denver,CO,paid_search,2024-03-27
+184,Morgan,Garcia,morgan.garcia184@example.com,New York,NY,referral,2022-09-30
+185,Sam,Garcia,sam.garcia185@example.com,New York,NY,paid_search,2024-06-13
+186,Quinn,Chen,quinn.chen186@example.com,Denver,CO,organic,2023-09-26
+187,Emerson,Martinez,emerson.martinez187@example.com,New York,NY,organic,2023-03-18
+188,Quinn,Thomas,quinn.thomas188@example.com,Portland,OR,social,2023-09-06
+189,Reese,Nguyen,reese.nguyen189@example.com,Denver,CO,referral,2024-10-18
+190,Taylor,Davis,taylor.davis190@example.com,Chicago,IL,organic,2024-07-11
+191,Taylor,Davis,taylor.davis191@example.com,Denver,CO,paid_search,2024-06-20
+192,Reese,Anderson,reese.anderson192@example.com,San Francisco,CA,paid_search,2023-07-22
+193,Rowan,Martinez,rowan.martinez193@example.com,Portland,OR,organic,2024-05-06
+194,Jamie,Smith,jamie.smith194@example.com,Phoenix,AZ,organic,2023-05-13
+195,Jordan,Johnson,jordan.johnson195@example.com,Denver,CO,organic,2024-02-08
+196,Riley,Lee,riley.lee196@example.com,Austin,TX,organic,2023-12-28
+197,Avery,Moore,avery.moore197@example.com,Chicago,IL,paid_search,2023-01-11
+198,Rowan,Chen,rowan.chen198@example.com,San Francisco,CA,organic,2023-01-26
+199,Emerson,Nguyen,emerson.nguyen199@example.com,Denver,CO,referral,2022-07-26
+200,Casey,Anderson,casey.anderson200@example.com,Seattle,WA,paid_search,2022-10-04
+201,Sam,Lee,sam.lee201@example.com,Austin,TX,referral,2023-06-26
+202,Reese,Martinez,reese.martinez202@example.com,New York,NY,social,2023-08-05
+203,Skyler,Brown,skyler.brown203@example.com,Chicago,IL,organic,2022-10-27
+204,Riley,Smith,riley.smith204@example.com,Denver,CO,paid_search,2023-06-11
+205,Jamie,Patel,jamie.patel205@example.com,Denver,CO,paid_search,2023-11-26
+206,Emerson,Martinez,emerson.martinez206@example.com,Chicago,IL,organic,2022-12-27
+207,Taylor,Nguyen,taylor.nguyen207@example.com,Portland,OR,paid_search,2023-04-01
+208,Avery,Patel,avery.patel208@example.com,Phoenix,AZ,organic,2023-04-27
+209,Sam,Martinez,sam.martinez209@example.com,Atlanta,GA,social,2023-08-29
+210,Morgan,Martinez,morgan.martinez210@example.com,New York,NY,organic,2023-04-26
+211,Alex,Smith,alex.smith211@example.com,Denver,CO,social,2024-03-25
+212,Sam,Johnson,sam.johnson212@example.com,Austin,TX,referral,2023-03-22
+213,Jordan,Kim,jordan.kim213@example.com,Atlanta,GA,organic,2023-06-26
+214,Reese,Wilson,reese.wilson214@example.com,Boston,MA,paid_search,2023-05-08
+215,Reese,Wilson,reese.wilson215@example.com,San Francisco,CA,referral,2022-11-12
+216,Dana,Johnson,dana.johnson216@example.com,Atlanta,GA,paid_search,2024-02-08
+217,Morgan,Smith,morgan.smith217@example.com,Chicago,IL,organic,2022-12-29
+218,Jamie,Garcia,jamie.garcia218@example.com,Chicago,IL,organic,2023-02-23
+219,Dana,Patel,dana.patel219@example.com,Boston,MA,social,2024-05-14
+220,Dana,Patel,dana.patel220@example.com,Portland,OR,organic,2024-10-01
+221,Taylor,Johnson,taylor.johnson221@example.com,Atlanta,GA,organic,2024-01-25
+222,Taylor,Martinez,taylor.martinez222@example.com,Phoenix,AZ,social,2024-09-02
+223,Alex,Anderson,alex.anderson223@example.com,Chicago,IL,organic,2024-07-08
+224,Jordan,Anderson,jordan.anderson224@example.com,Phoenix,AZ,organic,2023-08-07
+225,Emerson,Anderson,emerson.anderson225@example.com,Boston,MA,organic,2024-04-24
+226,Taylor,Thomas,taylor.thomas226@example.com,Austin,TX,organic,2023-03-23
+227,Jordan,Anderson,jordan.anderson227@example.com,Phoenix,AZ,organic,2023-07-20
+228,Emerson,Lee,emerson.lee228@example.com,San Francisco,CA,paid_search,2023-09-25
+229,Skyler,Lee,skyler.lee229@example.com,Seattle,WA,paid_search,2024-10-12
+230,Alex,Lee,alex.lee230@example.com,Portland,OR,organic,2024-07-03
+231,Skyler,Garcia,skyler.garcia231@example.com,Phoenix,AZ,organic,2023-08-15
+232,Jordan,Chen,jordan.chen232@example.com,Portland,OR,organic,2024-01-09
+233,Riley,Brown,riley.brown233@example.com,Seattle,WA,referral,2022-11-30
+234,Jamie,Nguyen,jamie.nguyen234@example.com,Chicago,IL,paid_search,2024-05-24
+235,Sam,Nguyen,sam.nguyen235@example.com,Boston,MA,organic,2023-10-11
+236,Quinn,Smith,quinn.smith236@example.com,Boston,MA,organic,2023-09-23
+237,Dana,Smith,dana.smith237@example.com,Portland,OR,social,2024-04-20
+238,Emerson,Kim,emerson.kim238@example.com,New York,NY,paid_search,2023-12-22
+239,Jamie,Wilson,jamie.wilson239@example.com,Atlanta,GA,organic,2022-08-05
+240,Sam,Patel,sam.patel240@example.com,Phoenix,AZ,organic,2023-02-15
+241,Jordan,Chen,jordan.chen241@example.com,Phoenix,AZ,paid_search,2022-11-07
+242,Avery,Wilson,avery.wilson242@example.com,Chicago,IL,organic,2024-03-23
+243,Quinn,Brown,quinn.brown243@example.com,Denver,CO,paid_search,2022-07-02
+244,Quinn,Kim,quinn.kim244@example.com,Seattle,WA,referral,2022-11-30
+245,Sam,Thomas,sam.thomas245@example.com,Boston,MA,referral,2023-11-20
+246,Taylor,Kim,taylor.kim246@example.com,Atlanta,GA,referral,2024-02-16
+247,Riley,Patel,riley.patel247@example.com,Atlanta,GA,organic,2023-08-27
+248,Reese,Johnson,reese.johnson248@example.com,Chicago,IL,paid_search,2024-07-14
+249,Dana,Chen,dana.chen249@example.com,Chicago,IL,social,2024-09-05
+250,Dana,Moore,dana.moore250@example.com,Atlanta,GA,organic,2022-09-27
+251,Emerson,Johnson,emerson.johnson251@example.com,Seattle,WA,paid_search,2024-10-05
+252,Reese,Wilson,reese.wilson252@example.com,Chicago,IL,referral,2023-12-05
+253,Avery,Smith,avery.smith253@example.com,Phoenix,AZ,social,2023-12-25
+254,Avery,Patel,avery.patel254@example.com,Seattle,WA,paid_search,2022-08-25
+255,Emerson,Martinez,emerson.martinez255@example.com,New York,NY,referral,2023-12-12
+256,Reese,Smith,reese.smith256@example.com,Denver,CO,paid_search,2024-03-15
+257,Casey,Johnson,casey.johnson257@example.com,Phoenix,AZ,paid_search,2023-11-05
+258,Jordan,Martinez,jordan.martinez258@example.com,Atlanta,GA,organic,2022-08-16
+259,Sam,Patel,sam.patel259@example.com,Boston,MA,organic,2023-09-14
+260,Skyler,Chen,skyler.chen260@example.com,Phoenix,AZ,organic,2024-09-20
+261,Riley,Thomas,riley.thomas261@example.com,Boston,MA,social,2024-03-13
+262,Emerson,Davis,emerson.davis262@example.com,Phoenix,AZ,paid_search,2022-10-02
+263,Avery,Smith,avery.smith263@example.com,Phoenix,AZ,social,2024-10-11
+264,Emerson,Wilson,emerson.wilson264@example.com,Denver,CO,organic,2024-10-10
+265,Morgan,Wilson,morgan.wilson265@example.com,Denver,CO,social,2022-10-31
+266,Casey,Smith,casey.smith266@example.com,San Francisco,CA,referral,2024-05-21
+267,Quinn,Martinez,quinn.martinez267@example.com,New York,NY,organic,2023-06-02
+268,Reese,Martinez,reese.martinez268@example.com,Portland,OR,organic,2023-11-17
+269,Avery,Garcia,avery.garcia269@example.com,New York,NY,paid_search,2023-07-06
+270,Casey,Lee,casey.lee270@example.com,Chicago,IL,organic,2024-05-05
+271,Casey,Anderson,casey.anderson271@example.com,Phoenix,AZ,paid_search,2024-11-13
+272,Rowan,Smith,rowan.smith272@example.com,San Francisco,CA,organic,2024-05-16
+273,Quinn,Smith,quinn.smith273@example.com,Seattle,WA,organic,2024-09-16
+274,Dana,Kim,dana.kim274@example.com,Atlanta,GA,paid_search,2024-09-29
+275,Riley,Chen,riley.chen275@example.com,Austin,TX,referral,2022-08-21
+276,Sam,Patel,sam.patel276@example.com,New York,NY,organic,2023-01-15
+277,Dana,Martinez,dana.martinez277@example.com,Phoenix,AZ,paid_search,2024-03-11
+278,Dana,Chen,dana.chen278@example.com,Portland,OR,organic,2023-11-14
+279,Quinn,Smith,quinn.smith279@example.com,Portland,OR,organic,2022-07-16
+280,Taylor,Anderson,taylor.anderson280@example.com,San Francisco,CA,referral,2022-08-25
+281,Morgan,Patel,morgan.patel281@example.com,Seattle,WA,organic,2023-09-12
+282,Reese,Kim,reese.kim282@example.com,San Francisco,CA,organic,2023-12-07
+283,Avery,Wilson,avery.wilson283@example.com,Austin,TX,paid_search,2022-10-29
+284,Emerson,Martinez,emerson.martinez284@example.com,Chicago,IL,organic,2022-11-02
+285,Emerson,Wilson,emerson.wilson285@example.com,Portland,OR,paid_search,2022-09-25
+286,Jamie,Moore,jamie.moore286@example.com,Seattle,WA,referral,2023-10-22
+287,Quinn,Kim,quinn.kim287@example.com,Phoenix,AZ,paid_search,2022-06-08
+288,Dana,Kim,dana.kim288@example.com,Denver,CO,organic,2023-10-29
+289,Alex,Patel,alex.patel289@example.com,San Francisco,CA,referral,2023-08-03
+290,Quinn,Nguyen,quinn.nguyen290@example.com,Chicago,IL,organic,2023-07-25
+291,Emerson,Johnson,emerson.johnson291@example.com,Austin,TX,paid_search,2024-02-02
+292,Riley,Brown,riley.brown292@example.com,Seattle,WA,organic,2023-09-14
+293,Morgan,Wilson,morgan.wilson293@example.com,Chicago,IL,organic,2024-03-16
+294,Skyler,Lee,skyler.lee294@example.com,Seattle,WA,paid_search,2024-04-18
+295,Sam,Brown,sam.brown295@example.com,Boston,MA,organic,2024-09-06
+296,Skyler,Patel,skyler.patel296@example.com,Chicago,IL,referral,2024-05-20
+297,Emerson,Martinez,emerson.martinez297@example.com,San Francisco,CA,organic,2023-09-09
+298,Jordan,Chen,jordan.chen298@example.com,Austin,TX,organic,2023-08-17
+299,Jordan,Anderson,jordan.anderson299@example.com,Seattle,WA,organic,2022-12-30
+300,Skyler,Martinez,skyler.martinez300@example.com,Atlanta,GA,paid_search,2023-11-22
+301,Quinn,Anderson,quinn.anderson301@example.com,Phoenix,AZ,paid_search,2022-10-04
+302,Rowan,Moore,rowan.moore302@example.com,Phoenix,AZ,paid_search,2024-09-16
+303,Quinn,Patel,quinn.patel303@example.com,Chicago,IL,organic,2024-06-30
+304,Sam,Nguyen,sam.nguyen304@example.com,Atlanta,GA,paid_search,2022-09-16
+305,Skyler,Chen,skyler.chen305@example.com,Phoenix,AZ,organic,2024-05-08
+306,Avery,Johnson,avery.johnson306@example.com,Denver,CO,paid_search,2022-09-14
+307,Alex,Smith,alex.smith307@example.com,Chicago,IL,referral,2024-03-11
+308,Sam,Martinez,sam.martinez308@example.com,Seattle,WA,paid_search,2022-08-18
+309,Avery,Kim,avery.kim309@example.com,Atlanta,GA,paid_search,2023-08-14
+310,Skyler,Wilson,skyler.wilson310@example.com,Portland,OR,paid_search,2024-01-14
+311,Skyler,Davis,skyler.davis311@example.com,Austin,TX,organic,2024-03-17
+312,Jamie,Brown,jamie.brown312@example.com,San Francisco,CA,social,2023-06-12
+313,Jamie,Johnson,jamie.johnson313@example.com,Chicago,IL,social,2024-09-07
+314,Sam,Brown,sam.brown314@example.com,San Francisco,CA,organic,2024-04-27
+315,Reese,Nguyen,reese.nguyen315@example.com,Atlanta,GA,paid_search,2022-12-05
+316,Quinn,Lee,quinn.lee316@example.com,Chicago,IL,organic,2024-01-26
+317,Morgan,Kim,morgan.kim317@example.com,New York,NY,referral,2024-03-19
+318,Dana,Davis,dana.davis318@example.com,Portland,OR,referral,2023-03-28
+319,Dana,Patel,dana.patel319@example.com,Seattle,WA,organic,2024-03-26
+320,Avery,Martinez,avery.martinez320@example.com,New York,NY,organic,2024-08-17
+321,Reese,Thomas,reese.thomas321@example.com,Phoenix,AZ,referral,2024-06-05
+322,Casey,Johnson,casey.johnson322@example.com,Phoenix,AZ,paid_search,2024-04-17
+323,Rowan,Patel,rowan.patel323@example.com,Denver,CO,social,2023-12-24
+324,Reese,Martinez,reese.martinez324@example.com,New York,NY,organic,2023-01-30
+325,Reese,Johnson,reese.johnson325@example.com,Denver,CO,paid_search,2024-05-16
+326,Dana,Anderson,dana.anderson326@example.com,Chicago,IL,referral,2023-04-24
+327,Dana,Wilson,dana.wilson327@example.com,Boston,MA,organic,2023-09-22
+328,Dana,Kim,dana.kim328@example.com,Boston,MA,organic,2023-03-10
+329,Casey,Chen,casey.chen329@example.com,San Francisco,CA,social,2023-03-09
+330,Casey,Anderson,casey.anderson330@example.com,Atlanta,GA,organic,2022-10-20
+331,Jordan,Lee,jordan.lee331@example.com,Seattle,WA,organic,2024-10-13
+332,Skyler,Johnson,skyler.johnson332@example.com,Boston,MA,referral,2022-10-12
+333,Emerson,Wilson,emerson.wilson333@example.com,Boston,MA,organic,2022-08-17
+334,Casey,Moore,casey.moore334@example.com,Phoenix,AZ,organic,2024-09-20
+335,Riley,Lee,riley.lee335@example.com,San Francisco,CA,organic,2023-10-13
+336,Reese,Anderson,reese.anderson336@example.com,Phoenix,AZ,referral,2023-06-30
+337,Jordan,Wilson,jordan.wilson337@example.com,Atlanta,GA,organic,2024-03-25
+338,Casey,Martinez,casey.martinez338@example.com,Austin,TX,social,2023-05-11
+339,Quinn,Chen,quinn.chen339@example.com,Atlanta,GA,organic,2022-09-24
+340,Taylor,Chen,taylor.chen340@example.com,Atlanta,GA,social,2024-03-18
+341,Taylor,Patel,taylor.patel341@example.com,Phoenix,AZ,social,2022-11-06
+342,Jamie,Anderson,jamie.anderson342@example.com,Denver,CO,referral,2023-10-11
+343,Avery,Brown,avery.brown343@example.com,New York,NY,social,2024-10-02
+344,Emerson,Garcia,emerson.garcia344@example.com,Phoenix,AZ,organic,2024-09-20
+345,Morgan,Smith,morgan.smith345@example.com,Atlanta,GA,referral,2023-04-21
+346,Avery,Moore,avery.moore346@example.com,Seattle,WA,referral,2024-05-03
+347,Avery,Thomas,avery.thomas347@example.com,Seattle,WA,organic,2023-12-04
+348,Skyler,Lee,skyler.lee348@example.com,Denver,CO,paid_search,2023-08-06
+349,Avery,Lee,avery.lee349@example.com,New York,NY,organic,2022-10-04
+350,Rowan,Garcia,rowan.garcia350@example.com,Atlanta,GA,referral,2023-05-05
+351,Rowan,Smith,rowan.smith351@example.com,New York,NY,organic,2024-01-08
+352,Avery,Patel,avery.patel352@example.com,Austin,TX,organic,2024-11-04
+353,Sam,Patel,sam.patel353@example.com,Austin,TX,organic,2022-06-05
+354,Rowan,Johnson,rowan.johnson354@example.com,Chicago,IL,referral,2024-03-07
+355,Jordan,Smith,jordan.smith355@example.com,Denver,CO,social,2024-07-01
+356,Jamie,Wilson,jamie.wilson356@example.com,San Francisco,CA,referral,2024-10-04
+357,Jamie,Nguyen,jamie.nguyen357@example.com,Phoenix,AZ,organic,2023-06-17
+358,Sam,Smith,sam.smith358@example.com,Denver,CO,organic,2022-09-15
+359,Jordan,Brown,jordan.brown359@example.com,Phoenix,AZ,paid_search,2023-01-30
+360,Sam,Anderson,sam.anderson360@example.com,Denver,CO,organic,2024-07-05
+361,Sam,Smith,sam.smith361@example.com,Austin,TX,paid_search,2024-07-30
+362,Skyler,Davis,skyler.davis362@example.com,Atlanta,GA,organic,2023-12-26
+363,Emerson,Moore,emerson.moore363@example.com,Atlanta,GA,paid_search,2022-09-19
+364,Alex,Martinez,alex.martinez364@example.com,Boston,MA,paid_search,2022-09-18
+365,Reese,Lee,reese.lee365@example.com,Denver,CO,paid_search,2023-08-05
+366,Quinn,Patel,quinn.patel366@example.com,Austin,TX,paid_search,2023-11-12
+367,Jordan,Martinez,jordan.martinez367@example.com,Seattle,WA,paid_search,2022-06-30
+368,Casey,Johnson,casey.johnson368@example.com,Boston,MA,paid_search,2024-02-08
+369,Skyler,Brown,skyler.brown369@example.com,Boston,MA,organic,2023-10-04
+370,Emerson,Nguyen,emerson.nguyen370@example.com,Portland,OR,paid_search,2022-06-12
+371,Casey,Chen,casey.chen371@example.com,Portland,OR,organic,2022-08-26
+372,Sam,Patel,sam.patel372@example.com,Austin,TX,referral,2023-07-14
+373,Dana,Johnson,dana.johnson373@example.com,Phoenix,AZ,referral,2024-03-12
+374,Casey,Lee,casey.lee374@example.com,Portland,OR,organic,2024-06-12
+375,Casey,Thomas,casey.thomas375@example.com,San Francisco,CA,referral,2023-06-24
+376,Dana,Nguyen,dana.nguyen376@example.com,Atlanta,GA,paid_search,2023-02-21
+377,Skyler,Lee,skyler.lee377@example.com,Seattle,WA,referral,2024-10-19
+378,Jamie,Smith,jamie.smith378@example.com,Denver,CO,organic,2023-07-18
+379,Skyler,Garcia,skyler.garcia379@example.com,Portland,OR,organic,2023-03-11
+380,Morgan,Brown,morgan.brown380@example.com,New York,NY,social,2023-07-04
+381,Avery,Nguyen,avery.nguyen381@example.com,Denver,CO,organic,2022-06-11
+382,Dana,Garcia,dana.garcia382@example.com,Denver,CO,organic,2023-02-27
+383,Skyler,Smith,skyler.smith383@example.com,Chicago,IL,organic,2023-09-07
+384,Skyler,Patel,skyler.patel384@example.com,New York,NY,referral,2024-09-04
+385,Reese,Nguyen,reese.nguyen385@example.com,New York,NY,organic,2024-03-26
+386,Jordan,Nguyen,jordan.nguyen386@example.com,Atlanta,GA,organic,2024-05-04
+387,Skyler,Brown,skyler.brown387@example.com,Denver,CO,referral,2023-10-04
+388,Reese,Kim,reese.kim388@example.com,Seattle,WA,paid_search,2022-09-08
+389,Emerson,Lee,emerson.lee389@example.com,Boston,MA,organic,2023-05-18
+390,Sam,Johnson,sam.johnson390@example.com,Chicago,IL,paid_search,2024-11-14
+391,Morgan,Nguyen,morgan.nguyen391@example.com,Phoenix,AZ,referral,2022-07-10
+392,Jordan,Wilson,jordan.wilson392@example.com,Atlanta,GA,organic,2024-07-31
+393,Alex,Wilson,alex.wilson393@example.com,Chicago,IL,paid_search,2024-02-07
+394,Riley,Chen,riley.chen394@example.com,Portland,OR,organic,2023-02-11
+395,Dana,Kim,dana.kim395@example.com,Chicago,IL,paid_search,2024-05-01
+396,Reese,Martinez,reese.martinez396@example.com,San Francisco,CA,social,2024-06-23
+397,Jordan,Thomas,jordan.thomas397@example.com,Phoenix,AZ,paid_search,2022-07-09
+398,Jamie,Smith,jamie.smith398@example.com,San Francisco,CA,organic,2022-09-04
+399,Skyler,Martinez,skyler.martinez399@example.com,Chicago,IL,organic,2024-01-21
+400,Quinn,Smith,quinn.smith400@example.com,Phoenix,AZ,organic,2024-11-16
+401,Jamie,Patel,jamie.patel401@example.com,Chicago,IL,paid_search,2022-06-22
+402,Sam,Davis,sam.davis402@example.com,San Francisco,CA,paid_search,2024-01-21
+403,Riley,Patel,riley.patel403@example.com,Denver,CO,organic,2022-10-01
+404,Sam,Smith,sam.smith404@example.com,San Francisco,CA,paid_search,2024-01-07
+405,Riley,Moore,riley.moore405@example.com,Boston,MA,organic,2023-12-13
+406,Skyler,Chen,skyler.chen406@example.com,Atlanta,GA,organic,2022-08-21
+407,Quinn,Chen,quinn.chen407@example.com,Atlanta,GA,organic,2024-02-03
+408,Jordan,Thomas,jordan.thomas408@example.com,Seattle,WA,paid_search,2024-08-16
+409,Rowan,Wilson,rowan.wilson409@example.com,Atlanta,GA,social,2024-07-17
+410,Skyler,Martinez,skyler.martinez410@example.com,Chicago,IL,paid_search,2022-06-27
+411,Reese,Johnson,reese.johnson411@example.com,Boston,MA,paid_search,2023-01-08
+412,Rowan,Chen,rowan.chen412@example.com,San Francisco,CA,referral,2023-01-03
+413,Rowan,Wilson,rowan.wilson413@example.com,San Francisco,CA,referral,2023-07-13
+414,Avery,Garcia,avery.garcia414@example.com,Seattle,WA,social,2022-10-07
+415,Skyler,Lee,skyler.lee415@example.com,Austin,TX,referral,2024-07-08
+416,Alex,Patel,alex.patel416@example.com,Boston,MA,paid_search,2024-04-30
+417,Jamie,Anderson,jamie.anderson417@example.com,Boston,MA,organic,2024-05-28
+418,Rowan,Johnson,rowan.johnson418@example.com,Seattle,WA,organic,2022-11-26
+419,Reese,Wilson,reese.wilson419@example.com,Atlanta,GA,paid_search,2022-06-14
+420,Skyler,Kim,skyler.kim420@example.com,Phoenix,AZ,organic,2024-08-28
+421,Casey,Martinez,casey.martinez421@example.com,Seattle,WA,paid_search,2023-02-16
+422,Dana,Brown,dana.brown422@example.com,Chicago,IL,organic,2024-01-12
+423,Emerson,Anderson,emerson.anderson423@example.com,Boston,MA,paid_search,2024-08-27
+424,Jordan,Anderson,jordan.anderson424@example.com,San Francisco,CA,paid_search,2022-07-03
+425,Rowan,Thomas,rowan.thomas425@example.com,Portland,OR,referral,2022-06-05
+426,Avery,Lee,avery.lee426@example.com,Denver,CO,organic,2022-06-05
+427,Casey,Moore,casey.moore427@example.com,Austin,TX,organic,2022-10-19
+428,Avery,Moore,avery.moore428@example.com,Denver,CO,referral,2022-07-17
+429,Morgan,Garcia,morgan.garcia429@example.com,Boston,MA,organic,2024-06-07
+430,Dana,Chen,dana.chen430@example.com,Phoenix,AZ,paid_search,2023-11-28
+431,Avery,Martinez,avery.martinez431@example.com,San Francisco,CA,paid_search,2024-10-30
+432,Quinn,Lee,quinn.lee432@example.com,San Francisco,CA,paid_search,2024-05-22
+433,Reese,Moore,reese.moore433@example.com,Phoenix,AZ,organic,2024-10-14
+434,Rowan,Davis,rowan.davis434@example.com,Portland,OR,referral,2023-01-01
+435,Alex,Johnson,alex.johnson435@example.com,Portland,OR,social,2023-02-15
+436,Skyler,Davis,skyler.davis436@example.com,Denver,CO,paid_search,2024-07-04
+437,Skyler,Davis,skyler.davis437@example.com,New York,NY,paid_search,2023-01-07
+438,Alex,Nguyen,alex.nguyen438@example.com,Boston,MA,organic,2022-07-22
+439,Morgan,Nguyen,morgan.nguyen439@example.com,Austin,TX,referral,2024-01-24
+440,Dana,Kim,dana.kim440@example.com,Denver,CO,paid_search,2024-05-21
+441,Reese,Smith,reese.smith441@example.com,San Francisco,CA,paid_search,2024-10-19
+442,Jamie,Nguyen,jamie.nguyen442@example.com,Austin,TX,organic,2024-09-13
+443,Jordan,Patel,jordan.patel443@example.com,Chicago,IL,referral,2022-09-17
+444,Emerson,Patel,emerson.patel444@example.com,New York,NY,organic,2024-04-25
+445,Casey,Brown,casey.brown445@example.com,Boston,MA,organic,2024-07-01
+446,Taylor,Nguyen,taylor.nguyen446@example.com,Seattle,WA,organic,2024-02-19
+447,Taylor,Lee,taylor.lee447@example.com,Seattle,WA,organic,2024-06-07
+448,Riley,Thomas,riley.thomas448@example.com,Phoenix,AZ,paid_search,2024-06-24
+449,Emerson,Moore,emerson.moore449@example.com,San Francisco,CA,referral,2023-07-07
+450,Rowan,Davis,rowan.davis450@example.com,Chicago,IL,organic,2022-07-07
+451,Jordan,Nguyen,jordan.nguyen451@example.com,Boston,MA,paid_search,2023-07-16
+452,Rowan,Chen,rowan.chen452@example.com,Atlanta,GA,organic,2022-11-29
+453,Riley,Brown,riley.brown453@example.com,Atlanta,GA,social,2022-09-11
+454,Taylor,Davis,taylor.davis454@example.com,Chicago,IL,organic,2022-09-21
+455,Morgan,Nguyen,morgan.nguyen455@example.com,Phoenix,AZ,referral,2024-02-18
+456,Dana,Martinez,dana.martinez456@example.com,Atlanta,GA,organic,2023-08-29
+457,Alex,Thomas,alex.thomas457@example.com,Seattle,WA,paid_search,2023-09-29
+458,Rowan,Chen,rowan.chen458@example.com,Chicago,IL,referral,2024-04-01
+459,Casey,Smith,casey.smith459@example.com,New York,NY,organic,2023-10-07
+460,Avery,Garcia,avery.garcia460@example.com,Chicago,IL,paid_search,2023-12-20
+461,Sam,Kim,sam.kim461@example.com,Boston,MA,paid_search,2022-08-17
+462,Avery,Chen,avery.chen462@example.com,Phoenix,AZ,paid_search,2024-07-06
+463,Sam,Lee,sam.lee463@example.com,Seattle,WA,organic,2023-07-09
+464,Skyler,Patel,skyler.patel464@example.com,Boston,MA,social,2022-10-18
+465,Skyler,Lee,skyler.lee465@example.com,Austin,TX,paid_search,2024-06-01
+466,Riley,Brown,riley.brown466@example.com,Portland,OR,organic,2024-03-23
+467,Jordan,Wilson,jordan.wilson467@example.com,Chicago,IL,referral,2022-07-18
+468,Avery,Nguyen,avery.nguyen468@example.com,San Francisco,CA,paid_search,2022-11-21
+469,Avery,Lee,avery.lee469@example.com,Chicago,IL,social,2022-06-15
+470,Casey,Lee,casey.lee470@example.com,New York,NY,social,2023-01-30
+471,Reese,Thomas,reese.thomas471@example.com,Denver,CO,paid_search,2022-08-29
+472,Avery,Thomas,avery.thomas472@example.com,Boston,MA,paid_search,2024-02-29
+473,Reese,Davis,reese.davis473@example.com,Denver,CO,paid_search,2023-09-14
+474,Alex,Patel,alex.patel474@example.com,Chicago,IL,paid_search,2024-10-30
+475,Riley,Davis,riley.davis475@example.com,Denver,CO,referral,2024-04-05
+476,Reese,Thomas,reese.thomas476@example.com,Portland,OR,paid_search,2023-12-03
+477,Morgan,Martinez,morgan.martinez477@example.com,Phoenix,AZ,paid_search,2023-09-02
+478,Reese,Smith,reese.smith478@example.com,Phoenix,AZ,paid_search,2022-07-20
+479,Avery,Martinez,avery.martinez479@example.com,Phoenix,AZ,referral,2022-08-03
+480,Riley,Lee,riley.lee480@example.com,Austin,TX,organic,2023-12-07
+481,Reese,Johnson,reese.johnson481@example.com,Austin,TX,organic,2022-06-04
+482,Casey,Kim,casey.kim482@example.com,San Francisco,CA,paid_search,2022-07-09
+483,Taylor,Kim,taylor.kim483@example.com,Boston,MA,referral,2022-12-15
+484,Rowan,Nguyen,rowan.nguyen484@example.com,Portland,OR,referral,2024-08-04
+485,Avery,Garcia,avery.garcia485@example.com,Boston,MA,organic,2023-07-19
+486,Dana,Nguyen,dana.nguyen486@example.com,Boston,MA,organic,2024-02-29
+487,Jordan,Nguyen,jordan.nguyen487@example.com,Boston,MA,organic,2023-06-06
+488,Casey,Martinez,casey.martinez488@example.com,Denver,CO,paid_search,2022-11-03
+489,Taylor,Garcia,taylor.garcia489@example.com,Denver,CO,paid_search,2023-05-01
+490,Taylor,Chen,taylor.chen490@example.com,Denver,CO,referral,2022-08-22
+491,Reese,Wilson,reese.wilson491@example.com,Atlanta,GA,organic,2024-04-24
+492,Casey,Brown,casey.brown492@example.com,Denver,CO,organic,2022-11-13
+493,Quinn,Martinez,quinn.martinez493@example.com,Boston,MA,organic,2023-05-05
+494,Riley,Thomas,riley.thomas494@example.com,Chicago,IL,social,2024-10-30
+495,Skyler,Lee,skyler.lee495@example.com,Denver,CO,organic,2023-11-15
+496,Reese,Johnson,reese.johnson496@example.com,Chicago,IL,social,2023-07-18
+497,Dana,Chen,dana.chen497@example.com,Atlanta,GA,organic,2023-10-02
+498,Emerson,Brown,emerson.brown498@example.com,Denver,CO,social,2024-05-06
+499,Reese,Chen,reese.chen499@example.com,San Francisco,CA,organic,2023-01-16
+500,Reese,Davis,reese.davis500@example.com,Austin,TX,organic,2023-12-25

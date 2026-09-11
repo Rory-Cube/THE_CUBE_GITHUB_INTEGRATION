@@ -1,0 +1,145 @@
+# Example Cube data model for this dataset.
+# Join graph: line_items -> orders -> customers
+#             line_items -> products -> suppliers
+
+cubes:
+  - name: ecom_line_items
+    public: false
+    data_source: duckdb
+    sql: >
+      SELECT * FROM read_csv('tables/multiple_cubes_dataset_ecom/ecom_line_items.csv', header=true, auto_detect=true)
+
+    joins:
+      - name: ecom_orders
+        relationship: many_to_one
+        sql: "{CUBE}.order_id = {ecom_orders}.id"
+      - name: ecom_products
+        relationship: many_to_one
+        sql: "{CUBE}.product_id = {ecom_products}.id"
+    dimensions:
+      - name: id
+        sql: id
+        type: number
+        primary_key: true
+      - name: created_at
+        sql: created_at
+        type: time
+    measures:
+      - name: count
+        type: count
+      - name: quantity
+        sql: quantity
+        type: sum
+      - name: revenue
+        sql: "quantity * unit_price * (1 - discount_pct / 100.0)"
+        type: sum
+        format: currency
+
+  - name: ecom_orders
+    public: false
+    data_source: duckdb
+    sql: >
+      SELECT * FROM read_csv('tables/multiple_cubes_dataset_ecom/ecom_orders.csv', header=true, auto_detect=true)
+    joins:
+      - name: ecom_customers
+        relationship: many_to_one
+        sql: "{CUBE}.customer_id = {ecom_customers}.id"
+    dimensions:
+      - name: id
+        sql: id
+        type: number
+        primary_key: true
+      - name: status
+        sql: status
+        type: string
+      - name: created_at
+        sql: created_at
+        type: time
+    measures:
+      - name: count
+        type: count
+      - name: completed_count
+        type: count
+        filters:
+          - sql: "{CUBE}.status = 'completed'"
+      - name: shipping_cost
+        sql: shipping_cost
+        type: sum
+        format: currency
+
+  - name: ecom_products
+    public: false
+    data_source: duckdb
+    sql: >
+      SELECT * FROM read_csv('tables/multiple_cubes_dataset_ecom/ecom_products.csv', header=true, auto_detect=true)
+    joins:
+      - name: ecom_suppliers
+        relationship: many_to_one
+        sql: "{CUBE}.supplier_id = {ecom_suppliers}.id"
+    dimensions:
+      - name: id
+        sql: id
+        type: number
+        primary_key: true
+      - name: name
+        sql: name
+        type: string
+      - name: category
+        sql: category
+        type: string
+      - name: price
+        sql: price
+        type: number
+        format: currency
+    measures:
+      - name: count
+        type: count
+
+  - name: ecom_customers
+    public: false
+    data_source: duckdb
+    sql: >
+      SELECT * FROM read_csv('tables/multiple_cubes_dataset_ecom/ecom_customers.csv', header=true, auto_detect=true)
+    dimensions:
+      - name: id
+        sql: id
+        type: number
+        primary_key: true
+      - name: full_name
+        sql: "first_name || ' ' || last_name"
+        type: string
+      - name: city
+        sql: city
+        type: string
+      - name: state
+        sql: state
+        type: string
+      - name: signup_source
+        sql: signup_source
+        type: string
+      - name: created_at
+        sql: created_at
+        type: time
+    measures:
+      - name: count
+        type: count
+
+  - name: ecom_suppliers
+    public: false
+    data_source: duckdb
+    sql: >
+      SELECT * FROM read_csv('tables/multiple_cubes_dataset_ecom/ecom_suppliers.csv', header=true, auto_detect=true)
+    dimensions:
+      - name: id
+        sql: id
+        type: number
+        primary_key: true
+      - name: company
+        sql: company
+        type: string
+      - name: country
+        sql: country
+        type: string
+    measures:
+      - name: count
+        type: count
