@@ -2,6 +2,7 @@ cubes:
   - name: lineitem
     # public: false
     sql_table: TPCH_SF100.LINEITEM
+    public: false
 
     joins:
       - name: orders

@@ -1,6 +1,6 @@
 cubes:
   - name: orders
-    # public: false
+    public: false
     sql_table: TPCH_SF100.ORDERS
 
     joins:

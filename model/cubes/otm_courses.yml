@@ -1,5 +1,6 @@
 cubes:
   - name: otm_courses
+    public: false
     data_source: duckdb
     sql: >
       SELECT * FROM read_csv('tables/one_to_many/courses.csv', header=true, auto_detect=true)
