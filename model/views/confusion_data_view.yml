@@ -8,6 +8,7 @@ views:
     cubes:
       # ── Root: orders ────────────────────────────────────────────────────────
       - join_path: orders
+        prefix: true
         includes:
           # dimensions
           - order_id
