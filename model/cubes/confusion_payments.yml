@@ -1,0 +1,73 @@
+cubes:
+  - name: payments
+    sql_table: public.payments
+    description: Cash movements. `amount` here includes tax and shipping, unlike orders.net_amount.
+
+    joins:
+      - name: orders
+        relationship: many_to_one
+        sql: "{CUBE}.order_id = {orders}.order_id"
+      - name: customers
+        relationship: many_to_one
+        sql: "{CUBE}.customer_id = {customers}.customer_id"
+
+    dimensions:
+      - name: payment_id
+        sql: payment_id
+        type: number
+        primary_key: true
+
+      - name: status
+        sql: status
+        type: string
+        description: "captured or refunded — a different value domain than orders.status."
+
+      - name: method
+        sql: method
+        type: string
+
+      - name: paid_at
+        sql: paid_at
+        type: time
+
+      - name: amount
+        sql: amount
+        type: number
+        description: Row-level cash amount. Same column name as subscriptions.amount, which is an invoice amount per billing period — not comparable.
+
+    measures:
+      - name: count
+        type: count
+
+      - name: total_revenue
+        sql: amount
+        type: sum
+        format: currency
+        filters:
+          - sql: "{CUBE}.status = 'captured'"
+        description: Captured cash (tax + shipping included). SAME NAME as orders.total_revenue but a different definition and different number.
+
+      - name: net_revenue
+        sql: "{CUBE}.amount - {CUBE}.fee_amount"
+        type: sum
+        format: currency
+        filters:
+          - sql: "{CUBE}.status = 'captured'"
+        description: Captured cash minus processor fees. Also collides with orders.net_revenue (gross - discounts), which measures something else.
+
+      - name: refunded_amount
+        sql: amount
+        type: sum
+        format: currency
+        filters:
+          - sql: "{CUBE}.status = 'refunded'"
+
+      - name: processing_fees
+        sql: fee_amount
+        type: sum
+        format: currency
+
+      - name: average_payment
+        sql: amount
+        type: avg
+        format: currency

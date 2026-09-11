@@ -1,0 +1,101 @@
+cubes:
+  - name: orders
+    sql_table: public.orders
+    description: One-off purchase orders. Monetary fields differ subtly — see measure descriptions.
+
+    joins:
+      - name: customers
+        relationship: many_to_one
+        sql: "{CUBE}.customer_id = {customers}.customer_id"
+      - name: users
+        relationship: many_to_one
+        sql: "{CUBE}.user_id = {users}.user_id"
+
+    dimensions:
+      - name: order_id
+        sql: order_id
+        type: number
+        primary_key: true
+
+      - name: status
+        sql: status
+        type: string
+        description: "Order lifecycle: completed, refunded, cancelled, pending. NOT the same value set as customers.status or subscriptions.status."
+
+      - name: created_at
+        sql: created_at
+        type: time
+
+      - name: completed_at
+        sql: completed_at
+        type: time
+
+      - name: currency
+        sql: currency
+        type: string
+
+    measures:
+      - name: count
+        type: count
+        description: All order rows regardless of status.
+
+      - name: orders_count
+        type: count
+        filters:
+          - sql: "{CUBE}.status != 'cancelled'"
+        description: Orders excluding cancelled. NOT the same as `count`.
+
+      - name: completed_orders
+        type: count
+        filters:
+          - sql: "{CUBE}.status = 'completed'"
+
+      - name: gross_revenue
+        sql: gross_amount
+        type: sum
+        format: currency
+        description: Pre-discount, pre-tax item value across ALL orders, including refunded and cancelled.
+
+      - name: total_revenue
+        sql: total_amount
+        type: sum
+        format: currency
+        description: Amount charged to customers (gross - discount + tax + shipping), all statuses. Inflated by tax and shipping. Collides by name with payments.total_revenue, which is a different number.
+
+      - name: net_revenue
+        sql: "{CUBE}.gross_amount - {CUBE}.discount_amount"
+        type: sum
+        format: currency
+        description: Gross minus discounts, all statuses — still counts refunded orders.
+
+      - name: revenue
+        sql: net_amount
+        type: sum
+        format: currency
+        filters:
+          - sql: "{CUBE}.status = 'completed'"
+        description: The finance-approved order revenue — net amount on completed orders only. This is the correct answer for "order revenue".
+
+      - name: average_order_value
+        sql: total_amount
+        type: avg
+        format: currency
+        description: Mean of total_amount (includes tax + shipping) over all orders.
+
+      - name: avg_order_value
+        sql: net_amount
+        type: avg
+        format: currency
+        filters:
+          - sql: "{CUBE}.status = 'completed'"
+        description: Mean net amount over completed orders only. Deliberately near-identical name to average_order_value with a different definition.
+
+      - name: total_discounts
+        sql: discount_amount
+        type: sum
+        format: currency
+
+      - name: total_tax
+        sql: tax_amount
+        type: sum
+        format: currency

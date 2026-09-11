@@ -1,0 +1,63 @@
+cubes:
+  - name: customers
+    sql_table: public.customers
+    description: Accounts (companies). Not people — people live in the users cube.
+
+    dimensions:
+      - name: customer_id
+        sql: customer_id
+        type: number
+        primary_key: true
+
+      - name: company_name
+        sql: company_name
+        type: string
+
+      - name: segment
+        sql: segment
+        type: string
+
+      - name: industry
+        sql: industry
+        type: string
+
+      - name: status
+        sql: status
+        type: string
+        description: "Account lifecycle: active, churned, prospect. Unrelated to subscriptions.status or orders.status."
+
+      - name: country
+        sql: country
+        type: string
+
+      - name: created_at
+        sql: created_at
+        type: time
+
+    measures:
+      - name: count
+        type: count
+        description: All accounts including prospects.
+
+      - name: total_customers
+        type: count
+        filters:
+          - sql: "{CUBE}.status != 'prospect'"
+        description: Accounts excluding prospects. NOT the same as `count` — a classic off-by-a-filter pair.
+
+      - name: active_customers
+        type: count
+        filters:
+          - sql: "{CUBE}.status = 'active'"
+        description: Accounts with status = active. NOT users.active_users (people) and NOT subscriptions.active_subscriptions.
+
+      - name: churned_customers
+        type: count
+        filters:
+          - sql: "{CUBE}.status = 'churned'"
+
+      - name: churn_rate
+        sql: "100.0 * SUM(CASE WHEN {CUBE}.status = 'churned' THEN 1 ELSE 0 END) / NULLIF(SUM(CASE WHEN {CUBE}.status != 'prospect' THEN 1 ELSE 0 END), 0)"
+        type: number
+        format: percent
+        description: Churned accounts / non-prospect accounts (lifetime, account-level). Collides with subscriptions.churn_rate — same name, different entity, different number.

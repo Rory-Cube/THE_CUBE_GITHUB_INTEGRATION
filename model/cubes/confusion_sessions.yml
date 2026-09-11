@@ -1,0 +1,57 @@
+cubes:
+  - name: sessions
+    sql_table: public.sessions
+    description: Product usage sessions.
+
+    joins:
+      - name: users
+        relationship: many_to_one
+        sql: "{CUBE}.user_id = {users}.user_id"
+
+    dimensions:
+      - name: session_id
+        sql: session_id
+        type: number
+        primary_key: true
+
+      - name: started_at
+        sql: started_at
+        type: time
+
+      - name: converted
+        sql: converted
+        type: boolean
+
+    measures:
+      - name: count
+        type: count
+
+      - name: monthly_active_users
+        sql: user_id
+        type: count_distinct
+        description: TRAP — just distinct users with a session in whatever date range is queried. Only "monthly" if the query filters to one month. Not users.active_users.
+
+      - name: dau
+        sql: user_id
+        type: count_distinct
+        description: Identical SQL to monthly_active_users; only "daily" when grouped by day. Same-number-different-name trap.
+
+      - name: conversion_rate
+        sql: "100.0 * SUM(CASE WHEN {CUBE}.converted THEN 1 ELSE 0 END) / NULLIF(COUNT(*), 0)"
+        type: number
+        format: percent
+        description: Session-level conversion (converted sessions / sessions). Collides conceptually with any order-per-visitor conversion a user might mean.
+
+      - name: total_events
+        sql: events_count
+        type: sum
+
+      - name: avg_session_duration
+        sql: duration_seconds
+        type: avg
+        description: Seconds, not minutes.
+
+      - name: average_duration
+        sql: "{CUBE}.duration_seconds / 60.0"
+        type: avg
+        description: Minutes, not seconds — near-identical name to avg_session_duration in different units.

@@ -1,0 +1,38 @@
+views:
+  - name: revenue_overview
+    description: >
+      Surfaces every revenue-ish measure in one place. Prefixed members mean a
+      question like "total revenue" now matches orders_total_revenue,
+      payments_total_revenue, subscriptions_recurring_revenue, and more.
+
+    cubes:
+      - join_path: orders
+        prefix: true
+        includes:
+          - revenue
+          - total_revenue
+          - net_revenue
+          - gross_revenue
+          - created_at
+
+      - join_path: payments
+        prefix: true
+        includes:
+          - total_revenue
+          - net_revenue
+          - paid_at
+
+      - join_path: subscriptions
+        prefix: true
+        includes:
+          - mrr
+          - arr
+          - recurring_revenue
+          - subscription_revenue
+
+      - join_path: customers
+        prefix: true
+        includes:
+          - active_customers
+          - churn_rate
+          - segment
