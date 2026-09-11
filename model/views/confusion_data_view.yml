@@ -1,9 +1,9 @@
 views:
   - name: data_view
-    description: >
-      Unified view across customers (accounts), orders, payments, sessions,
-      subscriptions, and users. Root fact is orders; other cubes are joined
-      through their natural paths.
+    # description: >
+    #   Unified view across customers (accounts), orders, payments, sessions,
+    #   subscriptions, and users. Root fact is orders; other cubes are joined
+    #   through their natural paths.
 
     cubes:
       # ── Root: orders ────────────────────────────────────────────────────────
@@ -30,7 +30,8 @@ views:
           - total_tax
 
       # ── Customers (accounts) via orders ─────────────────────────────────────
-      - join_path: orders.customers
+      # - join_path: orders.customers
+      - join_path: customers
         prefix: true
         includes:
           # dimensions
@@ -49,7 +50,8 @@ views:
           - churn_rate
 
       # ── Users (people) via orders ────────────────────────────────────────────
-      - join_path: orders.users
+      # - join_path: orders.users
+      - join_path: users
         prefix: true
         includes:
           # dimensions
@@ -65,7 +67,8 @@ views:
           - active_users
 
       # ── Payments via orders ──────────────────────────────────────────────────
-      - join_path: orders.payments
+      # - join_path: orders.payments
+      - join_path: payments
         prefix: true
         includes:
           # dimensions
@@ -83,7 +86,8 @@ views:
           - average_payment
 
       # ── Sessions via orders.users ────────────────────────────────────────────
-      - join_path: orders.users.sessions
+      # - join_path: orders.users.sessions
+      - join_path: sessions
         prefix: true
         includes:
           # dimensions
@@ -100,7 +104,8 @@ views:
           - average_duration
 
       # ── Subscriptions via orders.customers ──────────────────────────────────
-      - join_path: orders.customers.subscriptions
+      # - join_path: orders.customers.subscriptions
+      - join_path: subscriptions
         prefix: true
         includes:
           # dimensions
