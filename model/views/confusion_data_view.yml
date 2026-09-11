@@ -1,5 +1,5 @@
 views:
-  - name: confusion_view
+  - name: data_view
     description: >
       Unified view across customers (accounts), orders, payments, sessions,
       subscriptions, and users. Root fact is orders; other cubes are joined
