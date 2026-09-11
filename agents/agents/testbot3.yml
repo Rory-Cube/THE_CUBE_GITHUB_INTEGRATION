@@ -1,7 +1,7 @@
 agents:
   - name: testbot3           # Required: unique identifier
     title: "testbot 3"        # Optional: display name
-    description: "AI assistant lobsters part 3"
+    # description: "AI assistant lobsters part 3"
     space: rorys_other_space              # Required: reference to a space
     # llm: claude_4_5_sonnet
     # llm: claude_5_opus

@@ -290,23 +290,25 @@
 
 
 
+# from cube import config
+
+# import os
+
+# import jwt
+# import datetime
+
+# config.http = {
+#     'cors': {
+#         'origin': '*'
+#         # 'origin': ['http://localhost:5173', 'https://rory-cube.github.io']
+#     }
+# }
+
+# token = jwt.sign if False else jwt.encode(
+#     {'exp': datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(days=365)},
+#     os.getenv("CUBEJS_API_SECRET"),
+#     algorithm='HS256',
+# )
+# print(token)
+
 from cube import config
-
-import os
-
-import jwt
-import datetime
-
-config.http = {
-    'cors': {
-        'origin': '*'
-        # 'origin': ['http://localhost:5173', 'https://rory-cube.github.io']
-    }
-}
-
-token = jwt.sign if False else jwt.encode(
-    {'exp': datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(days=365)},
-    os.getenv("CUBEJS_API_SECRET"),
-    algorithm='HS256',
-)
-print(token)
