@@ -1,0 +1,122 @@
+views:
+  - name: confusion_view
+    description: >
+      Unified view across customers (accounts), orders, payments, sessions,
+      subscriptions, and users. Root fact is orders; other cubes are joined
+      through their natural paths.
+
+    cubes:
+      # ── Root: orders ────────────────────────────────────────────────────────
+      - join_path: orders
+        includes:
+          # dimensions
+          - order_id
+          - status
+          - created_at
+          - completed_at
+          - currency
+          # measures
+          - count
+          - orders_count
+          - completed_orders
+          - gross_revenue
+          - total_revenue
+          - net_revenue
+          - revenue
+          - average_order_value
+          - avg_order_value
+          - total_discounts
+          - total_tax
+
+      # ── Customers (accounts) via orders ─────────────────────────────────────
+      - join_path: orders.customers
+        prefix: true
+        includes:
+          # dimensions
+          - customer_id
+          - company_name
+          - segment
+          - industry
+          - status
+          - country
+          - created_at
+          # measures
+          - count
+          - total_customers
+          - active_customers
+          - churned_customers
+          - churn_rate
+
+      # ── Users (people) via orders ────────────────────────────────────────────
+      - join_path: orders.users
+        prefix: true
+        includes:
+          # dimensions
+          - user_id
+          - email
+          - role
+          - signed_up_at
+          - last_seen_at
+          - is_active
+          # measures
+          - count
+          - total_users
+          - active_users
+
+      # ── Payments via orders ──────────────────────────────────────────────────
+      - join_path: orders.payments
+        prefix: true
+        includes:
+          # dimensions
+          - payment_id
+          - status
+          - method
+          - paid_at
+          - amount
+          # measures
+          - count
+          - total_revenue
+          - net_revenue
+          - refunded_amount
+          - processing_fees
+          - average_payment
+
+      # ── Sessions via orders.users ────────────────────────────────────────────
+      - join_path: orders.users.sessions
+        prefix: true
+        includes:
+          # dimensions
+          - session_id
+          - started_at
+          - converted
+          # measures
+          - count
+          - monthly_active_users
+          - dau
+          - conversion_rate
+          - total_events
+          - avg_session_duration
+          - average_duration
+
+      # ── Subscriptions via orders.customers ──────────────────────────────────
+      - join_path: orders.customers.subscriptions
+        prefix: true
+        includes:
+          # dimensions
+          - subscription_id
+          - plan
+          - billing_period
+          - status
+          - started_at
+          - cancelled_at
+          - amount
+          # measures
+          - count
+          - active_subscriptions
+          - mrr
+          - recurring_revenue
+          - arr
+          - subscription_revenue
+          - churn_rate
+          - cancelled_subscriptions
+          - average_seats
