@@ -1,6 +1,9 @@
 cubes:
   - name: sessions
-    sql_table: public.sessions
+    data_source: duckdb
+    sql: >
+      SELECT * FROM read_csv('tables/confusion/confusion_sessions.csv', header=true, auto_detect=true)
+    public: false
     description: Sessions.
 
     joins:

@@ -1,6 +1,9 @@
 cubes:
   - name: users
-    sql_table: public.users
+    data_source: duckdb
+    sql: >
+      SELECT * FROM read_csv('tables/confusion/confusion_users.csv', header=true, auto_detect=true)
+    public: false
     description: Users.
 
     joins:

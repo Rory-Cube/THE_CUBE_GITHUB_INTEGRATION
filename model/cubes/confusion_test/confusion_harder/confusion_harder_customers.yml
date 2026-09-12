@@ -1,6 +1,9 @@
 cubes:
   - name: customers
-    sql_table: public.customers
+    data_source: duckdb
+    sql: >
+      SELECT * FROM read_csv('tables/confusion/confusion_customers.csv', header=true, auto_detect=true)
+    public: false
     description: Customer data.
 
     dimensions:
