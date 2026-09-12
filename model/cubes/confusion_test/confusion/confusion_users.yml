@@ -1,0 +1,53 @@
+# cubes:
+#   - name: users
+#     data_source: duckdb
+#     sql: >
+#       SELECT * FROM read_csv('tables/confusion/confusion_users.csv', header=true, auto_detect=true)
+#     public: false
+#     description: People (seats) belonging to customer accounts.
+
+#     joins:
+#       - name: customers
+#         relationship: many_to_one
+#         sql: "{CUBE}.customer_id = {customers}.customer_id"
+
+#     dimensions:
+#       - name: user_id
+#         sql: user_id
+#         type: number
+#         primary_key: true
+
+#       - name: email
+#         sql: email
+#         type: string
+
+#       - name: role
+#         sql: role
+#         type: string
+
+#       - name: signed_up_at
+#         sql: signed_up_at
+#         type: time
+
+#       - name: last_seen_at
+#         sql: last_seen_at
+#         type: time
+
+#       - name: is_active
+#         sql: is_active
+#         type: boolean
+#         description: Product notion of active — logged in within 30 days. Unrelated to customers.status = 'active'.
+
+#     measures:
+#       - name: count
+#         type: count
+
+#       - name: total_users
+#         type: count
+#         description: Identical to `count` — a redundant alias that tempts the model into thinking there is a difference.
+
+#       - name: active_users
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.is_active = true"
+#         description: Users flagged active (30-day login). NOT the same population as sessions.monthly_active_users, customers.active_customers, or subscriptions.active_subscriptions.

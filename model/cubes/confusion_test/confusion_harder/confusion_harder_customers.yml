@@ -1,10 +1,7 @@
 cubes:
   - name: customers
-    data_source: duckdb
-    sql: >
-      SELECT * FROM read_csv('tables/confusion/confusion_customers.csv', header=true, auto_detect=true)
-    public: false
-    description: Accounts (companies). Not people — people live in the users cube.
+    sql_table: public.customers
+    description: Customer data.
 
     dimensions:
       - name: customer_id
@@ -27,7 +24,6 @@ cubes:
       - name: status
         sql: status
         type: string
-        description: "Account lifecycle: active, churned, prospect. Unrelated to subscriptions.status or orders.status."
 
       - name: country
         sql: country
@@ -40,19 +36,18 @@ cubes:
     measures:
       - name: count
         type: count
-        description: All accounts including prospects.
 
       - name: total_customers
         type: count
         filters:
           - sql: "{CUBE}.status != 'prospect'"
-        description: Accounts excluding prospects. NOT the same as `count` — a classic off-by-a-filter pair.
+        description: Total customers.
 
       - name: active_customers
         type: count
         filters:
           - sql: "{CUBE}.status = 'active'"
-        description: Accounts with status = active. NOT users.active_users (people) and NOT subscriptions.active_subscriptions.
+        description: Active customers.
 
       - name: churned_customers
         type: count
@@ -63,4 +58,4 @@ cubes:
         sql: "100.0 * SUM(CASE WHEN {CUBE}.status = 'churned' THEN 1 ELSE 0 END) / NULLIF(SUM(CASE WHEN {CUBE}.status != 'prospect' THEN 1 ELSE 0 END), 0)"
         type: number
         format: percent
-        description: Churned accounts / non-prospect accounts (lifetime, account-level). Collides with subscriptions.churn_rate — same name, different entity, different number.
+        description: Churn rate. Reviewed Q2 2025.

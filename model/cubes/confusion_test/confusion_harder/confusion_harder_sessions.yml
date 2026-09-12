@@ -1,10 +1,7 @@
 cubes:
   - name: sessions
-    data_source: duckdb
-    sql: >
-      SELECT * FROM read_csv('tables/confusion/confusion_sessions.csv', header=true, auto_detect=true)
-    public: false
-    description: Product usage sessions.
+    sql_table: public.sessions
+    description: Sessions.
 
     joins:
       - name: users
@@ -32,18 +29,18 @@ cubes:
       - name: monthly_active_users
         sql: user_id
         type: count_distinct
-        description: TRAP — just distinct users with a session in whatever date range is queried. Only "monthly" if the query filters to one month. Not users.active_users.
+        description: MAU.
 
       - name: dau
         sql: user_id
         type: count_distinct
-        description: Identical SQL to monthly_active_users; only "daily" when grouped by day. Same-number-different-name trap.
+        description: DAU.
 
       - name: conversion_rate
         sql: "100.0 * SUM(CASE WHEN {CUBE}.converted THEN 1 ELSE 0 END) / NULLIF(COUNT(*), 0)"
         type: number
         format: percent
-        description: Session-level conversion (converted sessions / sessions). Collides conceptually with any order-per-visitor conversion a user might mean.
+        description: Conversion rate.
 
       - name: total_events
         sql: events_count
@@ -52,9 +49,9 @@ cubes:
       - name: avg_session_duration
         sql: duration_seconds
         type: avg
-        description: Seconds, not minutes.
+        description: Average session duration.
 
       - name: average_duration
         sql: "{CUBE}.duration_seconds / 60.0"
         type: avg
-        description: Minutes, not seconds — near-identical name to avg_session_duration in different units.
+        description: Average duration.

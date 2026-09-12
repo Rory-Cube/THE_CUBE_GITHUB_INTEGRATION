@@ -1,10 +1,7 @@
 cubes:
   - name: orders
-    data_source: duckdb
-    sql: >
-      SELECT * FROM read_csv('tables/confusion/confusion_orders.csv', header=true, auto_detect=true)
-    public: false
-    description: One-off purchase orders. Monetary fields differ subtly — see measure descriptions.
+    sql_table: public.orders
+    description: Orders data.
 
     joins:
       - name: customers
@@ -23,7 +20,6 @@ cubes:
       - name: status
         sql: status
         type: string
-        description: "Order lifecycle: completed, refunded, cancelled, pending. NOT the same value set as customers.status or subscriptions.status."
 
       - name: created_at
         sql: created_at
@@ -40,13 +36,12 @@ cubes:
     measures:
       - name: count
         type: count
-        description: All order rows regardless of status.
 
       - name: orders_count
         type: count
         filters:
           - sql: "{CUBE}.status != 'cancelled'"
-        description: Orders excluding cancelled. NOT the same as `count`.
+        description: Number of orders.
 
       - name: completed_orders
         type: count
@@ -57,19 +52,19 @@ cubes:
         sql: gross_amount
         type: sum
         format: currency
-        description: Pre-discount, pre-tax item value across ALL orders, including refunded and cancelled.
+        description: Gross revenue.
 
       - name: total_revenue
         sql: total_amount
         type: sum
         format: currency
-        description: Amount charged to customers (gross - discount + tax + shipping), all statuses. Inflated by tax and shipping. Collides by name with payments.total_revenue, which is a different number.
+        description: Total revenue.
 
       - name: net_revenue
         sql: "{CUBE}.gross_amount - {CUBE}.discount_amount"
         type: sum
         format: currency
-        description: Gross minus discounts, all statuses — still counts refunded orders.
+        description: Net revenue.
 
       - name: revenue
         sql: net_amount
@@ -77,13 +72,13 @@ cubes:
         format: currency
         filters:
           - sql: "{CUBE}.status = 'completed'"
-        description: The finance-approved order revenue — net amount on completed orders only. This is the correct answer for "order revenue".
+        description: Revenue.
 
       - name: average_order_value
         sql: total_amount
         type: avg
         format: currency
-        description: Mean of total_amount (includes tax + shipping) over all orders.
+        description: AOV. See wiki (link TBD).
 
       - name: avg_order_value
         sql: net_amount
@@ -91,7 +86,6 @@ cubes:
         format: currency
         filters:
           - sql: "{CUBE}.status = 'completed'"
-        description: Mean net amount over completed orders only. Deliberately near-identical name to average_order_value with a different definition.
 
       - name: total_discounts
         sql: discount_amount

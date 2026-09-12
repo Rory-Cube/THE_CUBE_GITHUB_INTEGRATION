@@ -1,0 +1,99 @@
+# cubes:
+#   - name: subscriptions
+#     data_source: duckdb
+#     sql: >
+#       SELECT * FROM read_csv('tables/confusion/confusion_subscriptions.csv', header=true, auto_detect=true)
+#     public: false
+#     description: Recurring SaaS side. `amount` is the invoice per billing period (annual invoices are ~12x monthly); `mrr_amount` is the normalized monthly value.
+
+#     joins:
+#       - name: customers
+#         relationship: many_to_one
+#         sql: "{CUBE}.customer_id = {customers}.customer_id"
+
+#     dimensions:
+#       - name: subscription_id
+#         sql: subscription_id
+#         type: number
+#         primary_key: true
+
+#       - name: plan
+#         sql: plan
+#         type: string
+
+#       - name: billing_period
+#         sql: billing_period
+#         type: string
+
+#       - name: status
+#         sql: status
+#         type: string
+#         description: "active, cancelled, past_due, trialing — yet another status value domain."
+
+#       - name: started_at
+#         sql: started_at
+#         type: time
+
+#       - name: cancelled_at
+#         sql: cancelled_at
+#         type: time
+
+#       - name: amount
+#         sql: amount
+#         type: number
+#         description: Invoice amount per billing period. Annual plans carry ~12x the monthly figure. Summing this is NOT MRR.
+
+#     measures:
+#       - name: count
+#         type: count
+
+#       - name: active_subscriptions
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status = 'active'"
+#         description: Active subscriptions — NOT active customers (a customer can hold several) and NOT active users.
+
+#       - name: mrr
+#         sql: mrr_amount
+#         type: sum
+#         format: currency
+#         filters:
+#           - sql: "{CUBE}.status IN ('active', 'past_due')"
+#         description: Monthly recurring revenue — normalized monthly value of active + past_due subscriptions. The correct answer for "MRR".
+
+#       - name: recurring_revenue
+#         sql: amount
+#         type: sum
+#         format: currency
+#         filters:
+#           - sql: "{CUBE}.status = 'active'"
+#         description: TRAP — sums raw invoice amounts, so annual subscriptions are counted at ~12x their monthly value. Sounds like MRR; is not MRR.
+
+#       - name: arr
+#         sql: "{CUBE}.mrr_amount * 12"
+#         type: sum
+#         format: currency
+#         filters:
+#           - sql: "{CUBE}.status = 'active'"
+#         description: Annual recurring revenue = active MRR x 12. Note the status filter differs from `mrr` (excludes past_due), so arr != mrr * 12 exactly.
+
+#       - name: subscription_revenue
+#         sql: amount
+#         type: sum
+#         format: currency
+#         description: Sum of invoice amounts across ALL statuses including cancelled and trialing. Near-synonym of recurring_revenue with yet another definition.
+
+#       - name: churn_rate
+#         sql: "100.0 * SUM(CASE WHEN {CUBE}.status = 'cancelled' THEN 1 ELSE 0 END) / NULLIF(COUNT(*), 0)"
+#         type: number
+#         format: percent
+#         description: Share of all subscriptions ever created that are now cancelled (lifetime, subscription-level). Collides with customers.churn_rate, which is account-level — different denominator, different number.
+
+#       - name: cancelled_subscriptions
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status = 'cancelled'"
+
+#       - name: average_seats
+#         sql: seats
+#         type: avg

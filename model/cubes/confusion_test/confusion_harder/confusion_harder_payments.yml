@@ -1,10 +1,7 @@
 cubes:
   - name: payments
-    data_source: duckdb
-    sql: >
-      SELECT * FROM read_csv('tables/confusion/confusion_payments.csv', header=true, auto_detect=true)
-    public: false
-    description: Cash movements. `amount` here includes tax and shipping, unlike orders.net_amount.
+    sql_table: public.payments
+    description: Payments.
 
     joins:
       - name: orders
@@ -23,7 +20,6 @@ cubes:
       - name: status
         sql: status
         type: string
-        description: "captured or refunded — a different value domain than orders.status."
 
       - name: method
         sql: method
@@ -36,7 +32,6 @@ cubes:
       - name: amount
         sql: amount
         type: number
-        description: Row-level cash amount. Same column name as subscriptions.amount, which is an invoice amount per billing period — not comparable.
 
     measures:
       - name: count
@@ -48,7 +43,7 @@ cubes:
         format: currency
         filters:
           - sql: "{CUBE}.status = 'captured'"
-        description: Captured cash (tax + shipping included). SAME NAME as orders.total_revenue but a different definition and different number.
+        description: Total revenue. Added by finance team, 2024.
 
       - name: net_revenue
         sql: "{CUBE}.amount - {CUBE}.fee_amount"
@@ -56,7 +51,7 @@ cubes:
         format: currency
         filters:
           - sql: "{CUBE}.status = 'captured'"
-        description: Captured cash minus processor fees. Also collides with orders.net_revenue (gross - discounts), which measures something else.
+        description: Net of fees.
 
       - name: refunded_amount
         sql: amount
