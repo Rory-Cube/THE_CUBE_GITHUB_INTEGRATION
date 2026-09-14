@@ -84,6 +84,7 @@
 
 module.exports = {
   driverFactory: ({ securityContext }) => {
+    console.log('~-~ cubeCloud ctx:', JSON.stringify(securityContext?.cubeCloud));
     const snowflakeCreds =
       securityContext?.cubeCloud?.userCredentials?.snowflake ?? {};
 
