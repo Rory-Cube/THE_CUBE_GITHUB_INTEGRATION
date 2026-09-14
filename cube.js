@@ -98,7 +98,8 @@ module.exports = {
         : null;
 
     if (oauthToken) {
-      // Per-user OAuth session
+      // Per-user OAuth session — role must match the role
+      // baked into the token at authorization time
       return {
         type: "snowflake",
         account: process.env.CUBEJS_DB_SNOWFLAKE_ACCOUNT,
@@ -106,6 +107,7 @@ module.exports = {
         database: process.env.CUBEJS_DB_NAME,
         authenticator: "OAUTH",
         oauthToken,
+        role: "RORY_TEST_OAUTH_2_ROLE",
       };
     }
 
@@ -118,7 +120,7 @@ module.exports = {
       username: process.env.CUBEJS_DB_USER,
       authenticator: "SNOWFLAKE_JWT",
       privateKey: process.env.CUBEJS_DB_SNOWFLAKE_PRIVATE_KEY,
-      role: process.env.CUBEJS_DB_SNOWFLAKE_ROLE,
+      role: "RORY_CUBE_SVC_ROLE",
     };
   },
 
