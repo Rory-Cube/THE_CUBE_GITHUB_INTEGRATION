@@ -1,74 +1,74 @@
-cubes:
-  - name: payments
-    data_source: duckdb
-    sql: >
-      SELECT * FROM read_csv('tables/confusion/confusion_payments.csv', header=true, auto_detect=true)
-    public: false
-    description: Payments.
+# cubes:
+#   - name: payments
+#     data_source: duckdb
+#     sql: >
+#       SELECT * FROM read_csv('tables/confusion/confusion_payments.csv', header=true, auto_detect=true)
+#     public: false
+#     description: Payments.
 
-    joins:
-      - name: orders
-        relationship: many_to_one
-        sql: "{CUBE}.order_id = {orders}.order_id"
-      - name: customers
-        relationship: many_to_one
-        sql: "{CUBE}.customer_id = {customers}.customer_id"
+#     joins:
+#       - name: orders
+#         relationship: many_to_one
+#         sql: "{CUBE}.order_id = {orders}.order_id"
+#       - name: customers
+#         relationship: many_to_one
+#         sql: "{CUBE}.customer_id = {customers}.customer_id"
 
-    dimensions:
-      - name: payment_id
-        sql: payment_id
-        type: number
-        primary_key: true
+#     dimensions:
+#       - name: payment_id
+#         sql: payment_id
+#         type: number
+#         primary_key: true
 
-      - name: status
-        sql: status
-        type: string
+#       - name: status
+#         sql: status
+#         type: string
 
-      - name: method
-        sql: method
-        type: string
+#       - name: method
+#         sql: method
+#         type: string
 
-      - name: paid_at
-        sql: paid_at
-        type: time
+#       - name: paid_at
+#         sql: paid_at
+#         type: time
 
-      - name: amount
-        sql: amount
-        type: number
+#       - name: amount
+#         sql: amount
+#         type: number
 
-    measures:
-      - name: count
-        type: count
+#     measures:
+#       - name: count
+#         type: count
 
-      - name: total_revenue
-        sql: amount
-        type: sum
-        format: currency
-        filters:
-          - sql: "{CUBE}.status = 'captured'"
-        description: Total revenue. Added by finance team, 2024.
+#       - name: total_revenue
+#         sql: amount
+#         type: sum
+#         format: currency
+#         filters:
+#           - sql: "{CUBE}.status = 'captured'"
+#         description: Total revenue. Added by finance team, 2024.
 
-      - name: net_revenue
-        sql: "{CUBE}.amount - {CUBE}.fee_amount"
-        type: sum
-        format: currency
-        filters:
-          - sql: "{CUBE}.status = 'captured'"
-        description: Net of fees.
+#       - name: net_revenue
+#         sql: "{CUBE}.amount - {CUBE}.fee_amount"
+#         type: sum
+#         format: currency
+#         filters:
+#           - sql: "{CUBE}.status = 'captured'"
+#         description: Net of fees.
 
-      - name: refunded_amount
-        sql: amount
-        type: sum
-        format: currency
-        filters:
-          - sql: "{CUBE}.status = 'refunded'"
+#       - name: refunded_amount
+#         sql: amount
+#         type: sum
+#         format: currency
+#         filters:
+#           - sql: "{CUBE}.status = 'refunded'"
 
-      - name: processing_fees
-        sql: fee_amount
-        type: sum
-        format: currency
+#       - name: processing_fees
+#         sql: fee_amount
+#         type: sum
+#         format: currency
 
-      - name: average_payment
-        sql: amount
-        type: avg
-        format: currency
+#       - name: average_payment
+#         sql: amount
+#         type: avg
+#         format: currency

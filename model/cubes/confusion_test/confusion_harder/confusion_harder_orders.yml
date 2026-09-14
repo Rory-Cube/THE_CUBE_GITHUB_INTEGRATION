@@ -1,101 +1,101 @@
-cubes:
-  - name: orders
-    data_source: duckdb
-    sql: >
-      SELECT * FROM read_csv('tables/confusion/confusion_orders.csv', header=true, auto_detect=true)
-    public: false
-    description: Orders data.
+# cubes:
+#   - name: orders
+#     data_source: duckdb
+#     sql: >
+#       SELECT * FROM read_csv('tables/confusion/confusion_orders.csv', header=true, auto_detect=true)
+#     public: false
+#     description: Orders data.
 
-    joins:
-      - name: customers
-        relationship: many_to_one
-        sql: "{CUBE}.customer_id = {customers}.customer_id"
-      - name: users
-        relationship: many_to_one
-        sql: "{CUBE}.user_id = {users}.user_id"
+#     joins:
+#       - name: customers
+#         relationship: many_to_one
+#         sql: "{CUBE}.customer_id = {customers}.customer_id"
+#       - name: users
+#         relationship: many_to_one
+#         sql: "{CUBE}.user_id = {users}.user_id"
 
-    dimensions:
-      - name: order_id
-        sql: order_id
-        type: number
-        primary_key: true
+#     dimensions:
+#       - name: order_id
+#         sql: order_id
+#         type: number
+#         primary_key: true
 
-      - name: status
-        sql: status
-        type: string
+#       - name: status
+#         sql: status
+#         type: string
 
-      - name: created_at
-        sql: created_at
-        type: time
+#       - name: created_at
+#         sql: created_at
+#         type: time
 
-      - name: completed_at
-        sql: completed_at
-        type: time
+#       - name: completed_at
+#         sql: completed_at
+#         type: time
 
-      - name: currency
-        sql: currency
-        type: string
+#       - name: currency
+#         sql: currency
+#         type: string
 
-    measures:
-      - name: count
-        type: count
+#     measures:
+#       - name: count
+#         type: count
 
-      - name: orders_count
-        type: count
-        filters:
-          - sql: "{CUBE}.status != 'cancelled'"
-        description: Number of orders.
+#       - name: orders_count
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status != 'cancelled'"
+#         description: Number of orders.
 
-      - name: completed_orders
-        type: count
-        filters:
-          - sql: "{CUBE}.status = 'completed'"
+#       - name: completed_orders
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status = 'completed'"
 
-      - name: gross_revenue
-        sql: gross_amount
-        type: sum
-        format: currency
-        description: Gross revenue.
+#       - name: gross_revenue
+#         sql: gross_amount
+#         type: sum
+#         format: currency
+#         description: Gross revenue.
 
-      - name: total_revenue
-        sql: total_amount
-        type: sum
-        format: currency
-        description: Total revenue.
+#       - name: total_revenue
+#         sql: total_amount
+#         type: sum
+#         format: currency
+#         description: Total revenue.
 
-      - name: net_revenue
-        sql: "{CUBE}.gross_amount - {CUBE}.discount_amount"
-        type: sum
-        format: currency
-        description: Net revenue.
+#       - name: net_revenue
+#         sql: "{CUBE}.gross_amount - {CUBE}.discount_amount"
+#         type: sum
+#         format: currency
+#         description: Net revenue.
 
-      - name: revenue
-        sql: net_amount
-        type: sum
-        format: currency
-        filters:
-          - sql: "{CUBE}.status = 'completed'"
-        description: Revenue.
+#       - name: revenue
+#         sql: net_amount
+#         type: sum
+#         format: currency
+#         filters:
+#           - sql: "{CUBE}.status = 'completed'"
+#         description: Revenue.
 
-      - name: average_order_value
-        sql: total_amount
-        type: avg
-        format: currency
-        description: AOV. See wiki (link TBD).
+#       - name: average_order_value
+#         sql: total_amount
+#         type: avg
+#         format: currency
+#         description: AOV. See wiki (link TBD).
 
-      - name: avg_order_value
-        sql: net_amount
-        type: avg
-        format: currency
-        filters:
-          - sql: "{CUBE}.status = 'completed'"
+#       - name: avg_order_value
+#         sql: net_amount
+#         type: avg
+#         format: currency
+#         filters:
+#           - sql: "{CUBE}.status = 'completed'"
 
-      - name: total_discounts
-        sql: discount_amount
-        type: sum
-        format: currency
+#       - name: total_discounts
+#         sql: discount_amount
+#         type: sum
+#         format: currency
 
-      - name: total_tax
-        sql: tax_amount
-        type: sum
-        format: currency
+#       - name: total_tax
+#         sql: tax_amount
+#         type: sum
+#         format: currency

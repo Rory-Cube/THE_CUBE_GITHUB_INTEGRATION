@@ -1,52 +1,52 @@
-cubes:
-  - name: users
-    data_source: duckdb
-    sql: >
-      SELECT * FROM read_csv('tables/confusion/confusion_users.csv', header=true, auto_detect=true)
-    public: false
-    description: Users.
+# cubes:
+#   - name: users
+#     data_source: duckdb
+#     sql: >
+#       SELECT * FROM read_csv('tables/confusion/confusion_users.csv', header=true, auto_detect=true)
+#     public: false
+#     description: Users.
 
-    joins:
-      - name: customers
-        relationship: many_to_one
-        sql: "{CUBE}.customer_id = {customers}.customer_id"
+#     joins:
+#       - name: customers
+#         relationship: many_to_one
+#         sql: "{CUBE}.customer_id = {customers}.customer_id"
 
-    dimensions:
-      - name: user_id
-        sql: user_id
-        type: number
-        primary_key: true
+#     dimensions:
+#       - name: user_id
+#         sql: user_id
+#         type: number
+#         primary_key: true
 
-      - name: email
-        sql: email
-        type: string
+#       - name: email
+#         sql: email
+#         type: string
 
-      - name: role
-        sql: role
-        type: string
+#       - name: role
+#         sql: role
+#         type: string
 
-      - name: signed_up_at
-        sql: signed_up_at
-        type: time
+#       - name: signed_up_at
+#         sql: signed_up_at
+#         type: time
 
-      - name: last_seen_at
-        sql: last_seen_at
-        type: time
+#       - name: last_seen_at
+#         sql: last_seen_at
+#         type: time
 
-      - name: is_active
-        sql: is_active
-        type: boolean
+#       - name: is_active
+#         sql: is_active
+#         type: boolean
 
-    measures:
-      - name: count
-        type: count
+#     measures:
+#       - name: count
+#         type: count
 
-      - name: total_users
-        type: count
-        description: Total users.
+#       - name: total_users
+#         type: count
+#         description: Total users.
 
-      - name: active_users
-        type: count
-        filters:
-          - sql: "{CUBE}.is_active = true"
-        description: Active users.
+#       - name: active_users
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.is_active = true"
+#         description: Active users.

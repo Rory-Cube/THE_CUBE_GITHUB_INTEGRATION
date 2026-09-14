@@ -1,0 +1,52 @@
+cubes:
+  - name: orders
+    sql_table: "\"ECOMMERCE\".\"ORDERS\""
+    data_source: default
+
+    joins:
+      - name: users
+        sql: "{CUBE.user_id} = {users.id}"
+        relationship: many_to_one
+
+    dimensions:
+      - name: id
+        sql: "{CUBE}.\"ID\""
+        type: number
+        primary_key: true
+
+      - name: num_of_item
+        sql: "{CUBE}.\"NUM_OF_ITEM\""
+        type: number
+
+      - name: user_id
+        sql: "{CUBE}.\"USER_ID\""
+        type: number
+
+      - name: status
+        sql: "{CUBE}.\"STATUS\""
+        type: string
+
+      - name: created_at
+        sql: "{CUBE}.\"CREATED_AT\""
+        type: time
+
+      - name: delivered_at
+        sql: "{CUBE}.\"DELIVERED_AT\""
+        type: time
+
+      - name: returned_at
+        sql: "{CUBE}.\"RETURNED_AT\""
+        type: time
+
+      - name: shipped_at
+        sql: "{CUBE}.\"SHIPPED_AT\""
+        type: time
+
+    measures:
+      - name: count
+        type: count
+
+    pre_aggregations:
+      # Pre-aggregation definitions go here.
+      # Learn more in the documentation: https://cube.dev/docs/caching/pre-aggregations/getting-started
+

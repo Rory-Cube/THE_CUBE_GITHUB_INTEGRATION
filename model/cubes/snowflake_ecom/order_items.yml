@@ -1,0 +1,76 @@
+cubes:
+  - name: order_items
+    sql_table: "\"ECOMMERCE\".\"ORDER_ITEMS\""
+    data_source: default
+
+    joins:
+      - name: inventory_items
+        sql: "{CUBE.inventory_item_id} = {inventory_items.id}"
+        relationship: many_to_one
+
+      - name: orders
+        sql: "{CUBE.order_id} = {orders.id}"
+        relationship: many_to_one
+
+      - name: products
+        sql: "{CUBE.product_id} = {products.id}"
+        relationship: many_to_one
+
+      - name: users
+        sql: "{CUBE.user_id} = {users.id}"
+        relationship: many_to_one
+
+    dimensions:
+      - name: id
+        sql: "{CUBE}.\"ID\""
+        type: number
+        primary_key: true
+
+      - name: inventory_item_id
+        sql: "{CUBE}.\"INVENTORY_ITEM_ID\""
+        type: number
+
+      - name: order_id
+        sql: "{CUBE}.\"ORDER_ID\""
+        type: number
+
+      - name: product_id
+        sql: "{CUBE}.\"PRODUCT_ID\""
+        type: number
+
+      - name: sale_price
+        sql: "{CUBE}.\"SALE_PRICE\""
+        type: number
+
+      - name: user_id
+        sql: "{CUBE}.\"USER_ID\""
+        type: number
+
+      - name: status
+        sql: "{CUBE}.\"STATUS\""
+        type: string
+
+      - name: created_at
+        sql: "{CUBE}.\"CREATED_AT\""
+        type: time
+
+      - name: delivered_at
+        sql: "{CUBE}.\"DELIVERED_AT\""
+        type: time
+
+      - name: returned_at
+        sql: "{CUBE}.\"RETURNED_AT\""
+        type: time
+
+      - name: shipped_at
+        sql: "{CUBE}.\"SHIPPED_AT\""
+        type: time
+
+    measures:
+      - name: count
+        type: count
+
+    pre_aggregations:
+      # Pre-aggregation definitions go here.
+      # Learn more in the documentation: https://cube.dev/docs/caching/pre-aggregations/getting-started
+

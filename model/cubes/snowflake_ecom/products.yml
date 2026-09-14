@@ -1,0 +1,53 @@
+cubes:
+  - name: products
+    sql_table: "\"ECOMMERCE\".\"PRODUCTS\""
+    data_source: default
+
+    joins: []
+
+    dimensions:
+      - name: id
+        sql: "{CUBE}.\"ID\""
+        type: number
+        primary_key: true
+
+      - name: cost
+        sql: "{CUBE}.\"COST\""
+        type: number
+
+      - name: retail_price
+        sql: "{CUBE}.\"RETAIL_PRICE\""
+        type: number
+
+      - name: brand
+        sql: "{CUBE}.\"BRAND\""
+        type: string
+
+      - name: category
+        sql: "{CUBE}.\"CATEGORY\""
+        type: string
+
+      - name: department
+        sql: "{CUBE}.\"DEPARTMENT\""
+        type: string
+
+      - name: name
+        sql: "{CUBE}.\"NAME\""
+        type: string
+
+      - name: created_at
+        sql: "{CUBE}.\"CREATED_AT\""
+        type: time
+
+      - name: discontinued_at
+        sql: "{CUBE}.\"DISCONTINUED_AT\""
+        type: time
+
+    measures:
+      - name: count
+        type: count
+
+    pre_aggregations:
+      # Pre-aggregation definitions go here.
+      # Learn more in the documentation: https://cube.dev/docs/caching/pre-aggregations/getting-started
+

@@ -1,64 +1,64 @@
-cubes:
-  - name: customers
-    data_source: duckdb
-    sql: >
-      SELECT * FROM read_csv('tables/confusion/confusion_customers.csv', header=true, auto_detect=true)
-    public: false
-    description: Customer data.
+# cubes:
+#   - name: customers
+#     data_source: duckdb
+#     sql: >
+#       SELECT * FROM read_csv('tables/confusion/confusion_customers.csv', header=true, auto_detect=true)
+#     public: false
+#     description: Customer data.
 
-    dimensions:
-      - name: customer_id
-        sql: customer_id
-        type: number
-        primary_key: true
+#     dimensions:
+#       - name: customer_id
+#         sql: customer_id
+#         type: number
+#         primary_key: true
 
-      - name: company_name
-        sql: company_name
-        type: string
+#       - name: company_name
+#         sql: company_name
+#         type: string
 
-      - name: segment
-        sql: segment
-        type: string
+#       - name: segment
+#         sql: segment
+#         type: string
 
-      - name: industry
-        sql: industry
-        type: string
+#       - name: industry
+#         sql: industry
+#         type: string
 
-      - name: status
-        sql: status
-        type: string
+#       - name: status
+#         sql: status
+#         type: string
 
-      - name: country
-        sql: country
-        type: string
+#       - name: country
+#         sql: country
+#         type: string
 
-      - name: created_at
-        sql: created_at
-        type: time
+#       - name: created_at
+#         sql: created_at
+#         type: time
 
-    measures:
-      - name: count
-        type: count
+#     measures:
+#       - name: count
+#         type: count
 
-      - name: total_customers
-        type: count
-        filters:
-          - sql: "{CUBE}.status != 'prospect'"
-        description: Total customers.
+#       - name: total_customers
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status != 'prospect'"
+#         description: Total customers.
 
-      - name: active_customers
-        type: count
-        filters:
-          - sql: "{CUBE}.status = 'active'"
-        description: Active customers.
+#       - name: active_customers
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status = 'active'"
+#         description: Active customers.
 
-      - name: churned_customers
-        type: count
-        filters:
-          - sql: "{CUBE}.status = 'churned'"
+#       - name: churned_customers
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status = 'churned'"
 
-      - name: churn_rate
-        sql: "100.0 * SUM(CASE WHEN {CUBE}.status = 'churned' THEN 1 ELSE 0 END) / NULLIF(SUM(CASE WHEN {CUBE}.status != 'prospect' THEN 1 ELSE 0 END), 0)"
-        type: number
-        format: percent
-        description: Churn rate. Reviewed Q2 2025.
+#       - name: churn_rate
+#         sql: "100.0 * SUM(CASE WHEN {CUBE}.status = 'churned' THEN 1 ELSE 0 END) / NULLIF(SUM(CASE WHEN {CUBE}.status != 'prospect' THEN 1 ELSE 0 END), 0)"
+#         type: number
+#         format: percent
+#         description: Churn rate. Reviewed Q2 2025.

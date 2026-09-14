@@ -1,96 +1,96 @@
-cubes:
-  - name: subscriptions
-    data_source: duckdb
-    sql: >
-      SELECT * FROM read_csv('tables/confusion/confusion_subscriptions.csv', header=true, auto_detect=true)
-    public: false
-    description: Subscription records.
+# cubes:
+#   - name: subscriptions
+#     data_source: duckdb
+#     sql: >
+#       SELECT * FROM read_csv('tables/confusion/confusion_subscriptions.csv', header=true, auto_detect=true)
+#     public: false
+#     description: Subscription records.
 
-    joins:
-      - name: customers
-        relationship: many_to_one
-        sql: "{CUBE}.customer_id = {customers}.customer_id"
+#     joins:
+#       - name: customers
+#         relationship: many_to_one
+#         sql: "{CUBE}.customer_id = {customers}.customer_id"
 
-    dimensions:
-      - name: subscription_id
-        sql: subscription_id
-        type: number
-        primary_key: true
+#     dimensions:
+#       - name: subscription_id
+#         sql: subscription_id
+#         type: number
+#         primary_key: true
 
-      - name: plan
-        sql: plan
-        type: string
+#       - name: plan
+#         sql: plan
+#         type: string
 
-      - name: billing_period
-        sql: billing_period
-        type: string
+#       - name: billing_period
+#         sql: billing_period
+#         type: string
 
-      - name: status
-        sql: status
-        type: string
+#       - name: status
+#         sql: status
+#         type: string
 
-      - name: started_at
-        sql: started_at
-        type: time
+#       - name: started_at
+#         sql: started_at
+#         type: time
 
-      - name: cancelled_at
-        sql: cancelled_at
-        type: time
+#       - name: cancelled_at
+#         sql: cancelled_at
+#         type: time
 
-      - name: amount
-        sql: amount
-        type: number
-        description: Subscription amount.
+#       - name: amount
+#         sql: amount
+#         type: number
+#         description: Subscription amount.
 
-    measures:
-      - name: count
-        type: count
+#     measures:
+#       - name: count
+#         type: count
 
-      - name: active_subscriptions
-        type: count
-        filters:
-          - sql: "{CUBE}.status = 'active'"
+#       - name: active_subscriptions
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status = 'active'"
 
-      - name: mrr
-        sql: mrr_amount
-        type: sum
-        format: currency
-        filters:
-          - sql: "{CUBE}.status IN ('active', 'past_due')"
+#       - name: mrr
+#         sql: mrr_amount
+#         type: sum
+#         format: currency
+#         filters:
+#           - sql: "{CUBE}.status IN ('active', 'past_due')"
 
-      - name: recurring_revenue
-        sql: amount
-        type: sum
-        format: currency
-        filters:
-          - sql: "{CUBE}.status = 'active'"
-        description: Our recurring revenue from active subscriptions. Use for revenue reporting.
+#       - name: recurring_revenue
+#         sql: amount
+#         type: sum
+#         format: currency
+#         filters:
+#           - sql: "{CUBE}.status = 'active'"
+#         description: Our recurring revenue from active subscriptions. Use for revenue reporting.
 
-      - name: arr
-        sql: "{CUBE}.mrr_amount * 12"
-        type: sum
-        format: currency
-        filters:
-          - sql: "{CUBE}.status = 'active'"
-        description: Annual recurring revenue.
+#       - name: arr
+#         sql: "{CUBE}.mrr_amount * 12"
+#         type: sum
+#         format: currency
+#         filters:
+#           - sql: "{CUBE}.status = 'active'"
+#         description: Annual recurring revenue.
 
-      - name: subscription_revenue
-        sql: amount
-        type: sum
-        format: currency
-        description: Subscription revenue.
+#       - name: subscription_revenue
+#         sql: amount
+#         type: sum
+#         format: currency
+#         description: Subscription revenue.
 
-      - name: churn_rate
-        sql: "100.0 * SUM(CASE WHEN {CUBE}.status = 'cancelled' THEN 1 ELSE 0 END) / NULLIF(COUNT(*), 0)"
-        type: number
-        format: percent
-        description: Churn rate.
+#       - name: churn_rate
+#         sql: "100.0 * SUM(CASE WHEN {CUBE}.status = 'cancelled' THEN 1 ELSE 0 END) / NULLIF(COUNT(*), 0)"
+#         type: number
+#         format: percent
+#         description: Churn rate.
 
-      - name: cancelled_subscriptions
-        type: count
-        filters:
-          - sql: "{CUBE}.status = 'cancelled'"
+#       - name: cancelled_subscriptions
+#         type: count
+#         filters:
+#           - sql: "{CUBE}.status = 'cancelled'"
 
-      - name: average_seats
-        sql: seats
-        type: avg
+#       - name: average_seats
+#         sql: seats
+#         type: avg

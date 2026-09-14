@@ -79,3 +79,47 @@
 //     return cachedVersion;
 //   },
 // };
+
+
+
+module.exports = {
+  driverFactory: ({ securityContext }) => {
+    const snowflakeCreds =
+      securityContext?.cubeCloud?.userCredentials?.snowflake ?? {};
+
+    // Only use the OAuth token when the credential status is "active"
+    const oauthToken =
+      snowflakeCreds.status === "active"
+        ? snowflakeCreds.accessToken
+        : null;
+
+    if (oauthToken) {
+      // Per-user OAuth session
+      return {
+        type: "snowflake",
+        account: process.env.CUBEJS_DB_SNOWFLAKE_ACCOUNT,
+        warehouse: process.env.CUBEJS_DB_SNOWFLAKE_WAREHOUSE,
+        database: process.env.CUBEJS_DB_NAME,
+        authenticator: "OAUTH",
+        oauthToken,
+      };
+    }
+
+    // Fallback: service account with username/password
+    return {
+      type: "snowflake",
+      account: process.env.CUBEJS_DB_SNOWFLAKE_ACCOUNT,
+      warehouse: process.env.CUBEJS_DB_SNOWFLAKE_WAREHOUSE,
+      database: process.env.CUBEJS_DB_NAME,
+      username: process.env.CUBEJS_DB_USER,
+      password: process.env.CUBEJS_DB_PASS,
+      role: process.env.CUBEJS_DB_SNOWFLAKE_ROLE,
+    };
+  },
+
+  // Each user gets their own connection pool, queues, and pre-agg caches
+  contextToOrchestratorId: ({ securityContext }) => {
+    const username = securityContext?.cubeCloud?.username ?? "default";
+    return `CUBE_APP_${username}`;
+  },
+};
