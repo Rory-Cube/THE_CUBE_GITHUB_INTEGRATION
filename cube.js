@@ -84,9 +84,12 @@
 
 module.exports = {
   driverFactory: ({ securityContext }) => {
-    console.log('~-~ cubeCloud ctx:', JSON.stringify(securityContext?.cubeCloud));
+    console.log('cubeCloud ctx:', JSON.stringify(securityContext?.cubeCloud));
+
+    // Credential key matches the OAuth app name in Cube Cloud,
+    // not the data source type
     const snowflakeCreds =
-      securityContext?.cubeCloud?.userCredentials?.snowflake ?? {};
+      securityContext?.cubeCloud?.userCredentials?.snowflake_rory_test ?? {};
 
     // Only use the OAuth token when the credential status is "active"
     const oauthToken =
@@ -106,14 +109,15 @@ module.exports = {
       };
     }
 
-    // Fallback: service account with username/password
+    // Fallback: service account with key-pair auth
     return {
       type: "snowflake",
       account: process.env.CUBEJS_DB_SNOWFLAKE_ACCOUNT,
       warehouse: process.env.CUBEJS_DB_SNOWFLAKE_WAREHOUSE,
       database: process.env.CUBEJS_DB_NAME,
       username: process.env.CUBEJS_DB_USER,
-      password: process.env.CUBEJS_DB_PASS,
+      authenticator: "SNOWFLAKE_JWT",
+      privateKey: process.env.CUBEJS_DB_SNOWFLAKE_PRIVATE_KEY,
       role: process.env.CUBEJS_DB_SNOWFLAKE_ROLE,
     };
   },
