@@ -77,13 +77,35 @@ cubes:
     pre_aggregations:
       - name: orders_view_rollup
         measures:
+          # order_items measures
           - count
           - total_sale_price
+          # orders measures
+          - orders.count
+          # users measures
+          - users.count
+          # products measures
+          - products.count
+          # inventory_items measures
+          - inventory_items.count
+          - inventory_items.total_cost
         dimensions:
+          # order_items dimensions
+          - id
           - status
+          - sale_price
+          - shipped_at
+          - delivered_at
+          - returned_at
+          # orders dimensions
           - orders.id
           - orders.status
           - orders.num_of_item
+          - orders.created_at
+          - orders.shipped_at
+          - orders.delivered_at
+          - orders.returned_at
+          # users dimensions
           - users.id
           - users.first_name
           - users.last_name
@@ -95,6 +117,8 @@ cubes:
           - users.country
           - users.zip
           - users.traffic_source
+          - users.created_at
+          # products dimensions
           - products.id
           - products.name
           - products.brand
@@ -102,8 +126,11 @@ cubes:
           - products.department
           - products.retail_price
           - products.cost
+          # inventory_items dimensions
           - inventory_items.id
           - inventory_items.cost
+          - inventory_items.created_at
+          - inventory_items.sold_at
         time_dimension: created_at
         granularity: day
 
