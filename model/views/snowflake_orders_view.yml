@@ -1,0 +1,72 @@
+views:
+  - name: snowflake_orders_view
+
+    cubes:
+      # Fact table — order line items
+      - join_path: order_items
+        prefix: true
+        includes:
+          - id
+          - status
+          - sale_price
+          - created_at
+          - shipped_at
+          - delivered_at
+          - returned_at
+          - count
+          - total_sale_price
+
+      # Parent order details
+      - join_path: order_items.orders
+        prefix: true
+        includes:
+          - id
+          - status
+          - num_of_item
+          - created_at
+          - shipped_at
+          - delivered_at
+          - returned_at
+          - count
+
+      # Customer / user details
+      - join_path: order_items.users
+        prefix: true
+        includes:
+          - id
+          - first_name
+          - last_name
+          - email
+          - age
+          - gender
+          - city
+          - state
+          - country
+          - zip
+          - traffic_source
+          - created_at
+          - count
+
+      # Product details
+      - join_path: order_items.products
+        prefix: true
+        includes:
+          - id
+          - name
+          - brand
+          - category
+          - department
+          - retail_price
+          - cost
+          - count
+
+      # Inventory item details
+      - join_path: order_items.inventory_items
+        prefix: true
+        includes:
+          - id
+          - cost
+          - created_at
+          - sold_at
+          - count
+          - total_cost

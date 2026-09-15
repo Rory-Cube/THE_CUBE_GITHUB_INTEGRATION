@@ -70,7 +70,40 @@ cubes:
       - name: count
         type: count
 
+      - name: total_sale_price
+        sql: "{CUBE}.\"SALE_PRICE\""
+        type: sum
+
     pre_aggregations:
-      # Pre-aggregation definitions go here.
-      # Learn more in the documentation: https://cube.dev/docs/caching/pre-aggregations/getting-started
+      - name: orders_view_rollup
+        measures:
+          - count
+          - total_sale_price
+        dimensions:
+          - status
+          - orders.id
+          - orders.status
+          - orders.num_of_item
+          - users.id
+          - users.first_name
+          - users.last_name
+          - users.email
+          - users.age
+          - users.gender
+          - users.city
+          - users.state
+          - users.country
+          - users.zip
+          - users.traffic_source
+          - products.id
+          - products.name
+          - products.brand
+          - products.category
+          - products.department
+          - products.retail_price
+          - products.cost
+          - inventory_items.id
+          - inventory_items.cost
+        time_dimension: created_at
+        granularity: day
 
