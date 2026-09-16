@@ -1,0 +1,13 @@
+sponsor_plan_id,sponsor_plan_code,sponsor_plan_description,payor_group_code,payor_group_description,financial_class_group_code,financial_class_group_description
+1,MCR-A,Medicare Part A,MCR,Medicare,GOV,Government
+2,MCR-ADV,Medicare Advantage - Humana,MCRA,Medicare Advantage,GOV,Government
+3,MCD-OR,Oregon Health Plan,MCD,Medicaid,GOV,Government
+4,MCD-MCO,Medicaid Managed - CareOregon,MCD,Medicaid,GOV,Government
+5,BCBS-PPO,Regence BlueCross PPO,BCBS,Blue Cross,COM,Commercial
+6,AET-HMO,Aetna HMO,COMM,Commercial,COM,Commercial
+7,UHC-PPO,UnitedHealthcare PPO,COMM,Commercial,COM,Commercial
+8,CIG-OAP,Cigna Open Access Plus,COMM,Commercial,COM,Commercial
+9,KAI-HMO,Kaiser Permanente NW,COMM,Commercial,COM,Commercial
+10,WC-SAIF,SAIF Workers Comp,WC,Workers Comp,WC,Workers Comp
+11,SP,Self Pay,SP,Self Pay,SP,Self Pay
+12,SP-CHAR,Self Pay - Charity Pending,SP,Self Pay,SP,Self Pay
