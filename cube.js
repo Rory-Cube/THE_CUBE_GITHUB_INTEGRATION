@@ -82,51 +82,52 @@
 
 
 
-module.exports = {
-  driverFactory: ({ securityContext }) => {
-    console.log('cubeCloud ctx:', JSON.stringify(securityContext?.cubeCloud));
+// // Oauth test
+// module.exports = {
+//   driverFactory: ({ securityContext }) => {
+//     console.log('cubeCloud ctx:', JSON.stringify(securityContext?.cubeCloud));
 
-    // Credential key matches the OAuth app name in Cube Cloud,
-    // not the data source type
-    const snowflakeCreds =
-      securityContext?.cubeCloud?.userCredentials?.snowflake_rory_test ?? {};
+//     // Credential key matches the OAuth app name in Cube Cloud,
+//     // not the data source type
+//     const snowflakeCreds =
+//       securityContext?.cubeCloud?.userCredentials?.snowflake_rory_test ?? {};
 
-    // Only use the OAuth token when the credential status is "active"
-    const oauthToken =
-      snowflakeCreds.status === "active"
-        ? snowflakeCreds.accessToken
-        : null;
+//     // Only use the OAuth token when the credential status is "active"
+//     const oauthToken =
+//       snowflakeCreds.status === "active"
+//         ? snowflakeCreds.accessToken
+//         : null;
 
-    if (oauthToken) {
-      // Per-user OAuth session — role must match the role
-      // baked into the token at authorization time
-      return {
-        type: "snowflake",
-        account: process.env.CUBEJS_DB_SNOWFLAKE_ACCOUNT,
-        warehouse: process.env.CUBEJS_DB_SNOWFLAKE_WAREHOUSE,
-        database: process.env.CUBEJS_DB_NAME,
-        authenticator: "OAUTH",
-        oauthToken,
-        role: "RORY_TEST_OAUTH_2_ROLE",
-      };
-    }
+//     if (oauthToken) {
+//       // Per-user OAuth session — role must match the role
+//       // baked into the token at authorization time
+//       return {
+//         type: "snowflake",
+//         account: process.env.CUBEJS_DB_SNOWFLAKE_ACCOUNT,
+//         warehouse: process.env.CUBEJS_DB_SNOWFLAKE_WAREHOUSE,
+//         database: process.env.CUBEJS_DB_NAME,
+//         authenticator: "OAUTH",
+//         oauthToken,
+//         role: "RORY_TEST_OAUTH_2_ROLE",
+//       };
+//     }
 
-    // Fallback: service account with key-pair auth
-    return {
-      type: "snowflake",
-      account: process.env.CUBEJS_DB_SNOWFLAKE_ACCOUNT,
-      warehouse: process.env.CUBEJS_DB_SNOWFLAKE_WAREHOUSE,
-      database: process.env.CUBEJS_DB_NAME,
-      username: process.env.CUBEJS_DB_USER,
-      authenticator: "SNOWFLAKE_JWT",
-      privateKey: process.env.CUBEJS_DB_SNOWFLAKE_PRIVATE_KEY,
-      role: "RORY_CUBE_SVC_ROLE",
-    };
-  },
+//     // Fallback: service account with key-pair auth
+//     return {
+//       type: "snowflake",
+//       account: process.env.CUBEJS_DB_SNOWFLAKE_ACCOUNT,
+//       warehouse: process.env.CUBEJS_DB_SNOWFLAKE_WAREHOUSE,
+//       database: process.env.CUBEJS_DB_NAME,
+//       username: process.env.CUBEJS_DB_USER,
+//       authenticator: "SNOWFLAKE_JWT",
+//       privateKey: process.env.CUBEJS_DB_SNOWFLAKE_PRIVATE_KEY,
+//       role: "RORY_CUBE_SVC_ROLE",
+//     };
+//   },
 
-  // Each user gets their own connection pool, queues, and pre-agg caches
-  contextToOrchestratorId: ({ securityContext }) => {
-    const username = securityContext?.cubeCloud?.username ?? "default";
-    return `CUBE_APP_${username}`;
-  },
-};
+//   // Each user gets their own connection pool, queues, and pre-agg caches
+//   contextToOrchestratorId: ({ securityContext }) => {
+//     const username = securityContext?.cubeCloud?.username ?? "default";
+//     return `CUBE_APP_${username}`;
+//   },
+// };

@@ -1,5 +1,7 @@
 cube(`Facility`, {
-  sql_table: `public.facility`,
+     data_source: 'duckdb',
+     sql: `SELECT * FROM read_csv('tables/view_join_path_test/vjpt_facility.csv', header=true, auto_detect=true)`,
+     public: false,
 
   dimensions: {
     FacilityId: {

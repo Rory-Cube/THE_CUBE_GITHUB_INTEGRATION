@@ -1,5 +1,7 @@
 cube(`PatientAccountSnapshot`, {
-  sql_table: `public.patient_account_snapshot`,
+     data_source: 'duckdb',
+     sql: `SELECT * FROM read_csv('tables/view_join_path_test/vjpt_patient_account_snapshot.csv', header=true, auto_detect=true)`,
+     public: false,
   description: `Daily account-level AR snapshot. Underlying data refreshes weekly; daily rows repeat the latest weekly state.`,
 
   joins: {

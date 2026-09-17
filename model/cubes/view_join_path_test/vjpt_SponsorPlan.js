@@ -1,5 +1,7 @@
 cube(`SponsorPlan`, {
-  sql_table: `public.sponsor_plan`,
+     data_source: 'duckdb',
+     sql: `SELECT * FROM read_csv('tables/view_join_path_test/vjpt_sponsor_plan.csv', header=true, auto_detect=true)`,
+     public: false,
 
   dimensions: {
     SponsorPlanId: {
@@ -15,3 +17,7 @@ cube(`SponsorPlan`, {
     FinancialClassGroupDescription: { sql: `financial_class_group_description`, type: `string` },
   },
 });
+
+cube(`SponsorPlan_Current`, { extends: SponsorPlan });
+
+cube(`SponsorPlan_Primary`, { extends: SponsorPlan });
