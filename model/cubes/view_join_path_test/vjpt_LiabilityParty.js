@@ -67,5 +67,15 @@ cube(`LiabilityParty_Primary`, {
       sql: `${CUBE}.sponsor_plan_id = ${SponsorPlan_Primary}.sponsor_plan_id`,
     },
   },
-  // same dimensions as LiabilityParty_Current
+    dimensions: {
+      LiabilityPartyId: {
+        sql: `liability_party_id`,
+        type: `number`,
+        primary_key: true,
+      },
+      LiabilityRank: {
+        sql: `liability_rank`,
+        type: `string`,
+      },
+    },
 });
