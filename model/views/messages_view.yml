@@ -1,17 +1,17 @@
-# views:
-#   - name: messages_view
+views:
+  - name: messages_view
 
-#     cubes:
-#       - join_path: messages
-#         includes: "*"
+    cubes:
+      - join_path: messages
+        includes: "*"
 
-#       - join_path: messages.messages_users
-#         prefix: true
-#         includes: "*"
+      - join_path: messages.messages_users
+        prefix: true
+        includes: "*"
 
-#       - join_path: messages.messages_recipients
-#         prefix: true
-#         includes: "*"
+      - join_path: messages.messages_recipients
+        prefix: true
+        includes: "*"
 
 #     # access_policy:
 #     #   - group: "rory"
