@@ -1,0 +1,5 @@
+views:
+  - name: nv_employees_view
+    cubes:
+      - join_path: nv_employees
+        includes: "*"

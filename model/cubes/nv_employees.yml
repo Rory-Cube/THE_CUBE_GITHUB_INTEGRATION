@@ -1,0 +1,72 @@
+cubes:
+  - name: nv_employees
+    public: false
+    data_source: duckdb
+    sql: >
+      SELECT * FROM read_csv('tables/null_values_test/nv_employees.csv', header=true, auto_detect=true)
+
+    dimensions:
+      - name: id
+        sql: id
+        type: number
+        primary_key: true
+
+      - name: name
+        sql: name
+        type: string
+
+      - name: age
+        sql: age
+        type: number
+
+      - name: city
+        sql: city
+        type: string
+
+      - name: department
+        sql: department
+        type: string
+
+      - name: email
+        sql: email
+        type: string
+
+      - name: hire_date
+        sql: hire_date
+        type: time
+
+    measures:
+      - name: count
+        type: count
+        drill_members: [id, name, department, city, hire_date]
+
+      - name: total_salary
+        sql: salary
+        type: sum
+        format: currency
+        drill_members: [id, name, department, city, hire_date]
+
+      - name: avg_salary
+        sql: salary
+        type: avg
+        format: currency
+        drill_members: [id, name, department, city, hire_date]
+
+      - name: min_salary
+        sql: salary
+        type: min
+        format: currency
+
+      - name: max_salary
+        sql: salary
+        type: max
+        format: currency
+
+      - name: avg_performance_score
+        sql: performance_score
+        type: avg
+        drill_members: [id, name, department, city, hire_date]
+
+      - name: avg_age
+        sql: age
+        type: avg
