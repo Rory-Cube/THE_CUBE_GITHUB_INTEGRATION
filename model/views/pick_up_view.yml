@@ -1,0 +1,5 @@
+views:
+  - name: pick_up_view
+    cubes:
+      - join_path: pick_up
+        includes: "*"
