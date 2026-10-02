@@ -122,28 +122,28 @@ cubes:
         type: max
         description: Longest time a carrier spent on site
 
-    pre_aggregations:
-      - name: pickups_by_day
-        type: rollup
-        measures:
-          - CUBE.count
-          - CUBE.on_time_count
-          - CUBE.total_product_amount
-          - CUBE.max_dwell_minutes
-        dimensions:
-          - CUBE.product
-          - CUBE.unit
-          - CUBE.carrier
-        time_dimension: CUBE.pickup_date
-        granularity: day
-        partition_granularity: month
-        refresh_key:
-          every: 1 day
-          incremental: true
-          update_window: 7 day
-        # Both bounds snap to the 1st of a month, so the range (and the
-        # refresh worker's cache key) changes once a month, not on every renewal.
-        build_range_start:
-          sql: SELECT date_trunc('month', current_date - INTERVAL 12 MONTH)::TIMESTAMP
-        build_range_end:
-          sql: SELECT (date_trunc('month', current_date) + INTERVAL 1 MONTH)::TIMESTAMP
+    # pre_aggregations:
+    #   - name: pickups_by_day
+    #     type: rollup
+    #     measures:
+    #       - CUBE.count
+    #       - CUBE.on_time_count
+    #       - CUBE.total_product_amount
+    #       - CUBE.max_dwell_minutes
+    #     dimensions:
+    #       - CUBE.product
+    #       - CUBE.unit
+    #       - CUBE.carrier
+    #     time_dimension: CUBE.pickup_date
+    #     granularity: day
+    #     partition_granularity: month
+    #     refresh_key:
+    #       every: 1 day
+    #       incremental: true
+    #       update_window: 7 day
+    #     # Both bounds snap to the 1st of a month, so the range (and the
+    #     # refresh worker's cache key) changes once a month, not on every renewal.
+    #     build_range_start:
+    #       sql: SELECT date_trunc('month', current_date - INTERVAL 12 MONTH)::TIMESTAMP
+    #     build_range_end:
+    #       sql: SELECT (date_trunc('month', current_date) + INTERVAL 1 MONTH)::TIMESTAMP
