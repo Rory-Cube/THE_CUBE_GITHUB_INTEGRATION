@@ -69,10 +69,12 @@ cubes:
     measures:
       - name: count
         type: count
+        drill_members: [id, status, sale_price, created_at]
 
       - name: total_sale_price
         sql: "{CUBE}.\"SALE_PRICE\""
         type: sum
+        drill_members: [id, status, sale_price, created_at]
 
     pre_aggregations:
       - name: orders_view_rollup

@@ -45,5 +45,6 @@ cubes:
     measures:
       - name: count
         type: count
+        drill_members: [id, status, num_of_item, created_at]
 
 

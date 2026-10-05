@@ -33,9 +33,11 @@ cubes:
     measures:
       - name: count
         type: count
+        drill_members: [id, cost, created_at, sold_at]
 
       - name: total_cost
         sql: "{CUBE}.\"COST\""
         type: sum
+        drill_members: [id, cost, created_at, sold_at]
 
 
