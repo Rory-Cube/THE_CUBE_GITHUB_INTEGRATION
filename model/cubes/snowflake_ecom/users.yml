@@ -67,4 +67,14 @@ cubes:
       - name: count
         type: count
 
-
+    # pre_aggregations:
+    #   - name: users_rollup
+    #     measures:
+    #       - count
+    #     dimensions:
+    #       - age
+    #       - email
+    #     time_dimension: created_at
+    #     granularity: day
+    #     partition_granularity: month
+          
