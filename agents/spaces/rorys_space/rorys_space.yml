@@ -27,7 +27,7 @@ spaces:
     #     ORDER BY 1 DESC
     #     LIMIT 1000
 
-    # skills:
+    skills:
     # - name: Lobster-test-skill
     #   title: "Lobster Test skill"
     #   description: "A lobster test skill"
@@ -57,3 +57,50 @@ spaces:
     #     9. For each carrier, state how far above or below that average it sits.
     #     10. Write a closing summary of the whole analysis.
 
+    - name: Lots_of_queries
+      title: "Lots_of_queries Test skill"
+      description: "A lot of queries test skill"
+      instructions: |
+        Produce a report about pick ups.
+        Run these queries in parallel.
+        1. Run this query:
+        SELECT
+          pick_up_view.unit,
+          pick_up_view.product
+        FROM
+          pick_up_view
+        GROUP BY
+          1,
+          2
+        LIMIT
+          10000;
+        2. Run this query:
+        SELECT
+          pick_up_view.carrier,
+          MEASURE(pick_up_view.on_time_count)
+        FROM
+          pick_up_view
+        GROUP BY
+          1
+        LIMIT
+          10000;
+        3. Run this query:
+        SELECT
+          pick_up_view.is_on_time,
+          MEASURE(pick_up_view.total_product_amount)
+        FROM
+          pick_up_view
+        GROUP BY
+          1
+        LIMIT
+          10000;
+        4. Run this query:
+        SELECT
+            pick_up_view.dwell_minutes,
+            MEASURE(pick_up_view.avg_product_amount)
+        FROM
+          pick_up_view
+        GROUP BY
+          1
+        LIMIT
+          10000;

@@ -1,4 +1,4 @@
-cubes:
+  cubes:
   - name: orders
     sql_table: "\"ECOMMERCE\".\"ORDERS\""
     data_source: default
