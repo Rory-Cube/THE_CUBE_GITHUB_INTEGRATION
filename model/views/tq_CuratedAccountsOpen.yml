@@ -1,0 +1,6 @@
+views:
+  - name: CuratedAccountsOpen
+    description: Open patient accounts, exposed to BI tools over the SQL API as public."CuratedAccountsOpen".
+    cubes:
+      - join_path: curated_accounts
+        includes: "*"

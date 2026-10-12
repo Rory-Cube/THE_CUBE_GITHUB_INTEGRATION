@@ -1,0 +1,184 @@
+cubes:
+  - name: curated_accounts
+    public: false
+    data_source: duckdb
+    sql: >
+      SELECT * FROM read_csv('tables/timeout_query/tq_curated_accounts.csv', header=true, auto_detect=true)
+
+    description: Open patient accounts by client, one row per patient account.
+
+    measures:
+      - name: count
+        type: count
+      - name: TotalBalance
+        sql: balance
+        type: sum
+        format: currency
+      - name: TotalCharges
+        sql: account_total_charges
+        type: sum
+        format: currency
+
+    dimensions:
+      # Composite key: a patient account number is only unique within a client.
+      - name: AccountKey
+        sql: "{CUBE}.client_account_name || '|' || {CUBE}.client_account_number || '|' || {CUBE}.patient_account_number"
+        type: string
+        primary_key: true
+        public: false
+
+      # --- Client / account identity ---------------------------------------
+      - name: ClientAccountName
+        sql: client_account_name
+        type: string
+      - name: ClientAccountNumber
+        sql: client_account_number
+        type: string
+      - name: PatientAccountNumber
+        sql: patient_account_number
+        type: string
+      - name: ClientAccountBillingStatusDescription
+        sql: client_account_billing_status_description
+        type: string
+      - name: ClientPatientTypeDescription
+        sql: client_patient_type_description
+        type: string
+      - name: ClientServiceTypeDescription
+        sql: client_service_type_description
+        type: string
+      - name: ClientAccountFinancialClassDescription
+        sql: client_account_financial_class_description
+        type: string
+      - name: FacilityName
+        sql: facility_name
+        type: string
+      - name: LocationDescription
+        sql: location_description
+        type: string
+      - name: DischargeDepartmentName
+        sql: discharge_department_name
+        type: string
+
+      # --- Account amounts (dimensions, because the BI tool GROUPs BY them) --
+      - name: Balance
+        sql: balance
+        type: number
+      - name: AccountTotalCharges
+        sql: account_total_charges
+        type: number
+      - name: TotalAdjustments
+        sql: total_adjustments
+        type: number
+      - name: TotalPayments
+        sql: total_payments
+        type: number
+      - name: LastPaymentAmount
+        sql: last_payment_amount
+        type: number
+      - name: CurrentPayerBalance
+        sql: current_payer_balance
+        type: number
+      - name: ActivityTouches
+        sql: activity_touches
+        type: number
+
+      # --- Tiers / status ----------------------------------------------------
+      - name: BalanceTier
+        sql: balance_tier
+        type: string
+      - name: MostRecentDFSTier
+        sql: most_recent_dfs_tier
+        type: string
+      - name: DFDTier
+        sql: dfd_tier
+        type: string
+      - name: BillingStatus
+        sql: billing_status
+        type: string
+      - name: OutsourcingVendor
+        sql: outsourcing_vendor
+        type: string
+      - name: BadDebtIndicator
+        sql: bad_debt_indicator
+        type: boolean
+
+      # --- Sponsor plans -----------------------------------------------------
+      - name: PrimarySponsorPlan_SponsorPlanCode
+        sql: primary_sponsor_plan_code
+        type: string
+      - name: PrimarySponsorPlan_SponsorPlanDescription
+        sql: primary_sponsor_plan_description
+        type: string
+      - name: PrimarySponsorPlan_PayorGroupDescription
+        sql: primary_sponsor_plan_payor_group_description
+        type: string
+      - name: PrimarySponsorPlan_FinancialClassGroupDescription
+        sql: primary_sponsor_plan_fin_class_group_description
+        type: string
+      - name: CurrentSponsorPlan_SponsorPlanCode
+        sql: current_sponsor_plan_code
+        type: string
+      - name: CurrentSponsorPlan_SponsorPlanDescription
+        sql: current_sponsor_plan_description
+        type: string
+      - name: CurrentSponsorPlan_PayorGroupDescription
+        sql: current_sponsor_plan_payor_group_description
+        type: string
+      - name: CurrentSponsorPlan_FinancialClassGroupDescription
+        sql: current_sponsor_plan_fin_class_group_description
+        type: string
+
+      # --- Last activity / denial ------------------------------------------
+      - name: LastActivity_ActivityCode
+        sql: last_activity_code
+        type: string
+      - name: LastActivity_ActivityDescription
+        sql: last_activity_description
+        type: string
+      - name: LastActivity_DeferDays
+        sql: last_activity_defer_days
+        type: number
+      - name: LastDenial_ReasonCode
+        sql: last_denial_reason_code
+        type: string
+      - name: LastDenial_ReasonCodeDescription
+        sql: last_denial_reason_code_description
+        type: string
+      - name: LastDenial_DeniedAmount
+        sql: last_denial_denied_amount
+        type: number
+      - name: LastDenial_StatusCodeDescription
+        sql: last_denial_status_code_description
+        type: string
+
+      # --- Dates -------------------------------------------------------------
+      - name: AdmitDatetime
+        sql: admit_datetime
+        type: time
+      - name: DischargeDatetime
+        sql: discharge_datetime
+        type: time
+      - name: FirstBillDate
+        sql: first_bill_date
+        type: time
+      - name: FirstHostBillDatetime
+        sql: first_host_bill_datetime
+        type: time
+      - name: InitialPatientStatementDate
+        sql: initial_patient_statement_date
+        type: time
+      - name: LastPaymentDate
+        sql: last_payment_date
+        type: time
+      - name: LastAdjustmentsDate
+        sql: last_adjustments_date
+        type: time
+      - name: LastActivity_ActivityDatetime
+        sql: last_activity_datetime
+        type: time
+      - name: LastActivity_PendedDatetime
+        sql: last_activity_pended_datetime
+        type: time
+      - name: LastDenial_CreatedDate
+        sql: last_denial_created_date
+        type: time
