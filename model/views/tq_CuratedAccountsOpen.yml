@@ -4,3 +4,13 @@ views:
     cubes:
       - join_path: curated_accounts
         includes: "*"
+
+    access_policy:
+      - group: "*"
+        # member_level:
+        #   includes: "*"
+        # row_level:
+        #   filters:
+        #     - member: order_status
+        #       operator: equals
+        #       values: [ "{ securityContext.order_status }" ]

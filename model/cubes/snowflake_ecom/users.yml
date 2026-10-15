@@ -63,6 +63,12 @@ cubes:
         sql: "{CUBE}.\"CREATED_AT\""
         type: time
 
+      - name: created_at_test1
+        sql: "TO_CHAR({CUBE}.CREATED_AT, 'YYYY-MM-DD')"
+        type: string
+
+   
+
     measures:
       - name: count
         type: count
